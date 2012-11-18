@@ -9,13 +9,23 @@ yet been packaged in linux distributions. To make it easier for developers to
 build from sources, we developed a set of scripts that automates builds and
 other common development tasks.
 
-First of all clone the sugar-build git repository and enter the main directory::
+Only a few distributions are supported by the scripts, the most popular and
+most recent. Unfortunately we can't support everything, especially older
+versions, we prefer to focus on making the scripts work really well where
+supported. You can choose between the 32-bit and 64-bit versions of
+
+* Fedora 17
+* Ubuntu 12.10
+* Fedora 18 (experimental until it will be released)
+
+First of all clone the sugar-build git repository::
 
     git clone git://git.sugarlabs.org/sugar-build/sugar-build
-    cd sugar-buil
 
-Then build the source code, it may take some time::
+Then enter the main directory and build the source code. It may take some
+time, depending on your distribution, computer and network speed::
 
+    cd sugar-build
     make build
 
 Finally run it::
@@ -26,8 +36,8 @@ If anything goes wrong, you can check if there are known problems with the
 source code, by looking at the
 `buildbot status <http://buildbot.sugarlabs.org/waterfall>`_. If it's red
 than something is wrong and hopefully developers will fix it soon. If it's
-green than the issue is probably unknown and you should report it. You can
-generate useful debug information with::
+green than the issue is probably not yet known and you should report it.
+You can generate useful debug information with::
 
     make bug-report
 
@@ -47,13 +57,15 @@ Install your changes::
     make install
 
 If you made changes to an activity you can just restart it. If you made
-changes to the system, you need to restart sugar. Shut it down and as before::
+changes to the system, you need to restart sugar. You are now inside a
+sugar-build shell, so you can run commands directly, without using the make
+command. Shut down sugar and simply::
 
-    make run
+    run
 
 Installing takes a bit of time and doing it for every change is annoying.
-There is a shortcut, which is currently limited to python files of system
-modules (it will be extended to activities soon). In a separate terminal::
+There is a shortcut, which is currently limited to python files of core
+modules (we are planning to extend it to activities). In a separate terminal::
 
     make auto-install
 
@@ -78,8 +90,8 @@ Or inside a shell::
 The following commands are available
 
 auto-install
-    Automatically install source files whenever they change.
-    Currently limited to python files of system modules.
+    Automatically install source files whenever they change. Currently
+    limited to python files of core modules.
 
 check-system
     Check that all the necessary dependencies are installed in your system.
@@ -89,9 +101,6 @@ build
 
 run
     Run sugar.
-
-run-command
-    Run a custom command inside the build environment.
 
 test
     Run the UI tests.
@@ -111,39 +120,38 @@ send-patches
     and from the source directory of the module you modified. Changes must
     have been committed.
 
-Preferences
------------
+Preferences reference
+---------------------
 
-You can set a few options by creating sugar-build/prefs. For example::
+You can set a few options by creating a ugar-build/prefs file. For example::
 
     OUTPUT=HDMI1
     RESOLUTION=1024x768
 
-The following options are available
+The following preferences are available
 
 RESOLUTION
 
-    Specify the screen resolution in the form widthxheight. Note that
-    the resolution needs to be in the list of available modes, as
-    displayed by xrandr command.
+    Specify the screen resolution in the form widthxheight. Note that the
+    resolution needs to be in the list of available modes, as displayed
+    by the xrandr command.
 
 OUTPUT
 
     Sugar does not run properly on multiple video outputs, so we need to
     select one and turn off the others. By default we select the first
-    output listed by RandR.  You can set this variable to override that
-    with any other of the connected outputs reported by xrandr command,
-    for example VGA1 if you have an external monitor.
+    output listed by RandR. You can set this variable to override that with
+    any other of the connected outputs reported by xrandr command, for example
+    VGA1 if you have an external monitor.
 
 PROFILE
 
-    Sugar supports multiple profiles, so that you can run multiple
-    instances with the same user. You can specify the name of the
-    profile with this option. A random generated one is added to
-    the prefs if you are running sugar-build under sugar.
+    Sugar supports multiple profiles, so that you can run multiple instances
+    with the same user. You can specify the name of the profile with this
+    option. A random generated one is added to the prefs if you are running
+    sugar-build under sugar.
 
 RUN_IN_WINDOW
 
-    Set this variable to any value to run Sugar inside a window rather
+    Set this variable to any value to run sugar inside a window rather
     than fullscreen.
-
