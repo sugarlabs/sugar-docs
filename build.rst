@@ -132,17 +132,18 @@ The following preferences are available
 
 RESOLUTION
 
-    Specify the screen resolution in the form widthxheight. Note that the
-    resolution needs to be in the list of available modes, as displayed
-    by the xrandr command.
+    This option is only valid when running from X Window. It specifies the
+    resolution of the window containing the sugar desktop in the form
+    [width]x[height]. Otherwise the whole screen is used.
 
 OUTPUT
 
-    Sugar does not run properly on multiple video outputs, so we need to
-    select one and turn off the others. By default we select the first
-    output listed by RandR. You can set this variable to override that with
-    any other of the connected outputs reported by xrandr command, for example
-    VGA1 if you have an external monitor.
+    This option is only valid when running from a text console. Sugar does
+    not work properly on multiple video outputs, so we need to select one
+    and turn off the others. By default we select the first output listed
+    by RandR. You can set this variable to override that with any other of
+    the connected outputs reported by the xrandr command, for example VGA1
+    if you have an external monitor.
 
 PROFILE
 
@@ -150,8 +151,3 @@ PROFILE
     with the same user. You can specify the name of the profile with this
     option. A random generated one is added to the prefs if you are running
     sugar-build under sugar.
-
-RUN_IN_WINDOW
-
-    Set this variable to any value to run sugar inside a window rather
-    than fullscreen.
