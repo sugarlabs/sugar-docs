@@ -7,7 +7,3 @@ Contents:
    :maxdepth: 2
 
    build
-   architecture
-   activities
-   testing
-   reference
