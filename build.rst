@@ -151,3 +151,8 @@ PROFILE
     with the same user. You can specify the name of the profile with this
     option. A random generated one is added to the prefs if you are running
     sugar-build under sugar.
+
+BUILD_IN_SOURCE
+
+    If this is option is set (to any value) all the modules will be built
+    inside the source directory, even if they support out-of-source builds.
