@@ -24,6 +24,7 @@ Enter the directory and run sugar::
     ./run-sugar.sh
 
 If you are developing activities you should make sure to run setup.py and any
-other command which requires the sugar environment inside a shell. You can run ashell inside an existing terminal with::
+other command which requires the sugar environment inside a shell. You can run 
+a shell inside an existing terminal with::
 
     ./run-shell.sh
