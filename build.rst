@@ -45,16 +45,10 @@ Developing
 ----------
 
 All the sources are inside the sugar-build/source directory. You can make
-changes using any text editor. When you are done you need to install the
-changes. Enter the shell and the build directory of the module you modified,
-for example::
+changes using any text editor. When you are done you need to build the
+changes. For example, if you made changes to the sugar module::
 
-    make shell
-    cd build/sugar
-
-Install your changes::
-
-    make install
+    make build-sugar
 
 If you made changes to an activity you can just restart it. If you made
 changes to the system, you need to restart sugar. You are now inside a
