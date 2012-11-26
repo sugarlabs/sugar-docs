@@ -26,7 +26,7 @@ Then enter the main directory and build the source code. It may take some
 time, depending on your distribution, computer and network speed::
 
     cd sugar-build
-    make build
+    make
 
 Finally run it::
 
@@ -96,8 +96,25 @@ auto-install
 check-system
     Check that all the necessary dependencies are installed in your system.
 
+pull
+    Pull the latest source code. All modules are pulled unless one is
+    specified. For example with make::
+
+      make pull-sugar
+
+    And inside the shell::
+
+      pull sugar
+
 build
-    Build the source code.
+    Build the source code. All the modules are built unless one is specified.
+    For example with make::
+
+      make build-sugar
+
+    And inside the shell::
+
+      build sugar
 
 run
     Run sugar.
