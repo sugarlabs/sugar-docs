@@ -4,3 +4,5 @@ version = "0.1"
 
 master_doc = "index"
 html_theme = "sphinxdoc"
+
+extensions = ["sphinx.ext.autodoc"]

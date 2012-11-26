@@ -156,3 +156,70 @@ BUILD_IN_SOURCE
 
     If this is option is set (to any value) all the modules will be built
     inside the source directory, even if they support out-of-source builds.
+
+Adding a new distribution
+-------------------------
+
+To add support for other distributions you first need to add a plugin,
+implementing the following classes. It helps to take a look at the existing
+implementations in devbot/plugins.
+
+.. automodule:: devbot.plugins.interfaces
+   :members:
+
+The next step is to provide distributions specific package names. To do so,
+edit the config/packages-3.6 file (or the one with your system version). The
+keys of the dictionary are cross distribution dependency names, which are
+mapped to a list of dependency specific package names. For example::
+
+  "evince typelib":
+  { "fedora": ["evince-libs"],
+    "ubuntu": ["gir1.2-evince-3.0"] },
+
+Add the correct package name (or names) for your distribution to each
+element of the dictionary. If you are not clear on what package you need to
+add, you can refer to the config/deps directory, which defines, in several
+files, the cross distribution dependencies. For example::
+
+  { "check_name": "evince typelib",
+    "check": "from gi.repository import EvinceDocument",
+    "checker": "python" },
+
+You can map it to the package by looking at the check_name field. There are
+different kind of checkers, which takes the check field as input.
+
+python
+    This is just a snippet of python code which is evaluated. You should be
+    looking either for a classic python library or, when importing from
+    "gi.repository", for a typelib file.
+
+binary
+    This checks if an executable file is present on the system. You should
+    find the package which contains this file.
+
+gtkmodule
+    These modules are library files which are generally installed in the
+    "gtk-[version]/modules", inside the system lib directory.
+
+include
+    It checks for a C header file, inside the system include directory.
+
+dbus
+    Checks for a dbus service. The service file is generally installed in
+    share directory, inside dbus-1/services. The extension is "service".
+
+metacity
+    You should look for a package providing a metacity theme. They are
+    normally installed under "themes" in the share system directory.
+
+gstreamer
+    This checks for gstreamer plugins. They are library files installed in
+    gstreamer-[version], under the system lib directory. 
+
+You should edit buildbot.json in a similar way (there is only one package
+there). Finally, you should add to basesystem.json a minimal list of packages
+necessary for the system work. If just these are installed it should be able
+to boot, function and install new packages.
+
+That's it! If all is configured correctly you should now be able to build
+sugar on the new distribution.
