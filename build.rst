@@ -179,22 +179,32 @@ implementations in devbot/plugins.
    :members:
 
 The next step is to provide distributions specific package names. To do so,
-edit the config/packages-3.6 file (or the one with your system version). The
-keys of the dictionary are cross distribution dependency names, which are
+edit the config/packages/deps.json file (or the one with your system version).
+The keys of the dictionary are cross distribution dependency names, which are
 mapped to a list of dependency specific package names. For example::
 
-  "evince typelib":
-  { "fedora": ["evince-libs"],
-    "ubuntu": ["gir1.2-evince-3.0"] },
+  "evince typelib": {
+      "debian": [
+          "gir1.2-evince-3.0"
+      ], 
+      "fedora": [
+          "evince-libs"
+      ], 
+      "ubuntu": [
+          "gir1.2-evince-3.0"
+      ]
+  } 
 
 Add the correct package name (or names) for your distribution to each
 element of the dictionary. If you are not clear on what package you need to
 add, you can refer to the config/deps directory, which defines, in several
 files, the cross distribution dependencies. For example::
 
-  { "check_name": "evince typelib",
-    "check": "from gi.repository import EvinceDocument",
-    "checker": "python" },
+  {
+      "check": "from gi.repository import EvinceDocument", 
+      "checker": "python", 
+      "name": "evince typelib"
+  } 
 
 You can map it to the package by looking at the check_name field. There are
 different kind of checkers, which takes the check field as input.
