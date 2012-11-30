@@ -6,7 +6,7 @@ you just want to test or to develop activities, it might sometimes be more
 convenient to use a binary snapshot. We are building snapshots for each change
 in the source tree, so what you get is built from the very latest code.
 
-First of all download the latest snapshot for your distribution, it's important that you pick the right one, it won't work otherwise.
+First of all download the latest snapshot for your distribution, it's important to pick the right one, it won't work otherwise.
 
 * `Fedora 17 (32 bit) <http://sugarlabs.org/~dnarvaez/snapshots/fedora-17-32bit/latest>`_
 * `Fedora 17 (64 bit) <http://sugarlabs.org/~dnarvaez/snapshots/fedora-17-64bit/latest>`_
