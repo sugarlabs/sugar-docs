@@ -12,6 +12,8 @@ First of all download the latest snapshot for your distribution, it's important 
 * `Fedora 17 (64 bit) <http://sugarlabs.org/~dnarvaez/snapshots/fedora-17-64bit/latest>`_
 * `Ubuntu 12.10 (32 bit) <http://sugarlabs.org/~dnarvaez/snapshots/ubuntu-12.10-32bit/latest>`_
 * `Ubuntu 12.10 (64 bit) <http://sugarlabs.org/~dnarvaez/snapshots/ubuntu-12.10-64bit/latest>`_
+* `Debian Wheezy (32 bit) <http://sugarlabs.org/~dnarvaez/snapshots/debian-wheezy-32bit/latest>`_
+* `Debian Wheezy (64 bit) <http://sugarlabs.org/~dnarvaez/snapshots/debian-wheezy-64bit/latest>`_
 
 Then unpack it where you like (adapting the tarball path to your system and
 snapshot filename)::
