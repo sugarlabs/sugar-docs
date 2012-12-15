@@ -114,8 +114,15 @@ build
 run
     Run sugar.
 
-test
-    Run the UI tests.
+run-tests
+    Run the tests. All the modules are tested unless one is specified. For
+    example with make::
+
+      make run-tests-sugar
+
+    And inside the shell::
+
+      run-tests sugar
 
 bug-report
     Generate a bug report.
