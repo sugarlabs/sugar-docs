@@ -27,10 +27,6 @@ Then enter the main directory and build the source code. It may take some
 time, depending on your distribution, computer and network speed::
 
     cd sugar-build
-    make
-
-Finally run it::
-
     make run
 
 If anything goes wrong, you can check if there are known problems with the
@@ -46,31 +42,15 @@ Developing
 ----------
 
 All the sources are inside the sugar-build/source directory. You can make
-changes using any text editor. When you are done you need to build the
-changes. For example, if you made changes to the sugar module::
+changes using any text editor. If sugar is already running stop it, then
+restart it with::
 
-    make build-sugar
-
-If you made changes to an activity you can just restart it. If you made
-changes to the system, you need to restart sugar. You are now inside a
-sugar-build shell, so you can run commands directly, without using the make
-command. Shut down sugar and simply::
-
-    run
-
-Installing takes a bit of time and doing it for every change is annoying.
-There is a shortcut, which is currently limited to python files of core
-modules (we are planning to extend it to activities). In a separate terminal::
-
-    make auto-install
-
-Now whenever you make changes to the source files, they will be immediately
-installed.
+    make run
 
 Commands reference
 ------------------
 
-The commands can be run as make arguments::
+You can run the commands as make arguments::
 
     make build
     make run
@@ -83,10 +63,6 @@ Or inside a shell::
     [sugar-build $] run
 
 The following commands are available
-
-auto-install
-    Automatically install source files whenever they change. Currently
-    limited to python files of core modules.
 
 check-system
     Check that all the necessary dependencies are installed in your system.
