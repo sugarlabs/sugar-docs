@@ -3,8 +3,7 @@ Binary snapshots
 
 Building from sources takes a while and uses a lot of network bandwidth. If
 you just want to test or to develop activities, it might sometimes be more
-convenient to use a binary snapshot. We are building snapshots for each change
-in the source tree, so what you get is built from the very latest code.
+convenient to use a binary snapshot.
 
 First of all download the latest snapshot for your distribution, it's important to pick the right one, it won't work otherwise.
 
