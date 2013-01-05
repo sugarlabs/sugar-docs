@@ -9,6 +9,8 @@ First of all download the latest snapshot for your distribution, it's important 
 
 * `Fedora 17 (32 bit) <http://sugarlabs.org/~dnarvaez/snapshots/fedora-17-32bit/latest>`_
 * `Fedora 17 (64 bit) <http://sugarlabs.org/~dnarvaez/snapshots/fedora-17-64bit/latest>`_
+* `Fedora 18 (32 bit) <http://sugarlabs.org/~dnarvaez/snapshots/fedora-18-32bit/latest>`_
+* `Fedora 18 (64 bit) <http://sugarlabs.org/~dnarvaez/snapshots/fedora-18-64bit/latest>`_
 * `Ubuntu 12.10 (32 bit) <http://sugarlabs.org/~dnarvaez/snapshots/ubuntu-12.10-32bit/latest>`_
 * `Ubuntu 12.10 (64 bit) <http://sugarlabs.org/~dnarvaez/snapshots/ubuntu-12.10-64bit/latest>`_
 * `Debian Wheezy (32 bit) <http://sugarlabs.org/~dnarvaez/snapshots/debian-wheezy-32bit/latest>`_
