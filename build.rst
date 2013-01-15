@@ -132,7 +132,7 @@ send-patches
 Preferences reference
 ---------------------
 
-You can set a few options by creating a ugar-build/prefs file. For example::
+You can set a few options by creating a sugar-build/prefs file. For example::
 
     OUTPUT=HDMI1
     RESOLUTION=1024x768
