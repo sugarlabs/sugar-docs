@@ -104,15 +104,16 @@ build
 run
     Run sugar.
 
-run-tests
-    Run the tests. All the modules are tested unless one is specified. For
-    example with make::
+check
+    Run tests for sugar-build and all the modules that provides them. It
+    should usually be run before submitting patches or pushing changes. It's
+    possible to specify a single module using make::
 
-      make run-tests-sugar
+      make check-sugar
 
     And inside the shell::
 
-      run-tests sugar
+      check sugar
 
 bug-report
     Generate a bug report.
