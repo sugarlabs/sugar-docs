@@ -14,7 +14,6 @@ most recent. Unfortunately we can't support everything, especially older
 versions, we prefer to focus on making the scripts work really well where
 supported. You can choose between the 32-bit and 64-bit versions of
 
-* Fedora 17
 * Fedora 18
 * Ubuntu 12.10
 * Debian Wheezy
