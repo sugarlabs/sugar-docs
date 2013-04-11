@@ -35,8 +35,8 @@ Finally run it with::
 If anything goes wrong, you can check if there are known problems with the
 source code, by looking at the
 `buildbot status <http://buildbot.sugarlabs.org/waterfall>`_. If it's red
-than something is wrong and hopefully developers will fix it soon. If it's
-green than the issue is probably not yet known and you should report it.
+then something is wrong and hopefully developers will fix it soon. If it's
+green then the issue is probably not yet known and you should report it.
 You can generate useful debug information with::
 
     make bug-report
