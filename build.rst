@@ -20,7 +20,7 @@ supported. You can choose between the 32-bit and 64-bit versions of
 
 First of all clone the sugar-build git repository::
 
-    git clone git://git.sugarlabs.org/sugar-build/sugar-build
+    git clone git://github.com/sugarlabs/sugar-build.git
 
 Then enter the main directory and build the source code. It may take some
 time, depending on your distribution, computer and network speed::
