@@ -7,4 +7,3 @@ Contents:
    :maxdepth: 2
 
    build
-   snapshots
