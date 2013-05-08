@@ -170,11 +170,8 @@ Adding a new distribution
 -------------------------
 
 To add support for other distributions you first need to add a plugin,
-implementing the following classes. It helps to take a look at the existing
-implementations in devbot/plugins.
-
-.. automodule:: devbot.plugins.interfaces
-   :members:
+implementing the PackageManager and DistroInfo interfaces. It helps to take
+a look at the existing implementations in devbot/plugins.
 
 The next step is to provide distributions specific package names. To do so,
 edit the config/packages/deps.json file (or the one with your system version).
