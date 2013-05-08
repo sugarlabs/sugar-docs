@@ -1,3 +1,8 @@
+---
+layout: default
+title: Building from sources
+---
+
 Building from sources
 =====================
 
@@ -18,26 +23,26 @@ supported. You can choose between the 32-bit and 64-bit versions of
 * Ubuntu 13.04
 * Debian Wheezy
 
-First of all clone the sugar-build git repository::
+First of all clone the sugar-build git repository
 
     git clone git://github.com/sugarlabs/sugar-build.git
 
 Then enter the main directory and build the source code. It may take some
-time, depending on your distribution, computer and network speed::
+time, depending on your distribution, computer and network speed
 
     cd sugar-build
     make build
 
-Finally run it with::
+Finally run it with
 
     make run
 
 If anything goes wrong, you can check if there are known problems with the
 source code, by looking at the
-`buildbot status <http://buildbot.sugarlabs.org/waterfall>`_. If it's red
+[buildbot status](http://buildbot.sugarlabs.org/waterfall). If it's red
 then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
-You can generate useful debug information with::
+You can generate useful debug information with
 
     make bug-report
 
@@ -46,29 +51,29 @@ Developing
 
 All the sources are inside the sugar-build/source directory. You can make
 changes using any text editor. If sugar is already running stop it, then
-restart it with::
+restart it with
 
     make run
 
 Once in a while you will want to update to the latest sugar sources, issuing
-the command::
+the command
 
     make pull
 
 It's also a good idea to keep up with the latest sugar-build scripts. You can
-do that like for any other git repository::
+do that like for any other git repository
 
     git pull
 
 Commands reference
 ------------------
 
-You can run the commands as make arguments::
+You can run the commands as make arguments
 
     make build
     make run
 
-Or inside a shell::
+Or inside a shell
 
     make shell
 
@@ -77,10 +82,12 @@ Or inside a shell::
 
 The following commands are available
 
-check-system
+* check-system
+
     Check that all the necessary dependencies are installed in your system.
 
-pull
+* pull
+
     Pull the latest source code. All modules are pulled unless one is
     specified. For example with make::
 
@@ -90,40 +97,47 @@ pull
 
       pull sugar
 
-build
+* build
+
     Build the source code. All the modules are built unless one is specified.
-    For example with make::
+    For example with make
 
       make build-sugar
 
-    And inside the shell::
+    And inside the shell
 
       build sugar
 
-run
+* run
+
     Run sugar.
 
-check
+* check
+
     Run tests for sugar-build and all the modules that provides them. It
     should usually be run before submitting patches or pushing changes. It's
-    possible to specify a single module using make::
+    possible to specify a single module using make
 
       make check-sugar
 
-    And inside the shell::
+    And inside the shell
 
       check sugar
 
-bug-report
+* bug-report
+
     Generate a bug report.
 
-clean
+* clean
+
     Delete the build artifacts.
 
-shell
+* shell
+
     Open a shell inside the build environment.
 
-send-patches
+* send-patches
+
     Send the modifications you made as patches, for review and integration
     into the official repository. This command must be run inside the shell
     and from the source directory of the module you modified. Changes must
@@ -132,20 +146,20 @@ send-patches
 Preferences reference
 ---------------------
 
-You can set a few options by creating a sugar-build/prefs file. For example::
+You can set a few options by creating a sugar-build/prefs file. For example
 
     OUTPUT=HDMI1
     RESOLUTION=1024x768
 
 The following preferences are available
 
-RESOLUTION
+* RESOLUTION
 
     This option is only valid when running from X Window. It specifies the
     resolution of the window containing the sugar desktop in the form
     [width]x[height]. Otherwise the whole screen is used.
 
-OUTPUT
+* OUTPUT
 
     This option is only valid when running from a text console. Sugar does
     not work properly on multiple video outputs, so we need to select one
@@ -154,14 +168,14 @@ OUTPUT
     the connected outputs reported by the xrandr command, for example VGA1
     if you have an external monitor.
 
-PROFILE
+* PROFILE
 
     Sugar supports multiple profiles, so that you can run multiple instances
     with the same user. You can specify the name of the profile with this
     option. A random generated one is added to the prefs if you are running
     sugar-build under sugar.
 
-BUILD_IN_SOURCE
+* BUILD_IN_SOURCE
 
     If this is option is set (to any value) all the modules will be built
     inside the source directory, even if they support out-of-source builds.
@@ -170,68 +184,72 @@ Adding a new distribution
 -------------------------
 
 To add support for other distributions you first need to add a plugin,
-implementing the following classes. It helps to take a look at the existing
-implementations in devbot/plugins.
-
-.. automodule:: devbot.plugins.interfaces
-   :members:
+implementing the PackageManager and DistroInfo interfaces. It helps to take
+a look at the existing implementations in devbot/plugins.
 
 The next step is to provide distributions specific package names. To do so,
 edit the config/packages/deps.json file (or the one with your system version).
 The keys of the dictionary are cross distribution dependency names, which are
-mapped to a list of dependency specific package names. For example::
+mapped to a list of dependency specific package names. For example
 
-  "evince typelib": {
-      "debian": [
-          "gir1.2-evince-3.0"
-      ], 
-      "fedora": [
-          "evince-libs"
-      ], 
-      "ubuntu": [
-          "gir1.2-evince-3.0"
-      ]
-  } 
+    "evince typelib": {
+        "debian": [
+            "gir1.2-evince-3.0"
+        ], 
+        "fedora": [
+            "evince-libs"
+        ], 
+        "ubuntu": [
+            "gir1.2-evince-3.0"
+        ]
+    } 
 
 Add the correct package name (or names) for your distribution to each
 element of the dictionary. If you are not clear on what package you need to
 add, you can refer to the config/deps directory, which defines, in several
-files, the cross distribution dependencies. For example::
+files, the cross distribution dependencies. For example
 
-  {
-      "check": "from gi.repository import EvinceDocument", 
-      "checker": "python", 
-      "name": "evince typelib"
-  } 
+    {
+        "check": "from gi.repository import EvinceDocument", 
+        "checker": "python", 
+        "name": "evince typelib"
+    } 
 
 You can map it to the package by looking at the check_name field. There are
 different kind of checkers, which takes the check field as input.
 
-python
+* python
+
     This is just a snippet of python code which is evaluated. You should be
     looking either for a classic python library or, when importing from
     "gi.repository", for a typelib file.
 
-binary
+* binary
+
     This checks if an executable file is present on the system. You should
     find the package which contains this file.
 
-gtkmodule
+* gtkmodule
+
     These modules are library files which are generally installed in the
     "gtk-[version]/modules", inside the system lib directory.
 
-include
+* include
+
     It checks for a C header file, inside the system include directory.
 
-dbus
+* dbus
+
     Checks for a dbus service. The service file is generally installed in
     share directory, inside dbus-1/services. The extension is "service".
 
-metacity
+* metacity
+
     You should look for a package providing a metacity theme. They are
     normally installed under "themes" in the share system directory.
 
-gstreamer
+* gstreamer
+
     This checks for gstreamer plugins. They are library files installed in
     gstreamer-[version], under the system lib directory. 
 
