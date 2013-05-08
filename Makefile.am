@@ -5,7 +5,7 @@ all: build
 htmldir = $(builddir)/html
 
 build:
-	sphinx-build -b html $(srcdir) $(htmldir)
+	jekyll $(srcdir) $(htmldir)
 
 clean:
 	rm -rf $(htmldir)
