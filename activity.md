@@ -23,6 +23,8 @@ Install the activity for development
 
 Now you should have a basic activity running!
 
+![Activity template](images/activity-template.png "Activity template")
+
 ### File structure
 
 In your new activity, you will find the following file structure:
