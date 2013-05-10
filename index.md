@@ -8,3 +8,4 @@ Sugar developer documentation
 
 * [Building from sources](build.html)
 * [Code style guide](style.html)
+* [Write an activity](activity.html)
