@@ -89,7 +89,7 @@ This means that if there are changes in one of the modules you have to update
 your local copy. You can do this with running the following command inside the
 activity directory:
 
-    volo add -f
+    `volo add -f`
 
 ### Ready to release
 
@@ -98,3 +98,11 @@ Before your first release, you should:
 * make your activity unique in the Sugar interface by changing your
   activity icon activity/activity-icon.svg .  Or if you don't have
   graphics skills, you can ask in the community if someone can do it.
+
+After that, you can make an XO bundle and upload it to the Sugar
+activities market <http://activities.sugarlabs.org/> .
+
+    `python setup.py dist_xo`
+
+For further releases, you should update the activity_version in
+`activity/activity.info`.
