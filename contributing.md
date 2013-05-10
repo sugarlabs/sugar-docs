@@ -20,56 +20,59 @@ In short, you will:
 You should fork the repository first.  This step is needed only once.
 See [complete help in
 github](https://help.github.com/articles/fork-a-repo).  Brief
-instructions follow:
+instructions follow using [sugar
+component](https://github.com/sugarlabs/sugar) as example:
 
 * navigate <https://github.com/sugarlabs/sugar/> and press **Fork** button
-* git clone https://github.com/YOUR-NAME/sugar.git
-* cd sugar
-* git remote add upstream https://github.com/sugarlabs/sugar.git
-* git fetch upstream
+* `git clone https://github.com/YOUR-NAME/sugar.git`
+* `cd sugar`
+* `git remote add upstream https://github.com/sugarlabs/sugar.git`
+* `git fetch upstream`
 
 ### Sending a pull-request
 
 * Create one branch per topic
 
-  git checkout -b topic1
+    `git checkout -b topic1`
 
 * Make one or more commits
 * Push the branch
 
-  git push origin topic1
+    `git push origin topic1`
 
-* Submit a pull request for the branch (web UI)
+* Submit a pull request for the branch.  Navigate to your repository
+  page in github, switch to the branch you made, and then press the
+  **Pull Request** button.
 
 After that, the review process will happen in the pull-request page on
 github.  The process ends with one of this:
 
-1. The reviewer merges your request.
-2. The reviewer rejects your request (and closes the request).
-3. The reviewer requires changes (and closes the request).
+1. A reviewer merges your request.
+2. A reviewer rejects your request providing reasons  (and closes the request).
+3. A reviewer requires changes (and closes the request).
 
 In case they ask you for changes,
 
 * Make changes using interactive rebase
 <http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages>
 
-  git rebase -i master
+    `git rebase -i master`
 
 * Push the changes to another remote branch
 
-  git push origin topic1:topic1-try2
+    `git push origin topic1:topic1-try2`
 
-* Submit the new pull request (web UI)
+* Submit the new pull request through the github site as you did before
 
-To provide your next pull-request, don't forget to pull in changes
+To do your next contribution, don't forget to pull in changes
 from the master repository.
 
 ### Keep your fork up to date
 
 Pull in upstream changes:
 
-* git fetch upstream
-* git merge upstream/master
+* `git fetch upstream`
+* `git merge upstream/master`
 
 ### Reviewing
 
@@ -83,16 +86,16 @@ commands to do the local merge.  They will be something like:
 
 * get the changes from that branch to a new local branch:
 
-  git checkout -b SOME-USER-topic1 master
+    `git checkout -b SOME-USER-topic1 master`
 
-  git pull https://github.com/SOME-USER/sugar.git topic1
+    `git pull https://github.com/SOME-USER/sugar.git topic1`
 
 * Test!
 
 * If everything is fine, merge:
 
-  git checkout master
+    `git checkout master`
 
-  git merge SOME-USER-topic1
+    `git merge SOME-USER-topic1`
 
-  git push origin master
+    `git push origin master`
