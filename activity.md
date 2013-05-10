@@ -22,4 +22,14 @@ Install the activity for development
     python setup.py dev
 
 Now you should have a basic activity running! If you want to inspect the code,
-you can press ctrl+shift+I.
+you can press ctrl+shift+i while your Activity is running.
+
+The activity carries a copy of [sugar-html-graphics](http://github.com/sugarlabs/sugar-html-graphics) and
+[sugar-html-core](http://github.com/sugarlabs/sugar-html-core). This is done to be able
+to run the activity outside of Sugar.
+
+This means that if there are changes in one of the modules you have to update
+your local copy. You can do this with running the following command inside the
+activity directory:
+
+    volo -f updates
