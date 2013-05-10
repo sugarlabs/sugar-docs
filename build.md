@@ -157,7 +157,7 @@ The following preferences are available
 
     This option is only valid when running from X Window. It specifies the
     resolution of the window containing the sugar desktop in the form
-    [width]x[height]. Otherwise the whole screen is used.
+    \[width\]x\[height\]. Otherwise the whole screen is used.
 
 * OUTPUT
 
@@ -232,7 +232,7 @@ different kind of checkers, which takes the check field as input.
 * gtkmodule
 
     These modules are library files which are generally installed in the
-    "gtk-[version]/modules", inside the system lib directory.
+    "gtk-\[version\]/modules", inside the system lib directory.
 
 * include
 
@@ -251,7 +251,7 @@ different kind of checkers, which takes the check field as input.
 * gstreamer
 
     This checks for gstreamer plugins. They are library files installed in
-    gstreamer-[version], under the system lib directory. 
+    gstreamer-\[version\], under the system lib directory.
 
 You should edit buildbot.json in a similar way (there is only one package
 there). Finally, you should add to basesystem.json a minimal list of packages
