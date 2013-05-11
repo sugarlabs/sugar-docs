@@ -60,11 +60,6 @@ the command
 
     make pull
 
-It's also a good idea to keep up with the latest sugar-build scripts. You can
-do that like for any other git repository
-
-    git pull
-
 Commands reference
 ------------------
 
