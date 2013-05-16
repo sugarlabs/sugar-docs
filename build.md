@@ -21,7 +21,7 @@ supported. You can choose between the 32-bit and 64-bit versions of
 
 * Fedora 18
 * Ubuntu 13.04
-* Debian Wheezy
+* Debian Jessie
 
 First of all clone the sugar-build git repository
 
