@@ -31,11 +31,11 @@ Then enter the main directory and build the source code. It may take some
 time, depending on your distribution, computer and network speed
 
     cd sugar-build
-    make build
+    ./osbuild build
 
 Finally run it with
 
-    make run
+    ./osbuild run
 
 If anything goes wrong, you can check if there are known problems with the
 source code, by looking at the
@@ -44,7 +44,7 @@ then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
 You can generate useful debug information with
 
-    make bug-report
+    ./osbuild bug-report
 
 Developing
 ----------
@@ -53,24 +53,24 @@ All the sources are inside the sugar-build/source directory. You can make
 changes using any text editor. If sugar is already running stop it, then
 restart it with
 
-    make run
+    ./osbuild run
 
 Once in a while you will want to update to the latest sugar sources, issuing
 the command
 
-    make pull
+    ./osbuild pull
 
 Commands reference
 ------------------
 
-You can run the commands as make arguments
+You can run the commands as osbuild arguments
 
-    make build
-    make run
+    ./osbuild build
+    ./osbuild run
 
 Or inside a shell
 
-    make shell
+    ./osbuild
 
     [sugar-build $] build
     [sugar-build $] run
@@ -86,7 +86,7 @@ The following commands are available
     Pull the latest source code. All modules are pulled unless one is
     specified. For example with make::
 
-      make pull-sugar
+      ./osbuild pull-sugar
 
     And inside the shell::
 
@@ -97,7 +97,7 @@ The following commands are available
     Build the source code. All the modules are built unless one is specified.
     For example with make
 
-      make build-sugar
+      ./osbuild build-sugar
 
     And inside the shell
 
@@ -113,7 +113,7 @@ The following commands are available
     should usually be run before submitting patches or pushing changes. It's
     possible to specify a single module using make
 
-      make check-sugar
+      ./osbuild check-sugar
 
     And inside the shell
 
