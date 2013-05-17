@@ -84,22 +84,13 @@ The following commands are available
 * pull
 
     Pull the latest source code. All modules are pulled unless one is
-    specified. For example with make::
-
-      ./osbuild pull-sugar
-
-    And inside the shell::
+    specified.
 
       pull sugar
 
 * build
 
     Build the source code. All the modules are built unless one is specified.
-    For example with make
-
-      ./osbuild build-sugar
-
-    And inside the shell
 
       build sugar
 
@@ -110,12 +101,7 @@ The following commands are available
 * check
 
     Run tests for sugar-build and all the modules that provides them. It
-    should usually be run before submitting patches or pushing changes. It's
-    possible to specify a single module using make
-
-      ./osbuild check-sugar
-
-    And inside the shell
+    should usually be run before submitting patches or pushing changes.
 
       check sugar
 
