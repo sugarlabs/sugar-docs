@@ -1,8 +1,3 @@
----
-layout: default
-title: Building from sources
----
-
 Building from sources
 =====================
 

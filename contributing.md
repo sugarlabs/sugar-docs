@@ -1,8 +1,3 @@
----
-layout: default
-title: Contributing to the development process
----
-
 Contributing
 ------------
 

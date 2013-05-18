@@ -1,12 +1,7 @@
----
-layout: default
-title: Write an activity
----
-
 Write your own HTML activity
 ============================
 
-After you have [built](build.html) the development environment, enter the
+After you have [built](build.md.html) the development environment, enter the
 source directory in a sugar-build shell
 
     make shell

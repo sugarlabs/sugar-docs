@@ -1,8 +1,3 @@
----
-layout: default
-title: Code style guide
----
-
 Code style for Sugar HTML development
 =====================================
 
