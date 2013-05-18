@@ -91,6 +91,6 @@ commands to do the local merge.  They will be something like:
 
     `git checkout master`
 
-    `git merge SOME-USER-topic1`
+    `git rebase SOME-USER-topic1`
 
     `git push origin master`

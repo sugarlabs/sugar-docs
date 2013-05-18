@@ -44,7 +44,7 @@ You can generate useful debug information with
 Developing
 ----------
 
-All the sources are inside the sugar-build/source directory. You can make
+All the sources are inside the sugar-build directory. You can make
 changes using any text editor. If sugar is already running stop it, then
 restart it with
 
@@ -151,10 +151,6 @@ The following preferences are available
     option. A random generated one is added to the prefs if you are running
     sugar-build under sugar.
 
-* BUILD_IN_SOURCE
-
-    If this is option is set (to any value) all the modules will be built
-    inside the source directory, even if they support out-of-source builds.
 
 Adding a new distribution
 -------------------------
