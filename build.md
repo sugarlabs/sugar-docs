@@ -74,50 +74,52 @@ The following commands are available
 
 * check-system
 
-    Check that all the necessary dependencies are installed in your system.
+  Check that all the necessary dependencies are installed in your
+  system.
 
 * pull
 
-    Pull the latest source code. All modules are pulled unless one is
-    specified.
+  Pull the latest source code. All modules are pulled unless one is
+  specified.
 
-      pull sugar
+    pull sugar
 
 * build
 
-    Build the source code. All the modules are built unless one is specified.
+  Build the source code. All the modules are built unless one is
+  specified.
 
-      build sugar
+    build sugar
 
 * run
 
-    Run sugar.
+  Run sugar.
 
 * check
 
-    Run tests for sugar-build and all the modules that provides them. It
-    should usually be run before submitting patches or pushing changes.
+  Run tests for sugar-build and all the modules that provides them. It
+  should usually be run before submitting patches or pushing changes.
 
-      check sugar
+    check sugar
 
 * bug-report
 
-    Generate a bug report.
+  Generate a bug report.
 
 * clean
 
-    Delete the build artifacts.
+  Delete the build artifacts.
 
 * shell
 
-    Open a shell inside the build environment.
+  Open a shell inside the build environment.
 
 * send-patches
 
-    Send the modifications you made as patches, for review and integration
-    into the official repository. This command must be run inside the shell
-    and from the source directory of the module you modified. Changes must
-    have been committed.
+  Send the modifications you made as patches, for review and
+  integration into the official repository. This command must be run
+  inside the shell and from the source directory of the module you
+  modified. Changes must have been committed.
 
 Preferences reference
 ---------------------
@@ -131,25 +133,25 @@ The following preferences are available
 
 * RESOLUTION
 
-    This option is only valid when running from X Window. It specifies the
-    resolution of the window containing the sugar desktop in the form
-    \[width\]x\[height\]. Otherwise the whole screen is used.
+  This option is only valid when running from X Window. It specifies
+  the resolution of the window containing the sugar desktop in the
+  form \[width\]x\[height\]. Otherwise the whole screen is used.
 
 * OUTPUT
 
-    This option is only valid when running from a text console. Sugar does
-    not work properly on multiple video outputs, so we need to select one
-    and turn off the others. By default we select the first output listed
-    by RandR. You can set this variable to override that with any other of
-    the connected outputs reported by the xrandr command, for example VGA1
-    if you have an external monitor.
+  This option is only valid when running from a text console. Sugar
+  does not work properly on multiple video outputs, so we need to
+  select one and turn off the others. By default we select the first
+  output listed by RandR. You can set this variable to override that
+  with any other of the connected outputs reported by the xrandr
+  command, for example VGA1 if you have an external monitor.
 
 * PROFILE
 
-    Sugar supports multiple profiles, so that you can run multiple instances
-    with the same user. You can specify the name of the profile with this
-    option. A random generated one is added to the prefs if you are running
-    sugar-build under sugar.
+  Sugar supports multiple profiles, so that you can run multiple
+  instances with the same user. You can specify the name of the
+  profile with this option. A random generated one is added to the
+  prefs if you are running sugar-build under sugar.
 
 
 Adding a new distribution
@@ -192,38 +194,39 @@ different kind of checkers, which takes the check field as input.
 
 * python
 
-    This is just a snippet of python code which is evaluated. You should be
-    looking either for a classic python library or, when importing from
-    "gi.repository", for a typelib file.
+  This is just a snippet of python code which is evaluated. You should
+  be looking either for a classic python library or, when importing
+  from "gi.repository", for a typelib file.
 
 * binary
 
-    This checks if an executable file is present on the system. You should
-    find the package which contains this file.
+  This checks if an executable file is present on the system. You
+  should find the package which contains this file.
 
 * gtkmodule
 
-    These modules are library files which are generally installed in the
-    "gtk-\[version\]/modules", inside the system lib directory.
+  These modules are library files which are generally installed in the
+  "gtk-\[version\]/modules", inside the system lib directory.
 
 * include
 
-    It checks for a C header file, inside the system include directory.
+  It checks for a C header file, inside the system include directory.
 
 * dbus
 
-    Checks for a dbus service. The service file is generally installed in
-    share directory, inside dbus-1/services. The extension is "service".
+  Checks for a dbus service. The service file is generally installed
+  in share directory, inside dbus-1/services. The extension is
+  "service".
 
 * metacity
 
-    You should look for a package providing a metacity theme. They are
-    normally installed under "themes" in the share system directory.
+  You should look for a package providing a metacity theme. They are
+  normally installed under "themes" in the share system directory.
 
 * gstreamer
 
-    This checks for gstreamer plugins. They are library files installed in
-    gstreamer-\[version\], under the system lib directory.
+  This checks for gstreamer plugins. They are library files installed
+  in gstreamer-\[version\], under the system lib directory.
 
 You should edit buildbot.json in a similar way (there is only one package
 there). Finally, you should add to basesystem.json a minimal list of packages
