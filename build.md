@@ -82,14 +82,10 @@ The following commands are available
   Pull the latest source code. All modules are pulled unless one is
   specified.
 
-    pull sugar
-
 * build
 
   Build the source code. All the modules are built unless one is
   specified.
-
-    build sugar
 
 * run
 
@@ -99,8 +95,6 @@ The following commands are available
 
   Run tests for sugar-build and all the modules that provides them. It
   should usually be run before submitting patches or pushing changes.
-
-    check sugar
 
 * bug-report
 
