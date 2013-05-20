@@ -1,11 +1,10 @@
 Write your own HTML activity
 ============================
 
-After you have [built](build.md.html) the development environment, enter the
-source directory in a sugar-build shell
+After you have [built](build.md.html) the development environment, enter
+the sugar-build shell
 
     ./osbuild
-    cd source
 
 Create an activity based on the default template
 
