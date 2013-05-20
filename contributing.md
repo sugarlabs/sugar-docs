@@ -28,12 +28,12 @@ component](https://github.com/sugarlabs/sugar) as example:
 
 * Create one branch per topic
 
-    `git checkout -b topic1`
+    git checkout -b topic1
 
 * Make one or more commits
 * Push the branch
 
-    `git push origin topic1`
+    git push origin topic1
 
 * Submit a pull request for the branch.  Navigate to your repository
   page in github, switch to the branch you made, and then press the
@@ -51,11 +51,11 @@ In case they ask you for changes,
 * Make changes using interactive rebase
 <http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages>
 
-    `git rebase -i master`
+    git rebase -i master
 
 * Push the changes to another remote branch
 
-    `git push origin topic1:topic1-try2`
+    git push origin topic1:topic1-try2
 
 * Submit the new pull request through the github site as you did before
 
@@ -81,16 +81,16 @@ commands to do the local merge.  They will be something like:
 
 * get the changes from that branch to a new local branch:
 
-    `git checkout -b SOME-USER-topic1 master`
+    git checkout -b SOME-USER-topic1 master
 
-    `git pull https://github.com/SOME-USER/sugar.git topic1`
+    git pull https://github.com/SOME-USER/sugar.git topic1
 
 * Test!
 
 * If everything is fine, merge:
 
-    `git checkout master`
+    git checkout master
 
-    `git rebase SOME-USER-topic1`
+    git rebase SOME-USER-topic1
 
-    `git push origin master`
+    git push origin master
