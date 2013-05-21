@@ -77,8 +77,8 @@ Activity is running.
 ### Keeping Sugar libraries up to date
 
 The activity depends on libraries like
-[sugar-html-core](http://github.com/sugarlabs/sugar-html-activity),
-[sugar-html-core](http://github.com/sugarlabs/sugar-html-bus),
+[sugar-html-activity](http://github.com/sugarlabs/sugar-html-activity),
+[sugar-html-bus](http://github.com/sugarlabs/sugar-html-bus),
 and [sugar-html-graphics](http://github.com/sugarlabs/sugar-html-graphics)
 that provides the Sugar API and the Sugar look & feel.
 
