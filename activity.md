@@ -25,21 +25,6 @@ Now you should have a basic activity running!
 ![Activity template](images/activity-template.png "Activity template")
 
 
-For development you can initialize the repository as a git repository. This will help you to track your changes. First use [git init](https://www.kernel.org/pub/software/scm/git/docs/git-init.html) to initialize the repository:
-
-    git init 
-
-With [git status](https://www.kernel.org/pub/software/scm/git/docs/git-status.html) you can show the available files in the folder they are still untracked. You do not want to track the lib folder as this is a copy of the upstream libraries. You can exclude those by creating a [.gitignore](https://www.kernel.org/pub/software/scm/git/docs/gitignore.html) file that has:
-
-    # ignore the lib directory as those is only a copy
-    lib
-
-Now add all the files in the directory besides the lib folder and commit those changes, you can use git status again to see the current state:
-
-    git add .
-    git commit -a -m 'Initial import'
-    git status
-
 ### File structure
 
 In your new activity, you will find the following file structure:
@@ -84,6 +69,34 @@ Those are the files you'll modify.  The others are:
 
 Now you are ready to go ahead and develop your activity in the html,
 js and css files.
+
+### Revision control your code
+
+For development you can initialize the repository as a git
+repository. This will help you to track your changes. First use [git
+init](https://www.kernel.org/pub/software/scm/git/docs/git-init.html)
+to initialize the repository:
+
+    git init
+
+With [git
+status](https://www.kernel.org/pub/software/scm/git/docs/git-status.html)
+you can show the available files in the folder they are still
+untracked. You do not want to track the lib folder as this is a copy
+of the upstream libraries. You can exclude those by creating a
+[.gitignore](https://www.kernel.org/pub/software/scm/git/docs/gitignore.html)
+file that has:
+
+    # ignore the lib directory as those is only a copy
+    lib
+
+Now add all the files in the directory besides the lib folder and
+commit those changes, you can use git status again to see the current
+state:
+
+    git add .
+    git commit -a -m 'Initial import'
+    git status
 
 ### Debugging
 
