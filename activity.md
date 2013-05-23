@@ -9,11 +9,14 @@ the sugar-build shell
 Create an activity based on the default template
 
     volo create my-activity ./sugar-html-template
+    cd my-activity
 
+Choose a name for your activity.  Write it in the activity name and
+bundle-id in `activity/activity.info`, and also in the title tag of
+`index.html`.
 
 Install the activity for development
 
-    cd my-activity
     python setup.py dev
 
 Now you should have a basic activity running!
@@ -79,13 +82,8 @@ Those are the files you'll modify.  The others are:
 * `setup.py` lets you install your activity or make an installable
   bundle with it
 
-### First steps
-
-First of all, set your activity name and bundle-id in
-`activity/activity.info`, and also in the title tag of `index.html` .
-
-After that, you can go ahead and develop your activity in the html, js
-and css files.
+Now you are ready to go ahead and develop your activity in the html,
+js and css files.
 
 ### Debugging
 
