@@ -15,6 +15,7 @@ versions, we prefer to focus on making the scripts work really well where
 supported. You can choose between the 32-bit and 64-bit versions of
 
 * Fedora 18
+* Fedora 19
 * Ubuntu 13.04
 * Debian Jessie
 
