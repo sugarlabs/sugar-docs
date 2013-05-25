@@ -89,27 +89,26 @@ h1 {
 #headings .h1 {
   padding-left: 0;
   margin-top: 10px;
-  font-size: 1.1em;
-  font-weight: bold }
+  font-size: 1.3em; }
 #headings .h2 {
   padding-left: 10px;
   margin-top: 8px;
-  font-size: 1em; }
+  font-size: 1.1em; }
 #headings .h3 {
   padding-left: 20px;
   margin-top: 5px;
-  font-size: 0.9em; }
+  font-size: 1em; }
 #headings .h4 {
   padding-left: 30px;
   margin-top: 3px;
-  font-size: 0.8em; }
+  font-size: 0.9em; }
 #headings .h5 {
   padding-left: 40px;
   margin-top: 1px;
-  font-size: 0.7em; }
+  font-size: 0.8em; }
 #headings .h6 {
   padding-left: 50px;
-  font-size: 0.6em; }
+  font-size: 0.75em; }
 
 #sidebar-toggle {
   position: fixed;
