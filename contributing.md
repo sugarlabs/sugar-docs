@@ -1,5 +1,5 @@
 Contributing
-------------
+============
 
 We use the pull-request model, see [github's help on
 pull-request](https://help.github.com/articles/using-pull-requests).
@@ -10,7 +10,8 @@ In short, you will:
 * push your branch and submit a pull-request for it
 * go through the review process
 
-### Forking
+Forking
+-------
 
 You should fork the repository first.  This step is needed only once.
 See [complete help in
@@ -24,7 +25,8 @@ component](https://github.com/sugarlabs/sugar) as example:
 * `git remote add upstream https://github.com/sugarlabs/sugar.git`
 * `git fetch upstream`
 
-### Sending a pull-request
+Sending a pull-request
+----------------------
 
 * Create one branch per topic
 
@@ -62,14 +64,16 @@ In case they ask you for changes,
 To do your next contribution, don't forget to pull in changes
 from the master repository.
 
-### Keep your fork up to date
+Keep your fork up to date
+-------------------------
 
 Pull in upstream changes:
 
 * `git fetch upstream`
 * `git merge upstream/master`
 
-### Reviewing
+Reviewing
+---------
 
 We encourage testing before merging a pull-request.  So instead of
 merging directly with the "merge" button on github UI, you do a local
