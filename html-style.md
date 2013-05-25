@@ -67,7 +67,7 @@ Install the js-beautify command:
 
 Then you'll have the executable.  To clean javascript code:
 
-    js-beautify --replace js/main.js
+    js-beautify --replace --good-stuff js/main.js
 
 Warning: the --replace option will modify your source.  But you will
 be safe if you are versioning it (we use git for Sugar HTML).
