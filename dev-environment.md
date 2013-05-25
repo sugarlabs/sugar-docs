@@ -1,5 +1,5 @@
-Building from sources
-=====================
+Setup a development environment
+===============================
 
 Getting started
 ---------------
