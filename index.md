@@ -17,6 +17,9 @@ The Sugar Learning Platform is composed of two main components, an operating
 system and a set of HTML libraries which allows to build cross platform
 activities.
 
+See detailed information about [our
+architecture](web-architecture.md.html).
+
 Sugar OS is based on
 
 * [Linux](http://en.wikipedia.org/wiki/Linux/)
@@ -24,15 +27,6 @@ Sugar OS is based on
 * [freedesktop.org](http://www.freedesktop.org/)
 * [GNOME](http://www.gnome.org/)
 * [WebKit](http://www.webkit.org/)
-
-Sugar HTML is based on
-
-* [HTML5](dev.w3.org/html5/spec/)
-* [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
-* [Node.js](http://nodejs.org/)
-* [volo](http://volojs.org/)
-* [RequireJS](http://requirejs.org/)
-* [Jasmine](http://pivotal.github.io/jasmine/)
 
 Modules
 -------
