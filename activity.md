@@ -1,14 +1,14 @@
 Write your own HTML activity
 ============================
 
-After you have [built](build.md.html) the development environment, enter
+After you have [built](dev-environ.md.html) the development environment, enter
 the sugar-build shell
 
     ./osbuild
 
 Create an activity based on the default template
 
-    volo create my-activity ./sugar-html-template
+    volo create my-activity ./sugar-web-template
     cd my-activity
 
 Choose a name for your activity.  Write it in the activity name and
@@ -105,14 +105,12 @@ Activity is running.
 
 ### Keeping Sugar libraries up to date
 
-The activity depends on libraries like
-[sugar-html-activity](http://github.com/sugarlabs/sugar-html-activity),
-[sugar-html-bus](http://github.com/sugarlabs/sugar-html-bus),
-and [sugar-html-graphics](http://github.com/sugarlabs/sugar-html-graphics)
+The activity depends on the
+[sugar-web](http://github.com/sugarlabs/sugar-html-activity) library
 that provides the Sugar API and the Sugar look & feel.
 
-This means that if there are changes in one of the modules you have to update
-your local copy. You can do this with running the following command inside the
+This means that if there are changes to the library you have to update your
+local copy. You can do this with running the following command inside the
 activity directory:
 
     volo add -f

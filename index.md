@@ -37,4 +37,4 @@ Sugar HTML is based on
 Modules
 -------
 
-* [sugar-html-graphics](sugar-html-graphics/README.md.html)
+* [sugar-web](sugar-web/README.md.html)
