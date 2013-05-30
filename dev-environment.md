@@ -103,7 +103,8 @@ The following commands are available
 
 * clean
 
-  Delete the build artifacts.
+  Delete the build artifacts. If a module is specified only the source
+  directory of that module is cleaned.
 
 * shell
 
