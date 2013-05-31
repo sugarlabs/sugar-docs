@@ -28,7 +28,7 @@ Sugar OS is based on
 * [GNOME](http://www.gnome.org/)
 * [WebKit](http://www.webkit.org/)
 
-Modules
--------
+Sugar Web code documentation
+----------------------------
 
-* [sugar-html-graphics](sugar-html-graphics/README.md.html)
+See <sugar-web/README.md.html>
