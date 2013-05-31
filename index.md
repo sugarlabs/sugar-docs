@@ -31,4 +31,4 @@ Sugar OS is based on
 Sugar Web code documentation
 ----------------------------
 
-See <sugar-web/README.md.html>
+See [Sugar Web README.md](sugar-web/README.md.html)
