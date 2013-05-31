@@ -5,7 +5,7 @@ Getting started
 ---------------
 
 * [Setup a development environment](dev-environment.md.html)
-* Learn about [HTML](html-style.md.html) and
+* Learn about [web](html-style.md.html) and
 [python](python-style.md.html) code style
 * [Write your own activity](activity.md.html)
 * [Contribute code](contributing.md.html)
@@ -14,8 +14,11 @@ Architecture
 ------------
 
 The Sugar Learning Platform is composed of two main components, an operating
-system and a set of HTML libraries which allows to build cross platform
+system and a set of web libraries which allows to build cross platform
 activities.
+
+See detailed information about [our
+architecture](web-architecture.md.html).
 
 Sugar OS is based on
 
@@ -25,16 +28,7 @@ Sugar OS is based on
 * [GNOME](http://www.gnome.org/)
 * [WebKit](http://www.webkit.org/)
 
-Sugar HTML is based on
-
-* [HTML5](dev.w3.org/html5/spec/)
-* [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
-* [Node.js](http://nodejs.org/)
-* [volo](http://volojs.org/)
-* [RequireJS](http://requirejs.org/)
-* [Jasmine](http://pivotal.github.io/jasmine/)
-
 Modules
 -------
 
-* [sugar-web](sugar-web/README.md.html)
+* [sugar-html-graphics](sugar-html-graphics/README.md.html)
