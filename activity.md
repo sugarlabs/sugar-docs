@@ -1,5 +1,5 @@
-Write your own HTML activity
-============================
+Write your own web activity
+===========================
 
 After you have [built](dev-environ.md.html) the development environment, enter
 the sugar-build shell

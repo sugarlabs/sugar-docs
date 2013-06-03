@@ -5,7 +5,7 @@ Getting started
 ---------------
 
 * [Setup a development environment](dev-environment.md.html)
-* Learn about [web](html-style.md.html) and
+* Learn about [web](web-style.md.html) and
 [python](python-style.md.html) code style
 * [Write your own activity](activity.md.html)
 * [Contribute code](contributing.md.html)

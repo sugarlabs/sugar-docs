@@ -22,6 +22,13 @@ The js-beautify tool can be handy for the indentation part.
 Here is a good reading about javascript code conventions
 <http://javascript.crockford.com/code.html> .
 
+For public and private members of an object, read
+<http://javascript.crockford.com/private.html>.  To make the object
+available in private members, keep a private variable named **that**:
+
+    var that = this;
+
+
 HTML and CSS
 ------------
 
