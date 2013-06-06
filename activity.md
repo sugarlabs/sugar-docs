@@ -103,6 +103,16 @@ state:
 If you want to inspect the code, you can press ctrl+shift+I while your
 Activity is running.
 
+It is a very useful tool for many things. For example, you can edit
+the activity CSS or HTML, and interactively see how it is affected. Or
+you can write JavaScript commands in the console.
+
+![Activity inspector](images/activity-inspector.png "Activity inspector")
+
+Of course it has more advanced tools for JavaScript debugging. Here is
+a nice document:
+<https://developers.google.com/chrome-developer-tools/docs/javascript-debugging>.
+
 ### Keeping Sugar libraries up to date
 
 The activity depends on the
