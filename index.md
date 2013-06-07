@@ -38,3 +38,8 @@ Sugar Web code documentation
 ----------------------------
 
 See [Sugar Web README.md](sugar-web/README.md.html)
+
+Android documentation
+---------------------
+
+See [Android page](android.md.html)
