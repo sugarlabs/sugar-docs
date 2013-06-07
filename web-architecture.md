@@ -90,6 +90,15 @@ unlike Sugar GTK shell that only needs to connect to the current
 features.  But both take adventage of sharing the same JavaScript
 interface.  The interface should be platform agnostic.
 
+### Web activities standalone
+
+The standalone web activities are rendered in any modern web browser. They might
+have limited functionality but should be as functional as possible. The same
+libraries as with the other web activities are used.
+
+[Diagram of Web activity here]
+
+
 Tools
 -----
 
