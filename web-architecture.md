@@ -35,7 +35,7 @@ activity.  The Sugar services are delivered as a JavaScript framework,
 which supports common application-level functions, UI widgets and
 native services.
 
-A copy of the library is contained in the activity.
+A copy of the library is contained in each activity.
 
 Sugar Services
 --------------
