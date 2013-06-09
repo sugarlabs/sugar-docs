@@ -97,10 +97,6 @@ The following commands are available
   Run tests for sugar-build and all the modules that provides them. It
   should usually be run before submitting patches or pushing changes.
 
-* bug-report
-
-  Generate a bug report.
-
 * clean
 
   Delete the build artifacts. If a module is specified only the source
@@ -109,13 +105,6 @@ The following commands are available
 * shell
 
   Open a shell inside the build environment.
-
-* send-patches
-
-  Send the modifications you made as patches, for review and
-  integration into the official repository. This command must be run
-  inside the shell and from the source directory of the module you
-  modified. Changes must have been committed.
 
 Preferences reference
 ---------------------
