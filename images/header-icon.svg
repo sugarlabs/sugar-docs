@@ -1,0 +1,80 @@
+<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY stroke_color "#666666">
+	<!ENTITY fill_color "#ffffff">
+]><svg enable-background="new 0 0 55 55" height="55px" version="1.1" viewBox="0 0 55 55" width="55px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<g display="block" id="emblem-view-source">
+<g
+   transform="matrix(2.0833625,0,0,2.0803914,-75.288041,-61.96894)"
+   id="g4392"><g
+     transform="matrix(0.47058824,0,0,0.47058824,36.429686,30.085821)"
+     id="g3-2"
+     style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1"><polygon
+       points="26.891,12.363 17.238,16.369 14.659,4.975 20.555,2.531 "
+       id="polygon5-2"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1" /><polygon
+       points="42.646,26.88 38.649,17.228 50.04,14.654 52.477,20.55 "
+       id="polygon7-8"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1" /><polygon
+       points="28.117,42.645 37.775,38.645 40.349,50.029 34.453,52.471 "
+       id="polygon9-4"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1" /><polygon
+       points="37.824,16.315 28.171,12.309 34.394,2.439 40.295,4.882 "
+       id="polygon11-3"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1" /><polygon
+       points="38.628,37.791 42.623,28.139 52.493,34.365 50.055,40.258 "
+       id="polygon13-1"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1" /><polygon
+       points="16.385,37.76 12.391,28.105 2.515,34.34 4.953,40.234 "
+       id="polygon15-1"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1" /><polygon
+       points="12.319,26.875 16.32,17.216 4.936,14.643 2.493,20.539 "
+       id="polygon17-1"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1" /><polygon
+       points="26.939,42.623 17.287,38.629 14.719,50.018 20.609,52.461 "
+       id="polygon19-9"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-opacity:1" /><path
+       d="m 39.925,22.352 c 2.845,6.863 -0.412,14.728 -7.274,17.574 -6.867,2.85 -14.734,-0.418 -17.578,-7.281 -2.84,-6.862 0.418,-14.733 7.279,-17.572 6.862,-2.845 14.734,0.417 17.573,7.279 z"
+       id="path21-0"
+       style="fill:&stroke_color;;fill-opacity:1;stroke:&stroke_color;;stroke-width:11.69439983;stroke-opacity:1" /></g><g
+     transform="matrix(0.4,0,0,0.4,38.370368,32.023821)"
+     id="g3">
+	<polygon
+   points="17.238,16.369 14.659,4.975 20.555,2.531 26.891,12.363 "
+   id="polygon5"
+   style="fill:&fill_color;" />
+	<polygon
+   points="38.649,17.228 50.04,14.654 52.477,20.55 42.646,26.88 "
+   id="polygon7"
+   style="fill:&fill_color;" />
+	<polygon
+   points="37.775,38.645 40.349,50.029 34.453,52.471 28.117,42.645 "
+   id="polygon9"
+   style="fill:&fill_color;" />
+	<polygon
+   points="28.171,12.309 34.394,2.439 40.295,4.882 37.824,16.315 "
+   id="polygon11"
+   style="fill:&fill_color;" />
+	<polygon
+   points="42.623,28.139 52.493,34.365 50.055,40.258 38.628,37.791 "
+   id="polygon13"
+   style="fill:&fill_color;" />
+	<polygon
+   points="12.391,28.105 2.515,34.34 4.953,40.234 16.385,37.76 "
+   id="polygon15"
+   style="fill:&fill_color;" />
+	<polygon
+   points="16.32,17.216 4.936,14.643 2.493,20.539 12.319,26.875 "
+   id="polygon17"
+   style="fill:&fill_color;" />
+	<polygon
+   points="17.287,38.629 14.719,50.018 20.609,52.461 26.939,42.623 "
+   id="polygon19"
+   style="fill:&fill_color;" />
+	<path
+   d="m 39.925,22.352 c 2.845,6.863 -0.412,14.728 -7.274,17.574 -6.867,2.85 -14.734,-0.418 -17.578,-7.281 -2.84,-6.862 0.418,-14.733 7.279,-17.572 6.862,-2.845 14.734,0.417 17.573,7.279 z"
+   id="path21"
+   style="fill:none;stroke:&fill_color;;stroke-width:11.69439983" />
+</g>
+</g>
+</g>
+</svg>
