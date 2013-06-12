@@ -11,35 +11,22 @@ Getting started
 ---------------
 
 * [Setup a development environment](dev-environment.md.html)
-* Learn about [web](web-style.md.html) and
-[python](python-style.md.html) code style
 * [Write your own activity](activity.md.html)
 * [Contribute code](contributing.md.html)
 
-Architecture
-------------
+Sugar Web
+---------
 
-The Sugar Learning Platform is composed of two main components, an operating
-system and a set of web libraries which allows to build cross platform
-activities.
+* [Architecture](web-architecture.md.html)
+* [Web code style](web-style.md.html)
+* [Components documentation](sugar-web/README.md.html)
 
-See detailed information about [our
-architecture](web-architecture.md.html).
+Sugar GTK
+---------
 
-Sugar OS is based on
+* [Python code style](python-style.md.html)
 
-* [Linux](http://en.wikipedia.org/wiki/Linux/)
-* [Python](http://www.python.org/)
-* [freedesktop.org](http://www.freedesktop.org/)
-* [GNOME](http://www.gnome.org/)
-* [WebKit](http://www.webkit.org/)
+Sugar Android
+-------------
 
-Sugar Web code documentation
-----------------------------
-
-See [Sugar Web README.md](sugar-web/README.md.html)
-
-Android documentation
----------------------
-
-See [Android page](android.md.html)
+* [Web activity](android.md.html)
