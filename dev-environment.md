@@ -213,9 +213,9 @@ different kind of checkers, which takes the check field as input.
   This checks for gstreamer plugins. They are library files installed
   in gstreamer-\[version\], under the system lib directory.
 
-Finally, you should add to basesystem.json a minimal list of packages
-necessary for the system work. If just these are installed it should be able
-to boot, function and install new packages.
+Finally, you should add to base-system in packages.json a minimal list of
+packages necessary for the system work. If just these are installed it
+should be able to boot, function and install new packages.
 
 That's it! If all is configured correctly you should now be able to build
 sugar on the new distribution.
