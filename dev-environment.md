@@ -147,9 +147,9 @@ implementing the PackageManager and DistroInfo interfaces. It helps to take
 a look at the existing implementations in devbot/plugins.
 
 The next step is to provide distributions specific package names. To do so,
-edit the config/packages/deps.json file (or the one with your system version).
-The keys of the dictionary are cross distribution dependency names, which are
-mapped to a list of dependency specific package names. For example
+edit the build/config/packages.json file. The keys of the dictionary are cross
+distribution dependency names, which are mapped to a list of dependency
+specific package names. For example
 
     "evince typelib": {
         "debian": [
@@ -165,8 +165,8 @@ mapped to a list of dependency specific package names. For example
 
 Add the correct package name (or names) for your distribution to each
 element of the dictionary. If you are not clear on what package you need to
-add, you can refer to the config/deps directory, which defines, in several
-files, the cross distribution dependencies. For example
+add, you can refer to the config/dependencies.json directory, which defines,
+in several files, the cross distribution dependencies. For example
 
     {
         "check": "from gi.repository import EvinceDocument", 
@@ -213,8 +213,7 @@ different kind of checkers, which takes the check field as input.
   This checks for gstreamer plugins. They are library files installed
   in gstreamer-\[version\], under the system lib directory.
 
-You should edit buildbot.json in a similar way (there is only one package
-there). Finally, you should add to basesystem.json a minimal list of packages
+Finally, you should add to basesystem.json a minimal list of packages
 necessary for the system work. If just these are installed it should be able
 to boot, function and install new packages.
 
