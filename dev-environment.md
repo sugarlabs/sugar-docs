@@ -109,20 +109,21 @@ The following commands are available
 Preferences reference
 ---------------------
 
-You can set a few options by creating a sugar-build/prefs file. For example
+You can set a few options by creating a sugar-build/prefs.json file. For
+example
 
-    OUTPUT=HDMI1
-    RESOLUTION=1024x768
+    {"output": "HDMI1",
+     "resolution": "1024x768"}
 
 The following preferences are available
 
-* RESOLUTION
+* resolution
 
   This option is only valid when running from X Window. It specifies
   the resolution of the window containing the sugar desktop in the
   form \[width\]x\[height\]. Otherwise the whole screen is used.
 
-* OUTPUT
+* output
 
   This option is only valid when running from a text console. Sugar
   does not work properly on multiple video outputs, so we need to
@@ -131,7 +132,7 @@ The following preferences are available
   with any other of the connected outputs reported by the xrandr
   command, for example VGA1 if you have an external monitor.
 
-* PROFILE
+* profile
 
   Sugar supports multiple profiles, so that you can run multiple
   instances with the same user. You can specify the name of the
