@@ -150,6 +150,9 @@ so that remotes will be setup automatically for those. For example
 }
 </code></pre>
 
+When adding a new module to the lists, you need to delete its directory for
+the remotes to be switched over.
+
 #### resolution
 
 This option is only valid when running from X Window. It specifies
