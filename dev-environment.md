@@ -172,5 +172,4 @@ command, for example VGA1 if you have an external monitor.
 
 Sugar supports multiple profiles, so that you can run multiple
 instances with the same user. You can specify the name of the
-profile with this option. A random generated one is added to the
-prefs if you are running sugar-build under sugar.
+profile with this option.
