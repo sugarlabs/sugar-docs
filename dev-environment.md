@@ -135,6 +135,26 @@ example
 
 The following preferences are available
 
+#### github
+
+You can specify a list of forks and repositories for which you have ssh access,
+so that remotes will be setup automatically for those. For example
+
+<pre><code language='json'>
+{
+    "github": {
+        "forks": [
+            "myname/sugar.git",
+            "myname/sugar-docs.git",
+        ],
+        "ssh": [
+            "sugarlabs/sugar.git",
+            "sugarlabs/sugar-docs.git"
+        ]
+    }
+}
+</code></pre>
+
 #### resolution
 
 This option is only valid when running from X Window. It specifies
