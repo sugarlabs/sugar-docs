@@ -39,11 +39,6 @@ source code, by looking at the
 [buildbot status](http://buildbot.sugarlabs.org/waterfall). If it's red
 then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
-You can generate useful debug information with
-
-<pre><code language='sh'>
-./osbuild bug-report
-</code></pre>
 
 
 Developing
