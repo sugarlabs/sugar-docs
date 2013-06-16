@@ -26,12 +26,16 @@ First of all clone the sugar-build git repository
 Then enter the main directory and build the source code. It may take some
 time, depending on your distribution, computer and network speed
 
-    cd sugar-build
-    ./osbuild build
+<pre><code language='sh'>
+cd sugar-build
+./osbuild build
+</code></pre>
 
 Finally run it with
 
-    ./osbuild run
+<pre><code language='sh'>
+./osbuild run
+</code></pre>
 
 If anything goes wrong, you can check if there are known problems with the
 source code, by looking at the
@@ -40,7 +44,9 @@ then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
 You can generate useful debug information with
 
-    ./osbuild bug-report
+<pre><code language='sh'>
+./osbuild bug-report
+</code></pre>
 
 Developing
 ----------
@@ -49,27 +55,35 @@ All the sources are inside the sugar-build directory. You can make
 changes using any text editor. If sugar is already running stop it, then
 restart it with
 
-    ./osbuild run
+<pre><code language='sh'>
+./osbuild run
+</code></pre>
 
 Once in a while you will want to update to the latest sugar sources, issuing
 the command
 
-    ./osbuild pull
+<pre><code language='sh'>
+./osbuild pull
+</code></pre>
 
 Commands reference
 ------------------
 
 You can run the commands as osbuild arguments
 
-    ./osbuild build
-    ./osbuild run
+<pre><code language='sh'>
+./osbuild build
+./osbuild run
+</code></pre>
 
 Or inside a shell
 
-    ./osbuild
+<pre><code language='sh'>
+./osbuild
 
-    [sugar-build $] build
-    [sugar-build $] run
+[sugar-build $] build
+[sugar-build $] run
+</code></pre>
 
 The following commands are available
 
@@ -112,8 +126,12 @@ Preferences reference
 You can set a few options by creating a sugar-build/prefs.json file. For
 example
 
-    {"output": "HDMI1",
-     "resolution": "1024x768"}
+<pre><code language='json'>
+{
+    "output": "HDMI1",
+    "resolution": "1024x768"
+}
+</code></pre>
 
 The following preferences are available
 
@@ -152,28 +170,34 @@ edit the build/config/packages.json file. The keys of the dictionary are cross
 distribution dependency names, which are mapped to a list of dependency
 specific package names. For example
 
+<pre><code language='json'>
+{
     "evince typelib": {
         "debian": [
             "gir1.2-evince-3.0"
-        ], 
+        ],
         "fedora": [
             "evince-libs"
-        ], 
+        ],
         "ubuntu": [
             "gir1.2-evince-3.0"
         ]
-    } 
+    }
+}
+</code></pre>
 
 Add the correct package name (or names) for your distribution to each
 element of the dictionary. If you are not clear on what package you need to
 add, you can refer to the config/dependencies.json directory, which defines,
 in several files, the cross distribution dependencies. For example
 
-    {
-        "check": "from gi.repository import EvinceDocument", 
-        "checker": "python", 
-        "name": "evince typelib"
-    } 
+<pre><code language='json'>
+{
+    "check": "from gi.repository import EvinceDocument", 
+    "checker": "python", 
+    "name": "evince typelib"
+} 
+</code></pre>
 
 You can map it to the package by looking at the check_name field. There are
 different kind of checkers, which takes the check field as input.
