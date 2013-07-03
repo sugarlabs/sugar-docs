@@ -12,8 +12,13 @@ Create an activity based on the default template
     cd my-activity
 
 Choose a name for your activity.  Write it in the activity name and
-bundle-id in `activity/activity.info`, and also in the title tag of
-`index.html`.
+bundle-id in `activity/activity.info`.
+
+![activity.info](images/activity-info.png "activity.info")
+
+And also in the title tag of `index.html`.
+
+![index.html](images/activity-html.png "index.html")
 
 Install the activity for development
 
