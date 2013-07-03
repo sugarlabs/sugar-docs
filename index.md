@@ -2,10 +2,8 @@ Introduction
 ============
 
 Welcome to the Sugar developers site. Here you will find all you need
-to get started and contribute to Sugar. You can also help us improve
-this documentation, please [contact us](contact.md.html) or directly
-send pull requests to the [GitHub
-repository](https://github.com/sugarlabs/sugar-docs).
+to get started and contribute to Sugar. You can also help us [improve
+this documentation](docs.md.html).
 
 Getting started
 ---------------
