@@ -12,6 +12,12 @@ Getting started
 * [Write your own activity](activity.md.html)
 * [Contribute code](contributing.md.html)
 
+Design
+------
+
+* [Humane Interface Guidelines](HIG.md.html)
+* [Components showcase](http://sugarlabs.github.io/sugar-web-samples/)
+
 Sugar Web
 ---------
 
