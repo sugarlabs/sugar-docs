@@ -87,17 +87,9 @@ to initialize the repository:
 With [git
 status](https://www.kernel.org/pub/software/scm/git/docs/git-status.html)
 you can show the available files in the folder they are still
-untracked. You do not want to track the lib folder as this is a copy
-of the upstream libraries. You can exclude those by creating a
-[.gitignore](https://www.kernel.org/pub/software/scm/git/docs/gitignore.html)
-file that has:
-
-    # ignore the lib directory as those is only a copy
-    lib
-
-Now add all the files in the directory besides the lib folder and
-commit those changes, you can use git status again to see the current
-state:
+untracked. Now add all the files in the directory besides the lib
+folder and commit those changes, you can use git status again to see
+the current state:
 
     git add .
     git commit -a -m 'Initial import'
