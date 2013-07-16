@@ -95,6 +95,100 @@ the current state:
     git commit -a -m 'Initial import'
     git status
 
+### First steps
+
+#### Adding a button to the toolbar
+
+This simple example will show you how web activities are structured as
+bits of HTML, CSS and JavaScript.
+
+You will need a SVG graphic for the button.  Or you can use one from
+the Sugar icon set at `lib/sugar-web/graphics/icons/`.  For this
+example, let's say you have one custom icon called `my-button.svg`.
+Create a directory `icons/` inside your activity and place the SVG
+file inside.  Then do the following steps.
+
+In `index.html`, add a new &lt;button&gt; element inside the toolbar:
+
+    <button class="toolbutton" id="my-button" title="My Button"></button>
+
+In `css/activity.css`, define the button style:
+
+    #main-toolbar #new-button {
+        background-image: url(../icons/my-button.svg);
+    }
+
+In `js/activity.js`, add a callback for the button:
+
+    var myButton = document.getElementById("my-button");
+    myButton.onclick = function () {
+        console.log("You clicked me!");
+    }
+
+#### Adding HTML content dinamically
+
+Soon you will find that adding content to the HTML as we did with the
+toolbar button in the previous section, is very limited.  You'll want
+to add HTML elements on the fly, as the user interacts with the
+activity, or as the data structures of your activity logic change.
+There are several options to archive this.  Most of the time you'll
+end using a mix of them, so is important to know them all.
+
+First, it is possible to create HTML elements and append them to other
+HTML elements using JavaScript.  This is called "manipulating the
+DOM".
+
+For example, to create a new div with class 'my-div', and append it to
+the canvas div, you can do:
+
+    myElem = document.createElement('div');
+    myElem.className = "my-div";
+    var canvas = document.getElementById("canvas");
+    canvas.appendChild(myElem);
+
+But it is a pain to do that for large HTML structures.  Writing HTML
+directly is much better:
+
+    var canvas = document.getElementById("canvas");
+    canvas.innerHTML +=
+        '<ul id="names-list">' +
+          '<li class="name">Tom</li>' +
+          '<li class="name">Chris</li>' +
+          '<li class="name">Donald</li>' +
+        '</ul>';
+
+Nice, that saves us many JavaScript lines.  But what if the HTML
+depends on your data?  Let's say you have an array of names and you
+want one &lt;li&gt; per name, as in the previous example.  You have
+two options: 1. go back to use the JavaScript methods for DOM
+manipulation, or 2. use a template system.
+
+There are many template systems out there, and you can use whatever
+you like.  Let's try [mustache](http://mustache.github.io/) here.
+
+Add mustache to your activity:
+
+    volo add mustache
+
+Import mustache in your `js/activity.js`:
+
+    var mustache = require("mustache");
+
+Use it:
+
+    var template =
+        '<ul id="names-list">' +
+          '{{#names}}' +
+          '<li class="name">{{ name }}</li>' +
+          '{{/names}}' +
+        '</ul>';
+
+    var data = {names: [{name: "Laura"}, {name: "Joao"},
+                        {name: "Willy"}, {name: "Sandra"}]};
+
+    var containerElem = document.getElementById("container");
+    containerElem.innerHTML = mustache.render(template, data);
+
 ### Debugging
 
 If you want to inspect the code, you can press ctrl+shift+I while your
