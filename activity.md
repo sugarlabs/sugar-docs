@@ -114,7 +114,7 @@ In `index.html`, add a new &lt;button&gt; element inside the toolbar:
 
 In `css/activity.css`, define the button style:
 
-    #main-toolbar #new-button {
+    #main-toolbar #my-button {
         background-image: url(../icons/my-button.svg);
     }
 
