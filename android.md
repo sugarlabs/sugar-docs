@@ -67,3 +67,10 @@ There is a Home screen replacement sample in the
 [android-sdk samples](http://developer.android.com/tools/samples/index.html). It
 can be built and installed as any other app, following the steps at
 <https://developer.android.com/training/basics/firstapp/creating-project.html>.
+
+Debugging web activities on Android
+-----------------------------------
+
+To get the inspector in your web activity using Chrome, see [Remote
+Debugging on
+Android](https://developers.google.com/chrome-developer-tools/docs/remote-debugging).
