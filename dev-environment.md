@@ -166,9 +166,3 @@ select one and turn off the others. By default we select the first
 output listed by RandR. You can set this variable to override that
 with any other of the connected outputs reported by the xrandr
 command, for example VGA1 if you have an external monitor.
-
-#### profile
-
-Sugar supports multiple profiles, so that you can run multiple
-instances with the same user. You can specify the name of the
-profile with this option.
