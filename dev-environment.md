@@ -6,35 +6,32 @@ yet been packaged in linux distributions. To make it easier for developers to
 build from sources, we developed a set of scripts that automates builds and
 other common development tasks.
 
-Only a few distributions are supported by the scripts, the most popular and
-most recent. Unfortunately we can't support everything, especially older
-versions, we prefer to focus on making the scripts work really well where
-supported. You can choose between the 32-bit and 64-bit versions of
-
-* Fedora 19
-* Ubuntu 13.04
-* Debian Jessie
-
 First of all clone the sugar-build git repository
 
     git clone git://github.com/sugarlabs/sugar-build.git
 
-Then enter the main directory and build the source code. It may take some
-time, depending on your distribution, computer and network speed
+Then enter the main directory and pull the source code.
 
 <pre><code language='sh'>
 cd sugar-build
-./osbuild build
+./osbuild pull
 </code></pre>
 
-Finally run it with
+Enter the osbuild shell and start build.
 
 <pre><code language='sh'>
-./osbuild run
+./osbuild shell
+build
 </code></pre>
 
-If anything goes wrong, you can check if there are known problems with the
-source code, by looking at the
+Finally run sugar.
+
+<pre><code language='sh'>
+run
+</code></pre>
+
+If anything goes wrong, you can check if there are known problems by looking
+at the
 [buildbot status](http://buildbot.sugarlabs.org/waterfall). If it's red
 then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
@@ -51,8 +48,8 @@ restart it with
 ./osbuild run
 </code></pre>
 
-Once in a while you will want to update to the latest sugar sources, issuing
-the command
+Once in a while you will want to update to the latest sources, issuing the
+command
 
 <pre><code language='sh'>
 ./osbuild pull
@@ -79,11 +76,6 @@ Or inside a shell
 </code></pre>
 
 The following commands are available
-
-#### check-system
-
-Check that all the necessary dependencies are installed in your
-system.
 
 #### pull
 
@@ -166,3 +158,10 @@ select one and turn off the others. By default we select the first
 output listed by RandR. You can set this variable to override that
 with any other of the connected outputs reported by the xrandr
 command, for example VGA1 if you have an external monitor.
+
+### use_chroot
+
+Set the option to false if you don't want to build and run in a chroot. If
+you don't know what that means you'd better not use the option. This is
+currently supported only on Fedora 19, on other distributions it's likely
+to fail unless you manually install the required dependencies.
