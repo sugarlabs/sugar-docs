@@ -94,6 +94,16 @@ Pull in upstream changes:
     git fetch upstream
     git merge upstream/master
 
+Bugfixing
+---------
+
+We track bugs in http://bugs.sugarlabs.org/ .
+
+If you are sending a pull request that fixes a bug, make sure to add
+"Fixes #1234" to the commit message, being #1234 the number of the
+ticket in question.  This way, the ticket will be closed
+automatically.
+
 Reviewing
 ---------
 
