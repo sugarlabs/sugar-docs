@@ -159,7 +159,7 @@ output listed by RandR. You can set this variable to override that
 with any other of the connected outputs reported by the xrandr
 command, for example VGA1 if you have an external monitor.
 
-### use_chroot
+### use_broot
 
 Set the option to false if you don't want to build and run in a chroot. If
 you don't know what that means you'd better not use the option. This is
