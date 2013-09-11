@@ -1,8 +1,8 @@
 Write your own web activity
 ===========================
 
-After you have [built](dev-environ.md.html) the development environment, enter
-the sugar-build shell
+After you have [built](dev-environment.md.html) the development
+environment, enter the sugar-build shell
 
     ./osbuild
 
