@@ -176,11 +176,16 @@ are only a few activities installed by default. In Sugar, additional
 activities are usually stored in <pre><code
 language='sh'>~/Activities</code></pre>
 However in the dev-environment, they are stored in <pre><code
-language='sh'>sugar-build/activities</code></pre>.
+language='sh'>sugar-build/activities</code></pre>
 
 ### dotsugar
 
 By default, Sugar stores configuration files, logs, and the datastore
 in <pre><code language='sh'>~/.sugar</code></pre>
 In the dev-enviroment, these files are stored in <pre><code
-language='sh'>sugar-build/home/dotsugar</code></pre>.
+language='sh'>sugar-build/home/dotsugar</code></pre>
+
+### gconf
+
+Sugar uses gconf for a number of different settings. In the dev-environment, these settings are found in <pre><code
+language='sh'>sugar-build/home/default/config/gconf</code></pre>
