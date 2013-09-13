@@ -187,5 +187,6 @@ language='sh'>sugar-build/home/dotsugar</code></pre>
 
 ### gconf
 
-Sugar uses gconf for a number of different settings. In the dev-environment, these settings are found in <pre><code
+Sugar uses gconf for a number of different settings. In the
+dev-environment, these settings are found in <pre><code
 language='sh'>sugar-build/home/default/config/gconf</code></pre>
