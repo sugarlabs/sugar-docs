@@ -165,3 +165,28 @@ Set the option to false if you don't want to build and run in a chroot. If
 you don't know what that means you'd better not use the option. This is
 currently supported only on Fedora 19, on other distributions it's likely
 to fail unless you manually install the required dependencies.
+
+More configuration options
+--------------------------
+
+### activities
+
+When you first build the dev-environment, you will notice that there
+are only a few activities installed by default. In Sugar, additional
+activities are usually stored in <pre><code
+language='sh'>~/Activities</code></pre>
+However in the development environment, they are stored in <pre><code
+language='sh'>sugar-build/activities</code></pre>
+
+### dotsugar
+
+By default, Sugar stores configuration files, logs, and the datastore
+in <pre><code language='sh'>~/.sugar</code></pre>
+In the development enviroment, these files are stored in <pre><code
+language='sh'>sugar-build/home/dotsugar</code></pre>
+
+### gconf
+
+Sugar uses gconf for a number of different settings. In the development
+environment, these settings are found in <pre><code
+language='sh'>sugar-build/home/default/config/gconf</code></pre>
