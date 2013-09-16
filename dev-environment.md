@@ -169,13 +169,13 @@ to fail unless you manually install the required dependencies.
 More configuration options
 --------------------------
 
-### Activities
+### activities
 
-When you first build the dev-environment, you will notice that there
+When you first build the development environment, you will notice that there
 are only a few activities installed by default. In Sugar, additional
 activities are usually stored in <pre><code
 language='sh'>~/Activities</code></pre>
-However in the dev-environment, they are stored in <pre><code
+However in the development environment, they are stored in <pre><code
 language='sh'>sugar-build/activities</code></pre>
 
 ### dotsugar
@@ -188,5 +188,5 @@ language='sh'>sugar-build/home/dotsugar</code></pre>
 ### gconf
 
 Sugar uses gconf for a number of different settings. In the
-dev-environment, these settings are found in <pre><code
+development environment, these settings are found in <pre><code
 language='sh'>sugar-build/home/default/config/gconf</code></pre>
