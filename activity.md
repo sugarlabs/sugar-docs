@@ -216,6 +216,20 @@ activity directory:
 
     volo add -f
 
+### Using other JavaScript libraries
+
+You can easily add AMD-ready libraries with volo.  For example, to add
+[RaphaelJS](http://raphaeljs.com/):
+
+    [osbuild my-activity]$ volo add DmitryBaranovskiy/raphael
+    Downloading: https://codeload.github.com/DmitryBaranovskiy/raphael/legacy.zip/v2.1.2
+    Installed github:DmitryBaranovskiy/raphael/v2.1.2 at lib/raphael.js
+    AMD dependency name: raphael
+
+Then in `js/activity.js` you can use it:
+
+    var raphael = require("raphael");
+
 ### Ready to release
 
 Before your first release, you should:
