@@ -190,3 +190,12 @@ language='sh'>sugar-build/home/dotsugar</code></pre>
 Sugar uses gconf for a number of different settings. In the
 development environment, these settings are found in <pre><code
 language='sh'>sugar-build/home/default/config/gconf</code></pre>
+
+### multiple instances of sugar-build
+
+To run multiple instances of sugar-build, enter the shell and
+
+<pre><code language='sh'>
+SUGAR_PROFILE=test1 run &
+SUGAR_PROFILE=test2 run &
+</code></pre>
