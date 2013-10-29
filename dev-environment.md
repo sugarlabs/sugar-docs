@@ -10,12 +10,15 @@ First of all clone the sugar-build git repository
 
     git clone git://github.com/sugarlabs/sugar-build.git
 
-Then enter the main directory and pull the source code.
-
+Then enter the main directory and pull the source code. 
 <pre><code language='sh'>
 cd sugar-build
 ./osbuild pull
 </code></pre>
+This command can take time, according to your Internet connection's speed.   
+When this command says `$ sudo broot setup` , then it's downloading a big file. You can track progress by using `tail` to read from the broot log in `sugar-build/build/logs/broot.log`. For example,
+    
+    $ tail -f build/logs/broot.log
 
 Enter the osbuild shell and start build.
 
