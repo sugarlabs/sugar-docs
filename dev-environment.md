@@ -10,24 +10,22 @@ First of all clone the sugar-build git repository
 
     git clone git://github.com/sugarlabs/sugar-build.git
 
-Then enter the main directory and pull the source code.
-
+Then enter the main directory and pull the source code. This can take some time, according to your Internet connection speed.
 <pre><code language='sh'>
 cd sugar-build
 ./osbuild pull
 </code></pre>
 
-Enter the osbuild shell and start build.
+After the command completes, start building.
 
 <pre><code language='sh'>
-./osbuild shell
-build
+./osbuild build
 </code></pre>
 
 Finally run sugar.
 
 <pre><code language='sh'>
-run
+./osbuild run
 </code></pre>
 
 If anything goes wrong, you can check if there are known problems by looking
@@ -36,6 +34,7 @@ at the
 then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
 
+If you are still having problems, subscribe to the [sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing list, and then send an email specifying the problem. We will generally report within 24 hours.
 
 Developing
 ----------
