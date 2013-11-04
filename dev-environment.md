@@ -34,7 +34,7 @@ at the
 then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
 
-If you are still having problems, subscribe to the [sugar-devel]() mailing list, and then send an email specifying the problem. We will generally report within 24 hours.
+If you are still having problems, subscribe to the [sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing list, and then send an email specifying the problem. We will generally report within 24 hours.
 
 Developing
 ----------
