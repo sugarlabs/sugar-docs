@@ -191,7 +191,8 @@ Sugar uses gconf for a number of different settings. In the
 development environment, these settings are found in <pre><code
 language='sh'>sugar-build/home/default/config/gconf</code></pre>
 
-### multiple instances of sugar-build
+Multiple instances
+------------------
 
 To run multiple instances of sugar-build, enter the shell and
 
