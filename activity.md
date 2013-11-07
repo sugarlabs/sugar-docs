@@ -62,8 +62,7 @@ In your new activity, you will find the following file structure:
 Those are the files you'll modify in most cases. The others are:
 
 * `js/loader.js` configures the libraries paths and loads your
-  `js/activity.js` . You can add non-AMD libraries here
-  ([non-AMD libs](#non-amd-libs)).
+  `js/activity.js` . You can add [non-AMD libraries](#non-amd-libs) here.
 
 * `lib/` contains the libraries
 
