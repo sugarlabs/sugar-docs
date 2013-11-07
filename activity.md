@@ -59,10 +59,11 @@ In your new activity, you will find the following file structure:
 
 * `css/activity.css` is where you add the styling of your activity.
 
-Those are the files you'll modify.  The others are:
+Those are the files you'll modify in most cases. The others are:
 
 * `js/loader.js` configures the libraries paths and loads your
-  `js/activity.js`
+  `js/activity.js` . You can add non-AMD libraries here
+  ([non-AMD libs](#non-amd-libs)).
 
 * `lib/` contains the libraries
 
@@ -218,6 +219,8 @@ activity directory:
 
 ### Using other JavaScript libraries
 
+#### AMD-ready
+
 You can easily add AMD-ready libraries with volo.  For example, to add
 [RaphaelJS](http://raphaeljs.com/):
 
@@ -229,6 +232,12 @@ You can easily add AMD-ready libraries with volo.  For example, to add
 Then in `js/activity.js` you can use it:
 
     var raphael = require("raphael");
+
+#### non-AMD libs
+
+Please, refer to
+RequiresJS [shim section](http://requirejs.org/docs/api.html#config-shim),
+then you can add your shim section in `js/loader.js`
 
 ### Ready to release
 
