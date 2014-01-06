@@ -141,7 +141,7 @@ so that remotes will be setup automatically for those. For example
     "github": {
         "forks": [
             "myname/sugar.git",
-            "myname/sugar-docs.git",
+            "myname/sugar-docs.git"
         ],
         "ssh": [
             "sugarlabs/sugar.git",
