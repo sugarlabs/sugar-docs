@@ -17,13 +17,6 @@ cd sugar-build
 ./osbuild pull
 </code></pre>
 
-If your Internet connection is slow, the above command can take some time.
-To track progress, use the broot log at `sugar-build/build/logs/broot.log`. 
-For example, execute this from a different terminal while in the sugar-build 
-directory.
-
-    tail -f build/logs/broot.log
-
 After completing the pull command, you need to build.
 
 <pre><code language='sh'>
