@@ -1,18 +1,36 @@
 Write your own web activity
 ===========================
 
-After you have [built](dev-environment.md.html) the development
+### Choose your development environment
+
+You've got two choices to develop your own web activity for Sugar:
+
+- Using osbuild
+- Using Sugarizer
+
+**osbuild** is the Sugar build environment. With **osbuild** you've got a full Sugar environment. It's the better choice if you've enought knowledge to build your environment on GNU Linux.
+
+**Sugarizer** simulate the Sugar environment in a browser. So you need only a browser to start developing. It's the better choice if you've no time or knowledge to learn how to build Sugar on a GNU Linux distribution but you're not exactly in a real Sugar environment.
+
+### Create the activity from the template 
+
+On **osbuild**, after you have [built](dev-environment.md.html) the development
 environment, enter the sugar-build shell
 
     ./osbuild
+
 
 Create an activity based on the default template
 
     volo create my-activity ./sugar-web-template
     cd my-activity
 
+On **Sugarizer**, after you've cloned - or copied - the [Sugarizer repository](https://github.com/llaske/Sugarizer), copy all content of `activities/ActivityTemplate` directory in a new directory `activities/MyActivity.activity`.
+
+
+### Customize
 Choose a name for your activity.  Write it in the activity name and
-bundle-id in `activity/activity.info`.
+bundle-id in `activity/activity.info` of the new directory.
 
 ![activity.info](images/activity-info.png "activity.info")
 
@@ -20,15 +38,19 @@ And also in the title tag of `index.html`.
 
 ![index.html](images/activity-html.png "index.html")
 
-Install the activity for development
+
+On **osbuild**, install the activity for development
 
     python setup.py dev
 
+On **Sugarizer**, update the file `activities.json` of the Sugarizer directory: add a new line for your activity. Update id, name and directory values on this new line.
+
+![Sugarizer settings](images/sugarizer-json.png "Sugarizer settings")
+
+
 Now you should have a basic activity running!
 
-
 ![Activity template](images/activity-template.png "Activity template")
-
 
 ### File structure
 
@@ -125,7 +147,7 @@ In `js/activity.js`, add a callback for the button:
         console.log("You clicked me!");
     }
 
-#### Adding HTML content dinamically
+#### Adding HTML content dynamically
 
 Soon you will find that adding content to the HTML as we did with the
 toolbar button in the previous section, is very limited.  You'll want
@@ -211,7 +233,7 @@ The activity depends on the
 that provides the Sugar API and the Sugar look & feel.
 
 This means that if there are changes to the library you have to update your
-local copy. You can do this with running the following command inside the
+local copy. You can do this (on **osbuild** only) with running the following command inside the
 activity directory:
 
     volo add -f
@@ -246,10 +268,12 @@ Before your first release, you should:
   activity icon activity/activity-icon.svg .  Or if you don't have
   graphics skills, you can ask in the community if someone can do it.
 
-After that, you can make an XO bundle and upload it to the Sugar
+After that, on **osbuild** you can make an XO bundle and upload it to the Sugar
 activities market <http://activities.sugarlabs.org/> .
 
     python setup.py dist_xo
+
+With **Sugarizer**, you can't directly publish the XO bundle because the content of the `lib\sugar-web` directory is specific to Sugarizer. So, if you want to publish your activity you'll have to replace the `lib\sugar-web` directory content by the one from the [git repository](https://github.com/sugarlabs/sugar-web). Then zip the content of your `activities/MyActivity.activity` directory and rename the `.zip` file to a `.xo` file.
 
 For further releases, you should update the activity_version in
 `activity/activity.info`.
