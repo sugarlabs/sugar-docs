@@ -207,7 +207,7 @@ nicely documented here:
 ### Keeping Sugar libraries up to date
 
 The activity depends on the
-[sugar-web](http://github.com/sugarlabs/sugar-html-activity) library
+[sugar-web](http://github.com/sugarlabs/sugar-web) library
 that provides the Sugar API and the Sugar look & feel.
 
 This means that if there are changes to the library you have to update your
