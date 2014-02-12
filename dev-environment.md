@@ -180,6 +180,8 @@ activities are usually stored in <pre><code
 language='sh'>~/Activities</code></pre>
 However in the development environment, they are stored in <pre><code
 language='sh'>sugar-build/activities</code></pre>
+In the development environment, the activities folder will only get created  
+after you run the sugar-build instance and open the Browse Activity for the first time.
 
 ### dotsugar
 
