@@ -180,6 +180,12 @@ activities are usually stored in <pre><code
 language='sh'>~/Activities</code></pre>
 However in the development environment, they are stored in <pre><code
 language='sh'>sugar-build/activities</code></pre>
+Please note that the sugar-build/activities  often won't get created 
+until the user installs or creates an Activity in the sugar-build.
+For Installation of an activity please refer to 
+[this Manual](http://laptop.org/8.2.0/manual/Sugar_InstallingActivities.html) 
+and for the creation of your own Activity, 
+you can see the [Activity Creation](http://developer.sugarlabs.org/activity.md.html) page.
 
 ### dotsugar
 
