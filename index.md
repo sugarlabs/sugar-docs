@@ -13,6 +13,10 @@ Getting started
 * [Write your own activity](activity.md.html)
 * [Contribute code](contributing.md.html)
 
+Release Notes
+-------------
+* [See the Release Notes](release-notes.md.html)
+
 Design
 ------
 
