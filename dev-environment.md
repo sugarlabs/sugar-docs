@@ -187,6 +187,12 @@ For Installation of an activity please refer to
 and for the creation of your own Activity, 
 you can see the [Activity Creation](http://developer.sugarlabs.org/activity.md.html) page.
 
+Tip for Testing and Debugging Purposes : Inorder to run multiple versions of the same activity, one has to change the bundle_id in activity.info of the given activity.
+For example, I have Version 39 of Calculate Activity installed and I want to install the Version 41 of Calculate Activity 
+without removing the installed Calculate.activity. Inorder to do so, just go to the directory of the Version 41 and go to 
+Calculate.Activity/activity and then open the activity.info file and change the bundle_id of it. After doing that, 
+you will be able to install the Version 41 without removing the previously installed version. 
+
 ### dotsugar
 
 By default, Sugar stores configuration files, logs, and the datastore
