@@ -17,7 +17,7 @@ You've got two choices to develop your own web activity for Sugar:
 On **osbuild**, after you have [built](dev-environment.md.html) the development
 environment, enter the sugar-build shell
 
-    ./osbuild
+    ./osbuild shell
 
 
 Create an activity based on the default template
