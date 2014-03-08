@@ -9,6 +9,7 @@ Getting started
 ---------------
 
 * [Setup a development environment](dev-environment.md.html)
+* [Getting Started with development](get-started.md.html)
 * [What can I do?](what-can-i-do.md.html)
 * [Write your own activity](activity.md.html)
 * [Contribute code](contributing.md.html)
