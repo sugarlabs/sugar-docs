@@ -201,7 +201,10 @@ language='sh'>sugar-build/home/dotsugar</code></pre>
 
 Sugar uses gsettings for a number of different settings. In the
 development environment, these settings are found in <pre><code
-language='sh'>???</code></pre>
+language='sh'>sugar-build/home/default/config/dconf</code></pre>
+
+osbuild check uses its own gsetting. These can be found in <pre><code
+language='sh'>sugar-build/home/check/config/dconf</code></pre>
 
 ### gconf (deprecated)
 
