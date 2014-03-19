@@ -197,7 +197,13 @@ in <pre><code language='sh'>~/.sugar</code></pre>
 In the dev-enviroment, these files are stored in <pre><code
 language='sh'>sugar-build/home/dotsugar</code></pre>
 
-### gconf
+### gsettings
+
+Sugar uses gsettings for a number of different settings. In the
+development environment, these settings are found in <pre><code
+language='sh'>???</code></pre>
+
+### gconf (deprecated)
 
 Sugar uses gconf for a number of different settings. In the
 development environment, these settings are found in <pre><code
@@ -212,3 +218,12 @@ To run multiple instances of sugar-build, enter the shell and
 SUGAR_PROFILE=test1 run &
 SUGAR_PROFILE=test2 run &
 </code></pre>
+
+Log files
+---------
+
+Log files for osbuild are found <pre><code
+language='sh'>build/logs</code></pre>
+
+Log files for Sugar and Sugar activities are found in <pre><code
+language='sh'>home/dotsugar/default/logs</code></pre>
