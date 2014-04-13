@@ -8,7 +8,7 @@ You've got two choices to develop your own web activity for Sugar:
 - Using osbuild
 - Using Sugarizer
 
-**osbuild** is the Sugar build environment. With **osbuild** you've got a full Sugar environment. It's the better choice if you've enought knowledge to build your environment on GNU Linux.
+**osbuild** is the Sugar build environment. With **osbuild** you've got a full Sugar environment. It's the better choice if you've enough knowledge to build your environment on GNU Linux.
 
 **Sugarizer** simulate the Sugar environment in a browser. So you need only a browser to start developing. It's the better choice if you've no time or knowledge to learn how to build Sugar on a GNU Linux distribution but you're not exactly in a real Sugar environment.
 
