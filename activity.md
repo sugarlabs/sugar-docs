@@ -273,7 +273,7 @@ activities market <http://activities.sugarlabs.org/> .
 
     python setup.py dist_xo
 
-With **Sugarizer**, you can't directly publish the XO bundle because the content of the `lib\sugar-web` directory is specific to Sugarizer. So, if you want to publish your activity you'll have to replace the `lib\sugar-web` directory content by the one from the [git repository](https://github.com/sugarlabs/sugar-web). Then zip the content of your `activities/MyActivity.activity` directory and rename the `.zip` file to a `.xo` file.
+With **Sugarizer**, you can directly publish the XO bundle. So, just zip the content of your `activities/MyActivity.activity` directory and rename the `.zip` file to a `.xo` file.
 
 For further releases, you should update the activity_version in
 `activity/activity.info`.
