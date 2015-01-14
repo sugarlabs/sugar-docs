@@ -36,9 +36,36 @@ at the
 then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
 
-If you are still having problems, subscribe to the 
-[sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing list,
-and send an email. We will usually reply within 24 hours.
+If you are still having problems, read the common issues section or subscribe
+to the[sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing
+list, and send an email. We will usually reply within 24 hours.
+
+Common Issues
+-------------
+
+One common issue is sugar-build failing for people behind **proxies**.  This is
+usually marked by an issue with the `volo` command, for example:
+
+    * Building sugar-web
+
+    Command failed: volo -nostamp -f add
+
+    Error: connect ECONNREFUSED
+
+If this issue is affecting to you, you have 2 options.  Preferably, you should
+run your first build in an environment without a proxy.  If that is not an
+option, you will need to remove the `sugar-web` module.  This means you will
+not be able to develop Sugar activities using the web based stack.  To remove
+the `sugar-web` module, open `build/modules.json` file and remove the following
+lines:
+
+        {
+            "has_docs": true,
+            "has_checks": true,
+            "name": "sugar-web",
+            "repo": "https://github.com/sugarlabs/sugar-web.git",
+            "clean_stamp": 1
+        },
 
 Developing
 ----------
