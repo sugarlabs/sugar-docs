@@ -43,8 +43,23 @@ list, and send an email. We will usually reply within 24 hours.
 Common Issues
 -------------
 
-One common issue is sugar-build failing for people behind **proxies**.  This is
-usually marked by an issue with the `volo` command, for example:
+One common issue is sugar-build failing for people behind **proxies**. This is
+usually because of a proxy error related to `pip` command or is marked by an
+issue with the `volo` command.
+
+Regarding `pip` command issues, it raises the following error while installing
+python packages:
+    
+    MissingSchema: Proxy URLs must have explicit schemes.
+
+This issue is caused if you have no schema for your `http_proxy` environment 
+variable. To resolve, explicitly add the URL schema by prefixing *http*, for
+example `http_proxy=localhost:3128` would be changed to 
+`http_proxy=http://localhost:3128`.
+
+If this does not work, you can also try the method mentioned below:
+
+Regarding issues marked with the `volo` command, for example:
 
     * Building sugar-web
 
