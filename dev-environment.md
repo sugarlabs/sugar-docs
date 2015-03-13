@@ -224,6 +224,19 @@ in <pre><code language='sh'>~/.sugar</code></pre>
 In the dev-enviroment, these files are stored in <pre><code
 language='sh'>sugar-build/home/dotsugar</code></pre>
 
+### change debugging level
+
+You can enable debugging in Sugar modifying the file <pre><code
+language='sh'>sugar-build/home/default/debug</code></pre> and
+uncommenting the line:
+
+<pre><code language='sh'>#export SUGAR_LOGGER_LEVEL=debug</code></pre>
+
+This file is located in <pre><code language='sh'>~/.sugar/default/debug</code></pre>
+when is not run in sugar-buid.
+The file also allows enable debugging for specific parts of the stack,
+like collaboration.
+
 ### gsettings
 
 Sugar uses gsettings for a number of different settings. In the
