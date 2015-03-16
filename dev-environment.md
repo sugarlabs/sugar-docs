@@ -1,10 +1,14 @@
 Setup a development environment
 ===============================
 
-Sugar is made of several modules and it often depends on libraries which has not
-yet been packaged in linux distributions. To make it easier for developers to
-build from sources, we developed a set of scripts that automates builds and
-other common development tasks.
+Sugar is made of several modules and it often depends on libraries
+which have not yet been packaged in Linux distributions. To make it
+easier for developers to build from sources, we developed a set of
+scripts that automates builds and other common development tasks.
+
+Please note: The development environment requires Linux. If you are
+running Windows or iOS, you must launch a Linux virtual machine before
+continuing.
 
 First of all clone the sugar-build git repository
 
