@@ -8,7 +8,8 @@ scripts that automates builds and other common development tasks.
 
 Please note: The development environment requires Linux. If you are
 running Windows or OS X, you must launch a Linux virtual machine
-before continuing.
+before continuing.  However, if you are on Fedora linux, you should
+see the [Fedora section of the guide](#fedora).
 
 First of all clone the sugar-build git repository
 
@@ -39,6 +40,43 @@ at the
 [buildbot status](http://buildbot.sugarlabs.org/waterfall). If it's red
 then something is wrong and hopefully developers will fix it soon. If it's
 green then the issue is probably not yet known and you should report it.
+
+If you are still having problems, read the common issues section or subscribe
+to the[sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing
+list, and send an email. We will usually reply within 24 hours.
+
+Fedora
+------
+
+By default, sugar build will set up a Fedora container on your computer.
+However, if you use Fedora, you don't need to install Fedora again.
+
+First, you need to install the dependencies of sugar build:
+
+<pre><code language='sh'>
+sudo dnf install ccache make git findutils autoconf tar texinfo shadow-utils python-pip evince-devel python-setuptools gdb xorg-x11-server-Xvfb xorg-x11-utils gcc python-devel bzip2 npm xz sudo python-olpcgames libabiword libxml2-python gstreamer1-plugins-good gstreamer-python pyabiword gstreamer-plugins-good python-BeautifulSoup intltool libxklavier pygobject3 python-decorator libwnck3-devel dbus-python python-telepathy python-dateutil python-mock gtksourceview3 dconf gsettings-desktop-schemas metacity dejavu-sans-fonts dejavu-serif-fonts telepathy-mission-control zip unzip libwebkit2gtk gstreamer-plugins-espeak telepathy-salut telepathy-gabble mobile-broadband-provider-info gnome-themes-standard xorg-x11-drv-evdev xorg-x11-drv-modesetting xorg-x11-drv-fbdev xorg-x11-drv-vesa xorg-x11-drv-vmmouse xorg-x11-drv-intel xorg-x11-drv-vmware xorg-x11-drv-synaptics xorg-x11-drv-wacom xorg-x11-drv-openchrome xorg-x11-drv-qxl xorg-x11-drv-ati gvfs libxklavier gnome-common icon-slicer gtk2-devel icon-naming-utils xorg-x11-apps xapian-bindings-python xorg-x11-xkb-utils xorg-x11-drv-evdev xorg-x11-xinit xorg-x11-server-Xephyr xdg-user-dirs dbus-x11 gnome-keyring pygtk2-devel gnome-python2-gconf hippo-canvas-python gnome-python2-rsvg gtk3-devel libSM-devel alsa-lib-devel librsvg2-devel GConf2-devel gobject-introspection-devel file deltarpm vte3-devel
+</code></pre>
+
+Then, you need to clone sugar build:
+
+<pre><code language='sh'>
+git clone https://github.com/sugarlabs/sugar-build
+cd sugar-build
+</code></pre>
+
+Importantly, now we need to set sugar build not to use *broot* (the Fedora
+container):
+
+<pre><code language='sh'>
+echo '{ "use_broot": false }' > prefs.json
+</code></pre>
+
+Then, you can pull, build and run as you would normally with sugar build:
+
+<pre><code language='sh'>
+./osbuild pull
+./osbuild run  # Automatically builds as well
+</code></pre>
 
 If you are still having problems, read the common issues section or subscribe
 to the[sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing
