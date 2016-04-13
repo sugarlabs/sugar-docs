@@ -34,14 +34,8 @@ Finally run sugar.
 run
 </code></pre>
 
-If anything goes wrong, you can check if there are known problems by looking
-at the
-[buildbot status](http://buildbot.sugarlabs.org/waterfall). If it's red
-then something is wrong and hopefully developers will fix it soon. If it's
-green then the issue is probably not yet known and you should report it.
-
-If you are still having problems, read the common issues section or subscribe
-to the[sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing
+If anything goes wrong, read the common issues section or subscribe
+to the [sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing
 list, and send an email. We will usually reply within 24 hours.
 
 Common Issues
