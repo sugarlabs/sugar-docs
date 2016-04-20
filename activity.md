@@ -277,3 +277,9 @@ With **Sugarizer**, you can directly publish the XO bundle. So, just zip the con
 
 For further releases, you should update the activity_version in
 `activity/activity.info`.
+
+Writing python activities
+===========================
+You may follow this book by James Simmons on how to make Sugar activities, available at  
+
+https://flossmanuals.net/make-your-own-sugar-activities/
