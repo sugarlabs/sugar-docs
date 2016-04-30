@@ -23,7 +23,7 @@ little while, as people will come and go at different times of the day.
 Some of our developers have elected to be put on the list of mentors.
 You can find the list [here][5].
 
-[1]: activity.md.html
+[1]: https://github.com/sugarlabs/sugar-docs/blob/master/activity.md
 [2]: https://github.com/ignaciouy/sugar-irc/wiki/Top-Ten-Tickets-This-Week
 [3]: http://bugs.sugarlabs.org
 [4]: http://lists.sugarlabs.org/listinfo/sugar-devel
