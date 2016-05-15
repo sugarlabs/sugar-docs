@@ -47,7 +47,10 @@ Your clone of the Hello World activity contains a file,
     icon = activity-helloworld
     licence = GPLv2+
 
-Choose a name and unique bundle-id for your activity by editing the file.
+Choose a name and unique bundle-id for your activity by editing the
+file.  Note: Don't use punctuation in your bundle_id, e.g.,
+`org.sugarlabs.my-activity-name` is not a valid bundle name. Use
+CamelCase instead: `org.sugarlabs.MyActivityName`
 
     [Activity]
     name = MyActivityName
@@ -80,7 +83,7 @@ You may also want to edit the Activity icon, found in
 `activity/activity-helloworld.svg`.
 
 ![Activity
- Icon](https://github.com/manuq/hello-world/blob/master/activity/activity-helloworld.svg
+ Icon](https://rawgit.com/manuq/hello-world/master/activity/activity-helloworld.svg
  "Activity icon")
 
 You can rename this file, as long as you make the corresponding edit
