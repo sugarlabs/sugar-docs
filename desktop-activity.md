@@ -142,6 +142,13 @@ In your new activity, you will find the following file structure:
 Now you are ready to go ahead and develop your activity in the html,
 js and css files.
 
+### Translation
+
+Since Sugar serves a global audience, it is important to enable your
+activity for internationalization and localization. A [guide to best
+practices](https://wiki.sugarlabs.org/go/Translation_Team/i18n_Best_Practices)
+is found in our wiki.
+
 ### Revision control your code
 
 For development you can initialize the repository as a git
