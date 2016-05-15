@@ -58,6 +58,10 @@ set style data step
 plot "memory.log" using 1:2 title "run #1" lw 2
 ```
 
+The `memory.png` might look like this:
+
+![Example of memory leak graph](images/memory-leak-example.png)
+
 Finally removes the files,
 
     rm data  graph.png memory.log memory.png;
