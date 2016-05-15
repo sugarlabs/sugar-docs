@@ -2,42 +2,42 @@ Write your own desktop activity
 ===============================
 
 While the Sugar desktop can support activites written in a number of
-different languages, including Smalltalk, JavaScript, et al., the
-majority are written in Python and utilize the
+different languages, including Smalltalk, C, and JavaScript, the
+majority of activities are written in Python and utilize the
 [sugar-toolkit-gtk3](https://github.com/sugarlabs/sugar-toolkit-gtk3)
-libraries. This document describes the basics for developing a Python
-activity.
+libraries. This document describes the basic requirements for
+developing a Python activity.
 
 ### Setting up the development environment
 
-**osbuild** is the [Sugar build environment](dev-environment.md.html).
-With **osbuild** you've got a full Sugar environment. It is the best
-choice if you've enough knowledge to build your environment on GNU
-Linux.
+You should begin by setting up **osbuild**, the Sugar build
+environment (See [Sugar build environment](dev-environment.md.html)).
+**osbuild** provides all of the core libraries you'll need.  And you
+will use it for testing your activity and packaging it for
+distribution.
 
 ### Create a new activity from a template 
 
-Once you have set up Sugar, you will have an **activities** directory
-on your machine. (Where it is created depends upon how you set up
-Sugar. With **osbuild**, it will be in:
+Once you have set up **osbuild**, locate the **activities** directory
+on your machine. By default, it will be in:
 
     ~/sugar-build/activities
 
-Individual activities reside as subdirectory in the activities
-directory. This is where you will build your new activity.
+Individual activities reside in subdirectories of the `activities`
+directory. This is where you will create your new activity.
 
-You can clone a copy of the Hello World activity from
-[hello-world](https://github.com/manuq/hello-world.git)
+A quick way to get started it to clone a copy of the Hello World
+Activity from [hello-world](https://github.com/manuq/hello-world.git)
 
     git clone https://github.com/manuq/hello-world.git activity-name.activity
 
-Note that it is important to use the `.activity` suffix in the directory
-name of your new activity.
+Note that you must use the `.activity` suffix in the directory name of
+your new activity.
 
 ### Customize
 
-Your clone of the Hello World activity contains a file,
-`activity/activity.info` that will need to be modified.
+Your clone of the Hello World Activity contains a file,
+`activity/activity.info` that you will need to modify.
 
     [Activity]
     name = HelloWorld
@@ -45,12 +45,14 @@ Your clone of the Hello World activity contains a file,
     bundle_id = org.sugarlabs.MyActivity.HelloWorld
     exec = sugar-activity activity.HelloWorldActivity
     icon = activity-helloworld
-    licence = GPLv2+
+    licence = GPLv3+
 
 Choose a name and unique bundle-id for your activity by editing the
-file.  Note: Don't use punctuation in your bundle_id, e.g.,
-`org.sugarlabs.my-activity-name` is not a valid bundle name. Use
-CamelCase instead: `org.sugarlabs.MyActivityName`
+file.
+
+Note: Don't use punctuation in your bundle_id, e.g.,
+`org.sugarlabs.my-activity-name` is not a valid bundle name. Instead, use
+CamelCase, e.g., `org.sugarlabs.MyActivityName`.
 
     [Activity]
     name = MyActivityName
@@ -58,7 +60,7 @@ CamelCase instead: `org.sugarlabs.MyActivityName`
     bundle_id = org.sugarlabs.MyActivity.MyActivityName
     exec = sugar-activity activity.HelloWorldActivity
     icon = activity-helloworld
-    licence = GPLv2+
+    licence = GPLv3+
 
 You'll also want to change the `exec` field to reference the name of
 the class in your `activity.py` file, e.g., if you change Line 32:
@@ -77,20 +79,30 @@ then you need to change `activity/activity.info` as follows:
     bundle_id = org.sugarlabs.MyActivity.MyActivityName
     exec = sugar-activity activity.MyActivityActivity
     icon = activity-helloworld
-    licence = GPLv2+
+    licence = GPLv3+
 
-You may also want to edit the Activity icon, found in
+We recommend that you use a GPLv3+ license.
+
+To read more about `activity.info`, see the [Activity
+Bundles](https://wiki.sugarlabs.org/go/Development_Team/Almanac/Activity_Bundles)
+page in our wiki.
+
+You should make your activity's appearance unique in the Sugar
+interface by changing your activity icon.  (Yoy are welcome to ask for
+help from the community if you don't feel comfortable with graphic
+design.)
+
 `activity/activity-helloworld.svg`.
 
 ![Activity
  Icon](https://rawgit.com/manuq/hello-world/master/activity/activity-helloworld.svg
  "Activity icon")
 
-You can rename this file, as long as you make the corresponding edit
-in the `actvity.info` file.
+You can rename this file as long as you make the corresponding edit in
+the `actvity.info` file.
 
-Note that the Sugar Activity icon must follow the guidelines as
-decribed in [The Sugar Interface:
+Note that your activity icon must follow the guidelines as decribed in
+[The Sugar Interface:
 Icons](https://wiki.sugarlabs.org/go/Human_Interface_Guidelines/The_Sugar_Interface/Icons).
 
 There is a helper script, [Sugar
@@ -99,29 +111,31 @@ you create Sugar-compliant icons.
 
 Of course, the interesting changes will be the ones you make to the
 activity itself. Below you will find some links to some resources
-regarding some Activity devolepment details, but perhaps the best way
-to get started is to modify an existing activity.
+regarding some Sugar Activity devolepment details, but perhaps the
+best way to get started is to modify an existing activity that has
+features similar to the one you want to create.
 
-### Running your new activity
+### Running your activity
 
 Launch Sugar and your new activity should be immediately available,
-although since it has not been selected as a **favorite**, it will not
-appear by default on the Sugar Home View. You need to select the
+although since it has not yet been selected as a **favorite**, it will
+not appear by default on the Sugar Home View. You need to select the
 **List View** to see your activity's icon.
 
-Click on the icon and, if all goes well, your activity will run!!!
+Click on your activity icon and, if all goes well, your activity will
+launch.
 
-Of course, there are many opportunities to make mistakes. Don't get
-discouraged, as engaging in debugging is a great way to learn. One
-useful tool is the Log Activity, which will show you the log files of
-the system and individual activities. Alternatively, you can look at
-the log files from the command line.
+There are many opportunities to make mistakes. Don't get discouraged,
+as engaging in debugging is a great way to learn. One useful tool is
+the Log Activity, which will show you the log files of the system and
+individual activities. Alternatively, you can look at the log files
+from the command line.
 
     ~/sugar-build/home/dotsugar/default/logs
 
 ### File structure
 
-In your new activity, you will find the following file structure:
+All activities follow the same basic file structure:
 
     my-activity/
     |-- activity/
@@ -138,9 +152,6 @@ In your new activity, you will find the following file structure:
 
 * `setup.py` lets you install your activity or make an installable
   bundle with it
-
-Now you are ready to go ahead and develop your activity in the html,
-js and css files.
 
 ### Translation
 
@@ -178,13 +189,7 @@ Once your activity is working, you can request to have
 your activity repository hosted under the [Sugar Labs github
 account](http://github.com/sugarlabs).
 
-Before your first release, you should:
-
-* make your activity unique in the Sugar interface by changing your
-  activity icon activity/activity-icon.svg .  Or if you don't have
-  graphics skills, you can ask in the community if someone can do it.
-
-After that, on **osbuild** you can make an XO bundle and upload it to
+From **osbuild** you can make an XO bundle and upload it to
 the Sugar activities portal <http://activities.sugarlabs.org/> .
 
     python setup.py dist_xo
@@ -194,7 +199,12 @@ For further releases, you should update the activity_version in
 
 More details
 ============
-You may follow this book by James Simmons on how to make Sugar
-activities, available at:
 
-    https://flossmanuals.net/make-your-own-sugar-activities/
+Documentation for `sugar-toolkit-gtk3` is available
+[here](http://people.sugarlabs.org/sam/).
+
+A Python-GTK3 tutorial is available
+[here](http://python-gtk-3-tutorial.readthedocs.io/en/latest/).
+
+You may follow this book by James Simmons on how to make Sugar
+activities, available at [Make Your Own Sugar Activities](https://flossmanuals.net/make-your-own-sugar-activities/).
