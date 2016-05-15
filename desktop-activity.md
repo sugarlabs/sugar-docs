@@ -1,7 +1,7 @@
 Write your own desktop activity
 ===============================
 
-While the Sugar desktop can support acitivites written in a number of
+While the Sugar desktop can support activites written in a number of
 different languages, including Smalltalk, JavaScript, et al., the
 majority are written in Python and utilize the
 [sugar-toolkit-gtk3](https://github.com/sugarlabs/sugar-toolkit-gtk3)
@@ -20,7 +20,6 @@ Linux.
 Once you have set up Sugar, you will have an **activities** directory
 on your machine. (Where it is created depends upon how you set up
 Sugar. With **osbuild**, it will be in:
-directory, e.g.:
 
     ~/sugar-build/activities
 
@@ -32,13 +31,13 @@ You can clone a copy of the Hello World activity from
 
     git clone https://github.com/manuq/hello-world.git activity-name.activity
 
-Note that it is important to use the .activity suffix in the directory
+Note that it is important to use the `.activity` suffix in the directory
 name of your new activity.
 
 ### Customize
 
 Your clone of the Hello World activity contains a file,
-'activity/activity.info' that will need to be modified.
+`activity/activity.info` that will need to be modified.
 
     [Activity]
     name = HelloWorld
@@ -58,8 +57,8 @@ Choose a name and unique bundle-id for your activity by editing the file.
     icon = activity-helloworld
     licence = GPLv2+
 
-You'll also want to change the 'exec' field to reference the name of
-the class in your 'activity.py' file, e.g., if you change Line 32:
+You'll also want to change the `exec` field to reference the name of
+the class in your `activity.py` file, e.g., if you change Line 32:
 
     class HelloWorldActivity(activity.Activity):
 
@@ -67,7 +66,7 @@ to:
 
     class MyActivityActivity(activity.Activity):
 
-then you need to change 'activity/activity.info' as follows:
+then you need to change `activity/activity.info` as follows:
 
     [Activity]
     name = MyActivityName
@@ -78,14 +77,14 @@ then you need to change 'activity/activity.info' as follows:
     licence = GPLv2+
 
 You may also want to edit the Activity icon, found in
-'activity/activity-helloworld.svg'.
+`activity/activity-helloworld.svg`.
 
 ![Activity
  Icon](https://github.com/manuq/hello-world/blob/master/activity/activity-helloworld.svg
  "Activity icon")
 
 You can rename this file, as long as you make the corresponding edit
-in the 'actvity.info' file.
+in the `actvity.info` file.
 
 Note that the Sugar Activity icon must follow the guidelines as
 decribed in [The Sugar Interface:

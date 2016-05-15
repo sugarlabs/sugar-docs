@@ -10,7 +10,7 @@ Getting started
 
 * [Setup a development environment](dev-environment.md.html)
 * [What can I do?](what-can-i-do.md.html)
-* [Write your own Sugar desktop activity](desktop-activity.md.html)
+* [Write your own desktop activity](desktop-activity.md.html)
 * [Write your own web activity](web-activity.md.html)
 * [Contribute code](contributing.md.html)
 
