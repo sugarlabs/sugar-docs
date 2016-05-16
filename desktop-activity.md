@@ -208,3 +208,12 @@ A Python-GTK3 tutorial is available
 
 You may follow this book by James Simmons on how to make Sugar
 activities, available at [Make Your Own Sugar Activities](https://flossmanuals.net/make-your-own-sugar-activities/).
+
+# Coding standards
+
+We currently use [Python Version 2.7](https://docs.python.org/2/) for
+the Sugar toolkit and Sugar activity development.
+
+We recommend [flake8](https://pypi.python.org/pypi/flake8) as a
+wrapper around the [pep8](https://www.python.org/dev/peps/pep-0008/)
+and [pyflakes](https://pypi.python.org/pypi/pyflakes) code checkers.
