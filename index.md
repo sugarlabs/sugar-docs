@@ -20,7 +20,7 @@ Release Notes
 Design
 ------
 
-* [Humane Interface Guidelines](HIG.md.html)
+* [Human Interface Guidelines](HIG.md.html)
 * [Components showcase](http://sugarlabs.github.io/sugar-web-samples/)
 
 Sugar Web
