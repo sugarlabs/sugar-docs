@@ -10,7 +10,6 @@ Getting started
 
 * [What can I do?](what-can-i-do.md.html)
 * [Contribute code](contributing.md.html)
-* [Release Notes](release-notes.md.html)
 
 Design
 ------
