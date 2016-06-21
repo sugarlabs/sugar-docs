@@ -201,7 +201,7 @@ More details
 ============
 
 Documentation for `sugar-toolkit-gtk3` is available
-[here](http://people.sugarlabs.org/sam/).
+[here](https://developer.sugarlabs.org/sugar3/).
 
 A Python-GTK3 tutorial is available
 [here](http://python-gtk-3-tutorial.readthedocs.io/en/latest/).
