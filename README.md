@@ -1,6 +1,6 @@
-<h2>Contents in Sugarlabs</h2>
+#Contents in Sugarlabs
 
-<h4> Sugar </h4>
+#### Sugar
 
 This contains the core components of Sugar. It contains certain 
 examples, source files and documentation, extensions and test files. 
@@ -9,36 +9,37 @@ More information about Sugar here :
 
 https://github.com/sugarlabs/sugar/blob/master/README.md
 
-<h4> Sugar-toolkit-gtk3 </h4>
+#### Sugar-toolkit-gtk3 
 
 The toolkit provides
 a set of widgets to build HIG compliant applications and interfaces
 to interact with system services like presence and the datastore.
 
 This contains examples, source files, necessary documentation files,
-graphics files and example for developers. Sugar-toolkit-gtk3 is 
-targeted for developers. 
+graphics files and example for sugar developers and activity 
+developers. Sugar-toolkit-gtk3 is targeted for sugar developers and
+activity developers both. 
 
-More information about Sugar here : 
+More information about Sugar-toolkit-gtk3  here : 
 
 https://github.com/sugarlabs/sugar-toolkit-gtk3/blob/master/README
 
-<h4> www-sugarlabs (website) </h4>
+#### www-sugarlabs (website) 
 
-This is for Sugar labs website. The files are old here. It contains
-layouts, image files, design, scripts for the website. 
+This is for Sugar labs website. It contains layouts, image files, 
+design, scripts for the website. (https://www.sugarlabs.org/)
 
-More information about Sugar here : 
+More information about www-sugarlabs here : 
 
 https://github.com/sugarlabs/www-sugarlabs/blob/master/README.md
 
-<h4> sugar-build </h4>
+#### sugar-build 
 
 sugar-build is a set of scripts to build sugar from sources.
 It contains necessary build files. You can use osbuild to build
 and run sugar. 
 
-More information about Sugar here : 
+More information about sugar-build  here : 
 
 https://github.com/sugarlabs/sugar-build
 http://developer.sugarlabs.org/dev-environment.md.html
