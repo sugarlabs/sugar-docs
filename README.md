@@ -11,9 +11,11 @@ https://github.com/sugarlabs/sugar/blob/master/README.md
 
 #### Sugar-toolkit-gtk3 
 
-The toolkit provides
-a set of widgets to build HIG compliant applications and interfaces
-to interact with system services like presence and the datastore.
+The toolkit provides a set of widgets to build HIG compliant 
+applications and interfaces to interact with system services
+like presence and the datastore. HIG means Human Interface 
+Guidelines. It describes visual design guidelines like how 
+the icons should look etc.
 
 This contains examples, source files, necessary documentation files,
 graphics files and example for sugar developers and activity 
@@ -35,11 +37,19 @@ https://github.com/sugarlabs/www-sugarlabs/blob/master/README.md
 
 #### sugar-build 
 
-sugar-build is a set of scripts to build sugar from sources.
-It contains necessary build files. You can use osbuild to build
-and run sugar. 
+sugar-build is a set of scripts to build sugar from sources. It also
+emulates Sugar. It contains necessary build files. You can use osbuild
+to build and run sugar. 
 
 More information about sugar-build  here : 
 
 https://github.com/sugarlabs/sugar-build
 http://developer.sugarlabs.org/dev-environment.md.html
+
+#### More Activities
+
+There are certain activities like browser, juke-box activity, clock
+activity, terminal activity. There repositories contain necessary files
+which make them work. 
+
+Find activites here : https://github.com/sugarlabs
