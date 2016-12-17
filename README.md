@@ -26,15 +26,9 @@ you make changes to a project without affecting the original
 repository. You can fetch updates from or submit changes to the 
 original repository with pull requests.
 
-1. Now, you first need to open any repository you want to 
-contribute. 
-
-2. Then you will need to fork that repository. After forking, you 
-are ready to edit files or create files in your forked repository. 
-
-3. After editing or creating the file, all you would need to do is
-create a new pull request. You can press the button "New Pull Request".
-Then just submit that pull request. 
+Please refer to the following link for details on how to contribute a 
+patch and also about how to open issues. : 
+https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
 
 Let others review your PR before it gets merged to the master branch.
 Only maintainers of repository can merge your pull request. If it 
