@@ -4,7 +4,7 @@ This repository contains documentation for contributors and
 developers. This repository also contains image files for 
 the documentation.
 
-You can find developers documentation here :
+You can find developer documentation here:
 https://developer.sugarlabs.org/
 
 ###How to contribute?
