@@ -11,5 +11,5 @@ https://developer.sugarlabs.org/
 
 We encourage contributions to our project. Please refer to 
 the following link for details on how to contribute a 
-patch and also about how to open issues. : 
+patch and also about how to open issues: 
 https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
