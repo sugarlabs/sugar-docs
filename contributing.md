@@ -99,11 +99,11 @@ Finally submit the new pull-request on GitHub as you did before.
 
 ### Keep your fork up to date
 
-Don't forget to pull in changes from the master repository that is 'upstream.' 
-To pull in upstream changes:
+When there have been upstream commits since your fork was made, you should bring these into your fork:
 
-    git fetch upstream
-    git merge upstream/master
+    git checkout master
+    git pull upstream
+    git checkout NAME
 
 ### Review
 
