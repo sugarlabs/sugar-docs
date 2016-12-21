@@ -76,25 +76,25 @@ This way, the ticket may be closed automatically.
 
 ### Sending a pull-request
 
-Submit a pull-request for the branch. 
+Send a pull-request for your branch. 
 Navigate to your repository page in GitHub, switch to the branch you made, and then press the **Pull Request** button.
 
-After that, the review process will happen in the pull-request page on GitHub. 
-The process ends with one of this:
+After that, a review will happen in the pull-request, and a reviewer will either;
 
-1. A reviewer merges your request.
-2. A reviewer rejects your request providing reasons (and closes the request)
-3. A reviewer requires changes (and closes the request)
+1. merge your commits,
+2. merge your commits with their own changes,
+3. ask you to make changes, or
+4. close and reject your request giving reasons.
 
-In case they ask you for changes, make them using [interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages)
+When they ask you for changes, make them using [interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages)
 
     git rebase -i master
 
-Submit the changes to another remote branch
+Then push the changes to the same branch
 
-    git push origin topic1:topic1-try2
+    git push --force origin
 
-Finally submit the new pull-request on GitHub as you did before.
+Then respond on the pull-request.
 
 ### Keep your pull-request up to date
 
