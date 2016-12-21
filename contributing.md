@@ -69,6 +69,11 @@ Make one or more commits and push the branch
 
 Your branch NAME can be anything, other than master.  The scope is your forked repository.  The branch name will be shown on pull-requests.
 
+### Making commits
+
+Make sure to add "Fixes #1234" to the commit message, being #1234 the number of the issue ticket related to your changes. 
+This way, the ticket may be closed automatically.
+
 ### Sending a pull-request
 
 Submit a pull-request for the branch. 
@@ -91,8 +96,6 @@ Submit the changes to another remote branch
 
 Finally submit the new pull-request on GitHub as you did before.
 
-Make sure to add "Fixes #1234" to the commit message, being #1234 the number of the issue ticket related to your changes. 
-This way, the ticket will be closed automatically.
 
 ### Keep your fork up to date
 
