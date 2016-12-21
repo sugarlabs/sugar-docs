@@ -1,7 +1,7 @@
 Contributing
 ============
 
-We use the pull-request model, see [github's help on pull-request](https://help.github.com/articles/using-pull-requests).
+We use the pull-request model, see [GitHub's help on pull-request](https://help.github.com/articles/using-pull-requests).
 
 In short, you will:
 
@@ -14,7 +14,7 @@ In short, you will:
 Activity Repositories
 -----------------
 
-To request a new activity repo, email the http://lists.sugarlabs.org/listinfo/systems list with the name of the repo and the github usernames who should have access.
+To request a new activity repo, email the http://lists.sugarlabs.org/listinfo/systems list with the name of the repo and the GitHub usernames who should have access.
 
 We recommend using the same process as below to develop your own Activities.
 
@@ -47,7 +47,7 @@ Generally, each improvement to Sugar should start with an issue discussion, to e
 
 You should fork the repository first. 
 This step is needed only once. 
-See [complete help in github](https://help.github.com/articles/fork-a-repo). 
+See [complete help in GitHub](https://help.github.com/articles/fork-a-repo). 
 Brief instructions follow using [sugar component](https://github.com/sugarlabs/sugar) as example.
 
 Navigate to the [sugar repository](https://github.com/sugarlabs/sugar/), press **Fork** button, then
@@ -68,9 +68,9 @@ Make one or more commits and push the branch
     git push origin topic1
 
 Submit a pull request for the branch. 
-Navigate to your repository page in github, switch to the branch you made, and then press the **Pull Request** button.
+Navigate to your repository page in GitHub, switch to the branch you made, and then press the **Pull Request** button.
 
-After that, the review process will happen in the pull-request page on github. 
+After that, the review process will happen in the pull-request page on GitHub. 
 The process ends with one of this:
 
 1. A reviewer merges your request.
@@ -85,7 +85,7 @@ Submit the changes to another remote branch
 
     git push origin topic1:topic1-try2
 
-Finally submit the new pull request through the github site as you did before.
+Finally submit the new pull-request on GitHub as you did before.
 
 Make sure to add "Fixes #1234" to the commit message, being #1234 the number of the issue ticket related to your changes. 
 This way, the ticket will be closed automatically.
@@ -102,11 +102,11 @@ To pull in upstream changes:
 
 We encourage testing before merging a pull-request. 
 
-So instead of merging directly with the "merge" button on github UI, we do a local merge, then test, then push.  
+So instead of merging directly with the "merge" button on GitHub, we do a local merge, then test, then push.  
 
-See [github help on merging a pull-request](https://help.github.com/articles/merging-a-pull-request)
+See [GitHub help on merging a pull-request](https://help.github.com/articles/merging-a-pull-request)
 
-The github page for the pull-request will provide you the right commands to do the local merge, similar to the following.
+The GitHub page for the pull-request will provide you the right commands to do the local merge, similar to the following.
 
 Get the changes from that branch to a new local branch:
 
