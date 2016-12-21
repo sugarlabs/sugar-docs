@@ -57,17 +57,21 @@ Navigate to the [sugar repository](https://github.com/sugarlabs/sugar/), press *
     git remote add upstream https://github.com/sugarlabs/sugar.git
     git fetch upstream
 
-### Sending a pull-request
+### Branching
 
 Create one branch per topic
 
-    git checkout -b topic1
+    git checkout -b NAME
 
 Make one or more commits and push the branch
 
-    git push origin topic1
+    git push origin NAME
 
-Submit a pull request for the branch. 
+Your branch NAME can be anything, other than master.  The scope is your forked repository.  The branch name will be shown on pull-requests.
+
+### Sending a pull-request
+
+Submit a pull-request for the branch. 
 Navigate to your repository page in GitHub, switch to the branch you made, and then press the **Pull Request** button.
 
 After that, the review process will happen in the pull-request page on GitHub. 
