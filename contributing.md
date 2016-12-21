@@ -45,14 +45,14 @@ Generally, each improvement to Sugar should start with an issue discussion, to e
 
 ### Forking
 
-You should fork the repository first. 
+You should first fork the repository on GitHub. 
 This step is needed only once. 
 See [complete help in GitHub](https://help.github.com/articles/fork-a-repo). 
 Brief instructions follow using [sugar component](https://github.com/sugarlabs/sugar) as example.
 
 Navigate to the [sugar repository](https://github.com/sugarlabs/sugar/), press **Fork** button, then
 
-    git clone https://github.com/YOUR-NAME/sugar.git
+    git clone git@github.com:YOUR-NAME/sugar.git
     cd sugar
     git remote add upstream https://github.com/sugarlabs/sugar.git
     git fetch upstream
