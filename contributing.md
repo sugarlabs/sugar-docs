@@ -96,6 +96,17 @@ Submit the changes to another remote branch
 
 Finally submit the new pull-request on GitHub as you did before.
 
+### Keep your pull-request up to date
+
+When there have been upstream commits while your pull-request was open, you should rebase your pull-request:
+
+    git pull --rebase upstream
+
+Then push the changes to the same branch
+
+    git push --force origin
+
+The pull-request will be updated.
 
 ### Keep your fork up to date
 
