@@ -21,22 +21,6 @@ We recommend using the same process as below to develop your own Activities.
 Modifying Sugar
 ---------------
 
-Before going through the details on how to submit changes, let's look at the useful tools we provide to assist contributors in the process of modifying Sugar.
-
-If you are hacking on sugar-web, run the testsuit with the *karma* command inside a osbuild shell:
-
-    karma start sugar-web/test/karma.conf.js
-
-We encourage writting new unit tests for new features.
-
-After you do the changes, run:
-
-    check
-
-It will run all the code checks and the unit tests making sure you won't break the build when your changes are pushed. 
-If the checks doesn't succeed because of coding style, see the coding style guide [for web](web-style.md.html) or [for Python](python-style.md.html). 
-If a test doesn't pass either your code needs to be fixed or the test need to be adapted.
-
 ### Open an Issue
 
 We track issues in http://bugs.sugarlabs.org
