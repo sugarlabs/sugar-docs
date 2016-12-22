@@ -5,11 +5,11 @@ We use the pull-request model, see [GitHub's help on pull-request](https://help.
 
 In short, you will:
 
-* file an issue about what you plan to change
-* do your changes in a new branch
-* push your branch and submit a pull-request for it
-* go through the review process until your pull-request is merged
-* close your issue
+* file an issue about what you plan to change;
+* do your changes in a new branch;
+* push your branch and submit a pull-request for it;
+* go through the review process until your pull-request is merged; and
+* close your issue.
 
 Activity Repositories
 -----------------
@@ -73,11 +73,11 @@ Your branch NAME can be anything, other than master.  The scope is your forked r
 
 Change files, and commit.  When writing a commit message;
 
-1. start with a one line summary of the change,
-2. leave a blank line after the summary,
-3. explain the problem that is solved, unless the summary makes it obvious,
-4. when the problem was introduced by a previous commit, mention the hash,
-5. when the problem is in an issue ticket, add "Fixes #1234", and the ticket may be closed automatically,
+1. start with a one line summary of the change;
+2. leave a blank line after the summary;
+3. explain the problem that is solved, unless the summary makes it obvious;
+4. when the problem was introduced by a previous commit, mention the hash;
+5. when the problem is in an issue ticket, add "Fixes #1234", and the ticket may be closed automatically; and
 6. avoid mentioning GitHub or other pull-requests, as these are not kept in git,
 
 ### Sending a pull-request
@@ -87,15 +87,15 @@ Navigate to your repository page in GitHub, switch to the branch you made, and t
 
 When writing a pull-request message;
 
-1. if there is only one commit, accept the GitHub default of the commit message, otherwise explain the series of commits,
-2. mention any relevant pull-requests,
+1. if there is only one commit, accept the GitHub default of the commit message, otherwise explain the series of commits;
+2. mention any relevant pull-requests; and
 3. mention any relevant resources, such as issues, tickets, or competition tasks.
 
 A review will happen in the pull-request, and a reviewer will either;
 
-1. merge your commits,
-2. merge your commits with their own changes,
-3. ask you to make changes, or
+1. merge your commits;
+2. merge your commits with their own changes;
+3. ask you to make changes; or
 4. close and reject your request giving reasons.
 
 When they ask you for changes, make them using [interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages)
