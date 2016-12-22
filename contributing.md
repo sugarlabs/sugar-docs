@@ -85,7 +85,13 @@ Change files, and commit.  When writing a commit message;
 Send a pull-request for your branch. 
 Navigate to your repository page in GitHub, switch to the branch you made, and then press the **Pull Request** button.
 
-After that, a review will happen in the pull-request, and a reviewer will either;
+When writing a pull-request message;
+
+1. if there is only one commit, accept the GitHub default of the commit message, otherwise explain the series of commits,
+2. mention any relevant pull-requests,
+3. mention any relevant resources, such as issues, tickets, or competition tasks.
+
+A review will happen in the pull-request, and a reviewer will either;
 
 1. merge your commits,
 2. merge your commits with their own changes,
