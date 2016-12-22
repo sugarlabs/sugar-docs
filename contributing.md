@@ -71,8 +71,14 @@ Your branch NAME can be anything, other than master.  The scope is your forked r
 
 ### Making commits
 
-Make sure to add "Fixes #1234" to the commit message, being #1234 the number of the issue ticket related to your changes. 
-This way, the ticket may be closed automatically.
+Change files, and commit.  When writing a commit message;
+
+1. start with a one line summary of the change,
+2. leave a blank line after the summary,
+3. explain the problem that is solved, unless the summary makes it obvious,
+4. when the problem was introduced by a previous commit, mention the hash,
+5. when the problem is in an issue ticket, add "Fixes #1234", and the ticket may be closed automatically,
+6. avoid mentioning GitHub or other pull-requests, as these are not kept in git,
 
 ### Sending a pull-request
 
