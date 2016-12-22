@@ -6,7 +6,7 @@ We use the pull-request model, see [GitHub's help on pull-request](https://help.
 In short, you will:
 
 * file an issue about what you plan to change;
-* do your changes in a new branch;
+* commit your changes in a new branch;
 * push your branch and submit a pull-request for it;
 * go through the review process until your pull-request is merged; and
 * close your issue.
