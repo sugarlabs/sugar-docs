@@ -2,17 +2,20 @@
 
 ##Description
 
-This script will create Sugar-compatible SVG icons from input.svg by
-adding the appropriate stroke and fill entities. It has two primary
-modes of operation: single-icon and icon set. For additional
-information about creating an SVG suitable for passing as the input
-to this script, see the tutorial on Making Sugar Icons.
+Sugar uses entities for its SVG colors. The sugariconify.py script
+converts SVGs into the format required for Sugar icons, adding the
+necessary  stroke and fill entities. This is a Python script, and as
+such requires Python to run.
 
-Single-icon: The default operation creates a single sugar icon — for
-instance an activity icon — from the input SVG. By default, the
-Sugarized icon will be written to a new file named input.sugar.svg,
-optionally in the output directory specified with -d. By invoking
-the -o option, the input file will be overwritten in place.
+It will create Sugar-compatible SVG icons from ```input.svg``` by
+adding the appropriate stroke and fill entities. It has two primary 
+modes of operation: single icon and icon set. For additional information
+about creating an SVG suitable for passing as the input to this script,
+see the tutorial on Making Sugar Icons :
+http://wiki.laptop.org/go/Making_Sugar_icons
+
+You can find this class at:
+https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py
 
 In some cases, you may desire to update a single icon, or a subset of
 the icons defined within a given SVG. To do so, pass a pattern to the
@@ -138,6 +141,15 @@ entities, True or False are the only accepted values.
 
 ```
    icon.set_use_iso_strokes(True)
+```
+
+##Example
+
+```
+   from sugariconify import SugarIconify
+   icon = SugarIconify()
+   icon.set_use_default_colors(True)
+   icon.iconify('/home/user/Desktop/image.svg')
 ```
 
 You can find more at : https://wiki.sugarlabs.org/go/Sugar_iconify
