@@ -118,6 +118,7 @@ Or inside a shell
 [sugar-build $] run
 </code></pre>
 
+**Troubleshooting:** "./osbuild build" might raise some errors if you are behind a proxy. A quick work-around is to remove the modules that are causing the problem from build/modules.json (most often sugar-web, sugar-web-template, and sugar-web-test).
 The following commands are available
 
 #### pull
