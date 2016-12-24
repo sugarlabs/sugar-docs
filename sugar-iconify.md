@@ -163,9 +163,6 @@ entities, True or False are the only accepted values.
    icon.set_use_default_colors(True)
    icon.iconify('/home/user/Desktop/image.svg')
 ```
-#####Usage with command line:
-
-```python sugariconify.py input.svg```
 
 You can find more at : https://wiki.sugarlabs.org/go/Sugar_iconify
 You can find the repository here : https://github.com/i5o/iconify-web
