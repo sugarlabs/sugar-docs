@@ -5,7 +5,8 @@
 Sugar uses entities for its SVG colors. The sugariconify.py script
 converts SVGs into the format required for Sugar icons, adding the
 necessary  stroke and fill entities. This is a Python script, and as
-such requires Python to run.
+such requires Python to run. A common is using SVG with more than two
+colors.
 
 It will create Sugar-compatible SVG icons from ```input.svg``` by
 adding the appropriate stroke and fill entities. It has two primary 
@@ -13,9 +14,6 @@ modes of operation: single icon and icon set. For additional information
 about creating an SVG suitable for passing as the input to this script,
 see the tutorial on Making Sugar Icons :
 http://wiki.laptop.org/go/Making_Sugar_icons
-
-You can find this class at:
-https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py
 
 In some cases, you may desire to update a single icon, or a subset of
 the icons defined within a given SVG. To do so, pass a pattern to the
@@ -38,6 +36,20 @@ Options
    -s    [hex] Hex value to replace with stroke entity 
    -v    Verbose 
    -x    Create HTML preview files, for icon validation 
+```
+
+###Usage
+
+You can find this class at:
+https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py
+
+You can use Sugar Iconify Web here:
+http://kuckuck.treehouse.su:5000/
+
+Download SVG by :
+
+```
+sugariconify.py [-ceghipv] [-s stroke_hex] [-f fill_hex] [-m | -o ] [-d directory] input.svg
 ```
 
 ##Instantiating SugarIconify
@@ -151,5 +163,9 @@ entities, True or False are the only accepted values.
    icon.set_use_default_colors(True)
    icon.iconify('/home/user/Desktop/image.svg')
 ```
+#####Usage with command line:
+
+```python sugariconify.py input.svg```
 
 You can find more at : https://wiki.sugarlabs.org/go/Sugar_iconify
+You can find the repository here : https://github.com/i5o/iconify-web
