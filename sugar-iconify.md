@@ -20,7 +20,25 @@ the icons defined within a given SVG. To do so, pass a pattern to the
 script with -p, and only those icons which match the pattern will be
 exported.
 
+###Usage
+
+You can find the script here:
+https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py
+
+You can use it here:
+http://kuckuck.treehouse.su:5000/
+
+Download SVG by :
+
 ```
+sugariconify.py [-ceghipv] [-s stroke_hex] [-f fill_hex] [-m | -o ] [-d directory] input.svg
+```
+Example usage: 
+
+```
+python sugariconify.py file.svg
+```
+
 Options
 
    -c    Apply default color entities (#666666, #FFFFFF) to output 
@@ -36,20 +54,6 @@ Options
    -s    [hex] Hex value to replace with stroke entity 
    -v    Verbose 
    -x    Create HTML preview files, for icon validation 
-```
-
-###Usage
-
-You can find this class at:
-https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py
-
-You can use Sugar Iconify Web here:
-http://kuckuck.treehouse.su:5000/
-
-Download SVG by :
-
-```
-sugariconify.py [-ceghipv] [-s stroke_hex] [-f fill_hex] [-m | -o ] [-d directory] input.svg
 ```
 
 ##Instantiating SugarIconify
