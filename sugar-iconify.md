@@ -40,7 +40,7 @@ python sugariconify.py file.svg
 ```
 
 Options
-
+```
    -c    Apply default color entities (#666666, #FFFFFF) to output 
    -d    [directory] The preferred output directory 
    -e    Do not insert entities for strokes and fills 
