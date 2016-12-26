@@ -15,7 +15,7 @@ Design
 ------
 * [Human Interface Guidelines](HIG.md.html)
 * [Components showcase](http://sugarlabs.github.io/sugar-web-samples/)
-
+* [Sugar Iconify](sugar-iconify.md)
 Sugar Desktop
 ---------
 * [Setup a development environment](dev-environment.md.html)
