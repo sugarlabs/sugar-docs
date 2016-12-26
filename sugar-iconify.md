@@ -5,8 +5,8 @@
 Sugar uses entities for its SVG colors. The sugariconify.py script
 converts SVGs into the format required for Sugar icons, adding the
 necessary  stroke and fill entities. This is a Python script, and as
-such requires Python to run. A common is using SVG with more than two
-colors.
+such requires Python to run. A problem common is using SVG with more
+than two colors.
 
 It will create Sugar-compatible SVG icons from ```input.svg``` by
 adding the appropriate stroke and fill entities. It has two primary 
@@ -15,18 +15,22 @@ about creating an SVG suitable for passing as the input to this script,
 see the tutorial on Making Sugar Icons :
 http://wiki.laptop.org/go/Making_Sugar_icons
 
+You can find the script in the [sugariconify repository](
+https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py).
+ 
+Note that there is a web service available for converting icons as
+well (See [Sugar Iconify Service](http://kuckuck.treehouse.su:5000/)).
+ 
+For additional information about creating an SVG suitable for Sugar,
+see the tutorial on [Making Sugar
+Icons](http://wiki.laptop.org/go/Making_Sugar_icons).
+
 In some cases, you may desire to update a single icon, or a subset of
 the icons defined within a given SVG. To do so, pass a pattern to the
 script with -p, and only those icons which match the pattern will be
 exported.
 
 ###Usage
-
-You can find the script here:
-https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py
-
-You can use it here:
-http://kuckuck.treehouse.su:5000/
 
 Download SVG by :
 
@@ -55,7 +59,59 @@ Options
    -v    Verbose 
    -x    Create HTML preview files, for icon validation 
 ```
-
+###Details
+ 
+Given a simple input SVG:
+ 
+```
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   viewBox="0 0 55 55"
+   height="55mm"
+   width="55mm">
+  <rect
+      y="2.5"
+      x="2.5"
+      height="50"
+      width="50"
+      style="fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:3.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</svg>
+```
+ 
+The resulting output would look like this:
+ 
+```
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'
+          'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+        <!ENTITY stroke_color "#666666">
+        <!ENTITY fill_color "#ffffff">
+]>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   viewBox="0 0 55 55"
+   height="55mm"
+   width="55mm">
+     <rect
+  <rect
+      y="2.5"
+      x="2.5"
+      height="50"
+      width="50"
+      style="fill:&fill_color;;fill-opacity:1;stroke:&stroke_color;;stroke-width:3.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
+</svg>
+```
 ##Instantiating SugarIconify
 
 ``` 
@@ -167,6 +223,7 @@ entities, True or False are the only accepted values.
    icon.set_use_default_colors(True)
    icon.iconify('/home/user/Desktop/image.svg')
 ```
+----
 
 You can find more at : https://wiki.sugarlabs.org/go/Sugar_iconify
 You can find the repository here : https://github.com/i5o/iconify-web
