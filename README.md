@@ -1,5 +1,8 @@
 # Sugar Docs
 
+ <img
+-src='https://rawgithub.com/sugarlabs/sugarlabs-doc/master/screenshots/Website.png'</img>
+
 This repository contains documentation for contributors and 
 developers. This repository also contains image files for 
 the documentation.
