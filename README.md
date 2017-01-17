@@ -1,6 +1,6 @@
 # Sugar Docs
 
- <img src='https://rawgithub.com/emilyong/sugarlabs-doc/readme/screenshots/Website.png'</img>
+ <img src='https://cloud.githubusercontent.com/assets/21200681/22024308/869094a8-dd04-11e6-8221-792b23861bde.png'</img>
 
 This repository contains documentation for contributors and 
 developers. This repository also contains image files for 
