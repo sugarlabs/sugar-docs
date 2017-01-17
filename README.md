@@ -18,7 +18,7 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
 
 #### Getting Started
 * [What can I do?](https://developer.sugarlabs.org/what-can-i-do.md.html)
-  *[I'm Stuck!](https://developer.sugarlabs.org/what-can-i-do.md.html#i%27m%20stuck!)
+ * [I'm Stuck!](https://developer.sugarlabs.org/what-can-i-do.md.html#i%27m%20stuck!)
 * [Contribute Code](https://developer.sugarlabs.org/contributing.md.html)
 
 #### Design
