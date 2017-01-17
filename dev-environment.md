@@ -250,6 +250,16 @@ when is not run in sugar-build.
 The file also allows enable debugging for specific parts of the stack,
 like collaboration.
 
+For debugging Salut or Gabble use:
+
+<pre><code
+language='sh'>FOO_PERSIST=1 FOO_DEBUG=all WOCKY_DEBUG=all G_MESSAGES_DEBUG=all FOO_LOGFILE=/tmp/foo.log *command*</code></pre>
+
+Note: Replace FOO with SALUT or GABBLE.
+When debugging Gabble, it's usually a good idea to set *WOCKY_DEBUG=xmpp (Gabble 0.9) or LM_DEBUG=net (Gabble 0.8)* so that the XML stanzas are also captured in the logfile.
+
+*For more refer [1](https://telepathy.freedesktop.org/wiki/DeveloperNotes/Debugging/) [2](https://wiki.gnome.org/Apps/Empathy/Debugging)*
+
 ### gsettings
 
 Sugar uses gsettings for a number of different settings. In the

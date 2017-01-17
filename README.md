@@ -1,12 +1,24 @@
-Introduction
-============
+# Sugar Docs
 
-Welcome to the Sugar developers site. 
-Here you will find all you need to get started and contribute to Sugar. 
-You can also help us [improve this documentation](docs.md.html).
+ <img src='https://cloud.githubusercontent.com/assets/21200681/22024308/869094a8-dd04-11e6-8221-792b23861bde.png'</img>
+
+This repository contains documentation for contributors and 
+developers. This repository also contains image files for 
+the documentation.
+
+You can find developer documentation here:
+https://developer.sugarlabs.org/
+
+###How to contribute?
+
+We encourage contributions to our project. Please refer to 
+the following link for details on how to contribute a 
+patch and also about how to open issues: 
+https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md 
+
+## List of Contents
 
 ### Getting Started
--------------------
 
 #### [What can I do?](https://developer.sugarlabs.org/what-can-i-do.md.html)
 * [I'm Stuck!](https://developer.sugarlabs.org/what-can-i-do.md.html#i%27m%20stuck!)
@@ -25,7 +37,6 @@ You can also help us [improve this documentation](docs.md.html).
  * [Close Issue](https://developer.sugarlabs.org/contributing.md.html#close%20issue)
 
 ### Design
-----------
 
 #### [Human Interface Guidelines](https://developer.sugarlabs.org/HIG.md.html)
 
@@ -34,7 +45,6 @@ You can also help us [improve this documentation](docs.md.html).
 #### [Components Showcase](http://sugarlabs.github.io/sugar-web-samples/)
   
 ### Sugar Desktop
------------------
 
 #### [Setup a Development Environment](https://developer.sugarlabs.org/dev-environment.md.html)
 
@@ -81,7 +91,6 @@ You can also help us [improve this documentation](docs.md.html).
 * [Conventions](https://developer.sugarlabs.org/python-style.md.html#conventions)
 
 ### Sugar Web
--------------
 
 #### [Write your own Web Activity](https://developer.sugarlabs.org/web-activity.md.html)
 
@@ -124,8 +133,7 @@ You can also help us [improve this documentation](docs.md.html).
  * [Karma](https://developer.sugarlabs.org/web-style.md.html#karma)
 * [Components Documentation](https://developer.sugarlabs.org/sugar-web/README.md.html)
   
-### Sugar Android
-------------------
+#### Sugar Android
 
 #### [Web Activity](https://developer.sugarlabs.org/android.md.html)
 
