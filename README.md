@@ -17,24 +17,24 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
 ## List of Contents
 
 #### Getting Started
-- [What can I do?](https://developer.sugarlabs.org/what-can-i-do.md.html)
--- [I'm Stuck!](https://developer.sugarlabs.org/what-can-i-do.md.html#i%27m%20stuck!)
-- [Contribute Code](https://developer.sugarlabs.org/contributing.md.html)
+* [What can I do?](https://developer.sugarlabs.org/what-can-i-do.md.html)
+  *[I'm Stuck!](https://developer.sugarlabs.org/what-can-i-do.md.html#i%27m%20stuck!)
+* [Contribute Code](https://developer.sugarlabs.org/contributing.md.html)
 
 #### Design
-- [Human Interface Guidelines](https://developer.sugarlabs.org/HIG.md.html)
-- [Components Showcase](http://sugarlabs.github.io/sugar-web-samples/)
+* [Human Interface Guidelines](https://developer.sugarlabs.org/HIG.md.html)
+* [Components Showcase](http://sugarlabs.github.io/sugar-web-samples/)
   
 #### Sugar Desktop
-- [Setup a Development Environment](https://developer.sugarlabs.org/dev-environment.md.html)
-- [Write your own Desktop Activity](https://developer.sugarlabs.org/desktop-activity.md.html)
-- [Python Code Style](https://developer.sugarlabs.org/python-style.md.html)
+* [Setup a Development Environment](https://developer.sugarlabs.org/dev-environment.md.html)
+* [Write your own Desktop Activity](https://developer.sugarlabs.org/desktop-activity.md.html)
+* [Python Code Style](https://developer.sugarlabs.org/python-style.md.html)
   
 #### Sugar Web
-- [Write your own Web Activity](https://developer.sugarlabs.org/web-activity.md.html)
-- [Architecture](https://developer.sugarlabs.org/web-architecture.md.html)
-- [Web Code Style](https://developer.sugarlabs.org/web-style.md.html)
-- [Components Documentation](https://developer.sugarlabs.org/sugar-web/README.md.html)
+* [Write your own Web Activity](https://developer.sugarlabs.org/web-activity.md.html)
+* [Architecture](https://developer.sugarlabs.org/web-architecture.md.html)
+* [Web Code Style](https://developer.sugarlabs.org/web-style.md.html)
+* [Components Documentation](https://developer.sugarlabs.org/sugar-web/README.md.html)
   
 #### Sugar Android
-- [Web Activity](https://developer.sugarlabs.org/android.md.html)
+* [Web Activity](https://developer.sugarlabs.org/android.md.html)
