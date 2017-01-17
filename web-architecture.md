@@ -5,7 +5,7 @@ Web Activities
 --------------
 
 A sugar web activity is an activity developed using the standard web
-technologies: [HTML](dev.w3.org/html5/spec/),
+technologies: [HTML](http://dev.w3.org/html5/spec/),
 [JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 and [CSS](http://www.w3.org/Style/CSS/). They are called "web" because
 of the technology used but they run off-line just fine. The activities
@@ -110,7 +110,7 @@ Package management and creation of activities from a template is
 handled with [Volo](http://volojs.org/).
 
 Unit testing of JavaScript code is done with the
-[Jasmine](http://pivotal.github.io/jasmine/) framework.
+[Jasmine](http://jasmine.github.io/) framework.
 
 Installation of JavaScript tools is done with
 [Node.js](http://nodejs.org/).

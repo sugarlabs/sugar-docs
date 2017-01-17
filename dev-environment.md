@@ -1,23 +1,27 @@
 Setup a development environment
 ===============================
 
-Sugar is made of several modules and it often depends on libraries which has not
-yet been packaged in linux distributions. To make it easier for developers to
-build from sources, we developed a set of scripts that automates builds and
-other common development tasks.
+Sugar is made of several modules and it often depends on libraries
+which have not yet been packaged in Linux distributions. To make it
+easier for developers to build from sources, we developed a set of
+scripts that automates builds and other common development tasks.
+
+Please note: The development environment requires Linux. If you are
+running Windows or OS X, you must launch a Linux virtual machine
+before continuing.
 
 First of all clone the sugar-build git repository
 
     git clone git://github.com/sugarlabs/sugar-build.git
 
-Then enter the main directory and pull the source code.
+Then enter the main directory and pull the source code. 
 
 <pre><code language='sh'>
 cd sugar-build
 ./osbuild pull
 </code></pre>
 
-Enter the osbuild shell and start build.
+After completing the pull command, you need to build.
 
 <pre><code language='sh'>
 ./osbuild shell
@@ -30,12 +34,51 @@ Finally run sugar.
 run
 </code></pre>
 
-If anything goes wrong, you can check if there are known problems by looking
-at the
-[buildbot status](http://buildbot.sugarlabs.org/waterfall). If it's red
-then something is wrong and hopefully developers will fix it soon. If it's
-green then the issue is probably not yet known and you should report it.
+If anything goes wrong, read the common issues section or subscribe
+to the [sugar-devel](http://lists.sugarlabs.org/listinfo/sugar-devel) mailing
+list, and send an email. We will usually reply within 24 hours.
 
+Common Issues
+-------------
+
+One common issue is sugar-build failing for people behind **proxies**. Usually
+this problem is either because of a proxy error related to the `pip` command or
+an issue with the `volo` command.
+
+The `pip` command has been known to raise the following error while installing
+Python packages:
+    
+    MissingSchema: Proxy URLs must have explicit schemes.
+
+This error is raised if you have no schema for your `http_proxy` environment
+variable. To resolve the error, explicitly add the URL schema by prefixing
+*http*, for example `http_proxy=localhost:3128` would be changed to
+`http_proxy=http://localhost:3128`.
+
+If this does not work, you can also try the method mentioned below:
+
+Regarding issues with the `volo` command, for example:
+
+    * Building sugar-web
+
+    Command failed: volo -nostamp -f add
+
+    Error: connect ECONNREFUSED
+
+If this issue is affecting to you, you have 2 options.  Preferably, you should
+run your first build in an environment without a proxy.  If that is not an
+option, you will need to remove the `sugar-web` module.  This means you will
+not be able to develop Sugar activities using the web based stack.  To remove
+the `sugar-web` module, open `build/modules.json` file and remove the following
+lines:
+
+        {
+            "has_docs": true,
+            "has_checks": true,
+            "name": "sugar-web",
+            "repo": "https://github.com/sugarlabs/sugar-web.git",
+            "clean_stamp": 1
+        },
 
 Developing
 ----------
@@ -131,7 +174,7 @@ so that remotes will be setup automatically for those. For example
     "github": {
         "forks": [
             "myname/sugar.git",
-            "myname/sugar-docs.git",
+            "myname/sugar-docs.git"
         ],
         "ssh": [
             "sugarlabs/sugar.git",
@@ -177,6 +220,15 @@ activities are usually stored in <pre><code
 language='sh'>~/Activities</code></pre>
 However in the development environment, they are stored in <pre><code
 language='sh'>sugar-build/activities</code></pre>
+Please note that the sugar-build/activities  often won't get created 
+until the user installs or creates an Activity in the sugar-build.
+For Installation of an activity please refer to 
+[this Manual](http://laptop.org/8.2.0/manual/Sugar_InstallingActivities.html) 
+and for the creation of your own Activity, 
+you can see the [Activity Creation](http://developer.sugarlabs.org/activity.md.html) page.
+
+Tip for testing and debugging purposes: In order to run multiple versions of the same activity, they need to have different bundle ids, so you have to change the `bundle_id` in `activity.info` file in one of them. For example, I have version 39 of Calculate Activity installed and I want to install the version 41 without removing the installed one. In order to do so, just go to the directory of the v41 and go to 
+`Calculate.Activity/activity` and then open the `activity.info` file and change the `bundle_id` of it. After doing that, you will be able to install v41 without removing the previously installed version.
 
 ### dotsugar
 
@@ -185,11 +237,37 @@ in <pre><code language='sh'>~/.sugar</code></pre>
 In the dev-enviroment, these files are stored in <pre><code
 language='sh'>sugar-build/home/dotsugar</code></pre>
 
-### gconf
+### change debugging level
 
-Sugar uses gconf for a number of different settings. In the
+You can enable debugging in Sugar modifying the file <pre><code
+language='sh'>sugar-build/home/default/debug</code></pre> and
+uncommenting the line:
+
+<pre><code language='sh'>#export SUGAR_LOGGER_LEVEL=debug</code></pre>
+
+This file is located in <pre><code language='sh'>~/.sugar/default/debug</code></pre>
+when is not run in sugar-build.
+The file also allows enable debugging for specific parts of the stack,
+like collaboration.
+
+For debugging Salut or Gabble use:
+
+<pre><code
+language='sh'>FOO_PERSIST=1 FOO_DEBUG=all WOCKY_DEBUG=all G_MESSAGES_DEBUG=all FOO_LOGFILE=/tmp/foo.log *command*</code></pre>
+
+Note: Replace FOO with SALUT or GABBLE.
+When debugging Gabble, it's usually a good idea to set *WOCKY_DEBUG=xmpp (Gabble 0.9) or LM_DEBUG=net (Gabble 0.8)* so that the XML stanzas are also captured in the logfile.
+
+*For more refer [1](https://telepathy.freedesktop.org/wiki/DeveloperNotes/Debugging/) [2](https://wiki.gnome.org/Apps/Empathy/Debugging)*
+
+### gsettings
+
+Sugar uses gsettings for a number of different settings. In the
 development environment, these settings are found in <pre><code
-language='sh'>sugar-build/home/default/config/gconf</code></pre>
+language='sh'>sugar-build/home/default/config/dconf</code></pre>
+
+osbuild check uses its own gsetting. These can be found in <pre><code
+language='sh'>sugar-build/home/check/config/dconf</code></pre>
 
 Multiple instances
 ------------------
@@ -200,3 +278,12 @@ To run multiple instances of sugar-build, enter the shell and
 SUGAR_PROFILE=test1 run &
 SUGAR_PROFILE=test2 run &
 </code></pre>
+
+Log files
+---------
+
+Log files for osbuild are found <pre><code
+language='sh'>build/logs</code></pre>
+
+Log files for Sugar and Sugar activities are found in <pre><code
+language='sh'>home/dotsugar/default/logs</code></pre>
