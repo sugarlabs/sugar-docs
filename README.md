@@ -13,7 +13,7 @@ the documentation.
 You can find developer documentation here:
 https://developer.sugarlabs.org/
 
-###How to contribute?
+### How to contribute?
 
 We encourage contributions to our project. Please refer to 
 the following link for details on how to contribute a 
@@ -133,7 +133,7 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
 * [General](https://developer.sugarlabs.org/web-style.md.html#general)
  * [Javascript](https://developer.sugarlabs.org/web-style.md.html#javascript)
  * [HTML](https://developer.sugarlabs.org/web-style.md.html#html)
- * [CSS] (https://developer.sugarlabs.org/web-style.md.html#css)
+ * [CSS](https://developer.sugarlabs.org/web-style.md.html#css)
 * [Tools](https://developer.sugarlabs.org/web-style.md.html#tools)
  * [JSHINT](https://developer.sugarlabs.org/web-style.md.html#jshint)
  * [js-beautify](https://developer.sugarlabs.org/web-style.md.html#js-beautify)
