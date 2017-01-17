@@ -47,28 +47,24 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
   * [pull](https://developer.sugarlabs.org/dev-environment.md.html#pull)
   * [build](https://developer.sugarlabs.org/dev-environment.md.html#build)
   * [run](https://developer.sugarlabs.org/dev-environment.md.html#run)
-  * [check](https://developer.sugarlabs.org/dev-environment.md.html#check
+  * [check](https://developer.sugarlabs.org/dev-environment.md.html#check)
   * [clean](https://developer.sugarlabs.org/dev-environment.md.html#clean)
   * [shell](https://developer.sugarlabs.org/dev-environment.md.html#shell)
-  
  4. [Preferences Reference](https://developer.sugarlabs.org/dev-environment.md.html#preferences%20reference)
  
   * [github](https://developer.sugarlabs.org/dev-environment.md.html#github)
   * [resoultion](https://developer.sugarlabs.org/dev-environment.md.html#resolution)
   * [output](https://developer.sugarlabs.org/dev-environment.md.html#output)
   * [use_broot](https://developer.sugarlabs.org/dev-environment.md.html#use_broot)
-  
  5. [More Configuration Options](https://developer.sugarlabs.org/dev-environment.md.html#more%20configuration%20options)
  
   * [activities](https://developer.sugarlabs.org/dev-environment.md.html#activities)
   * [dotsugar](https://developer.sugarlabs.org/dev-environment.md.html#dotsugar)
   * [change debugging level](https://developer.sugarlabs.org/dev-environment.md.html#change%20debugging%20level)
-  * [gsettings](https://developer.sugarlabs.org/dev-environment.md.html#gsettings)
- 
+  * [gsettings](https://developer.sugarlabs.org/dev-environment.md.html#gsettings) 
  6. [Multiple Instances](https://developer.sugarlabs.org/dev-environment.md.html#multiple%20instances)
  
  * [Log Files](https://developer.sugarlabs.org/dev-environment.md.html#log%20files)
-
 2. [Write your own Desktop Activity](https://developer.sugarlabs.org/desktop-activity.md.html)
  1. [Setting up the Development Environment](https://developer.sugarlabs.org/desktop-activity.md.html#setting%20up%20the%20development%20environment)
  2. [Create a new Activity from a Template](https://developer.sugarlabs.org/desktop-activity.md.html#create%20a%20new%20activity%20from%20a%20template)
@@ -97,7 +93,6 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
  
   * [Adding Button to the Toolbar](https://developer.sugarlabs.org/web-activity.md.html#adding%20a%20button%20to%20the%20toolbar)
   * [Adding HTML Content Dynamically](https://developer.sugarlabs.org/web-activity.md.html#adding%20html%20content%20dynamically)
-  
  7. [Debugging](https://developer.sugarlabs.org/web-activity.md.html#debugging)
  8. [Keeping Sugar Libraries up-to-date](https://developer.sugarlabs.org/web-activity.md.html#keeping%20sugar%20libraries%20up%20to%20date)
  9. [Using other Javascript Libraries](https://developer.sugarlabs.org/web-activity.md.html#using%20other%20javascript%20libraries)
@@ -105,9 +100,7 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
   * [AMD-ready](https://developer.sugarlabs.org/web-activity.md.html#amd-ready)
   * [non-AMD lids](https://developer.sugarlabs.org/web-activity.md.html#non-amd%20libs)
   * [Ready to Release](https://developer.sugarlabs.org/web-activity.md.html#ready%20to%20release)
-  
  10. [Writing Python Activities](https://developer.sugarlabs.org/web-activity.md.html#writing%20python%20activities)
- 
 2. [Architecture](https://developer.sugarlabs.org/web-architecture.md.html)
  1. [Web Activities](https://developer.sugarlabs.org/web-architecture.md.html#web%20activities)
  2. [Sugar Web Library](https://developer.sugarlabs.org/web-architecture.md.html#sugar%20web%20library)
@@ -122,14 +115,12 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
  * [Javascript](https://developer.sugarlabs.org/web-style.md.html#javascript)
  * [HTML](https://developer.sugarlabs.org/web-style.md.html#html)
  * [CSS] [https://developer.sugarlabs.org/web-style.md.html#css]
- 
  2. [Tools](https://developer.sugarlabs.org/web-style.md.html#tools)
  
  * [JSHINT](https://developer.sugarlabs.org/web-style.md.html#jshint)
  * [js-beautify](https://developer.sugarlabs.org/web-style.md.html#js-beautify)
  * [RECESS](https://developer.sugarlabs.org/web-style.md.html#recess)
  * [Karma](https://developer.sugarlabs.org/web-style.md.html#karma)
- 
 4. [Components Documentation](https://developer.sugarlabs.org/sugar-web/README.md.html)
   
 #### Sugar Android
@@ -138,7 +129,6 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
  
  * [Activity Icon](https://developer.sugarlabs.org/android.md.html#activity%20icon)
  * [Android Project](https://developer.sugarlabs.org/android.md.html#android%20project)
- 
  2. [Android Shell](https://developer.sugarlabs.org/android.md.html#android%20shell)
  3. [An Activity Launcher for Android Shell](https://developer.sugarlabs.org/android.md.html#an%20activity%20launcher%20for%20android%20shell)
  4. [Debugging Web Activities on Android](https://developer.sugarlabs.org/android.md.html#debugging%20web%20activities%20on%20android)
