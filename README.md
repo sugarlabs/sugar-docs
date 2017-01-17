@@ -17,11 +17,11 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
 ## List of Contents
 
 #### Getting Started
-* [What can I do?](https://developer.sugarlabs.org/what-can-i-do.md.html)
- * [I'm Stuck!](https://developer.sugarlabs.org/what-can-i-do.md.html#i%27m%20stuck!)
-* [Contribute Code](https://developer.sugarlabs.org/contributing.md.html)
- * [Activity Repositories](https://developer.sugarlabs.org/contributing.md.html#activity%20repositories)
- * [Modifying Sugar](https://developer.sugarlabs.org/contributing.md.html#modifying%20sugar)
+1. [What can I do?](https://developer.sugarlabs.org/what-can-i-do.md.html)
+ 1. [I'm Stuck!](https://developer.sugarlabs.org/what-can-i-do.md.html#i%27m%20stuck!)
+2. [Contribute Code](https://developer.sugarlabs.org/contributing.md.html)
+ 1. [Activity Repositories](https://developer.sugarlabs.org/contributing.md.html#activity%20repositories)
+ 2. [Modifying Sugar](https://developer.sugarlabs.org/contributing.md.html#modifying%20sugar)
   * [Open an Issue](https://developer.sugarlabs.org/contributing.md.html#open%20an%20issue)
   * [Forking](https://developer.sugarlabs.org/contributing.md.html#forking)
   * [Branching](https://developer.sugarlabs.org/contributing.md.html#branching)
