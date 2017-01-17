@@ -6,6 +6,7 @@ Here you will find all you need to get started and contribute to Sugar.
 You can also help us [improve this documentation](docs.md.html).
 
 ### Getting Started
+===
 
 #### [What can I do?](https://developer.sugarlabs.org/what-can-i-do.md.html)
 * [I'm Stuck!](https://developer.sugarlabs.org/what-can-i-do.md.html#i%27m%20stuck!)
@@ -24,6 +25,7 @@ You can also help us [improve this documentation](docs.md.html).
  * [Close Issue](https://developer.sugarlabs.org/contributing.md.html#close%20issue)
 
 ### Design
+===
 
 #### [Human Interface Guidelines](https://developer.sugarlabs.org/HIG.md.html)
 
@@ -32,6 +34,7 @@ You can also help us [improve this documentation](docs.md.html).
 #### [Components Showcase](http://sugarlabs.github.io/sugar-web-samples/)
   
 ### Sugar Desktop
+===
 
 #### [Setup a Development Environment](https://developer.sugarlabs.org/dev-environment.md.html)
 
@@ -78,6 +81,7 @@ You can also help us [improve this documentation](docs.md.html).
 * [Conventions](https://developer.sugarlabs.org/python-style.md.html#conventions)
 
 ### Sugar Web
+===
 
 #### [Write your own Web Activity](https://developer.sugarlabs.org/web-activity.md.html)
 
@@ -120,7 +124,8 @@ You can also help us [improve this documentation](docs.md.html).
  * [Karma](https://developer.sugarlabs.org/web-style.md.html#karma)
 * [Components Documentation](https://developer.sugarlabs.org/sugar-web/README.md.html)
   
-#### Sugar Android
+### Sugar Android
+===
 
 #### [Web Activity](https://developer.sugarlabs.org/android.md.html)
 
