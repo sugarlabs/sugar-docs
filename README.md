@@ -127,9 +127,8 @@ https://github.com/sugarlabs/sugar-docs/blob/master/contributing.md
 1. [Web Activity](https://developer.sugarlabs.org/android.md.html)
  1. [Web Activity on Andriod](https://developer.sugarlabs.org/android.md.html#web%20activity%20on%20android)
  
- * [Activity Icon](https://developer.sugarlabs.org/android.md.html#activity%20icon)
- * [Android Project](https://developer.sugarlabs.org/android.md.html#android%20project)
- 
+  * [Activity Icon](https://developer.sugarlabs.org/android.md.html#activity%20icon)
+  * [Android Project](https://developer.sugarlabs.org/android.md.html#android%20project)
  2. [Android Shell](https://developer.sugarlabs.org/android.md.html#android%20shell)
  3. [An Activity Launcher for Android Shell](https://developer.sugarlabs.org/android.md.html#an%20activity%20launcher%20for%20android%20shell)
  4. [Debugging Web Activities on Android](https://developer.sugarlabs.org/android.md.html#debugging%20web%20activities%20on%20android)
