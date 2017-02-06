@@ -25,10 +25,10 @@ Design
 
 Sugar Web
 ---------
-
+* [Write your own web activity](web-activity.md.html)
 * [Architecture](web-architecture.md.html)
 * [Web code style](web-style.md.html)
-* [Components documentation](sugar-web/README.md.html)
+* [Components documentation](https://github.com/sugarlabs/sugar-web)
 
 Sugar GTK
 ---------
