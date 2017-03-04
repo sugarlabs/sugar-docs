@@ -5,7 +5,8 @@ So, now that you've setup the development environment you will
 probably want to do something. Well there are many things you can
 do, but here are some we've put together:
 
-* [Write a new sugar activity][1]
+* [Write your own desktop activity][1]
+* [Write your own web activity][5]
 * [Check out bugs and feature requests on the bug tracker][2]
 * And anything else!
 
@@ -22,7 +23,8 @@ little while, as people will come and go at different times of the day.
 Some of our developers have elected to be put on the list of mentors.
 You can find the list [here][4].
 
-[1]: activity.md.html
+[1]: desktop-activity.md.html
 [2]: http://bugs.sugarlabs.org
 [3]: http://lists.sugarlabs.org/listinfo/sugar-devel
 [4]: http://wiki.sugarlabs.org/go/Mentors
+[5]: web-activity.md.html
