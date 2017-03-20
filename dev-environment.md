@@ -1,7 +1,7 @@
-Setup a development environment
+Setup a development environment - chroot style
 ===============================
 
-Sugar is made of several modules and it often depends on libraries
+Sugar is made of several modules and sometimes depends on libraries
 which have not yet been packaged in Linux distributions. To make it
 easier for developers to build from sources, we developed a set of
 scripts that automates builds and other common development tasks.
@@ -287,3 +287,35 @@ language='sh'>build/logs</code></pre>
 
 Log files for Sugar and Sugar activities are found in <pre><code
 language='sh'>home/dotsugar/default/logs</code></pre>
+
+Setup a development environment - packaged style
+===============================
+
+For development of activities without making changes to Sugar desktop.
+
+Install Debian and track `stretch` or `testing`, or install Ubuntu 17.04.
+
+Install the `sucrose` package;
+
+    sudo apt install sucrose
+
+Log out, then log in with the Sugar desktop selected.
+
+Or, install `xrdp` and `rdesktop` then log in to Sugar in a window;
+
+    sudo apt install xrdp rdesktop
+    sudo adduser guest
+    echo sugar | sudo tee -a /home/guest/.xsession
+    rdesktop -g 1200x900 -u guest -p guest 127.0.0.1
+
+Setup a development environment - native style
+===============================
+
+For experts.
+
+Clone each of the sugar, sugar-artwork, sugar-datastore, and sugar-toolkit-gtk3 repositories, then in each;
+
+    make
+    sudo make install
+
+You will need to install any dependencies by hand.  There are many dependencies.  A good list of dependencies is the Fedora packaging or Debian packaging files.
