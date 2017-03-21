@@ -6,7 +6,7 @@ Sugar build](#NATIVESTYLE) and install the necessary dependencies by
 hand.
 
 Setup a development environment - chroot style
-===============================
+==============================================
 
 Sugar is made of several modules and sometimes depends on libraries
 which have not yet been packaged in Linux distributions. To make it
@@ -309,8 +309,9 @@ Log files for Sugar and Sugar activities are found in <pre><code
 language='sh'>home/dotsugar/default/logs</code></pre>
 
 <a name="PACKAGEDSTYLE">
+
 Setup a development environment - packaged style
-===============================
+================================================
 
 For development of activities without making changes to Sugar desktop.
 
@@ -330,8 +331,9 @@ Or, install `xrdp` and `rdesktop` then log in to Sugar in a window;
     rdesktop -g 1200x900 -u guest -p guest 127.0.0.1
 
 <a name="NATIVESTYLE">
+
 Setup a development environment - native style
-===============================
+==============================================
 
 For experts.
 
