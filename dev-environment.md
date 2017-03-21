@@ -1,3 +1,10 @@
+There are several ways to set up the Sugar environment for doing Sugar
+development. If your goal is to create or modify a Sugar activity, you
+may want to consider installing a [pre-packaged Sugar
+environment](#PACKAGEDSTYLE). Experts may want to create a [native
+Sugar build](#NATIVESTYLE) and install the necessary dependencies by
+hand.
+
 Setup a development environment - chroot style
 ===============================
 
@@ -65,10 +72,10 @@ Regarding issues with the `volo` command, for example:
 
     Error: connect ECONNREFUSED
 
-If this issue is affecting to you, you have 2 options.  Preferably, you should
-run your first build in an environment without a proxy.  If that is not an
-option, you will need to remove the `sugar-web` module.  This means you will
-not be able to develop Sugar activities using the web based stack.  To remove
+If this issue is affecting to you, you have 2 options. Preferably, you should
+run your first build in an environment without a proxy. If that is not an
+option, you will need to remove the `sugar-web` module. This means you will
+not be able to develop Sugar activities using the web based stack. To remove
 the `sugar-web` module, open `build/modules.json` file and remove the following
 lines:
 
@@ -224,11 +231,19 @@ Please note that the sugar-build/activities  often won't get created
 until the user installs or creates an Activity in the sugar-build.
 For Installation of an activity please refer to 
 [this Manual](http://laptop.org/8.2.0/manual/Sugar_InstallingActivities.html) 
-and for the creation of your own Activity, 
-you can see the [Activity Creation](http://developer.sugarlabs.org/activity.md.html) page.
+and for the creation of your own Activity, you can see the
+[Activity Creation](http://developer.sugarlabs.org/activity.md.html) page.
 
-Tip for testing and debugging purposes: In order to run multiple versions of the same activity, they need to have different bundle ids, so you have to change the `bundle_id` in `activity.info` file in one of them. For example, I have version 39 of Calculate Activity installed and I want to install the version 41 without removing the installed one. In order to do so, just go to the directory of the v41 and go to 
-`Calculate.Activity/activity` and then open the `activity.info` file and change the `bundle_id` of it. After doing that, you will be able to install v41 without removing the previously installed version.
+Tip for testing and debugging purposes: In order to run multiple
+versions of the same activity, they need to have different bundle ids,
+so you have to change the `bundle_id` in `activity.info` file in one
+of them. For example, I have version 39 of Calculate Activity
+installed and I want to install the version 41 without removing the
+installed one. In order to do so, just go to the directory of the v41
+and go to `Calculate.Activity/activity` and then open the
+`activity.info` file and change the `bundle_id` of it. After doing
+that, you will be able to install v41 without removing the previously
+installed version.
 
 ### dotsugar
 
@@ -245,7 +260,8 @@ uncommenting the line:
 
 <pre><code language='sh'>#export SUGAR_LOGGER_LEVEL=debug</code></pre>
 
-This file is located in <pre><code language='sh'>~/.sugar/default/debug</code></pre>
+This file is located in
+<pre><code language='sh'>~/.sugar/default/debug</code></pre>
 when is not run in sugar-build.
 The file also allows enable debugging for specific parts of the stack,
 like collaboration.
@@ -255,10 +271,14 @@ For debugging Salut or Gabble use:
 <pre><code
 language='sh'>FOO_PERSIST=1 FOO_DEBUG=all WOCKY_DEBUG=all G_MESSAGES_DEBUG=all FOO_LOGFILE=/tmp/foo.log *command*</code></pre>
 
-Note: Replace FOO with SALUT or GABBLE.
-When debugging Gabble, it's usually a good idea to set *WOCKY_DEBUG=xmpp (Gabble 0.9) or LM_DEBUG=net (Gabble 0.8)* so that the XML stanzas are also captured in the logfile.
+Note: Replace FOO with SALUT or GABBLE. When debugging Gabble, it's
+usually a good idea to set *WOCKY_DEBUG=xmpp (Gabble 0.9) or
+LM_DEBUG=net (Gabble 0.8)* so that the XML stanzas are also captured
+in the logfile.
 
-*For more refer [1](https://telepathy.freedesktop.org/wiki/DeveloperNotes/Debugging/) [2](https://wiki.gnome.org/Apps/Empathy/Debugging)*
+*For more refer
+[1](https://telepathy.freedesktop.org/wiki/DeveloperNotes/Debugging/)
+[2](https://wiki.gnome.org/Apps/Empathy/Debugging)*
 
 ### gsettings
 
@@ -288,6 +308,7 @@ language='sh'>build/logs</code></pre>
 Log files for Sugar and Sugar activities are found in <pre><code
 language='sh'>home/dotsugar/default/logs</code></pre>
 
+<a name="PACKAGEDSTYLE">
 Setup a development environment - packaged style
 ===============================
 
@@ -308,14 +329,18 @@ Or, install `xrdp` and `rdesktop` then log in to Sugar in a window;
     echo sugar | sudo tee -a /home/guest/.xsession
     rdesktop -g 1200x900 -u guest -p guest 127.0.0.1
 
+<a name="NATIVESTYLE">
 Setup a development environment - native style
 ===============================
 
 For experts.
 
-Clone each of the sugar, sugar-artwork, sugar-datastore, and sugar-toolkit-gtk3 repositories, then in each;
+Clone each of the sugar, sugar-artwork, sugar-datastore, and
+sugar-toolkit-gtk3 repositories, then in each;
 
     make
     sudo make install
 
-You will need to install any dependencies by hand.  There are many dependencies.  A good list of dependencies is the Fedora packaging or Debian packaging files.
+You will need to install any dependencies by hand. There are many
+dependencies. A good list of dependencies is the Fedora packaging or
+Debian packaging files.
