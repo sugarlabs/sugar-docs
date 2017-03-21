@@ -3,38 +3,49 @@ Contributing
 
 We use the pull-request model, see [GitHub's help on pull-request](https://help.github.com/articles/using-pull-requests).
 
-In short, you will:
+In brief, you will:
 
-* file an issue about what you plan to change;
+* add an issue about what you plan to change;
+* on GitHub, find and fork the source repository;
+* on your computer, clone your fork repository,
 * commit your changes in a new branch;
 * push your branch and submit a pull-request for it;
 * go through the review process until your pull-request is merged; and
 * close your issue.
 
-Activity Repositories
+Modifying Activities
 -----------------
 
-To request a new activity repo, email the http://lists.sugarlabs.org/listinfo/systems list with the name of the repo and the GitHub usernames who should have access.
+Most activity repositories can be found in our [sugarlabs GitHub organisation](https://github.com/sugarlabs).
 
-We recommend using the same process as below to develop your own Activities.
+A few activity repositories are somewhere else; read the `activity/activity.info` file, check the metadata on the [activities.sugarlabs.org app store](https://activities.sugarlabs.org/), or the [Activity page on wiki.sugarlabs.org](https://wiki.sugarlabs.org/go/Activity), or our deprecated [gitorious instance](https://git.sugarlabs.org/).
+
+For new activities, make a new repository in your GitHub account, put the source code in it, then ask the [systems@ list](https://lists.sugarlabs.org/listinfo/systems) to move it to the `sugarlabs` organisation.
 
 Modifying Sugar
 ---------------
 
+Sugar repositories can be found in our [sugarlabs GitHub organisation](https://github.com/sugarlabs).  Sugar desktop environment repositories are:
+
+* https://github.com/sugarlabs/sugar (the shell);
+* https://github.com/sugarlabs/sugar-artwork (images, icons, themes);
+* https://github.com/sugarlabs/sugar-toolkit-gtk3 (graphical widget library); and,
+* https://github.com/sugarlabs/sugar-datastore (journal backend).
+
 ### Open an Issue
 
-We track issues in http://bugs.sugarlabs.org
+We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of activity repositories.
 
-Generally, each improvement to Sugar should start with an issue discussion, to ensure that work to fix a bug isn't wasted.
+Each improvement to Sugar should start with an issue discussion, to build consensus and ensure that work isn't wasted.
 
 ### Forking
 
-You should first fork the repository on GitHub. 
-This step is needed only once. 
-See [complete help in GitHub](https://help.github.com/articles/fork-a-repo). 
-Brief instructions follow using [sugar component](https://github.com/sugarlabs/sugar) as example.
+You should first fork the repository on GitHub.
+This step is needed only once.
+See [complete help in GitHub](https://help.github.com/articles/fork-a-repo).
+Brief instructions follow using [sugar](https://github.com/sugarlabs/sugar) as example.
 
-Navigate to the [sugar repository](https://github.com/sugarlabs/sugar/), press **Fork** button, then
+Navigate to the [sugar](https://github.com/sugarlabs/sugar/) repository, press **Fork** button, then on your computer
 
     git clone git@github.com:YOUR-NAME/sugar.git
     cd sugar
@@ -43,15 +54,11 @@ Navigate to the [sugar repository](https://github.com/sugarlabs/sugar/), press *
 
 ### Branching
 
-Create one branch per topic
+Create a branch per set of changes; e.g. to fix a problem or add a feature;
 
-    git checkout -b NAME
+    git checkout -b BRANCH-NAME
 
-Make one or more commits and push the branch
-
-    git push origin NAME
-
-Your branch NAME can be anything, other than master.  The scope is your forked repository.  The branch name will be shown on pull-requests.
+Your BRANCH-NAME can be anything, other than master.  The scope is your forked repository.  The branch name will be shown on pull-requests.
 
 ### Making commits
 
@@ -64,9 +71,13 @@ Change files, and commit.  When writing a commit message;
 5. when the problem is in an issue ticket, add "Fixes #1234", and the ticket may be closed automatically; and
 6. avoid mentioning GitHub or other pull-requests, as these are not kept in git,
 
+Make one or more commits and push the branch to your repository;
+
+    git push origin BRANCH-NAME
+
 ### Sending a pull-request
 
-Send a pull-request for your branch. 
+Send a pull-request for your branch.
 Navigate to your repository page in GitHub, switch to the branch you made, and then press the **Pull Request** button.
 
 When writing a pull-request message;
@@ -82,11 +93,13 @@ A review will happen in the pull-request, and a reviewer will either;
 3. ask you to make changes; or
 4. close and reject your request giving reasons.
 
-When they ask you for changes, make them using [interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages)
+When they ask you for changes, you may have to change both files and commits.
+
+When squashing commits to different files, use [interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages).
 
     git rebase -i master
 
-Then push the changes to the same branch
+After resolving any conflicts, push the changes to the same branch;
 
     git push --force origin
 
@@ -94,11 +107,11 @@ Then respond on the pull-request.
 
 ### Keep your pull-request up to date
 
-When there have been upstream commits while your pull-request was open, you should rebase your pull-request:
+When there have been upstream commits while your pull-request was open, you should rebase your pull-request;
 
     git pull --rebase upstream
 
-Then push the changes to the same branch
+Then push the changes to the same branch;
 
     git push --force origin
 
@@ -110,15 +123,15 @@ When there have been upstream commits since your fork was made, you should bring
 
     git checkout master
     git pull upstream
-    git checkout NAME
+    git checkout BRANCH-NAME
 
 ### Review
 
-We encourage testing before merging a pull-request. 
+We encourage testing before merging a pull-request.
 
-So instead of merging directly with the "merge" button on GitHub, we do a local merge, then test, then push.  
+So instead of merging directly with the "merge" button on GitHub, we may do a local merge, then test, then push.
 
-See [GitHub help on merging a pull-request](https://help.github.com/articles/merging-a-pull-request)
+See [GitHub help on merging a pull-request](https://help.github.com/articles/merging-a-pull-request).
 
 The GitHub page for the pull-request will provide you the right commands to do the local merge, similar to the following.
 
@@ -135,5 +148,21 @@ Test! If everything is fine, merge:
 
 ### Close Issue
 
-Once your changes are merged, you should close your issue. 
-Be sure to thank everyone who helped you out along the way :) 
+Once your changes are merged, you should close your issue.
+Be sure to thank everyone who helped you out along the way.
+
+Frequently Asked Questions
+--------------------------
+
+### I've used the GitHub editor, how can I rebase or amend commits?
+
+Make a local clone of your GitHub repository, use `git commit --amend` or the other advanced CLI features, then `git push` back to GitHub.
+
+### Error 403 on `git push`
+
+Most likely you have cloned someone else's repository, and you should
+instead fork their repository, clone your own repository, make your
+changes, then push.  See [Getting error 403 while submitting
+PR](http://lists.sugarlabs.org/archive/sugar-devel/2017-March/053926.html)
+and [D. Joe's
+reply](http://lists.sugarlabs.org/archive/sugar-devel/2017-March/053929.html).
