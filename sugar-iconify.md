@@ -12,12 +12,11 @@ It will create Sugar-compatible SVG icons from an ```input.svg``` by
 adding the appropriate stroke and fill entities. It can be used to
 convert a single icon or run over a batch of icons at one time.
 
-You can find the script in the [sugariconify repository](
-https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py).
- 
-Note that there is a web service available for converting icons as
+You can find the script in the [sugariconify repository](https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py).
+
+There is a web service available for converting icons as
 well (See [Sugar Iconify Service](http://kuckuck.treehouse.su:5000/)).
- 
+
 For additional information about creating an SVG suitable for Sugar,
 see the tutorial on [Making Sugar
 Icons](http://wiki.laptop.org/go/Making_Sugar_icons).

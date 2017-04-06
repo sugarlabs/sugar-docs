@@ -14,18 +14,31 @@ In brief, you will:
 * close your issue.
 
 Modifying Activities
------------------
+--------------------
 
-Most activity repositories can be found in our [sugarlabs GitHub organisation](https://github.com/sugarlabs).
+Most activity repositories can be found in our [GitHub `sugarlabs`
+organization](https://github.com/sugarlabs).
 
-A few activity repositories are somewhere else; read the `activity/activity.info` file, check the metadata on the [activities.sugarlabs.org app store](https://activities.sugarlabs.org/), or the [Activity page on wiki.sugarlabs.org](https://wiki.sugarlabs.org/go/Activity), or our deprecated [gitorious instance](https://git.sugarlabs.org/).
+A few activity repositories are somewhere else; read the
+`activity/activity.info` file, check the metadata on the
+[activities.sugarlabs.org app
+store](https://activities.sugarlabs.org/), or the [Activity page on
+wiki.sugarlabs.org](https://wiki.sugarlabs.org/go/Activity), or our
+deprecated [gitorious instance](https://git.sugarlabs.org/).
 
-For new activities, make a new repository in your GitHub account, put the source code in it, then ask the [systems@ list](https://lists.sugarlabs.org/listinfo/systems) to move it to the `sugarlabs` organisation.
+For new activities, see [Write your own Sugar desktop
+activity](desktop-activity.md.html), or [Write your own Sugar web
+activity](web-activity.md.html), then make a new repository in your
+GitHub account, put the source code in it, then ask the [systems@
+list](https://lists.sugarlabs.org/listinfo/systems) to move it to the
+GitHub `sugarlabs` organization.
 
 Modifying Sugar
 ---------------
 
-Sugar repositories can be found in our [sugarlabs GitHub organisation](https://github.com/sugarlabs).  Sugar desktop environment repositories are:
+Sugar repositories can be found in our [GitHub `sugarlabs`
+organization](https://github.com/sugarlabs).  Sugar desktop
+environment repositories are:
 
 * https://github.com/sugarlabs/sugar (the shell);
 * https://github.com/sugarlabs/sugar-artwork (images, icons, themes);
