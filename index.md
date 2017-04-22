@@ -28,7 +28,6 @@ Sugar Web
 * [Write your own Sugar web activity](web-activity.md.html)
 * [Architecture](web-architecture.md.html)
 * [Web code style](web-style.md.html)
-* [Components documentation](sugar-web/README.md.html)
 
 Sugar Android
 -------------
