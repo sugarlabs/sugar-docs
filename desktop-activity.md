@@ -48,20 +48,13 @@ Your clone of the Hello World activity contains a file,
     exec = sugar-activity activity.HelloWorldActivity
     icon = activity-helloworld
     licence = GPLv3+
+    repository = https://github.com/sugarlabs/hello-world-fork.git
 
 You must set a new `name` and a unique `bundle_id` for your activity.
 
 Avoid punctuation in your `bundle_id`, e.g.,
 `org.sugarlabs.my-activity-name` is not valid. Instead, use
 CamelCase, e.g., `org.sugarlabs.MyActivity`.
-
-    [Activity]
-    name = MyActivity
-    activity_version = 1
-    bundle_id = org.sugarlabs.MyActivity
-    exec = sugar-activity activity.HelloWorldActivity
-    icon = activity-helloworld
-    licence = GPLv3+
 
 You should change the Activity class in your `activity.py` file, e.g., from:
 
@@ -79,9 +72,12 @@ to:
 
     exec = sugar-activity activity.MyActivity
 
-We recommend that you use a GPLv3+ license.
+You should set the repository field to the URL of the git repository
+of your project.
 
-So your final `activity.info` file will look like:
+And we recommend that you use a GPLv3+ license.
+
+Your `activity.info` file will look something like:
 
     [Activity]
     name = MyActivity
@@ -90,6 +86,7 @@ So your final `activity.info` file will look like:
     exec = sugar-activity activity.MyActivity
     icon = activity-helloworld
     licence = GPLv3+
+    repository = https://github.com/MyGitHubAccount/MyActivityRepo.git
 
 To read more about the `activity.info` file, see [Activity
 Bundles](https://wiki.sugarlabs.org/go/Development_Team/Almanac/Activity_Bundles)
