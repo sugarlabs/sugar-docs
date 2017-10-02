@@ -67,13 +67,16 @@ Setup a development environment - packaged style
 For development of activities without making changes to Sugar desktop.
 
 For Fedora users, see [Using Sugar on
-Fedora](http://wiki.sugarlabs.org/go/Fedora).
+Fedora](http://wiki.sugarlabs.org/go/Fedora).  Once Sugar is
+installed, development of activities can begin.
 
 For Debian users, see also [Using Sugar on
-Debian](http://wiki.sugarlabs.org/go/Debian), or see below.
+Debian](http://wiki.sugarlabs.org/go/Debian), or see how to install
+`sucrose` below.
 
 For Ubuntu users, see also [Using Sugar on
-Ubuntu](http://wiki.sugarlabs.org/go/Ubuntu), or see below.
+Ubuntu](http://wiki.sugarlabs.org/go/Ubuntu), or see how to install
+`sucrose` see below.
 
 Install Debian **Stretch** or **Buster**, or Ubuntu 17.04 **Artful**.
 
@@ -93,6 +96,9 @@ sudo adduser guest
 echo sugar | sudo tee -a /home/guest/.xsession
 rdesktop -g 1200x900 -u guest -p guest 127.0.0.1
 ```
+
+Once you have a local Sugar desktop, or a remote Sugar desktop,
+development of activities can begin.
 
 <a name="NATIVE">
 Setup a development environment - native style
@@ -141,3 +147,18 @@ for module in sugar{-datastore,-artwork,-toolkit,-toolkit-gtk3,}; do
     cd ..
 done
 ```
+
+Clone the Browse and Terminal activities;
+
+```
+mkdir -p ~/Activities
+cd ~/Activities
+git clone https://github.com/sugarlabs/browse-activity.git Browse.activity
+git clone https://github.com/sugarlabs/terminal-activity.git Terminal.activity
+```
+
+Log out and log in again with the Sugar desktop selected, or use the
+remote desktop feature described earlier on this page.
+
+After making changes in a Sugar module, repeat the `sudo make install`
+step, and log in again.
