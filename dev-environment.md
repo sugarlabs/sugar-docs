@@ -14,9 +14,9 @@ development:
   build](#NATIVE) and install the necessary dependencies by hand.
 
 <a name="LIVE">
-
 Setup a development environment - live build
 ============================================
+</a>
 
 Sugar Live Build is a complete bootable image containing Sugar, the
 toolkits, and the demonstration activities;
@@ -58,9 +58,9 @@ on GitHub for configuration files to make your own Sugar Live Build
 using the Debian Live Build software.
 
 <a name="PACKAGED">
-
 Setup a development environment - packaged style
 ================================================
+</a>
 
 For development of activities without making changes to Sugar desktop.
 
@@ -69,16 +69,20 @@ Install Debian and track `stretch` or `buster`, or install Ubuntu
 
 Install the `sucrose` package;
 
-    sudo apt install sucrose
+```
+sudo apt install sucrose
+```
 
 Log out, then log in with the Sugar desktop selected.
 
 Or, install `xrdp` and `rdesktop` then log in to Sugar in a window;
 
-    sudo apt install xrdp rdesktop
-    sudo adduser guest
-    echo sugar | sudo tee -a /home/guest/.xsession
-    rdesktop -g 1200x900 -u guest -p guest 127.0.0.1
+```
+sudo apt install xrdp rdesktop
+sudo adduser guest
+echo sugar | sudo tee -a /home/guest/.xsession
+rdesktop -g 1200x900 -u guest -p guest 127.0.0.1
+```
 
 For Ubuntu users, see also [Using Sugar on
 Ubuntu](http://wiki.sugarlabs.org/go/Ubuntu).
@@ -90,9 +94,9 @@ For Fedora, see [Using Sugar on
 Fedora](http://wiki.sugarlabs.org/go/Fedora).
 
 <a name="NATIVE">
-
 Setup a development environment - native style
 ==============================================
+</a>
 
 For experts.
 
@@ -100,10 +104,12 @@ Clone each of the sugar, sugar-artwork, sugar-datastore,
 sugar-toolkit, and sugar-toolkit-gtk3 module repositories, then in
 each;
 
-    ./autogen.sh
-    configure
-    make
-    sudo make install
+```
+./autogen.sh
+configure
+make
+sudo make install
+```
 
 You will need to install any dependencies by hand. There are many
 dependencies. A good list of dependencies is the Fedora packaging or
