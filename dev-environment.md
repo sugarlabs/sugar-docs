@@ -1,17 +1,19 @@
 Sugar is made of several modules and depends on many other libraries.
 
 There are several ways to set up a Sugar environment for doing Sugar
-development:
+development, choose one at a time only;
 
 * for testing or changing Sugar or a Sugar activity, install a [live
-  build](#LIVE), which has all dependencies and source code included;
+  build](#LIVE), which has all dependencies and source code included,
+  but is nearly 1GB of downloads;
 
 * for writing or changing a Sugar activity, install a [packaged Sugar
   environment](#PACKAGED), which will install dependencies
   automatically; or,
 
 * for packaging Sugar, downstream developers create a [native Sugar
-  build](#NATIVE) and install the necessary dependencies by hand.
+  build](#NATIVE) and install the necessary dependencies by hand,
+  but Sugar is difficult to remove.
 
 <a name="LIVE">
 Setup a development environment - live build
@@ -64,8 +66,16 @@ Setup a development environment - packaged style
 
 For development of activities without making changes to Sugar desktop.
 
-Install Debian and track `stretch` or `buster`, or install Ubuntu
-17.04 Artful.
+For Fedora users, see [Using Sugar on
+Fedora](http://wiki.sugarlabs.org/go/Fedora).
+
+For Debian users, see also [Using Sugar on
+Debian](http://wiki.sugarlabs.org/go/Debian), or see below.
+
+For Ubuntu users, see also [Using Sugar on
+Ubuntu](http://wiki.sugarlabs.org/go/Ubuntu), or see below.
+
+Install Debian **Stretch** or **Buster**, or Ubuntu 17.04 **Artful**.
 
 Install the `sucrose` package;
 
@@ -84,15 +94,6 @@ echo sugar | sudo tee -a /home/guest/.xsession
 rdesktop -g 1200x900 -u guest -p guest 127.0.0.1
 ```
 
-For Ubuntu users, see also [Using Sugar on
-Ubuntu](http://wiki.sugarlabs.org/go/Ubuntu).
-
-For Debian, see also [Using Sugar on
-Debian](http://wiki.sugarlabs.org/go/Debian).
-
-For Fedora, see [Using Sugar on
-Fedora](http://wiki.sugarlabs.org/go/Fedora).
-
 <a name="NATIVE">
 Setup a development environment - native style
 ==============================================
@@ -100,17 +101,43 @@ Setup a development environment - native style
 
 For experts.
 
-Clone each of the sugar, sugar-artwork, sugar-datastore,
-sugar-toolkit, and sugar-toolkit-gtk3 module repositories, then in
-each;
+Clone each of the module repositories;
 
 ```
-./autogen.sh
-configure
-make
-sudo make install
+for module in sugar{-datastore,-artwork,-toolkit,-toolkit-gtk3,}; do
+    git clone https://github.com/sugarlabs/$module.git
+done
 ```
 
-You will need to install any dependencies by hand. There are many
-dependencies. A good list of dependencies is the Fedora packaging or
-Debian packaging files.
+Install the build dependencies.  There are many, and their package
+names vary by distribution.  A good list is in the Debian or Fedora
+packaging files.
+
+On Debian or Ubuntu;
+
+```
+for module in sugar{-datastore,-artwork,-toolkit,-toolkit-gtk3,}; do
+    apt build-dep $module
+done
+```
+
+On Fedora, use [dnf builddep](http://dnf-plugins-core.readthedocs.io/en/latest/builddep.html), like this;
+
+```
+for module in sugar{-datastore,-artwork,-toolkit,-toolkit-gtk3,}; do
+    dnf builddep $module
+done
+```
+
+Autogen, configure, make, and install each module;
+
+```
+for module in sugar{-datastore,-artwork,-toolkit,-toolkit-gtk3,}; do
+    cd $module
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+    cd ..
+done
+```
