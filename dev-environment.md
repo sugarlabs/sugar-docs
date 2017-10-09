@@ -34,7 +34,7 @@ toolkits, and the demonstration activities;
   the demonstration activity set.
 
 See
-[downloads](http://people.sugarlabs.org/~quozl/sugar-live-build-20170927/)
+[downloads](http://people.sugarlabs.org/~quozl/sugar-live-build-20171009/)
 for the ISO9660 image file.
 
 Once installed, Sugar Live Build can be used to make changes to Sugar,
@@ -76,7 +76,7 @@ Debian](http://wiki.sugarlabs.org/go/Debian), or see how to install
 
 For Ubuntu users, see also [Using Sugar on
 Ubuntu](http://wiki.sugarlabs.org/go/Ubuntu), or see how to install
-`sucrose` see below.
+`sucrose` below.
 
 Install Debian **Stretch** or **Buster**, or Ubuntu 17.04 **Artful**.
 
