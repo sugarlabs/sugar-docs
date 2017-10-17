@@ -60,16 +60,20 @@ Brief instructions follow using [sugar](https://github.com/sugarlabs/sugar) as e
 
 Navigate to the [sugar](https://github.com/sugarlabs/sugar/) repository, press **Fork** button, then on your computer
 
-    git clone git@github.com:YOUR-NAME/sugar.git
-    cd sugar
-    git remote add upstream https://github.com/sugarlabs/sugar.git
-    git fetch upstream
+```
+git clone git@github.com:YOUR-NAME/sugar.git
+cd sugar
+git remote add upstream https://github.com/sugarlabs/sugar.git
+git fetch upstream
+```
 
 ### Branching
 
 Create a branch per set of changes; e.g. to fix a problem or add a feature;
 
-    git checkout -b BRANCH-NAME
+```
+git checkout -b BRANCH-NAME
+```
 
 Your BRANCH-NAME can be anything, other than master.  The scope is your forked repository.  The branch name will be shown on pull-requests.
 
@@ -86,7 +90,9 @@ Change files, and commit.  When writing a commit message;
 
 Make one or more commits and push the branch to your repository;
 
-    git push origin BRANCH-NAME
+```
+git push origin BRANCH-NAME
+```
 
 ### Sending a pull-request
 
@@ -110,11 +116,15 @@ When they ask you for changes, you may have to change both files and commits.
 
 When squashing commits to different files, use [interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages).
 
-    git rebase -i master
+```
+git rebase -i master
+```
 
 After resolving any conflicts, push the changes to the same branch;
 
-    git push --force origin
+```
+git push --force origin
+```
 
 Then respond on the pull-request.
 
@@ -122,11 +132,15 @@ Then respond on the pull-request.
 
 When there have been upstream commits while your pull-request was open, you should rebase your pull-request;
 
-    git pull --rebase upstream
+```
+git pull --rebase upstream
+```
 
 Then push the changes to the same branch;
 
-    git push --force origin
+```
+git push --force origin
+```
 
 The pull-request will be updated.
 
@@ -134,9 +148,11 @@ The pull-request will be updated.
 
 When there have been upstream commits since your fork was made, you should bring these into your fork:
 
-    git checkout master
-    git pull upstream
-    git checkout BRANCH-NAME
+```
+git checkout master
+git pull upstream
+git checkout BRANCH-NAME
+```
 
 ### Review
 
@@ -150,14 +166,18 @@ The GitHub page for the pull-request will provide you the right commands to do t
 
 Get the changes from that branch to a new local branch:
 
-    git checkout -b SOME-USER-topic1 master
-    git pull https://github.com/SOME-USER/sugar.git topic1
+```
+git checkout -b SOME-USER-topic1 master
+git pull https://github.com/SOME-USER/sugar.git topic1
+```
 
 Test! If everything is fine, merge:
 
-    git checkout master
-    git rebase SOME-USER-topic1
-    git push origin master
+```
+git checkout master
+git rebase SOME-USER-topic1
+git push origin master
+```
 
 ### Close Issue
 
