@@ -85,8 +85,9 @@ Change files, and commit.  When writing a commit message;
 2. leave a blank line after the summary;
 3. explain the problem that is solved, unless the summary makes it obvious;
 4. when the problem was introduced by a previous commit, mention the hash;
-5. when the problem is in an issue ticket, add "Fixes #1234", and the ticket may be closed automatically; and
-6. avoid mentioning GitHub or other pull-requests, as these are not kept in git,
+5. when the problem is in an issue or ticket, add "Fixes #1234";
+6. avoid mentioning GitHub or other pull-requests, as these are not kept in git; and
+7. avoid mentioning any contest tasks or mentors; use the pull-request instead.
 
 Make one or more commits and push the branch to your repository;
 
@@ -101,18 +102,18 @@ Navigate to your repository page in GitHub, switch to the branch you made, and t
 
 When writing a pull-request message;
 
-1. if there is only one commit, accept the GitHub default of the commit message, otherwise explain the series of commits;
-2. mention any relevant pull-requests; and
-3. mention any relevant resources, such as issues, tickets, or competition tasks.
+1. if there is only one commit, begin with the GitHub default of the commit message, otherwise write a summary of the series of commits;
+2. link to any relevant pull-requests, issues, or tickets; and
+3. link to any contest tasks, and name your @mentors to subscribe them.
 
 A review will happen in the pull-request, and a reviewer will either;
 
-1. merge your commits;
+1. merge, squash, or rebase your commits;
 2. merge your commits with their own changes;
 3. ask you to make changes; or
-4. close and reject your request giving reasons.
+4. close and reject your pull-request giving reasons.
 
-When they ask you for changes, you may have to change both files and commits.
+When they ask you for changes, you may have to change both files, commits or commit messages.
 
 When squashing commits to different files, use [interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages).
 
@@ -181,7 +182,8 @@ git push origin master
 
 ### Close Issue
 
-Once your changes are merged, you should close your issue.
+Once your pull-request is merged, you should close any issue or ticket.  GitHub issues named as "Fixes" in a commit message may be automatically closed.
+
 Be sure to thank everyone who helped you out along the way.
 
 Frequently Asked Questions
