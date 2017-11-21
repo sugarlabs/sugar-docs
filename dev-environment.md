@@ -1,3 +1,6 @@
+Setup a development environment
+===============================
+
 Sugar is made of several modules and depends on many other libraries.
 
 There are several ways to set up a Sugar environment for doing Sugar
@@ -16,8 +19,8 @@ development, choose one at a time only;
   but Sugar is difficult to remove.
 
 <a name="LIVE">
-Setup a development environment - live build
-============================================
+Sugar Live Build
+----------------
 </a>
 
 Sugar Live Build is a complete bootable image containing Sugar, the
@@ -60,8 +63,8 @@ on GitHub for configuration files to make your own Sugar Live Build
 using the Debian Live Build software.
 
 <a name="PACKAGED">
-Setup a development environment - packaged style
-================================================
+Packaged Sugar
+--------------
 </a>
 
 For development of activities without making changes to Sugar desktop.
@@ -101,8 +104,8 @@ Once you have a local Sugar desktop, or a remote Sugar desktop,
 development of activities can begin.
 
 <a name="NATIVE">
-Setup a development environment - native style
-==============================================
+Native Sugar
+------------
 </a>
 
 For experts.
