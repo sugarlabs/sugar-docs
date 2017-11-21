@@ -78,7 +78,7 @@ For Ubuntu users, see also [Using Sugar on
 Ubuntu](http://wiki.sugarlabs.org/go/Ubuntu), or see how to install
 `sucrose` below.
 
-Install Debian **Stretch** or **Buster**, or Ubuntu 17.04 **Artful**.
+Install Debian **Stretch** or **Buster**, or Ubuntu 17.10 **Artful**.
 
 Install the `sucrose` package;
 
