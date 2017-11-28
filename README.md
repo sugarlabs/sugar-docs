@@ -7,7 +7,7 @@ the documentation.
 You can find developer documentation here:
 https://developer.sugarlabs.org/
 
-###How to contribute?
+### How to contribute?
 
 We encourage contributions to our project. Please refer to 
 the following link for details on how to contribute a 
