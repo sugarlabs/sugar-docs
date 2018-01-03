@@ -99,9 +99,7 @@ graphic design.
 
 Here is `activity/activity-helloworld.svg`;
 
-![Activity
- Icon](images/activity-helloworld.svg
- "Activity icon")
+![Activity Icon](images/activity-helloworld.png "Activity icon")
 
 You should rename this file and change `icon` in the `activity.info`
 file.
