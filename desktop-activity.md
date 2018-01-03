@@ -30,9 +30,9 @@ directories.  This is where you will create your new activity.
 
 Clone the Hello World activity from
 [hello-world on GitHub](https://github.com/sugarlabs/hello-world-fork):
-
+```
     git clone https://github.com/sugarlabs/hello-world-fork.git Name.activity
-
+```
 Use the `.activity` suffix in the directory name of an activity,
 because that's the way an activity bundle is released.
 
@@ -40,7 +40,7 @@ because that's the way an activity bundle is released.
 
 Your clone of the Hello World activity contains a file,
 `activity/activity.info`:
-
+```
     [Activity]
     name = HelloWorld
     activity_version = 1
@@ -49,7 +49,7 @@ Your clone of the Hello World activity contains a file,
     icon = activity-helloworld
     licence = GPLv3+
     repository = https://github.com/sugarlabs/hello-world-fork.git
-
+```
 You must set a new `name` and a unique `bundle_id` for your activity.
 
 Avoid punctuation in your `bundle_id`, e.g.,
@@ -57,28 +57,28 @@ Avoid punctuation in your `bundle_id`, e.g.,
 CamelCase, e.g., `org.sugarlabs.MyActivity`.
 
 You should change the Activity class in your `activity.py` file, e.g., from:
-
+```
     class HelloWorldActivity(activity.Activity):
-
+```
 to:
-
+```
     class MyActivity(activity.Activity):
-
+```
 You must change the `exec` field as well, e.g., from:
-
+```
     exec = sugar-activity activity.HelloWorldActivity
-
+```
 to:
-
+```
     exec = sugar-activity activity.MyActivity
-
+```
 You should set the repository field to the URL of the git repository
 of your project.
 
 And we recommend that you use a GPLv3+ license.
 
 Your `activity.info` file will look something like:
-
+```
     [Activity]
     name = MyActivity
     activity_version = 1
@@ -87,7 +87,7 @@ Your `activity.info` file will look something like:
     icon = activity-helloworld
     licence = GPLv3+
     repository = https://github.com/MyGitHubAccount/MyActivityRepo.git
-
+```
 To read more about the `activity.info` file, see [Activity
 Bundles](https://wiki.sugarlabs.org/go/Development_Team/Almanac/Activity_Bundles)
 on our Wiki.
@@ -145,20 +145,20 @@ Log files for *sugar-build* are in the directory `~/sugar-build/home/dotsugar/de
 Log files are named using the `bundle_id`.
 
 You may also test interactively by starting Terminal, then `cd` to the activity directory, and type:
-
+```
     sugar-activity .
-
+```
 ### File structure
 
 All activities should follow this file structure:
-
+```
     MyActivity.activity/
     |-- activity/
     |   |-- activity.info
     |   `-- activity-icon.svg
     |-- activity.py
     `-- setup.py
-
+```
 * `activity/` contains information about your activity, including the
   `name`, `bundle_id`, and the `icon`.
 
@@ -181,19 +181,19 @@ For development you can initialize the repository as a git
 repository. This will help you to track your changes. First use [git
 init](https://www.kernel.org/pub/software/scm/git/docs/git-init.html)
 to initialize the repository:
-
+```
     git init
-
+```
 With [git
 status](https://www.kernel.org/pub/software/scm/git/docs/git-status.html)
 you can show the available files in the folder they are still
 untracked. Now add all the files in the directory and commit those
 changes, you can use git status again to see the current state:
-
+```
     git add .
     git commit -a -m 'Initial import'
     git status
-
+```
 We recommend that you use [github](http://github.com) to host your
 activity.
 
@@ -205,9 +205,9 @@ organization](http://github.com/sugarlabs).
 
 Make an XO bundle and upload it to
 the Sugar Activity Library <http://activities.sugarlabs.org/> (ASLO).
-
+```
     python setup.py dist_xo
-
+```
 After that, users of Sugar can download and install your activity.
 
 For further releases, you should update the activity_version in
