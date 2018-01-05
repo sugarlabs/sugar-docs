@@ -1,13 +1,12 @@
 ## Table Of Contents
-1. [What Can I Do? A Brief Overview] (#what-can-I-do)
-2. [Outreachy/GSoC Tasks] (#outreachy-gsoc)
-3. [Release Engineer's Tasks] (#release-engineer)
-4. [Design Team UX Tasks] (#design-team)
-5. [Sugar Labs Repository Issue Lists] (#issue-lists)
-6. [I'm Stuck!] (#im-stuck)
+1.  [What Can I Do? A Brief Overview] (#WHAT-CAN-I-DO)
+2.  [Outreachy/GSoC Tasks] (#OUTREACHY-GSOC)
+3.  [Release Engineer's Tasks] (#RELEASE-ENGINEER)
+4.  [Design Team UX Tasks] (#DESIGN-TEAM)
+5.  [Sugar Labs Repository Issue Lists] (#ISSUE-LISTS)
+6.  [I'm Stuck!] (#IM-STUCK)
 
-## What Can I Do? A Brief Overview <a name="what-can-I-do"></a>
-
+## <a name="WHAT-CAN-I-DO"></a> What Can I Do? 
 Developers can do anything.  Start with what you know and work down this list;
   * Install Sugar, see Wiki pages [Fedora](https://wiki.sugarlabs.org/go/Fedora), [Debian](https://wiki.sugarlabs.org/go/Debian), and [Ubuntu](https://wiki.sugarlabs.org/go/Ubuntu),
   * Learn how to use Sugar and activities, see [Help](https://help.sugarlabs.org/),
@@ -22,12 +21,12 @@ Developers can do anything.  Start with what you know and work down this list;
   * Implement new programs or fix some bugs in the tasks listed below.
   * And anything else!
 
-## Outreachy/GSoC Tasks <a name="outreachy-gsoc"></a>
+## <a name="OUTREACHY-GSOC"></a> Outreachy/GSoC Tasks 
 Outreachy and GSoC (Google Summer Of Code) are internship programs which attaches interns to a free and open source organisation (such as Sugar Labs). Interns work on several major tasks in the different repositories of the organisation. The tasks listed below were originally intended for students  (at least for GSoC), however anyone can work on the tasks listed below-
 
 |Title |Mentors |Key Details |Prerequisite Knowledge |
 |----- |------- |----------- |---------------------- |
-|Internationalization and Localization |Chris Leonard |A goal of Sugar Labs is to enable our users to experience Sugar in their own native language. Our expected result is work flow improvements for internationalisation (i18n). |Pootle, Python, Javascript |
+|Internationalization and Localization |Chris Leonard |A goal of Sugar Labs is to enable our users to experience Sugar in their own native language. We hope to achieve work flow improvements for internationalisation (i18n). |Pootle, Python, Javascript |
 |New Back-end Server for Turtle Blocks and Music Blocks |Walter Bender, Vikram Ahuja, Ignacio Rodriguez |Previously we had explored with using a Git-like back end for projects so that they could be cloned and forked. Now, we hope to implement and deploy this new approach. |Git, JavaScript, Server-Side Skills |
 |Going Beyond Equal Temperament in Music Blocks |Walter Bender, Devin Ulibarri |Most modern music systems are designed around equal temperament. But there are many ways to chose and tune notes in a musical system that offer different expressive characteristics. We hope to extend Music Blocks such that different approaches to temperament are available to the user. |JavaScript, Music Theory |
 |Maintaining The Sugar Labs Website |Ignacio Rodriguez, Samson Goddy, Tymon Radzik, Hrishi Patel |Sugar Labs has a new look for its homepage, with the goals of making it more attractive and easier to explore. We hope to fix some remaining issues and bugs. |JavaScript, HTML, CSS, Ruby, JQuery, Jekyll, Django |
@@ -41,13 +40,13 @@ Outreachy and GSoC (Google Summer Of Code) are internship programs which attache
 |Music Blocks for Mobile |Walter Bender, Devin Ulibarri |Music Blocks was written for a browser, not mobile. It would be great to have a version native to mobile. We hope to create a working version on Android/iOS, some UI adjustments will be necessary. |JavaScript, Cordova, React/Swift |
 |Collab Rethink |Abhijit Patel, Walter Bender |Sugar collaboration uses a deprecated library, python-telepathy, which we no longer wish to maintain. We need to upgrade Sugar collab using something better. We hope to have a working version of revised collab system, with refactored presenceservice and a common Collabwrapper module for all sugar activities. |Python, Networking, Telepathy |
 
-## Release Engineer's Tasks <a name="release-engineer"></a>
+## <a name="RELEASE-ENGINEER"></a> Release Engineer's Tasks 
 
-## Design Team UX Tasks <a name="design-team"></a>
+## <a name="DESIGN-TEAM"></a> Design Team UX Tasks 
 
-## Sugar Labs Repository Issue Lists <a name="issue-lists"></a>
+## <a name="ISSUE-LISTS"></a> Sugar Labs Repository Issue Lists 
 
-## I'm Stuck! <a name="im-stuck"></a>
+## <a name="IM-STUCK"></a>I'm Stuck! 
 
 Well, don't worry; there are real people here who will try to help you. Some
 ways to get in touch with real people are:
