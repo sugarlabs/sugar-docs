@@ -99,9 +99,7 @@ graphic design.
 
 Here is `activity/activity-helloworld.svg`;
 
-![Activity
- Icon](images/activity-helloworld.svg
- "Activity icon")
+![Activity Icon](images/activity-helloworld.svg "Activity icon")
 
 You should rename this file and change `icon` in the `activity.info`
 file.
@@ -233,3 +231,11 @@ the Sugar toolkit and Sugar activity development.
 We recommend [flake8](https://pypi.python.org/pypi/flake8) as a
 wrapper around the [pep8](https://www.python.org/dev/peps/pep-0008/)
 and [pyflakes](https://pypi.python.org/pypi/pyflakes) code checkers.
+
+flake8 for Python 3 makes warnings on Python 2.7 source code.  On
+systems where Python 3 is the default, install and then use Python 2.7
+to run flake8 like this;
+
+```
+python2.7 -m flake8 *.py
+```
