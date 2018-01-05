@@ -1,10 +1,10 @@
 ## Table Of Contents
-1.  [What Can I Do? A Brief Overview] (#WHAT-CAN-I-DO)
-2.  [Outreachy/GSoC Tasks] (#OUTREACHY-GSOC)
-3.  [Release Engineer's Tasks] (#RELEASE-ENGINEER)
-4.  [Design Team UX Tasks] (#DESIGN-TEAM)
-5.  [Sugar Labs Repository Issue Lists] (#ISSUE-LISTS)
-6.  [I'm Stuck!] (#IM-STUCK)
+1.  [What Can I Do? A Brief Overview](#WHAT-CAN-I-DO)
+2.  [Outreachy/GSoC Tasks](#OUTREACHY-GSOC)
+3.  [Release Engineer's Tasks](#RELEASE-ENGINEER)
+4.  [Design Team UX Tasks](#DESIGN-TEAM)
+5.  [Sugar Labs Repository Issue Lists](#ISSUE-LISTS)
+6.  [I'm Stuck!](#IM-STUCK)
 
 ## <a name="WHAT-CAN-I-DO"></a> What Can I Do? 
 Developers can do anything.  Start with what you know and work down this list;
