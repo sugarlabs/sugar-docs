@@ -22,8 +22,8 @@ Before contributing to Sugar Labs, you should install Sugar-
 
 ## <a name="OUTREACHY-GSOC"></a> Coding/Documentation/Quality Assurance
 Coding, documentation and quality assurance is important - it is required everywhere from producing new software, rolling out new features, maintaining and upgrading current releases, distributing instructions for others to know how to operating the software, and ensuring that others can use software with any problems.
-  * You can contribute to Sugar Labs through coding, documentation, and testing for quality assurance. We also have mentoring opportunities through our participation in programs such as Outreachy, [Google Summer Of Code](https://wiki.sugarlabs.org/go/Summer_of_Code/2017), and [Google Code-In](https://wiki.sugarlabs.org/go/Google_Code_In_2017). You can read about these programs in the wiki.
-  * Another way you can contribute to Sugar Labs is the view the [Release Engineer's Feature Tracking wiki page.](https://wiki.sugarlabs.org/go/Features). The wiki page consists of features proposed and implemented by other Sugar Labs community contributors. The progress of the feature is also indicated in the page - please contribute to tasks which are "In Progress".
+  * We have mentoring opportunities through our participation in programs such as Outreachy, [Google Summer Of Code](https://wiki.sugarlabs.org/go/Summer_of_Code/2017), and [Google Code-In](https://wiki.sugarlabs.org/go/Google_Code_In_2017). You can read about these programs in the wiki.
+  * Another way you can contribute to Sugar Labs is the view the [Release Engineer's Feature Tracking wiki page](https://wiki.sugarlabs.org/go/Features). The wiki page consists of features proposed and implemented by other Sugar Labs community contributors. The progress of the feature is also indicated in the page - please contribute to tasks which are "In Progress".
   * You can test Sugar and Activities and familiarise yourself with Sugar, making a note of where your expectation is betrayed by your observations, then seek feedback from others learn if your expectation was right and post inconsistencies to the coressponding GitHub repository issues page, [Wiki](https://wiki.sugarlabs.org), or mailing list [sugar-devel@lists.laptop.org][2],
   * You can go to a specific GitHub repository and work on the bugs in the source code. Just go to the "Issues" tabs and work through the various issues listed in it. The main Sugar Labs GitHub Repositories are listed in the "Important Sugar Labs Links".
   * You can write documentation, see the [Wiki](https://wiki.sugarlabs.org), the [Help Activity](http://wiki.sugarlabs.org/go/Activities/Help/Contribute) which is kept in the [Help](https://github.com/godiard/help-activity) repository, and this [developer documentation](docs.md.html).
@@ -73,8 +73,6 @@ ways to get in touch with real people are:
 little while, as people will come and go at different times of the day.
 * [Send an email on the mailing list][3]
 
-Some of our developers have elected to be put on the list of mentors.
-You can find the list [here][4].
 
 [1]: desktop-activity.md.html
 [2]: https://bugs.sugarlabs.org
