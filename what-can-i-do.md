@@ -21,7 +21,9 @@ Developers can do anything.  Start with what you know and work down this list;
   * Implement new programs or fix some bugs in the tasks listed below.
   * And anything else!
 
-## <a name="OUTREACHY-GSOC"></a> Outreachy/GSoC Tasks 
+## <a name="OUTREACHY-GSOC"></a> Outreachy/GSoC Tasks
+The tasks listed below were originally from the Sugar Labs Wiki Outreachy and GSoC pages.
+
 Outreachy and GSoC (Google Summer Of Code) are internship programs which attaches interns to a free and open source organisation (such as Sugar Labs). Interns work on several major tasks in the different repositories of the organisation. The tasks listed below were originally intended for students  (at least for GSoC), however anyone can work on the tasks listed below-
 
 |Title |Mentors |Key Details |Prerequisite Knowledge |
@@ -41,13 +43,40 @@ Outreachy and GSoC (Google Summer Of Code) are internship programs which attache
 |Collab Rethink |Abhijit Patel, Walter Bender |Sugar collaboration uses a deprecated library, python-telepathy, which we no longer wish to maintain. We need to upgrade Sugar collab using something better. We hope to have a working version of revised collab system, with refactored presenceservice and a common Collabwrapper module for all sugar activities. |Python, Networking, Telepathy |
 
 ## <a name="RELEASE-ENGINEER"></a> Release Engineer's Tasks 
+The tasks listed below were originally from the Sugar Labs Wiki Release Engineer's Feature Tracking page.
+
+This section is where proposed and new Sugar features are tracked. The tasks here are all 'In Progress'.
 
 ## <a name="DESIGN-TEAM"></a> Design Team UX Tasks 
+The tasks listed below were originally from the Sugar Labs Wiki Design Team User Experience (UX) Proposals page.
 
-## <a name="ISSUE-LISTS"></a> Sugar Labs Repository Issue Lists 
+This section is where design proposals for Sugar or Sugar Labs are listed.
 
+## <a name="ISSUE-LISTS"></a> Important Sugar Labs Links
+The links listed below are of important Sugar Labs code repositories, wiki and website. Some of the code repositories ar based under the Sugar Labs GitHub Organisation, while others are not.
+
+__Github Organisation Page__
+  * [Sugar Labs](https://github.com/sugarlabs)
+  
+__GitHub Repositories Under Sugar Labs__
+  * [Sugar GTK Shell](https://github.com/sugarlabs/sugar)
+  * [Sugar Toolkit GTK3](https://github.com/sugarlabs/sugar-toolkit-gtk3)
+  * [Sugar Build/Development Scripts](https://github.com/sugarlabs/sugar-build)
+  * [Sugar Artwork](https://github.com/sugarlabs/sugar-artwork)
+  * [Sugar Labs Documentation](https://github.com/sugarlabs/sugar-docs)
+  * [Sugar Labs Website](https://github.com/sugarlabs/www-sugarlabs)
+  
+__GitHub Repositories Not Under Sugar Labs__
+  * [Sugarizer](https://github.com/llaske/sugarizer)
+  * [TurtleBlocksJS](https://github.com/walterbender/turtleblocksjs)
+  * [MusicBlocks](https://github.com/walterbender/musicblocks)
+  
+__Other Relevant Links__
+  * [Sugar Labs Website](https://www.sugarlabs.org/)
+  * [Sugar Labs Wiki](https://wiki.sugarlabs.org/go/Welcome_to_the_Sugar_Labs_wiki)
+  * [Sugar Labs IRC](https://chat.sugarlabs.org:9091/)
+  
 ## <a name="IM-STUCK"></a>I'm Stuck! 
-
 Well, don't worry; there are real people here who will try to help you. Some
 ways to get in touch with real people are:
 
