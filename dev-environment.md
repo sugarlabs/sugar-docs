@@ -131,6 +131,7 @@ done
 ```
 
 On Fedora, use [dnf builddep](http://dnf-plugins-core.readthedocs.io/en/latest/builddep.html), like this;
+(If you are using GNOME's desktop environment, make sure you are using GNOME Xorg before moving forward!)
 
 ```
 for module in sugar{-datastore,-artwork,-toolkit,-toolkit-gtk3,}; do
