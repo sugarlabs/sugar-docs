@@ -12,17 +12,17 @@ Before contributing to Sugar Labs, you should install Sugar-
 
 |Your Equipment |Your Operating System |Recommendations |
 |-------------- |--------------------- |--------------- |
-|You have only one computer and don't want to erase it |Linux, Windows, macOS, or iOS |Install virtualisation software, make a new virtual machine and install Sugar Live Build, Sugar on a Stick, Ubuntu, Fedora, or Debian. |
-|You have only one computer and don't want to erase it  |Linux |Install Sugar packages from your distribution, see Ubuntu, Fedora or Debian. For other distributions, contact your distribution community. |
-|You have another computer that can be erased |Doesn't matter |Install Sugar Live Build, Sugar on a Stick, Ubuntu, Fedora, or Debian. |
+|You have only one computer and don't want to erase it |Linux, Windows, macOS, or iOS |Install virtualisation software, make a new virtual machine and install [Sugar Live Build](https://wiki.sugarlabs.org/go/Live_Build), [Sugar on a Stick](https://wiki.sugarlabs.org/go/SoaS), [Ubuntu](https://wiki.sugarlabs.org/go/Ubuntu), [Fedora](https://wiki.sugarlabs.org/go/Fedora), or [Debian](https://wiki.sugarlabs.org/go/Debian). |
+|You have only one computer and don't want to erase it  |Linux |Install Sugar packages from your distribution, see [Ubuntu](https://wiki.sugarlabs.org/go/Ubuntu), [Fedora](https://wiki.sugarlabs.org/go/Fedora) or [Debian](https://wiki.sugarlabs.org/go/Debian). For other distributions, contact your distribution community. |
+|You have another computer that can be erased |Doesn't matter |Install [Sugar Live Build](https://wiki.sugarlabs.org/go/Live_Build), [Sugar on a Stick](https://wiki.sugarlabs.org/go/SoaS), [Ubuntu](https://wiki.sugarlabs.org/go/Ubuntu), [Fedora](https://wiki.sugarlabs.org/go/Fedora), or [Debian](https://wiki.sugarlabs.org/go/Debian). |
 
   * Learn how to use Sugar and activities, see [Help](https://help.sugarlabs.org/),
-  * [Setup a development environment](dev-environment.md.html)
+  * [Setup a development environment](dev-environment.md) (We also have a somewhat deprecated development environment. We are looking for a maintainer.)
   
 
 ## <a name="OUTREACHY-GSOC"></a> Coding/Documentation/Quality Assurance
 Coding, documentation and quality assurance is important - it is required everywhere from producing new software, rolling out new features, maintaining and upgrading current releases, distributing instructions for others to know how to operating the software, and ensuring that others can use software with any problems.
-  * One of the ways you can contribute to Sugar Labs in terms of coding, documentation and quality assurance is to view the [Outreachy and GSoC (Google Summer Of Code) task lists](https://wiki.sugarlabs.org/go/Summer_of_Code/2017) in the Sugar Labs wiki. Although the above programs are targeted at youths, however anyone can attempt and complete these tasks. Furthermore, GSoC/Outreachy and Google Code-In (GCI) represent opportunities for mentoring students. (Do note that the list is lightly outdated: some tasks in the task lists have been completed).
+  * You can contribute to Sugar Labs through coding, documentation, and testing for quality assurance. We also have mentoring opportunities through our participation in programs such as Outreachy, [Google Summer Of Code](https://wiki.sugarlabs.org/go/Summer_of_Code/2017), and [Google Code-In](https://wiki.sugarlabs.org/go/Google_Code_In_2017). You can read about these programs in the wiki.
   * Another way you can contribute to Sugar Labs is the view the [Release Engineer's Feature Tracking wiki page.](https://wiki.sugarlabs.org/go/Features). The wiki page consists of features proposed and implemented by other Sugar Labs community contributors. The progress of the feature is also indicated in the page - please contribute to tasks which are "In Progress".
   * You can test Sugar and Activities and familiarise yourself with Sugar, making a note of where your expectation is betrayed by your observations, then seek feedback from others learn if your expectation was right and post inconsistencies to the coressponding GitHub repository issues page, [Wiki](https://wiki.sugarlabs.org), or mailing list [sugar-devel@lists.laptop.org][2],
   * You can go to a specific GitHub repository and work on the bugs in the source code. Just go to the "Issues" tabs and work through the various issues listed in it. The main Sugar Labs GitHub Repositories are listed in the "Important Sugar Labs Links".
@@ -80,4 +80,4 @@ You can find the list [here][4].
 [2]: https://bugs.sugarlabs.org
 [3]: https://lists.sugarlabs.org/listinfo/sugar-devel
 [4]: https://wiki.sugarlabs.org/go/Mentors
-[5]: web-activity.md.html
+[5]: web-activity.md
