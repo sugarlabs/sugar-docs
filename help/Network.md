@@ -2,10 +2,10 @@
 
 ## Table Of Contents
 1. [Give Me The Internet](#GIVE-ME-INTERNET)
-   1.[Before Connecting](#BEFORE-CONNECTING)
-   2.[Connecting](#CONNECTING)
-   3.[Checking Access Points (AP)](#CHECKING-AP)
-   4.[Mesh Or AP](#MESH-OR-AP)
+   1. [Before Connecting](#BEFORE-CONNECTING)
+   2. [Connecting](#CONNECTING)
+   3. [Checking Access Points (AP)](#CHECKING-AP)
+   4. [Mesh Or AP](#MESH-OR-AP)
 2. [Getting Connected](#GETTING-CONNECTED)
    1. [Connecting Through AP](#CONNECTING-AP)
    2. [Note To Parents And Teachers](#CONNECTING-PARENTS)
