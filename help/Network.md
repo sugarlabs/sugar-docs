@@ -12,7 +12,7 @@
 3. [Troubleshooting Connectivity](#TROUBLESHOOTING)
    1. [Common Connectivity Problems And Solution](#COMMON-PROBLEMS)
 
-## <a link="GIVE-ME-INTERNET"></a> Give Me The Internet
+## <a name="GIVE-ME-INTERNET"></a> Give Me The Internet
 The designers of the XO laptop designed it for primarily wireless access, so it can work well in developing nations, where it is faster and less expensive to introduce wireless connections than wired ones.
 
 XOs are designed to connect to other XOs using a mesh network. A mesh network allows nearby XO laptops to talk to one another directly (wirelessly) without the need for a traditional Internet Service Provider (ISP).
@@ -24,7 +24,7 @@ There are different ways to connect to the Internet-
   * using a “School Server” provided by your school system
   * using a USB-to-Ethernet cable that plugs into a cable modem, DSL modem, or local network such as those offered at a home or workplace
   
-### <a link="BEFORE-CONNECTING"></a> Before Connecting
+### <a name="BEFORE-CONNECTING"></a> Before Connecting
 If you are going to connect at school or at home, check with your ISP to find out if the network is protected with a password. Your router also has a password which can be found in its documentation. Become familiar with your wireless router settings so that you can troubleshoot the connection if needed. The Troubleshooting chapter offers some assistance.
 
 Check your current connection status as shown in the lower right area on the Frame. If you have connected successfully in the past, the XO “remembers” the connection and will connect again in the future.
@@ -33,7 +33,7 @@ Check your current connection status as shown in the lower right area on the Fra
 
 Go to a location with your XO where you know there is a Wireless Access Point (WAP) nearby. Find out the network name (or SSID) and its password, if it is secured with a password. The XO refers to this as the Wireless Key.
 
-### <a link="CONNECTING"></a> Connecting
+### <a name="CONNECTING"></a> Connecting
 Go to the Neighborhood View. In the Search field, enter the name of the network to which you want to connect.
 
 ![Searching For A Network](assets/NetworkSearch.png)
@@ -42,7 +42,7 @@ Or roll the pointer over one of the network access circles until you recognize t
 
 ![Checking For A Network](assets/CheckingNetwork.png)
 
-### <a link="CHECKING-AP"></a> Checking Access Points (AP)
+### <a name="CHECKING-AP"></a> Checking Access Points (AP)
 Connect by clicking the center of the circle. Wireless access points are represented by circles. The fill level indicates signal strength. Access points that require keys have a “locked” icon. Access points that you have successfully connected to become “Favorites” as indicated by a star icon.
 
 ![Status Of Network](assets/NetworkStatus.png)
@@ -72,13 +72,13 @@ More information about your XO’s connection-
   * Your Wireless Access Point has a network name, also called an SSID, that displays in the Neighborhood View. The XO cannot recognize SSIDs that are hidden, which is configured on the access point. Refer to the Troubleshooting chapter for more information about hidden SSIDs.
   * If you are connected to the Internet, your XO laptop cannot be on the mesh network, and if your XO is on a mesh network, it cannot simultaneously connect wirelessly to the Internet.
   
-### <a link="MESH-OR-AP"></a> Mesh Or AP
+### <a name="MESH-OR-AP"></a> Mesh Or AP
   * If the XO cannot find an available Internet network point after five minutes of searching, it defaults to Mesh Network 1, which enables your XO laptop to connect to other nearby XO laptops.
   * Please be patient; it can take your XO up to a minute to find newly visible networks.
   * Sometimes you’ll be asked to enter the “Wireless Key” again. Enter it again and repeat until your connection is complete.
   * For more information about connecting, please see the Support FAQ online.
   
-## <a link="GETTING-CONNECTED"></a> Getting Connected
+## <a name="GETTING-CONNECTED"></a> Getting Connected
 A primary goal of the Sugar learning platform is enabling students to learn and work together.
 
 In a wireless environment, an access point (AP) is a device that allows your computer to connect to an existing set of communicating devices. The access point usually has a direct connection to the internet, and can relay data between the wireless devices and the devices it can access.
@@ -89,7 +89,7 @@ There are multiple ways to connect to others-
   * OLPC “School Server” mesh network;
   * OLPC “simple” mesh network, which lets you collaborate directly with other Sugar users.
 
-### <a link="CONNECTING-AP"></a> Connecting Through AP
+### <a name="CONNECTING-AP"></a> Connecting Through AP
 You can connect from the Neighborhood View. You can see information about the connection on the Frame.
 
 __Step 1__ : Go to the Neighborhood View.Go to the Neighborhood View to connect to an access point.
@@ -120,12 +120,12 @@ OLPC has designed a mesh network that allows XO laptops to communicate without t
 
 ![Step4Connection](assets/Step4Connection.png)
 
-### <a link="CONNECTING-PARENTS"></a> Note To Parents And Teachers
+### <a name="CONNECTING-PARENTS"></a> Note To Parents And Teachers
 Collaboration between learners is one of the most important features of Sugar. To enable collaboration in a classroom or home setting, it is necessary to establish the same type of connection for each computer. Computers can be connected through a School Server, a simple mesh if they are OLPC XOs, or an access point.
 
 When using an access point for the connection, the computers must all use the same Jabber server in order to collaborate. Please refer to the Sugar Control Panel discussion in the Personalizing Sugar chapter for details regarding the configuration of Jabber.
 
-## <a link="TROUBLESHOOTING"></a> Troubleshooting Connectivity
+## <a name="TROUBLESHOOTING"></a> Troubleshooting Connectivity
 You can look [here](http://wiki.laptop.org/go/Support_FAQ) for many technical troubleshooting tips, but you should read through all the information on this page to troubleshoot the wireless connectivity yourself. Understanding wireless router configuration
 
 Connect your router to any computer, and then use a web browser to view the router’s configuration page and change the router’s settings.
@@ -147,7 +147,7 @@ Your wireless router settings may contain Wired Equivalent Privacy (WEP) or Wi-F
 
 Based on the type of security system being used (WPA or WEP), the Wireless Key type varies. For WPA, you use a Passphrase key (for example, “password”, “tHisisAp4ssword”). For WEP, use either a Hex key (for example, “4f4c504321”, usually all keys that consist of only of 0-9 and a-f) or its corresponding ASCII key (“OLPC!”). 40-bit Hex keys are 10 letters/numbers long, corresponding to 5 letter/number ASCII keys.
 
-### <a link="COMMON-PROBLEMS"></a> Common Connectivity Problems And Solution
+### <a name="COMMON-PROBLEMS"></a> Common Connectivity Problems And Solution
 Inability to connect with an Access Point from the Neighborhood View is the most commonly reported symptom. The symptom is usually a flashing circle icon where the access point circle icon never appears in the Frame or the circle’s menu never contains “Connected.” This flashing animation indicates the XO is trying to connect, but the lack of connection indicators tells you that it fails to connect. If this happens, try the troubleshooting suggestions just below. Is the wifi hotspot dot visible in the Neighborhood View?
 
 Go to the Neighborhood View and type the name of your SSID in the Seach box to highlight your access point. Each circle network icon represents a Service Set Identifier (SSID). On one of the icons in the Neighborhood View, you should see your Wi-Fi hotspot’s network name.
