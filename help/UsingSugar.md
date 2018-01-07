@@ -92,12 +92,12 @@ Use the hover menu that appears over the XO icon to access the Sugar Control Pan
 ## Neighborhood View
 You can use the Neighborhood View to connect to the Internet and to collaborate with others.
 
-![NeighbourhoodViewIcons](assets/NeighbourhoodViewIcons.png)
+![Neighbourhood View Icons](assets/NeighbourhoodViewIcons.png)
 
 To see the Neighborhood View, click the Neighborhood icon on the Frame. You can also use the Neighborhood button for this purpose if your keyboard has one, or press the F1 key.
 
 ### Neighbourhood Elements
-![NeighbourhoodElements](assets/NeighbourhoodElements.png)
+![Neighbourhood Elements](assets/NeighbourhoodElements.png)
 
 1. Search menu: You can find find people, Activities, or access points (what connects you to the Internet) using the search menu.
 2. Ad-Hoc network icon: An ad-hoc network lets you connect to other computers without using an access point.
@@ -140,13 +140,197 @@ You can remove a friend from the Group View using the hover menu. Click Remove f
 ![Removing Friends](assets/RemovingFriend.png)
 
 ## The Frame
+The Frame is the black border around the screen that holds the View icons, Activity taskbar, clipboard, wireless connections, battery level, incoming invitations and notifications, buddies, and global information that is used across all views.
+
+### Accessing The Frame
+You can access the frame from any view in 2 ways:
+  * By using the Frame Key on the keyboard. On XO laptops the Frame key is the square icon on the upper right hand corner of your keyboard, on other laptops you can use the F6 key.
+  * By moving the cursor to the edges or corners of your screen. (There are several options you can configure in this area, please refer to the My Settings section for more details.)
+In the XO-4, with touch screen, you may show the frame by sliding a finger, from the top of the screen, a few centimeters downward. The same gesture will hide the frame too.
+
+### Frame Elements
+![Frame View](assets/FrameView.png)
+
+The Frame view:
+1. Zoom menu: The Zoom menu (icons matching the important keyboard shortcuts toward the keyboard top left) appears on the upper-left edge of the Frame. Use it to move between the four Sugar views: Neighborhood, Group, Home, and Activity.
+2. Running Activity list: The sequence of currently started Activities appears on the top edge of the Frame in the order that they were started. The active Activity is highlighted. (The Journal always appears here first.) Here you can see open Activities, save, close or switch between them, and view their source code. Sometimes an unlabeled circle appears here which represents an additional full-screen session started by an Activity whose icon already appears in the top edge of the Frame or an Activity that is having trouble completely starting. Invitations to collaborative Activity sessions also show up on this portion of the Frame. They appear as icons in the color of the person who sent them. Hover and you can see who it is and join in.
+3. Active buddy list: People you are currently collaborating with appear on the right edge of the Frame.
+4. Clipboard: The left edge of the Frame serves as a clipboard. You can drag objects such as images and text to and from the clipboard, and from and to Activities. A hover menu also lets you remove them from the clipboard, open them in an Activity, or save (keep) them in your Journal.
+5. System status (from left to right): Switch for the two modes of the touchpad (XO-1 only), external storage devices (e.g. thumb and hard drives), network status, text-to-speech, speaker (volume), and battery appear on the lower edge of the Frame.
 
 ## Journal
+The Journal Activity is an automated diary of everything you do within Sugar. Sugar Activities use the Journal as a place to save your work. You can use the Journal as a place to revisit old work, to resume incomplete work, to organize your completed work, and to reflect upon your progress as a learner.
+
+The Journal keeps a record of what you do and the things your create such as photos, drawings, and writings. You can search for items in the Journal or sort entries by type or date. You can also click an entry to get a detailed view. You can resume an activity by clicking on the icon for that entry.
+
+The Journal also supports external storage media such as a USB device or a SD card. When you plug a USB device into the XO, you can access the contents of the USB device using the Journal. Click the USB icon to see the content on an attached USB storage device. You can also copy information from the Journal onto removable media—such as a USB device—as a means of backing it up. If you are connected to a school server, you can access its backup system.
+
+### Accessing The Journal
+![Accessing The Journal](assets/AccessingJournal.png)
+
+To show the Journal, click the Journal icon on the Frame, or use the F5 key. On an XO laptop, you can press the magnifying glass key in the top row of the keyboard.
+
+![Activity Seen Icon](assets/ActivitySeenIcon.png)
+__Seen in an Activity__ , this icon on the Activity toolbar (or Activity tab) allows quick access to the Journal, to add a description, or further notes to yourself about what you are going to do, or have done in that session of the Activity.
+
+### Journal Features
+![Journal Features](assets/JournalFeatures.png)
+
+The Journal View contains a menu and a list of journal entries:
+1. Favorite star: You can mark important entries by clicking on the star icon for that entry. When you click the star icon, the star is colored in.
+2. Entry icon: Each Journal entry has an icon. The color of the icon shows who created the entry. For example, if you copy a photo from a friend, the photo’s icon has your friend’s colors. You can launch the Activity for the entry by clicking on the icon. A hover menu may reveal additional options. In particular, “Erase” deletes that entry from your Journal.
+3. Entry name: Each entry has a name. You can edit the name by clicking it.
+4. Search box: Type words in the box to search for entries that match those words. Entries are displayed when they contain all of the typed words. Comparison will be against all of: the entry name field, the description field (see “Journal detail view”), the comments field and the tag field (see “Journal detail view”). Note: A small x button at the right of the box shows that searching is being applied. To cancel your search, click on that x.
+5. Favorites view: Only shows the entries which have been marked as favorites.
+6. Type filter: You can show certain types of Journal entries, e.g. only images or only entries associated with a specific Activity.
+7. Date filter: You can show certain ages of Journal entries, e.g. changed within the past day, week, or month.
+8. Sorting options: You can order Journal entries by their size, creation and modification date.
+9. Documents folder: To exchange files between the Journal and the underlying file system the $HOME/DOCUMENTS folder is available in the Journal. For example: If you have created an image in GIMP under GNOME and want to open it in the Paint Activity you can place it in the $HOME/DOCUMENTS folder and then access it in the Journal.
+10. Buddy icons: If other participants joined you in this Activity, icons in their colors appear here.
+11. Elapsed time: Displays the time since the most recent change to the entry.
+12. Detail view: Click this button to see detailed information about the entry. See “Journal Detail View” below.
+
+### Journal Detail View
+![Journal Detail View](assets/JournalDetailView.png)
+
+The Detail view appears when you click the Detail view button for an entry. This view lets you examine and annotate the entry.
+1. Back Icon: You can click anywhere in this line to return to the main Journal View.
+2. Resume Button: You can click the Resume button to resume an Activity. A hover menu may show additional options. For example, you can resume working with an image using either the Browser or the Paint Activity.
+3. Copy button: You can copy a Journal entry to the clipboard (or to a removable storage device shown on the bottom edge of the Journal screen) by clicking on the Copy button.
+4. Duplicate button: You can duplicate a Journal entry by clicking on the Duplicate button.
+5. Erase button: You can erase an entry by clicking the Erase button. Caution: Once you erase an entry, it cannot be restored unless you have backed up your Journal.
+6. Entry name: You can change the name of the entry by clicking it and typing in a new name.
+7. Elapsed time: Displays the time since the most recent change to the entry.
+8. Favorites Icon: This icon indicates whether an entry has been starred as a favorite which can be done by clicking it.
+9. Thumbnail image: Each entry has a thumbnail image that is created automatically. The image show the Activity screen when the last change to the Journal entry was saved.
+10. Participants: Displays the XO icons of each person who participated in a shared Activity.
+11. Comments: Comments by the joiners will be displayed here. The comments will be from Portfolio activity and from journal share.
+12. Tags field: You can enter search tags. Tags are keywords used to describe a journal entry so that you can find it later using the Search box. For example, if your project is for school, maybe science class, and it is a report about local flowers, you could put “science” and “flowers” as the tags. You can write as many tags as you wish. You can also use keywords to help you “group” this entry, for instance by origin or context.
+13. Description field: You can type a description of the entry, which you can find later using the Search box. Use a description to remind you of what you did. For example: “Flowers I saw on the hike to the waterfall”. Or you can reflect on your work and process: what I have done; how I have done it; and how successful these efforts have been. “This was not easy, but I learned a lot about different types of flowers in my community by speaking with my family”. This is important because these description can be shown in the reflection Activity called “Portfolio”.
+
+![Choosing Activities In Journal](assets/JournalChooseActivity.png)
+
+When resuming from the Detail View, you can choose among different Activities.
+
+### Using Removable Media
+![Inserting Removable Media](assets/InsertRemovableMedia.png)
+
+When you insert removable media—such as a USB device or SD card—it appears as an icon on the bottom edge of the main Journal view.
+  * Journal: Click the Journal icon to shows the Journal View.
+  * Documents folder: Click the Documents icon to show the contents of
+  * USB device: Click the USB icon (or SD icon) to show the removable-media file system.
+  
+![Dragging Removable Media](assets/DraggingRemovableMedia.png)
+
+You can drag entries from the Journal onto the Documents folder or removable media (and vice-versa)
+
+![Unmounting Removable Media](assets/UnmountRemovableMedia.png)
+
+To remove (unmount) the external file system, choose Remove on the hover menu.
+
+Caution: It may take time for the hover menu to appear. It is easy to make a mistake and click the icon itself when you intended to click Unmount.
+
+Caution: If you have a Terminal running you may inadvertently have your removable media locked. If this happens, the safest way to remove media is after powering off your computer.
+
+### Sending Jornal Entries Through Networks
+![Sending Journal Entries](assets/SendingJournalEntries.png)
+
+The Journal allows you to send entries to other people who are using Sugar via a network. In order to do this the receiving user has to be registered as a friend in the Neighborhood View and be online. It does not matter whether the laptops are connected via the Mesh-network, an Ad-Hoc network, an access point, or a server.
+
+### Note To Parents And Teachers
+The Journal keeps a record of everything a child does within Sugar: which Activities they use and what content they create. It also keeps a record of group Activities, such as participation in a shared Write or Browse session. The Journal encourages reflection. You can refer to it to assess a child’s progress, much in the spirit of “portfolio” assessment. In order to further support this reflection, Sugar offers a Portfolio Activity, an assessment tool that utilizes the journal content. You can reflect on your work: what I have done; how I have done it; and how successful these efforts have been. Then you can create a multimedia presentation to share with your peers, teachers, and parents who can also reflect in return.
+
+You can also use it as a catalyst for discussion with your child or student. We encourage the use of the description field within the detail view of Journal entries as a place to annotate or comment up entries.
 
 ## My Settings
+The My Settings page in Sugar is similar to a Control Panel or System Settings window in other operating systems. It provides a way to view or change values needed by system functions, such as the language for menus and messages, the keyboard layout for typing and otherwise controlling the system, date and time values and format, and much more.
+
+To access My Settings, go to the Home view and activate the menu on the central XO icon, either by hovering with the cursor, or by right-clicking (O button on an XO). Then select My Settings. The following view appears.
+
+![My Settings View](assets/MySettingsView.png)
+
+Click any icon to open the indicated control. If you make changes, the window will offer you the choice whether to save (check mark) or discard (x) those changes. It may be necessary to reboot the computer or restart the Sugar session in order for the changes to take effect.
+  * __About Me__ - View and change your XO colors, name, gender, and grade.
+  * __About My Computer__ - View technical information about your computer: model, serial number, software versions, copyright, and license.
+  * __Background__ - Change the background image used on the Sugar views. You can also change the opacity of the image.
+  * __Date & Time__ - Set timezone for date and time display.
+  * __Frame__ - View and set activation rules for the frame. Set the dial as to whether you would like the frame to show up instantaneously (right away), never or somewhere in between when you move your cursor to both the corner and edge of your screen.
+  * __Language__ - View and set user interface languages. The language you are currently using will show on the first line, or by itself. If you click on the + at the end of the line, you can select another language. Select from the menu by country and language, or click the + icon by the last line to add another line. If there are two or more lines, a - icon will appear by the last line to allow you to delete it.
+  * __Modem Configuration__ - Enter settings for a mobile broadband connection to a cellular network. Not required for WiFi.
+  * __Network__ - View and change settings for turning off wireless in order to save battery power, the jabber server name for collaboration, and the web site for social help.
+  * __Software Update__ - If you are able, check over the Internet for software updates, and install any that are available.
+  * __Configure Your Web Services__ - Manage your online accounts and interventions to Journal.
 
 ## Sugar Features
+This page presents a number of Sugar features common to many Activities.
+
+### View Source
+You always can view the source code of Sugar Activities. In most cases, View Source will show you the Python code of the activity, in other cases, like Browse, you can see the HTML code of the page seen in the activity.
+
+You can see the source window by pressing Fn-space on your XO, or Alt-Shift-V, or right click on the Activity’s icon in The Frame. Here is an example of viewing the source of a page in Help Activity. In the case of this activity, you see the simple text, which Help converts into HTML pages for display.
+
+![Viewing Help Documentation](assets/ViewingSource.png)
+![Editing Help Documentation](assets/EditingSource.png)
+
+### Duplicating Source
+In the source window is an option to duplicate an activity. By selecting this option, a copy of the activity is created in the user’s $HOME/Activities directory. Thus we hope to encourage Sugar users to make modifications and improvements to the code they use without the risk of breaking the original activity.
+
+![Duplicating Activities](assets/DuplicatingActivities.png)
+
+### Speaking Selected Text
+You can have Speak, or robot Alice, read aloud, selected text. Here we demonstrate Alice reading text framed by Help. In Help, for instance, you can select a whole page of text, and have it read aloud to you while you explore that Activity.
+
+To select text, move the mouse to the top left of the text, there is a green arrow near the correct point. Click the left, or main, mouse button. Move the cursor to the bottom right of the text to select, there is a red arrow near the correct point.
+
+Bring in the The Frame with the “Frame key” or F6. Press on the “Speech lips” icon in the bottom of the frame, then press on Say selected text. Notice also that there is a pause feature, once speech has started.
+
+![Saying Selected Text](assets/SayingSelectedText.png)
+
+The Say selected text feature is available in many text based Activities including Browse, FotoToon, Write. Look out for the “Speech lips” icon in the bottom of the Frame, or as a button in the toolbar of an Activity, as in Write.
 
 ## GNOME
+In late 2009 OLPC added a more conventional desktop environment called GNOME to its operating system. This is intended for older children and advanced users.
+
+In late 2014 OLPC switched to MATE desktop, which is what GNOME was like before GNOME began some very serious changes.
+
+![GNOME View](assets/GNOMEView.jpg)
+
+Users can switch from Sugar to GNOME or MATE through the Switch Desktop option under My Settings.
+
+![Switching Operating Systems](assets/SwitchingOS.png)
+
+After selecting the Switch Desktop option another confirmation dialogue with additional information appears. The switch can be confirmed by clicking the Restart now button.
+
+![Switching To GNOME](assets/SwitchToGNOME.png)
+
+Switching back to Sugar can be done via the Switch to Sugar icon on the desktop or the Application - System Tools menu and confirming the corresponding message box.
+
+![Switching To Sugar](assets/SwitchToSugar.jpg)
+
+Further information about GNOME is available on the GNOME Web site and its extensive Help section. Additional information about how to transfer files from Sugar’s Journal to GNOME’s Documents folder can be found in the Journal section.
 
 ## XS school server
+### Overview
+The XO school Server, or XS, is one of the products of the OLPC project, designed to complement the XO laptop. The XS is installed on x86 (Intel-compatible) computers. These could be conventional servers such as rack-mounted computers, purpose-built low-power machines, or even netbooks.
+
+The OLPC XS provides additional infrastructure extending the capabilities of the laptops. While the laptops are self-sufficient for many learning activities, other activities and services depend on the XS providing connectivity, shared resources and services. The XS provides XO machines with network connectivity for backups, anti-theft leases, web browsing, system, content updates, and asynchronous collaboration tools such as Moodle.
+
+### Installation
+Two installation options are available:
+  * XS installation CD (recommended): download and burn a CD image, and use the resultant CD to install the system. See details [here](http://wiki.laptop.org/go/XS_Installing_Software_0.7#Installing_from_CD).
+  * On top of another system (advanced): install the XS software packages on top of an existing operating system installation. See details [here](http://wiki.laptop.org/go/XS_Installing_Software_0.7#Installing_on_top_of_existing_OS_installation).
+The installation is fairly straight forward and requires minimal configuration after the initial installation to the XS hard drive.
+
+### Configuration
+Configuring the XS involves choosing a server domain name. The hostname is always ‘schoolserver’. So, using a domain name like example.org will give you schoolserver.example.org.
+
+The XS has a fairly standard server-style networking setup. The XS provides DHCP and DNS services to all the XOs connected to it via a wireless access point. However, if the school already has its own network running its own DHCP services, the XS networking can be modified to work with the existing infrastructure. The XS can work with two Ethernet cards, where one works as a WAN interface, while the other works as the LAN interface. The XS can also work with a single Ethernet card where it works as a LAN interface for schools without WAN (Internet) connectivity. Optionally, such a server can provide WAN connectivity using a USB-to-Ethernet adapter.
+
+### Services
+  * __Collaboration__ - The XS provides collaboration services across a variety of activities. When XOs are connected to the School Server, the collaboration is managed through the server and can be segmented by a classroom or a group. While the user will not see anything different, the capacity of collaboration will scale up considerably with a XS in the mix.
+  * __Caching__ - The XS uses Squid to cache content locally. At sites where Internet access is limited, slow or expensive, content caching helps in speeding up access to content by making copies on the XS and serving these up locally.
+  * __Backup And Restore__ - The XS provides seamless backup services for each registered XO. The XS checks to see the backup status of the Journal on each XO and backs it up incrementally. Once the backups are made, these can be used to restore a child’s work back on her XO.
+  * __Antitheft Controls__ - Antitheft controls lists all registered XOs in one location. additionally, this feature offers rescue leases to laptops to re-activate laptops in case of problems. If a laptop gets stolen, the antitheft control feature shuts it down.
+  * __Learning Management System__ - Moodle is a Learning Management System that provides the teacher with a way to create a course, manage assignments and administer assessment using a web-based interface. On the XO, the Moodle LMS is accessible via the Browse activity. Moodle features include assignment submission, discussion forums, file downloads, grade books, instant messages, calendars, news, announcements, quizzes and wiki.
+  
+![Learning Management System](assets/LearningManagementSystem.jpg)
