@@ -3,7 +3,7 @@
 1. [Upgrading Software](#UPGRADING-SOFTWARE)
 2. [Getting Support](#GETTING-SUPPORT)
 
-## <a link="UPGRADING-SOFTWARE"></a> Upgrading Software
+## <a name="UPGRADING-SOFTWARE"></a> Upgrading Software
 Your XO comes pre-loaded with the software OS (operating system) designed for the XO. It is a good idea to keep your software up to date because our latest builds fix bugs in earlier releases and they are awesome!
 
 The XO-1’s came with Sugar software. Did you know that with the latest software your XO can have both Sugar and GNOME? GNOME provides an option to teach older children in a learning environment that will be familiar and transferable to using Windows or Mac OS. This Chapter will tell you how to upgrade your software.
@@ -37,7 +37,7 @@ Follow these steps to upgrade your XO-
 8. Click the XO icon to change the colors and then click Done.
 9. Optionally, connect your XO to the Internet, then use the Control Panel to download the latest Activities.
 
-## <a link="GETTING-SUPPORT"></a> Getting Support
+## <a name="GETTING-SUPPORT"></a> Getting Support
 One Laptop per Child is an education project, not a laptop project. With connected laptops, learners are liberated to actively engage with others with similar interests in cultures of learning by doing without being limited by time or space. If you are having hardware or software problems with your XO, remember that its design is to encourage you to learn new things by trying to solve problems on your own!
 
 That said, an entire community built this XO and everything on it, and we want to help you with it. Our OLPC global community of volunteers provide software and hardware troubleshooting and support. This section will help tell you where to find Support when you are really stuck! OLPC has proven that volunteer-driven support works, often with far more heartfelt caring than any corporate help desk!
