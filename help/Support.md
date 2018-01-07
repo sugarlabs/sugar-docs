@@ -1,7 +1,9 @@
 # Support
 ## Table Of Contents
+1. [Upgrading Software](#UPGRADING-SOFTWARE)
+2. [Getting Support](#GETTING-SUPPORT)
 
-## Upgrading Software
+## <a link="UPGRADING-SOFTWARE"></a> Upgrading Software
 Your XO comes pre-loaded with the software OS (operating system) designed for the XO. It is a good idea to keep your software up to date because our latest builds fix bugs in earlier releases and they are awesome!
 
 The XO-1’s came with Sugar software. Did you know that with the latest software your XO can have both Sugar and GNOME? GNOME provides an option to teach older children in a learning environment that will be familiar and transferable to using Windows or Mac OS. This Chapter will tell you how to upgrade your software.
@@ -35,7 +37,7 @@ Follow these steps to upgrade your XO-
 8. Click the XO icon to change the colors and then click Done.
 9. Optionally, connect your XO to the Internet, then use the Control Panel to download the latest Activities.
 
-## Getting Support
+## <a link="GETTING-SUPPORT"></a> Getting Support
 One Laptop per Child is an education project, not a laptop project. With connected laptops, learners are liberated to actively engage with others with similar interests in cultures of learning by doing without being limited by time or space. If you are having hardware or software problems with your XO, remember that its design is to encourage you to learn new things by trying to solve problems on your own!
 
 That said, an entire community built this XO and everything on it, and we want to help you with it. Our OLPC global community of volunteers provide software and hardware troubleshooting and support. This section will help tell you where to find Support when you are really stuck! OLPC has proven that volunteer-driven support works, often with far more heartfelt caring than any corporate help desk!
@@ -45,11 +47,11 @@ Next try looking [here](http://support.laptop.org) for extensive helpful guidanc
   * [Getting Started](http://laptop.org/start)
   * [Email Lists](http://lists.laptop.org)
   * [Live Chat](http://forum.laptop.org/chat)
-  * [OLPC Community](Wiki http://wiki.laptop.org)
+  * [OLPC Community](http://wiki.laptop.org)
 
 If you are still unable to find an answer online, please email help@laptop.org.
 
-Did you know that our volunteers staff a live Help Chat site 24/7, on the Internet? Click here: http://forum.laptop.org/chat Login with the color-name shown; that’s guest ID. Type your question in the chat line at the bottom. You may have to wait for a response as our volunteers come in and out. If you are patient, we can probably help you! To learn more about what Internet Relay Chat (the system that makes this possible) is, click [here](http://wiki.laptop.org/go/IRC).
+Did you know that our volunteers staff a live Help Chat site 24/7, on the Internet? Click [here](http://forum.laptop.org/chat). Login with the color-name shown; that’s guest ID. Type your question in the chat line at the bottom. You may have to wait for a response as our volunteers come in and out. If you are patient, we can probably help you! To learn more about what Internet Relay Chat (the system that makes this possible) is, click [here](http://wiki.laptop.org/go/IRC).
 
 We would also like to make special mention of our Support Gang, where an enthusiastic group of volunteers assist XO users all over the world. If you are impressed with the passion and hard work of our volunteers, please consider giving back, by joining our dedicated community. Take a look at the [link below](http://wiki.laptop.org/go/Support_Gang). We would welcome your participation! Be sure to review the Frequently Asked Questions (FAQ) [link above](http://wiki.laptop.org/go/Support_FAQ). Many of us join and “learn by doing.”
 
