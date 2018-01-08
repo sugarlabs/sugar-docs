@@ -31,10 +31,10 @@ The current value is always displayed on the frame. Experiment and you will quic
 
 Examples: In the gallery below, several simple examples are shown. In the gallery of images above, the number 54321 is shown on each of the different abaci.
 
-![Displaying 54321 In Abacus 1](assets/AbacusReading1.png)
-![Displaying 54321 In Abacus 2](assets/AbacusReading2.png)
-![Displaying 54321 In Abacus 3](assets/AbacusReading3.png)
-![Displaying 54321 In Abacus 4](assets/AbacusReading4.png)
+![Displaying 54321 In Abacus 1](../assets/AbacusReading1.png)
+![Displaying 54321 In Abacus 2](../assets/AbacusReading2.png)
+![Displaying 54321 In Abacus 3](../assets/AbacusReading3.png)
+![Displaying 54321 In Abacus 4](../assets/AbacusReading4.png)
 
 From left to right,
   * 1 bottom bead is up, corresponding to 1 unit
