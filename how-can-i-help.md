@@ -12,20 +12,58 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
 
 ### Sugarizer
 
-|Your Equipment |Your Operating System |Recommendations |
-|-------------- |--------------------- |--------------- |
-|You have a tablet or phone |Android or iOS|Install the [Sugarizer](https://sugarizer.org/) app from Google Play. |
-|You have a tablet or phone |iOS|Install the [Sugarizer](https://sugarizer.org/) app from the App Store. |
-|You have a Chromebook|Chrome OS|Install the [Sugarizer](https://sugarizer.org/) app from the Chrome Web Store. |
-|You have a Windows computer|Windows|Install the [Sugarizer](https://sugarizer.org/) app from the Windows Store. |
+<table style="width:100%">
+  <tr>
+    <th>Your Equipment</th>
+    <th>Your Operating System</th> 
+    <th>Recommendations</th>
+  </tr>
+  <tr>
+    <td>You have a tablet or phone</td>
+    <td>Android or iOS</td> 
+    <td>Install the <a href="https://sugarizer.org/">Sugarizer</a> app from Google Play.</td>
+  </tr>
+  <tr>
+    <td>You have a tablet or phone</td>
+    <td>iOS</td> 
+    <td>Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the App Store.</td>
+  </tr>
+  <tr>
+    <td>You have a Chromebook</td>
+    <td>Chrome OS</td> 
+   <td>Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Chrome Web Store.</td>
+  </tr>
+  <tr>
+    <td>You have a Windows computer</td>
+    <td>Windows</td> 
+    <td>Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Windows Store.</td>
+  </tr>
+</table>
 
 ### Sugar Desktop
 
-|Your Equipment |Your Operating System |Recommendations |
-|-------------- |--------------------- |--------------- |
-|You have only one computer and don't want to erase it |Linux, Windows, macOS, or iOS |Install virtualisation software, make a new virtual machine and install [Sugar Live Build](https://wiki.sugarlabs.org/go/Live_Build), [Sugar on a Stick](https://wiki.sugarlabs.org/go/SoaS), [Ubuntu](https://wiki.sugarlabs.org/go/Ubuntu), [Fedora](https://wiki.sugarlabs.org/go/Fedora), or [Debian](https://wiki.sugarlabs.org/go/Debian). |
-|You have only one computer and don't want to erase it  |Linux |Install Sugar packages from your distribution, see [Ubuntu](https://wiki.sugarlabs.org/go/Ubuntu), [Fedora](https://wiki.sugarlabs.org/go/Fedora) or [Debian](https://wiki.sugarlabs.org/go/Debian). For other distributions, contact your distribution community. |
-|You have another computer that can be erased |Doesn't matter |Install [Sugar Live Build](https://wiki.sugarlabs.org/go/Live_Build), [Sugar on a Stick](https://wiki.sugarlabs.org/go/SoaS), [Ubuntu](https://wiki.sugarlabs.org/go/Ubuntu), [Fedora](https://wiki.sugarlabs.org/go/Fedora), or [Debian](https://wiki.sugarlabs.org/go/Debian). |
+<table style="width:100%">
+  <tr>
+    <th>Your Equipment</th>
+    <th>Your Operating System</th> 
+    <th>Recommendations</th>
+  </tr>
+  <tr>
+    <td>You have only one computer and don't want to erase it</td>
+    <td>Linux, Windows, macOS, or iOS</td> 
+    <td>Install virtualisation software, make a new virtual machine and install <a href="https://wiki.sugarlabs.org/go/Live_Build">Sugar Live Build</a>, <a href="https://wiki.sugarlabs.org/go/SoaS">Sugar on a Stick</a>, <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>.</td>
+  </tr>
+  <tr>
+    <td>You have only one computer and don't want to erase it</td>
+    <td>Linux</td> 
+    <td>Install Sugar packages from your distribution, see <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>. For other distributions, contact your distribution community.</td>
+  </tr>
+  <tr>
+    <td>You have another computer that can be erased</td>
+    <td>Doesn't matter</td> 
+    <td>Install <a href="https://wiki.sugarlabs.org/go/Live_Build">Sugar Live Build</a>, <a href="https://wiki.sugarlabs.org/go/SoaS">Sugar on a Stick</a>, <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>.</td>
+  </tr>
+</table>
 
   * Learn how to use Sugar and activities, see [Help](https://help.sugarlabs.org/),
   * [Setup a development environment](dev-environment.md) (We also have a deprecated development environment. We are looking for a maintainer.)
