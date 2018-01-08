@@ -32,9 +32,6 @@ The current value is always displayed on the frame. Experiment and you will quic
 Examples: In the gallery below, several simple examples are shown. In the gallery of images above, the number 54321 is shown on each of the different abaci.
 
 ![Displaying 54321 In Abacus 1](../assets/AbacusReading1.png)
-![Displaying 54321 In Abacus 2](../assets/AbacusReading2.png)
-![Displaying 54321 In Abacus 3](../assets/AbacusReading3.png)
-![Displaying 54321 In Abacus 4](../assets/AbacusReading4.png)
 
 From left to right,
   * 1 bottom bead is up, corresponding to 1 unit
@@ -71,43 +68,43 @@ The rods with white beads are whole numbers in base 10; from left to right 10000
 ![Main Toolbar](../assets/AbacusToolbar1.png)
 
 From left to right:
-  * project-toolbar button: see below
-  * edit-toolbar button: see below
-  * abacus-toolbar button: see below
-  * customization-toolbar button
-  * clear button: clear the abacus
-  * stop button: exit the activity
+  * __project-toolbar button__: see below
+  * __edit-toolbar button__: see below
+  * __abacus-toolbar button__: see below
+  * __customization-toolbar button__
+  * __clear button__: clear the abacus
+  * __stop button__: exit the activity
   
 ![Copy/Paste Toolbar](../assets/AbacusToolbar2.png)
 
 From left to right:
-  * copy: copy current value to clipboard
-  * paste: paste a value from the clipboard into the abacus
+  * __Copy__: copy current value to clipboard
+  * __Paste__: paste a value from the clipboard into the abacus
   
 ![Mode Toolbar](../assets/AbacusToolbar3.png)
 
 From left to right:
-  * Decimal button: decimal abacus
-  * Soroban button: Japanese abacus
-  * Saupan button: Chinese abacus
-  * Nepohualtzintzin button: Mayan abacus
-  * Hexadecimal button: hexadecimal abacus
-  * Binary button: binary abacus
-  * Schety button: Russian abacus
-  * Fraction button: fraction abacus
-  * Caacupe button: fraction abacus with +/–
-  * rod button: Cuisenaire-like abacus
-  * custom button: your custom abacus
+  * __Decimal button__: decimal abacus
+  * __Soroban button__: Japanese abacus
+  * __Saupan button__: Chinese abacus
+  * __Nepohualtzintzin button__: Mayan abacus
+  * __Hexadecimal button__: hexadecimal abacus
+  * __Binary button__: binary abacus
+  * __Schety button__: Russian abacus
+  * __Fraction button__: fraction abacus
+  * __Caacupe button__: fraction abacus with +/–
+  * __Rod button__: Cuisenaire-like abacus
+  * __Custom button__: your custom abacus
   
 ![Settings Toolbar](../assets/AbacusToolbar4.png)
 
 From left to right:
-  * rods: select the number of rods:
-  * top beads: select the number of beads on the top of the frame
-  * bottom: select the number of beads on the bottom of the frame
-  * factor: select the multiplication factor of top beads (e.g., on the Chinese abacus, each top bead counts as 5× the value of a bottom bead on the same rod)
-  * base: select the base to determine the value of bottom beads across rods; this is 10 on most conventional abacuses, but 20 on the Mayan abacus, 16 on the hexadecimal abacus, and 2 on the binary abacus.
-  * create: you must push this button to activate the selections you’ve made
+  * __rods__: select the number of rods:
+  * __top beads__: select the number of beads on the top of the frame
+  * __bottom__: select the number of beads on the bottom of the frame
+  * __factor__: select the multiplication factor of top beads (e.g., on the Chinese abacus, each top bead counts as 5× the value of a bottom bead on the same rod)
+  * __base__: select the base to determine the value of bottom beads across rods; this is 10 on most conventional abacuses, but 20 on the Mayan abacus, 16 on the hexadecimal abacus, and 2 on the binary abacus.
+  * __create__: you must push this button to activate the selections you’ve made
   
 ### <a name="LEARNING-ABACUS"> Learning With Abacus
 Some lesson plans for using Abacus are found [here](http://wiki.sugarlabs.org/go/Activities/Abacus/Worksheet).
