@@ -8,7 +8,7 @@ You can also help us [improve this documentation](docs.md.html).
 Getting started
 ---------------
 
-* [What can I do?](what-can-i-do.md.html)
+* [How can I help?](how-can-i-help.md.html)
 * [Contribute code](contributing.md.html)
 
 Design
