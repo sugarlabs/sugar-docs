@@ -12,56 +12,58 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
 
 ### Sugarizer
 
-<table style="width:100%">
-  <tr>
-    <th>Your Equipment</th>
-    <th>Your Operating System</th> 
-    <th>Recommendations</th>
+<table style="width:100%; border-collapse:collapse">
+  <tbody><tr>
+    <th style="border: 2px black solid">Your Equipment</th>
+    <th style="border: 2px black solid">Your Operating System</th> 
+    <th style="border: 2px black solid">Recommendations</th>
   </tr>
   <tr>
-    <td>You have a tablet or phone</td>
-    <td>Android or iOS</td> 
-    <td>Install the <a href="https://sugarizer.org/">Sugarizer</a> app from Google Play.</td>
+    <td style="border: 2px black solid">You have a tablet or phone</td>
+    <td style="border: 2px black solid">Android or iOS</td> 
+    <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from Google Play.</td>
   </tr>
   <tr>
-    <td>You have a tablet or phone</td>
-    <td>iOS</td> 
-    <td>Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the App Store.</td>
+    <td style="border: 2px black solid">You have a tablet or phone</td>
+    <td style="border: 2px black solid">iOS</td> 
+    <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the App Store.</td>
   </tr>
   <tr>
-    <td>You have a Chromebook</td>
-    <td>Chrome OS</td> 
-   <td>Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Chrome Web Store.</td>
+    <td style="border: 2px black solid">You have a Chromebook</td>
+    <td style="border: 2px black solid">Chrome OS</td> 
+   <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Chrome Web Store.</td>
   </tr>
   <tr>
-    <td>You have a Windows computer</td>
-    <td>Windows</td> 
-    <td>Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Windows Store.</td>
+    <td style="border: 2px black solid">You have a Windows computer</td>
+    <td style="border: 2px black solid">Windows</td> 
+    <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Windows Store.</td>
   </tr>
-</table>
+</tbody></table>
+
+<br>
 
 ### Sugar Desktop
 
-<table style="width:100%">
+<table style="width:100%; border-collapse:collapse">
   <tr>
-    <th>Your Equipment</th>
-    <th>Your Operating System</th> 
-    <th>Recommendations</th>
+    <th style="border: 2px black solid">Your Equipment</th>
+    <th style="border: 2px black solid">Your Operating System</th> 
+    <th style="border: 2px black solid">Recommendations</th>
   </tr>
   <tr>
-    <td>You have only one computer and don't want to erase it</td>
-    <td>Linux, Windows, macOS, or iOS</td> 
-    <td>Install virtualisation software, make a new virtual machine and install <a href="https://wiki.sugarlabs.org/go/Live_Build">Sugar Live Build</a>, <a href="https://wiki.sugarlabs.org/go/SoaS">Sugar on a Stick</a>, <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>.</td>
+    <td style="border: 2px black solid">You have only one computer and don't want to erase it</td>
+    <td style="border: 2px black solid">Linux, Windows, macOS, or iOS</td> 
+    <td style="border: 2px black solid">Install virtualisation software, make a new virtual machine and install <a href="https://wiki.sugarlabs.org/go/Live_Build">Sugar Live Build</a>, <a href="https://wiki.sugarlabs.org/go/SoaS">Sugar on a Stick</a>, <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>.</td>
   </tr>
   <tr>
-    <td>You have only one computer and don't want to erase it</td>
-    <td>Linux</td> 
-    <td>Install Sugar packages from your distribution, see <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>. For other distributions, contact your distribution community.</td>
+    <td style="border: 2px black solid">You have only one computer and don't want to erase it</td>
+    <td style="border: 2px black solid">Linux</td> 
+    <td style="border: 2px black solid">Install Sugar packages from your distribution, see <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>. For other distributions, contact your distribution community.</td>
   </tr>
   <tr>
-    <td>You have another computer that can be erased</td>
-    <td>Doesn't matter</td> 
-    <td>Install <a href="https://wiki.sugarlabs.org/go/Live_Build">Sugar Live Build</a>, <a href="https://wiki.sugarlabs.org/go/SoaS">Sugar on a Stick</a>, <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>.</td>
+    <td style="border: 2px black solid">You have another computer that can be erased</td>
+    <td style="border: 2px black solid">Doesn't matter</td> 
+    <td style="border: 2px black solid">Install <a href="https://wiki.sugarlabs.org/go/Live_Build">Sugar Live Build</a>, <a href="https://wiki.sugarlabs.org/go/SoaS">Sugar on a Stick</a>, <a href="https://wiki.sugarlabs.org/go/Ubuntu">Ubuntu</a>, <a href="https://wiki.sugarlabs.org/go/Fedora">Fedora</a>, or <a href="https://wiki.sugarlabs.org/go/Debian">Debian</a>.</td>
   </tr>
 </table>
 
