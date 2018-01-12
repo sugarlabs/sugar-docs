@@ -1,13 +1,13 @@
 # How Can I Help?
 ## Table Of Contents
-1.  [Preparations](#PREPARATIONS)
+1.  [Prepare](#PREPARE)
 2.  [Coding/Documentation/Quality Assurance](#OUTREACHY-GSOC)
 3.  [Design](#DESIGN-TEAM)
 4.  [Marketing/Outreach](#MARKETING-OUTREACH)
 5.  [Important Links](#IMPORTANT-LINKS)
 5.  [I'm Stuck!](#IM-STUCK)
 
-## <a name="PREPARATIONS"></a> Preparations
+## <a name="PREPARE"></a> Prepare
 Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
 
 ### Sugarizer
@@ -40,7 +40,7 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
   </tr>
 </tbody></table>
 
-<br>
+
 
 ### Sugar Desktop
 
@@ -68,7 +68,7 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
 </table>
 
   * Learn how to use Sugar and activities, see [Help](https://help.sugarlabs.org/),
-  * [Setup a development environment](dev-environment.md) (We also have a deprecated development environment. We are looking for a maintainer.)
+  * [Setup a development environment](dev-environment.md)
 
 
 ## <a name="OUTREACHY-GSOC"></a> Coding, Documentation and Quality Assurance
