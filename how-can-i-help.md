@@ -88,6 +88,7 @@ Design is also crucial to Sugar Labs - it is where new ideas and initiatives are
 
 ## <a name="MARKETING-OUTREACH"></a> Marketing/Outreach
 You can help to increase the number of Sugar Labs users through -
+
   * Write translations, see [Translation Team](https://wiki.sugarlabs.org/go/Translation_Team) and [translate.sugarlabs.org](https://translate.sugarlabs.org/), thereby the user experience of users speaking other languages.
   * Publish blogs and detail your experience using Sugar Labs software, introducing more people to use Sugar Labs software.
   * Design and execute lesson plans to introduce more children and youth to Sugar Labs, either in schools, outside school or in an informal setting.
@@ -96,9 +97,11 @@ You can help to increase the number of Sugar Labs users through -
 The links listed below are of important Sugar Labs code repositories, wiki and website. Some of the code repositories ar based under the Sugar Labs GitHub Organisation, while others are not.
 
 __Github Organisation Page__
+
   * [Sugar Labs](https://github.com/sugarlabs)
 
 __GitHub Repositories Under Sugar Labs__
+
   * [Sugar Shell for GTK+ 3](https://github.com/sugarlabs/sugar)
   * [Sugar Toolkit for GTK+ 2](https://github.com/sugarlabs/sugar-toolkit)
   * [Sugar Toolkit for GTK+ 3](https://github.com/sugarlabs/sugar-toolkit-gtk3)
@@ -108,12 +111,14 @@ __GitHub Repositories Under Sugar Labs__
   * [Sugar Labs Website](https://github.com/sugarlabs/www-sugarlabs)
 
 __GitHub Repositories Not Under Sugar Labs__
+
   * [Sugarizer](https://github.com/llaske/sugarizer)
   * [TurtleBlocksJS](https://github.com/walterbender/turtleblocksjs)
   * [MusicBlocks](https://github.com/walterbender/musicblocks)
   * [Help Activity](https://github.com/godiard/help-activity)
 
 __Other Relevant Links__
+
   * [Sugar Labs Website](https://www.sugarlabs.org/)
   * [Sugar Labs Wiki](https://wiki.sugarlabs.org/go/Welcome_to_the_Sugar_Labs_wiki)
   * [Sugar Labs IRC](https://chat.sugarlabs.org:9091/)
