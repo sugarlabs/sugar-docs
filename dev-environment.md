@@ -126,7 +126,7 @@ On Debian or Ubuntu;
 
 ```
 for module in sugar{-datastore,-artwork,-toolkit,-toolkit-gtk3,}; do
-    apt build-dep $module
+    sudo apt build-dep $module
 done
 ```
 
@@ -135,7 +135,7 @@ On Fedora, use [dnf builddep](http://dnf-plugins-core.readthedocs.io/en/latest/b
 
 ```
 for module in sugar{-datastore,-artwork,-toolkit,-toolkit-gtk3,}; do
-    dnf builddep $module
+    sudo dnf builddep $module
 done
 ```
 
