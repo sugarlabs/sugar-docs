@@ -19,7 +19,7 @@ Design
 
 Sugar Desktop
 -------------
-* [Setup a development environment](https://github.com/sugarlabs/sugar/docs/development-environment.md)
+* [Setup a development environment](https://github.com/sugarlabs/sugar/blob/master/docs/development-environment.md)
 * [Write your own Sugar desktop activity](desktop-activity.md.html)
 * [Python code style](python-style.md.html)
 
