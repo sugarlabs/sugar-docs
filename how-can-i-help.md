@@ -68,7 +68,7 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
 </table>
 
   * Learn how to use Sugar and activities, see [Help](https://help.sugarlabs.org/),
-  * [Setup a development environment](dev-environment.md)
+  * [Setup a development environment](https://github.com/sugarlabs/sugar/blob/master/docs/development-environment.md)
 
 
 ## <a name="OUTREACHY-GSOC"></a> Coding, Documentation and Quality Assurance
