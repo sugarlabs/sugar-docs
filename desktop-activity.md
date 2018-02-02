@@ -14,7 +14,7 @@ own Sugar web activity](web-activity.md.html).
 ### Setting up a development environment
 
 You must first [setup a development
-environment](dev-environment.md.html), for testing your activity and
+environment](https://github.com/sugarlabs/sugar/blob/master/docs/development-environment.md), for testing your activity and
 releasing it for distribution.
 
 ### Create a new activity from a template

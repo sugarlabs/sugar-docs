@@ -13,8 +13,7 @@ You've got three choices to develop your own web activity for Sugar:
 you've got a full Sugar desktop environment. It's a good choice if
 you've enough knowledge to build your environment on GNU Linux.
 
-See [Setup a development environment](dev-environment.md.html) for
-more detail.
+See [Setup a development environment](https://github.com/sugarlabs/sugar/blob/master/docs/development-environment.md) for more detail.
 
 *Sugarizer* simulates the Sugar environment in a browser. So you need
 only a browser to start developing. It's the better choice if you've
