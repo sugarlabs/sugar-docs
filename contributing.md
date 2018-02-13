@@ -27,8 +27,8 @@ wiki.sugarlabs.org](https://wiki.sugarlabs.org/go/Activity), or our
 deprecated [gitorious instance](https://git.sugarlabs.org/).
 
 For new activities, see [Write your own Sugar desktop
-activity](desktop-activity.md.html), or [Write your own Sugar web
-activity](web-activity.md.html), then make a new repository in your
+activity](desktop-activity.md), or [Write your own Sugar web
+activity](web-activity.md), then make a new repository in your
 GitHub account, put the source code in it, then ask the [systems@
 list](https://lists.sugarlabs.org/listinfo/systems) to move it to the
 GitHub `sugarlabs` organization.
@@ -115,7 +115,7 @@ A review will happen in the pull-request, and a reviewer will either;
 
 When they ask you for changes, you may have to change both files, commits or commit messages.
 
-When squashing commits to different files, use [interactive rebase](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages).
+When squashing commits to different files, use interactive rebase.
 
 ```
 git rebase -i master
