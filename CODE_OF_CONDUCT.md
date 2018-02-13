@@ -1,16 +1,15 @@
 Code of Conduct
 ===============
 
-To be effective, the members of the Sugar Labs community must to work
-together; our code of conduct lays down the "ground rules" for our
+To be effective, the members of the Sugar Labs community must work
+together, our code of conduct lays down the "ground rules" for our
 cooperative efforts.
 
 The Sugar Labs community supports the educators and software
-developers who use and develop the Sugar Learning Platform. Sugar is a
-place for children to explore, learn, teach, and reflect. Sugar Labs
+developers who use and develop the Sugar Learning Platform. Sugar Labs
 is a place where we all can explore, learn, teach, and reflect. The
 same underlying principles that make Sugar great—discovery,
-collaboration, and reflection—are central to the way the Sugar
+collaboration, and reflection are central to the way the Sugar
 community operates.
 
 We chose the name Sugar Labs, plural, because we are more than one
@@ -60,7 +59,7 @@ Be collaborative
 ----------------
 
 Sugar Labs and Free Software are about collaboration and working
-together. Collaboration reduces redundancy of work done in the Free
+together. Collaboration reduces redundancy of work done in the free
 Software world, and improves the quality of the software produced. You
 should aim to collaborate with other Sugar contributors, as well as
 with the entire Sugar ecosystem that is interested in the work you
@@ -84,7 +83,7 @@ for educators and developers; parents, teachers, and children; and
 speakers of many languages to work together.  Try to find the
 appropriate forum for your topic, level or expertises, or language.
 If you come across a post that is in an incorrect forum, please
-respectfully redirect the poster to the appropriate.  However, a
+respectfully redirect the poster to the appropriate. However, a
 project such as Sugar Labs requires communication between groups and
 languages.
 
