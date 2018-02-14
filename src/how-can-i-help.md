@@ -78,7 +78,7 @@ Coding, documentation and quality assurance is important - it is required everyw
   * Another way you can contribute to Sugar Labs is the [Release Engineer's Feature Tracking wiki page](https://wiki.sugarlabs.org/go/Features). These are features proposed and implemented by other Sugar Labs community contributors. The progress of the feature is also indicated in the page - please contribute to tasks which are "In Progress".
   * You can test Sugar and Activities and familiarise yourself with Sugar, making a note of where your expectation is betrayed by your observations, then seek feedback from others to learn if your expectation was right, and post inconsistencies to the corresponding GitHub repository issues page, [Wiki](https://wiki.sugarlabs.org), or mailing list [sugar-devel@lists.laptop.org][2],
   * You can go to a specific GitHub repository and work on the bugs in the source code.  Choose the "Issues" tabs and work through the various issues listed in it. The main Sugar Labs GitHub Repositories are listed in the "Important Sugar Labs Links".
-  * You can write documentation, see the [Wiki](https://wiki.sugarlabs.org), the [Help Activity](http://wiki.sugarlabs.org/go/Activities/Help/Contribute) which is kept in the [Help](https://github.com/godiard/help-activity) repository, and this [developer documentation](docs.md.html).
+  * You can write documentation, see the [Wiki](https://wiki.sugarlabs.org), the [Help Activity](http://wiki.sugarlabs.org/go/Activities/Help/Contribute) which is kept in the [Help](https://github.com/godiard/help-activity) repository, and this [developer documentation](docs.md).
   * You can update web sites, see [www.sugarlabs.org](https://www.sugarlabs.org/) which is kept in the [www-sugarlabs](https://github.com/sugarlabs/www-sugarlabs) repository.
   * You can monitor [activities.sugarlabs.org](https://activities.sugarlabs.org/) for activities to download in Sugar.
   * You can choose to write your own [desktop activity][1] or write your own [web activity][5].
@@ -132,7 +132,7 @@ little while, as people will come and go at different times of the day.
 * [Send an email on the mailing list][3]
 
 
-[1]: desktop-activity.md.html
+[1]: desktop-activity.md
 [2]: https://bugs.sugarlabs.org
 [3]: https://lists.sugarlabs.org/listinfo/sugar-devel
 [4]: https://wiki.sugarlabs.org/go/Mentors

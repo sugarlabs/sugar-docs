@@ -9,7 +9,7 @@ This page shows how to develop an activity using Python with GTK+ 3.0.
 Some Sugar desktop activities are written in languages other than
 Python, such as Smalltalk, C, and JavaScript.  For new activities to
 run on both Sugar desktop and Sugarizer, please consider [Write your
-own Sugar web activity](web-activity.md.html).
+own Sugar web activity](web-activity.md).
 
 ### Setting up a development environment
 
@@ -109,7 +109,7 @@ Your activity icon must follow the guidelines as decribed in
 Icons](https://wiki.sugarlabs.org/go/Human_Interface_Guidelines/The_Sugar_Interface/Icons) on our Wiki.
 
 There is a helper script, [Sugar
-Iconify](sugar-iconify.md.html) that will help
+Iconify](sugar-iconify.md) that will help
 you create Sugar-compliant icons.
 
 Of course, the interesting changes will be the ones you make to the
