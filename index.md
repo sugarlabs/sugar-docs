@@ -1,8 +1,8 @@
 # Page Moved
 
-We have moved this page to [GitHub](https://github.com/sugarlabs/sugar-docs/blob/master/docs/README.md).
+We have moved this page to [GitHub](https://github.com/sugarlabs/sugar-docs/blob/master/README.md).
 
-Please [report](https://github.com/sugarlabs/sugar-docs/issues) any lingering links to this page https://developer.sugarlabs.org/.
+How did you get here?  Please [report](https://github.com/sugarlabs/sugar-docs/issues) any lingering links.
 
 2018-02-14
 
