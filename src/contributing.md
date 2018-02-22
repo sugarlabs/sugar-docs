@@ -186,6 +186,45 @@ Once your pull-request is merged, you should close any issue or ticket.  GitHub 
 
 Be sure to thank everyone who helped you out along the way.
 
+Guide for Reviewers
+-------------------
+
+### Goal
+
+Goals for review are to;
+
+* detect trivial mistakes,
+
+* maintain consistent and good code quality,
+
+* reproduce test results, (especially for critical repositories),
+
+* maintain a useful git commit history for use by git bisect, and developers who read it,
+
+* maintain other records, such as issues, tickets, and documentation,
+
+* not waste the time of the contributor, by doing anything trivial that otherwise the contributor might have to do.
+
+### Checklist
+
+* [ ] does the change have consensus of the community, see also [code of conduct](CODE_OF_CONDUCT.md) (if a reviewer is in doubt, seek opinions by @mentioning people),
+
+* [ ] does the commit message explain the summary, problem, and solution, so that it can be used in future analysis, see also [making commits](#making-commits) (if a reviewer can fix it by squash or manual rebase, do so),
+
+* [ ] does the commit message reference any issue, bugs.sugarlabs.org ticket number, or downstream ticket numbers, (if a reviewer can fix it by squash or manual rebase, do so),
+
+* [ ] are the number of commits excessive for future analysis, (a reviewer may squash or rebase if necessary),
+
+* [ ] is the changed code consistent in style with the existing code, see also [coding standards](desktop-activity.md#coding-standards), (on the other hand, expect flake8 changes to be in separate commits),
+
+* [ ] for critical repositories, does the change work properly on our latest version of Sugar on either Fedora, Debian, or Ubuntu.
+
+### Critical repositories
+
+- sugar, sugar-toolkit, sugar-toolkit-gtk3, sugar-artwork, sugar-datastore, gst-plugins-espeak,
+
+- each of the [Fructose](https://wiki.sugarlabs.org/go/Development_Team/Release/Modules#Fructose) activity set repositories,
+
 Frequently Asked Questions
 --------------------------
 
