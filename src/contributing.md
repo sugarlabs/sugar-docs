@@ -33,6 +33,61 @@ GitHub account, put the source code in it, then ask the [systems@
 list](https://lists.sugarlabs.org/listinfo/systems) to move it to the
 GitHub `sugarlabs` organization.
 
+After modifying an activity, a new release may be needed.  Some activities have no maintainer, so you may need to be the maintainer for a short time.
+
+### Checklist - anyone
+
+* [ ] make a fork and clone it,
+
+* [ ] check if what you want to change is available already in any other branches or forks,
+
+* [ ] make and test your changes,
+
+* [ ] if your changes add a new feature or will affect users; update the NEWS file, the README.md file, and the help-activity,
+
+* [ ] if your changes affect translatable strings; regenerate the POT file, with `python setup.py genpot`,
+
+* [ ] make a branch, one or more commits, and a pull request, see [#workflow](Workflow) below.
+
+### Checklist - maintainer
+
+* [ ] check version of latest bundle release in activities.sugarlabs.org,
+
+* [ ] check version of latest tarball release in download.sugarlabs.org,
+
+* [ ] check for a release version git tag, e.g. v34,
+
+* [ ] correlate with `activity_version` metadata in `activity/activity.info`,
+
+* [ ] look for commmits _after_ any of these, in either;
+
+    * [ ] master branch of repository at sugarlabs,
+    * [ ] any other branches,
+    * [ ] any other forks,
+    * [ ] orphaned repositories with the same `bundle_id` value, using GitHub or Google Search,
+    * [ ] deprecated repositories at git.sugarlabs.org,
+
+* [ ] review and merge all pull requests,
+
+* [ ] apply all desired commits, making pull requests if review is needed,
+
+* [ ] apply all translation.sugarlabs.org changes,
+
+* [ ] regenerate the POT file using `python setup.py genpot`, review the changes, and commit,
+
+* [ ] notify the translations manager if the POT file changes contain new or changed strings,
+
+* [ ] write release notes for the NEWS file, change the `activity_version` metadata in `activity/activity.info`, commit, and `git tag` the version,
+
+* [ ] update the README.md file if necessary,
+
+* [ ] update the activity documentation in the help-activity repository,
+
+* [ ] for activities that include a tarball release, or where Fedora or Debian packages may be made, create a tarball using `python setup.py dist_source`, and upload tarball to download.sugarlabs.org using shell account,
+
+* [ ] create bundle using `python setup.py dist_xo`, test that it can be installed by Browse, and upload to activities.sugarlabs.org using developer account.
+
+
 Modifying Sugar
 ---------------
 
@@ -40,23 +95,28 @@ Sugar repositories can be found in our [GitHub `sugarlabs`
 organization](https://github.com/sugarlabs).  Sugar desktop
 environment repositories are:
 
-* https://github.com/sugarlabs/sugar (the shell);
+* https://github.com/sugarlabs/sugar (the desktop shell);
 * https://github.com/sugarlabs/sugar-artwork (images, icons, themes);
 * https://github.com/sugarlabs/sugar-toolkit-gtk3 (graphical widget library); and,
 * https://github.com/sugarlabs/sugar-datastore (journal backend).
+
+Workflow
+--------
 
 ### Open an Issue
 
 We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of activity repositories.
 
-Each improvement to Sugar should start with an issue discussion, to build consensus and ensure that work isn't wasted.
+Each improvement to Sugar should start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone.
 
 ### Forking
 
-You should first fork the repository on GitHub.
+You should first fork a repository on GitHub.
 This step is needed only once.
 See [complete help in GitHub](https://help.github.com/articles/fork-a-repo).
 Brief instructions follow using [sugar](https://github.com/sugarlabs/sugar) as example.
+
+### Cloning
 
 Navigate to the [sugar](https://github.com/sugarlabs/sugar/) repository, press **Fork** button, then on your computer
 
