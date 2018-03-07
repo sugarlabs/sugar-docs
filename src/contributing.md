@@ -47,7 +47,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] if your changes affect translatable strings; regenerate the POT file, with `python setup.py genpot`,
 
-* [ ] make a branch, one or more commits, and a pull request, see [#workflow](Workflow) below.
+* [ ] make a branch, one or more commits, and a pull request, see [Workflow](#workflow) below.
 
 ### Checklist - maintainer
 
@@ -105,20 +105,21 @@ Workflow
 
 ### Open an Issue
 
-We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of activity repositories.
+We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of repositories.
 
-Each improvement to Sugar should start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone.
+Each improvement to Sugar should start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project.
 
 ### Forking
 
 You should first fork a repository on GitHub.
 This step is needed only once.
 See [complete help in GitHub](https://help.github.com/articles/fork-a-repo).
-Brief instructions follow using [sugar](https://github.com/sugarlabs/sugar) as example.
 
 ### Cloning
 
-Navigate to the [sugar](https://github.com/sugarlabs/sugar/) repository, press **Fork** button, then on your computer
+You should clone your fork.
+This step is needed only once.
+Using [sugar](https://github.com/sugarlabs/sugar) as example;
 
 ```
 git clone git@github.com:YOUR-NAME/sugar.git
@@ -249,7 +250,7 @@ Be sure to thank everyone who helped you out along the way.
 Guide for Reviewers
 -------------------
 
-### Goal
+### Goals
 
 Goals for review are to;
 
