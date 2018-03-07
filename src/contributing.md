@@ -75,7 +75,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] regenerate the POT file using `python setup.py genpot`, review the changes, and commit,
 
-* [ ] notify the translations manager if the POT file changes contain new or changed strings,
+* [ ] notify our translation-community manager @leonardcj if the POT file changes contain new or changed strings,
 
 * [ ] write release notes for the NEWS file, change the `activity_version` metadata in `activity/activity.info`, commit, and `git tag` the version,
 
