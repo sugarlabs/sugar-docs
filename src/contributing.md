@@ -140,15 +140,16 @@ Your BRANCH-NAME can be anything, other than master.  The scope is your forked r
 
 ### Making commits
 
-Change files, and commit.  When writing a commit message;
+Change files, and commit.  Commit messages are kept by git, and are used later when problems are being solved.  When writing a commit message;
 
 1. start with a one line summary of the change;
 2. leave a blank line after the summary;
 3. explain the problem that is solved, unless the summary makes it obvious;
 4. when the problem was introduced by a previous commit, mention the hash;
 5. when the problem is in an issue or ticket, add "Fixes #1234";
-6. avoid mentioning GitHub or other pull-requests, as these are not kept in git; and
-7. avoid mentioning any contest tasks or mentors; use the pull-request instead.
+6. avoid mentioning GitHub or other pull-requests, as these are not kept in git;
+7. avoid mentioning any contest tasks or mentors; use pull-request comments instead; and
+8. use imperative mood, like "add foo", or "port to bar"; (if English is not your first language, see [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood), [git documentation](https://git.kernel.org/pub/scm/git/git.git/tree/Documentation/SubmittingPatches#n133) and [blog post by Dan Clarke](https://www.danclarke.com/git-tense)).
 
 Make one or more commits and push the branch to your repository;
 
