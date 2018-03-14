@@ -1,10 +1,9 @@
 Write your own Sugar desktop activity
 =====================================
 
-Most Sugar desktop activities are written in Python, using our
-[GTK+ 2.0](https://github.com/sugarlabs/sugar-toolkit) or
+Most Sugar desktop activities are written in Python 3, using our
 [GTK+ 3.0](https://github.com/sugarlabs/sugar-toolkit-gtk3) libraries.
-This page shows how to develop an activity using Python with GTK+ 3.0.
+This page shows how to develop an activity using Python 3 with GTK+ 3.0.
 
 Some Sugar desktop activities are written in languages other than
 Python, such as Smalltalk, C, and JavaScript.  For new activities to
@@ -45,7 +44,7 @@ Your clone of the Hello World activity contains a file,
 name = HelloWorld
 activity_version = 1
 bundle_id = org.sugarlabs.HelloWorld
-exec = sugar-activity activity.HelloWorldActivity
+exec = sugar-activity3 activity.HelloWorldActivity
 icon = activity-helloworld
 licence = GPLv3+
 repository = https://github.com/sugarlabs/hello-world-fork.git
@@ -66,11 +65,11 @@ class MyActivity(activity.Activity):
 ```
 You must change the `exec` field as well, e.g., from:
 ```
-exec = sugar-activity activity.HelloWorldActivity
+exec = sugar-activity3 activity.HelloWorldActivity
 ```
 to:
 ```
-exec = sugar-activity activity.MyActivity
+exec = sugar-activity3 activity.MyActivity
 ```
 You should set the repository field to the URL of the git repository
 of your project.
@@ -83,7 +82,7 @@ Your `activity.info` file will look something like:
 name = MyActivity
 activity_version = 1
 bundle_id = org.sugarlabs.MyActivity
-exec = sugar-activity activity.MyActivity
+exec = sugar-activity3 activity.MyActivity
 icon = activity-helloworld
 licence = GPLv3+
 repository = https://github.com/MyGitHubAccount/MyActivityRepo.git
@@ -225,17 +224,14 @@ activities, available at [Make Your Own Sugar Activities](https://flossmanuals.n
 
 # Coding standards
 
-We currently use [Python Version 2.7](https://docs.python.org/2/) for
+We currently use [Python 3](https://docs.python.org/3/) for
 the Sugar toolkit and Sugar activity development.
 
 We recommend [flake8](https://pypi.python.org/pypi/flake8) as a
 wrapper around the [pep8](https://www.python.org/dev/peps/pep-0008/)
 and [pyflakes](https://pypi.python.org/pypi/pyflakes) code checkers.
 
-flake8 for Python 3 makes warnings on Python 2.7 source code.  On
-systems where Python 3 is the default, install and then use Python 2.7
-to run flake8 like this;
-
+To check for flake8 warnings in the current directory, run this command
 ```
-python2.7 -m flake8 *.py
+python3 -m flake8 *.py
 ```
