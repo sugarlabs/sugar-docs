@@ -13,6 +13,14 @@ In brief, you will:
 * go through the review process until your pull-request is merged; and
 * close your issue.
 
+Please note there is no need to ask permission to work on an
+issue. You should check for pull requests linked to the issue you are
+addressing; if there are none, then assume nobody has done
+anything. Begin to fix the problem, test, make your commits, push your
+commits, then make a pull request. Mention the issue number in the
+pull request, but not the commit message. These practices allow the
+competition of ideas (Sugar Labs is a meritocracy).
+
 Modifying Activities
 --------------------
 
