@@ -59,9 +59,9 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 ### Checklist - maintainer
 
-* [ ] check version of latest bundle release in activities.sugarlabs.org,
+* [ ] check version of latest bundle release in [activities.sugarlabs.org](https://activities.sugarlabs.org/),
 
-* [ ] check version of latest tarball release in download.sugarlabs.org,
+* [ ] check version of latest tarball release in [download.sugarlabs.org/sources/sucrose/fructose/](https://download.sugarlabs.org/sources/sucrose/fructose/) or [download.sugarlabs.org/sources/honey/](https://download.sugarlabs.org/sources/honey/),
 
 * [ ] check for a release version git tag, e.g. v34,
 
@@ -79,15 +79,15 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] apply all desired commits, making pull requests if review is needed,
 
-* [ ] apply all translation.sugarlabs.org changes,
+* [ ] apply all [translation.sugarlabs.org](https://translate.sugarlabs.org) changes,
 
 * [ ] regenerate the POT file using `python setup.py genpot`, review the changes, and commit,
 
 * [ ] notify our translation-community manager @leonardcj if the POT file changes contain new or changed strings,
 
-* [ ] write release notes for the NEWS file, change the `activity_version` metadata in `activity/activity.info`, commit, and `git tag` the version,
-
 * [ ] update the README.md file if necessary,
+
+* [ ] write release notes for the NEWS file, change the `activity_version` metadata in `activity/activity.info`, commit, and `git tag` the version,
 
 * [ ] update the activity documentation in the help-activity repository,
 
