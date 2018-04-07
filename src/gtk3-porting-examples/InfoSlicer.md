@@ -6,9 +6,7 @@ this port.
 Remove hippo
 ============
 
-First of all, I had to remove the *hippo* related things and the
-[sugar-port](Development_Team/sugar-port "wikilink")
-([ticket](http://bugs.sugarlabs.org/ticket/3743)) wrapper.
+First of all, I had to remove the *hippo* related things and the sugar-port ([ticket](http://bugs.sugarlabs.org/ticket/3743)) wrapper.
 
 Code Snippets
 =============
@@ -29,7 +27,6 @@ by the Python's `object` type
 ### Drag And Drop: drag-motion
 
 -   <http://www.pygtk.org/pygtk2tutorial/sec-DNDMethods.html#sec-SettingUpDestinationWidget>
--   <http://developer.gnome.org/gdk/2.24/gdk-Drag-and-Drop.html#GdkDragContext>
 
 The signal `drag-motion` works in the same way as it was working on
 gtk2, but the callback used by InfoSlicer should be a bit modified to
@@ -103,7 +100,7 @@ We have to change the way that alerts were shown because
 
 Example about how to use the different types of alerts:
 
--   <http://git.sugarlabs.org/sugar-toolkit-gtk3/sugar-toolkit-gtk3/blobs/master/src/sugar3/graphics/alert.py#line11>
+-   <https://github.com/sugarlabs/sugar-toolkit-gtk3/blob/master/src/sugar3/graphics/alert.py#L11>
 
 <!-- -->
 
@@ -187,7 +184,6 @@ by:
 Gdk.atom\_intern
 ================
 
--   <http://developer.gnome.org/gdk/2.24/gdk-Properties-and-Atoms.html#gdk-atom-intern>
 -   <http://www.pygtk.org/docs/pygtk/class-gdkatom.html#constructor-gdkatom-intern>
 
 I'm not sure about the meaning of this function. I've just took a look
@@ -220,8 +216,6 @@ Missing / Problematic things (not ported yet)
 -   \[<span style="color: red;">IMPORTANT</span>\] Drag and Drop Images
     from the Edit View is not working. Line \#52
     (*infoslicer/widgets/Gallery\_View.py*)
-    -   Example about how to use the drag-n-drop
-        <http://git.gnome.org/browse/pygobject/tree/demos/gtk-demo/demos/clipboard.py#n96>
     -   Walter Bender helped me to solve this issue. Thanks!
     -   \[<span style="color: orange;">ALTERNATIVE</span>\] Drag and
         drop is working but the image is being added twice. This is

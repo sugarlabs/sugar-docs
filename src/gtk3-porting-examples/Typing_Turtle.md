@@ -209,7 +209,6 @@ replaced by
 Gdk.Keymap.translate\_keyboard\_state
 -------------------------------------
 
--   <http://developer.gnome.org/gdk/stable/gdk-Keyboard-Handling.html#gdk-keymap-translate-keyboard-state>
 -   <http://www.pygtk.org/docs/pygtk/class-gdkkeymap.html#method-gdkkeymap--translate-keyboard-state>
 
 Old way:

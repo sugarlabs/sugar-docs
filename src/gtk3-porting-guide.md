@@ -28,12 +28,12 @@ Steps to Port an Activity to GTK+ 3
 2.  Resolve any existing pull requests before porting to avoid conflicts
     at a later stage.
 3.  Run this
-    [script](http://git.gnome.org/browse/pygobject/tree/pygi-convert.sh)
+    [script](https://gitlab.gnome.org/GNOME/pygobject/blob/master/tools/pygi-convert.sh)
     that will convert automatically things as much as it can. This is to
     avoid some stressful manually conversions that a “simple script” can
     do using *sed* :)
 4.  Follow the [Code
-    Guidelines](Development_Team/Code_guidelines "wikilink") during all
+    Guidelines](https://github.com/sugarlabs/sugar-docs/blob/master/src/contributing.md) during all
     the porting process
 5.  Make the API changes in sugar-toolkit-gtk3
 6.  Write comments on the code, by adding **\# README:**, **\# TODO:**
@@ -47,8 +47,7 @@ API changes in sugar-toolkit
     that GTK+ 3 is the underlying technology.
 -   The keep button has been removed
 -   The old-style toolbar has been removed
--   `set_toolbar_box` is used instead of `set_toolbox` (see in
-    [Abacus](http://git.sugarlabs.org/~walter/abacus/walter-cairo/commit/6871dd340a89ade3b5361457e1bd1d58276a8efc))
+-   `set_toolbar_box` is used instead of `set_toolbox`
 -   Remove import of deprecated ActivityToolbox (see
     [hello-world](http://git.sugarlabs.org/hello-world/mainline/commit/22060a3063b2d6fd38d6b1cd8d44946170255af3))
 -   Support for `service_name` and `class` tags in activity.info has
@@ -148,7 +147,7 @@ activity interface, a separator has to be included as well.
 
 There are tools to help you do the porting. There is a script in the
 pygobject repository for porting called
-[pygi-convert.sh](http://git.gnome.org/browse/pygobject/tree/pygi-convert.sh),
+[pygi-convert.sh](https://gitlab.gnome.org/GNOME/pygobject/blob/master/tools/pygi-convert.sh),
 more info about the script can be found in [the PyGObject Introspection
 Porting guide](http://live.gnome.org/PyGObject/IntrospectionPorting).
 
@@ -561,9 +560,7 @@ Note that the <samp>cairo.Region</samp> will no longer work in GTK+3
 
 #### Replacing pixmaps with Cairo
 
-You need to replace your pixmaps with Cairo in GTK+ 3. For an example on
-how this is done, see:
-<http://developer.gnome.org/gtk3/3.5/ch24s02.html#idp129615008>
+You need to replace your pixmaps with Cairo in GTK+ 3.
 
 ### Taking a screenshot and making a thumbnail
 
@@ -611,7 +608,7 @@ Hacks to help in porting
 ### Use the same keyboard and mouse
 
 If you have an XO, I'm sure you want to take a look at
-[this](User:Humitos/x2x "wikilink")...
+[this](http://wiki.sugarlabs.org/go/User:Humitos/x2x)
 
 ### Use Extended Python debugger
 
@@ -629,9 +626,6 @@ Finally I run Get Books Activity from the Terminal Activity to be able
 to write some code on a shell. This is the command that I use:
 
 `sugar-launch org.laptop.sugar.GetBooksActivity`
-
-See also [Development
-Team/Debugging](Development_Team/Debugging "wikilink").
 
 ### Check logs with *multitail*
 
@@ -676,7 +670,7 @@ Hence, once the activity is ported to GTK+ 3, please consider porting
 the activity from Python 2 to Python 3.
 
 Ref: [Guide to port activities to Python
-3](python-porting-guide)
+3](python-porting-guide.md)
 
 Releasing activities (for maintainers)
 ======================================
@@ -747,10 +741,8 @@ Resources
     -   GTK+ 2: <http://www.pygtk.org/docs/pygtk/>
 -   Reference Manual
     -   GTK+ 3: <http://developer.gnome.org/gtk3/3.4/>
--   Gdk documentation:
-    -   Gdk3: <http://developer.gnome.org/gdk/2.24/>
 -   OLPC Documentation:
-    <http://wiki.laptop.org/go/Activities/PortingToGTK+ 3>
+    <http://wiki.laptop.org/go/Activities/PortingToGtk3>
 -   Used to know the arguments of `GdkPixbuf.Pixbuf.save_to_bufferv`
     <https://mail.gnome.org/archives/javascript-list/2011-March/msg00001.html>
 
