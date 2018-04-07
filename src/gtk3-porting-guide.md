@@ -1,10 +1,12 @@
-Porting an existing activity to GTK+ 3
+Porting a GTK+ 2 activity to GTK+ 3
 ======================================
 
 This is a guide to porting an existing activity from GTK+ 2 to [GTK+
 3](http://developer.gnome.org/gtk3/stable/). It also shows the changes
 to use the new Sugar toolkit that also now uses [GTK+
-3](Features/GTK3 "wikilink"). This guide uses the
+3](https://wiki.sugarlabs.org/go/Features/GTK3).
+
+This guide uses the
 [hello-world](https://github.com/sugarlabs/hello-world) activity as a
 simple example.
 
@@ -674,7 +676,7 @@ Hence, once the activity is ported to GTK+ 3, please consider porting
 the activity from Python 2 to Python 3.
 
 Ref: [Guide to port activities to Python
-3](https://github.com/sugarlabs/sugar-docs/blob/master/src/python-porting-guide.md)
+3](python-porting-guide)
 
 Releasing activities (for maintainers)
 ======================================

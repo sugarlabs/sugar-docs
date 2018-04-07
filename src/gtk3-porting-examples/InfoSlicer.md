@@ -1,11 +1,7 @@
-This page is being performed while I'm porting InfoSlicer Activity to
-GTK+ 3.
-
-There is a [ticket](http://bugs.sugarlabs.org/ticket/3742) with some
+Ticket of this port is [here](http://bugs.sugarlabs.org/ticket/3742), with some
 useful information that I'm using on the porting and to keep tracking
-this port. Besides, this wiki page will be useful to write some code
-snippets about what are the difficulties that I'm having on the port and
-maybe can be useful for someone else.
+this port.
+
 
 Remove hippo
 ============
