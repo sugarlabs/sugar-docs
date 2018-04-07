@@ -1,4 +1,4 @@
-This page is being performed while I'm porting Implode Activity to Gtk3.
+This page is being performed while I'm porting Implode Activity to GTK+ 3.
 
 There is a [ticket](http://bugs.sugarlabs.org/ticket/3715) with some
 useful information that I'm using on the porting and to keep tracking
@@ -6,14 +6,11 @@ this port. Besides, this wiki page will be useful to write some code
 snippets about what are the difficulties that I'm having on the port and
 maybe can be useful for someone else.
 
-I will take [this guide](User:Humitos/PortingGetBooks "wikilink") as
-reference on the Gtk3 porting.
-
 Porting Gtk.DrawingArea
 =======================
 
 There are some things related with `gtk.DrawingArea` that we have to
-change when we are porting an activity to Gtk3. The names of the signals
+change when we are porting an activity to GTK+ 3. The names of the signals
 change and the way that they work as well.
 
 Get allocation size
@@ -73,7 +70,7 @@ focus. In gtk2 it was done by
 
 `.focus_child`
 
-and in Gtk3 it should be replaced by:
+and in GTK+ 3 it should be replaced by:
 
 `.get_focus_child()`
 
@@ -88,7 +85,7 @@ Replace the usual import:
 
 `import rsgv`
 
-by the Gtk3 one:
+by the GTK+ 3 one:
 
 `from gi.repository import Rsvg`
 
@@ -104,7 +101,7 @@ Invalidate rectangle
 ====================
 
 `Gdk.Window.invalidate_rect` takes a *Gdk.Rectangle* instead a tuple in
-Gtk3.
+GTK+ 3.
 
 `rect = Gdk.Rectangle()`\
 `rect.x, rect.y, rect.width, rect.height = (0, 0, width, height)`

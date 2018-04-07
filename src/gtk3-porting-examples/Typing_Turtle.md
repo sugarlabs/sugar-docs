@@ -1,14 +1,11 @@
 This page is being performed while I'm porting Typing Turtle Activity to
-Gtk3.
+GTK+ 3.
 
 There is a [ticket](http://bugs.sugarlabs.org/ticket/3772) with some
 useful information that I'm using on the porting and to keep tracking
 this port. Besides, this wiki page will be useful to write some code
 snippets about what are the difficulties that I'm having on the port and
 maybe can be useful for someone else.
-
-I will take [this guide](User:Humitos/PortingGetBooks "wikilink") as
-reference on the Gtk3 porting.
 
 Port to Cairo
 =============
@@ -123,14 +120,14 @@ Tips & tricks
 `             self.backgroundpixbuf.get_height())`\
 `cr.paint()`
 
-#### Gtk3 version
+#### GTK+ 3 version
 
 `Gdk.cairo_set_source_pixbuf(cr, self.backgroundpixbuf, 0, 0)`\
 `cr.rectangle(x, 0, self.backgroundpixbuf.get_width(),`\
 `             self.backgroundpixbuf.get_height())`\
 `cr.paint()`
 
-Port to Gtk3 -&gt; Code Snippets
+Port to GTK+ 3 -&gt; Code Snippets
 ================================
 
 Gtk.TextBuffer

@@ -1,4 +1,4 @@
-This page is being performed while I'm porting Jukebox Activity to Gtk3.
+This page is being performed while I'm porting Jukebox Activity to GTK+ 3.
 
 There is a [ticket](http://bugs.sugarlabs.org/ticket/3760) with some
 useful information that I'm using on the porting and to keep tracking
@@ -6,8 +6,6 @@ this port. Besides, this wiki page will be useful to write some code
 snippets about what are the difficulties that I'm having on the port and
 maybe can be useful for someone else.
 
-I will take [this guide](User:Humitos/PortingGetBooks "wikilink") as
-reference on the Gtk3 porting.
 
 Code Snippets
 =============
@@ -121,7 +119,7 @@ Missing / Problematic / Un-ported things
 
 -   The slider has a problem with the theme.
     [Issue](http://bugs.sugarlabs.org/attachment/ticket/3760/36.png)
--   The Gtk3 version in XO 1.75 os18 shows the animation too slow
+-   The GTK+ 3 version in XO 1.75 os18 shows the animation too slow
 
 Useful Links
 ============

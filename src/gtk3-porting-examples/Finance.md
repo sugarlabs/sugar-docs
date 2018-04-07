@@ -1,13 +1,10 @@
-This page is being performed while I'm porting Finance Activity to Gtk3.
+This page is being performed while I'm porting Finance Activity to GTK+ 3.
 
 There is a [ticket](http://bugs.sugarlabs.org/ticket/3740) with some
 useful information that I'm using on the porting and to keep tracking
 this port. Besides, this wiki page will be useful to write some code
 snippets about what are the difficulties that I'm having on the port and
 maybe can be useful for someone else.
-
-I will take [this guide](User:Humitos/PortingGetBooks "wikilink") as
-reference on the Gtk3 porting.
 
 Gtk.EventBox
 ============

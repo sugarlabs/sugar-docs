@@ -1,4 +1,4 @@
-This page is being performed while I'm porting Log Activity to Gtk3.
+This page is being performed while I'm porting Log Activity to GTK+ 3.
 
 There is a [ticket](http://bugs.sugarlabs.org/ticket/3761) with some
 useful information that I'm using on the porting and to keep tracking
@@ -6,8 +6,6 @@ this port. Besides, this wiki page will be useful to write some code
 snippets about what are the difficulties that I'm having on the port and
 maybe can be useful for someone else.
 
-I will take [this guide](User:Humitos/PortingGetBooks "wikilink") as
-reference on the Gtk3 porting.
 
 Code Snippets
 =============
@@ -15,9 +13,9 @@ Code Snippets
 Gtk.TextView
 ------------
 
--   gtk2:
+-   GTK+ 2:
     <http://www.pygtk.org/docs/pygtk/class-gtktextview.html#method-gtktextview--scroll-to-mark>
--   Gtk3:
+-   GTK+ 3:
     <http://developer.gnome.org/gtk3/3.5/GtkTextView.html#gtk-text-view-scroll-to-mark>
 
 Gtk.TextView.scroll\_to\_mark needs all the arguments. In gtk2 version
@@ -62,7 +60,7 @@ replaced by:
 Clipboard
 =========
 
--   Gtk3:
+-   GTK+ 3:
     <http://python-gtk-3-tutorial.readthedocs.org/en/latest/clipboard.html>
     -   <http://developer.gnome.org/gtk3/3.5/GtkTextBuffer.html#gtk-text-buffer-copy-clipboard>
 

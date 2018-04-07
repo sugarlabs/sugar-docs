@@ -1,14 +1,11 @@
 This page is being performed while I'm porting InfoSlicer Activity to
-Gtk3.
+GTK+ 3.
 
 There is a [ticket](http://bugs.sugarlabs.org/ticket/3742) with some
 useful information that I'm using on the porting and to keep tracking
 this port. Besides, this wiki page will be useful to write some code
 snippets about what are the difficulties that I'm having on the port and
 maybe can be useful for someone else.
-
-I will take [this guide](User:Humitos/PortingGetBooks "wikilink") as
-reference on the Gtk3 porting.
 
 Remove hippo
 ============
@@ -154,12 +151,12 @@ Gtk.Widget.drag\_source\_set()
     <http://python-gtk-3-tutorial.readthedocs.org/en/latest/drag_and_drop.html>
 -   C docs:
     <http://developer.gnome.org/gtk3/3.5/gtk3-Drag-and-Drop.html>
--   **Good example** about how drang-n-drop on Gtk3 works
+-   **Good example** about how drang-n-drop on GTK+ 3 works
     <http://bugs.sugarlabs.org/raw-attachment/ticket/3742/drag-n-drop-example.tar.gz>
     -   The *drag\_data\_received\_event* method is called ONLY if in
         *drag\_data\_get\_event* method we modify the argument *data*
 
-In Gtk3 the way to call this function is a bit different. Instead of
+In GTK+ 3 the way to call this function is a bit different. Instead of
 passing a tuple we should pass a list of Gtk.TargetEntry's. So, we
 should replace this:
 
@@ -177,12 +174,12 @@ by this:
 Gtk.TextView.scroll\_to\_iter
 -----------------------------
 
--   gtk2:
+-   GTK+ 2:
     <http://www.pygtk.org/docs/pygtk/class-gtktextview.html#method-gtktextview--scroll-to-iter>
--   Gtk3:
+-   GTK+ 3:
     <http://developer.gnome.org/gtk3/3.5/GtkTextView.html#gtk-text-view-scroll-to-iter>
 
-This method in gtk2 takes only 2 required arguments but in Gtk3 all of
+This method in gtk2 takes only 2 required arguments but in GTK+ 3 all of
 them (5) are required. So, I had to change the call to this method:
 
 `self.scroll_to_iter(mouseiter, 0)`
@@ -246,7 +243,7 @@ Missing / Problematic things (not ported yet)
     there I cannot move them up or down
     -   The same happens on the *Wiki* TreeView
     -   <http://bugs.sugarlabs.org/ticket/3768>
-    -   *TODO: This is not working because of the port to Gtk3. TreePath
+    -   *TODO: This is not working because of the port to GTK+ 3. TreePath
         object does not support indexing*
 -   Check boxes on “Home View” *Custom* TreeView don't show the tick
     after clicking (Is this related with the theme?)

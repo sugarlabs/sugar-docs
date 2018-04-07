@@ -639,7 +639,7 @@ Here is a really useful command to open new logs automatically:
 ### Use the pygobject code as example
 
 [pygobject](https://live.gnome.org/PyGObject) is what we use to make
-Gtk3 activities. So, it's really useful to take a look at the code
+GTK+ 3 activities. So, it's really useful to take a look at the code
 examples that are there. Even more, you can run some demo application
 that show how to use something specific about the library.
 
@@ -748,7 +748,7 @@ Resources
 -   Gdk documentation:
     -   Gdk3: <http://developer.gnome.org/gdk/2.24/>
 -   OLPC Documentation:
-    <http://wiki.laptop.org/go/Activities/PortingToGtk3>
+    <http://wiki.laptop.org/go/Activities/PortingToGTK+ 3>
 -   Used to know the arguments of `GdkPixbuf.Pixbuf.save_to_bufferv`
     <https://mail.gnome.org/archives/javascript-list/2011-March/msg00001.html>
 
@@ -770,11 +770,9 @@ More porting examples
 =====================
 
 - [Finance](gtk3-porting-examples/Finance.md)
-- [GetBooks](gtk3-porting-examples/GetBooks.md)
 - [Implode](gtk3-porting-examples/Implode.md)
 - [InfoSlicer](gtk3-porting-examples/InfoSlicer.md)
 - [Jukebox](gtk3-porting-examples/Jukebox.md)
 - [Log](gtk3-porting-examples/Log.md)
 - [Record](gtk3-porting-examples/Record.md)
-- [TamTam](gtk3-porting-examples/TamTam.md)
 - [Typing_Turtle](gtk3-porting-examples/Typing_Turtle.md)
