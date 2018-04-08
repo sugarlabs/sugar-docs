@@ -61,29 +61,30 @@ Note that `require_version` needs to called only the first time when GTK
 is being imported.
 
 Similar imports that may be used are:
-
-    from gi.repository import Gdk, Pango, Gobject
-
+```python
+from gi.repository import Gdk, Pango, Gobject
+```
 Then you have to change each call that involves GTK, for example
 creating a button will look now like this:
-
-`button = Gtk.Button()`
+```python
+button = Gtk.Button()
+```
 
 A simple hello world program in GTK+ 3 looks like this:
+```python
+from gi.repository import Gtk
 
-    from gi.repository import Gtk
+def _destroy_cb(widget, data=None):
+    Gtk.main_quit()
 
-    def _destroy_cb(widget, data=None):
-        Gtk.main_quit()
+w = Gtk.Window()
+w.connect("destroy", _destroy_cb)
+label = Gtk.Label('Hello World!')
+w.add(label)
+w.show_all()
 
-    w = Gtk.Window()
-    w.connect("destroy", _destroy_cb)
-    label = Gtk.Label('Hello World!')
-    w.add(label)
-    w.show_all()
-
-    Gtk.main()
-
+Gtk.main()
+```
 The changes that were needed to port the hello-world activity can be
 seen in [this
 commit.](https://github.com/sugarlabs/hello-world/commit/508e1c518b56cbde5508e560c8a2ff38a3518583)
@@ -91,12 +92,9 @@ commit.](https://github.com/sugarlabs/hello-world/commit/508e1c518b56cbde5508e56
 #### Simple example on creating a toolbar
 
 One of Sugar's activity most unique user interface includes the toolbar.
-In order to reference the relevant modules and graphics, the sugar3
-library has to be imported. These are the relevant ones that would
-enable us to create a simple toolbar containing the activity button and
-the stop button.
+These are the relevant modules required to create a simple toolbar containing the activity button and the stop button.
 
-```
+```python
 from sugar3.activity import activity
 from sugar3.graphics.toolbarbox import ToolbarBox
 from sugar3.activity.widgets import ActivityToolbarButton
@@ -106,31 +104,31 @@ from sugar3.graphics import style
 ```
 
 Since the ActivityToolbar() module has been deprecated, the toolbar can
-now be called using
-
-`ToolbarBox()`
+now be called using `ToolbarBox()`
 
 Then, from the ToolbarBox(), include the ActivityButton and StopButton.
 In order for the StopButton to be align to the right as per Sugar
 activity interface, a separator has to be included as well.
 
-    toolbar_box = ToolbarBox()
+```python
+toolbar_box = ToolbarBox()
 
-    activity_button = ActivityToolbarButton(self)
-    toolbar_box.toolbar.insert(activity_button, 0)
-    activity_button.show()
+activity_button = ActivityToolbarButton(self)
+toolbar_box.toolbar.insert(activity_button, 0)
+activity_button.show()
 
-    separator = Gtk.SeparatorToolItem()
-    separator.props.draw = False
-    separator.set_expand(True)
-    toolbar_box.toolbar.insert(separator, -1)
-    separator.show()
+separator = Gtk.SeparatorToolItem()
+separator.props.draw = False
+separator.set_expand(True)
+toolbar_box.toolbar.insert(separator, -1)
+separator.show()
 
-    stop_button = StopButton(self)
-    toolbar_box.toolbar.insert(stop_button, -1)
-    stop_button.show()
-    self.set_toolbar_box(toolbar_box)
-    toolbar_box.show()
+stop_button = StopButton(self)
+toolbar_box.toolbar.insert(stop_button, -1)
+stop_button.show()
+self.set_toolbar_box(toolbar_box)
+toolbar_box.show()
+```
 
 ### Tools
 
@@ -140,9 +138,8 @@ pygobject repository for porting called
 more info about the script can be found in [the PyGObject Introspection
 Porting guide](http://live.gnome.org/PyGObject/IntrospectionPorting).
 
-Here is a script to automate the rename of the imports **sugar** to
-**sugar3**:
-[sugar-convert.sh](http://dev.laptop.org/~manuq/sugar-convert.sh).
+Here is a script to automate the rename of the imports `sugar` to
+`sugar3`, [sugar-convert.sh](http://dev.laptop.org/~manuq/sugar-convert.sh).
 
 If you are having trouble finding how a particular GTK
 class/method/constant has been named in PyGI, run
@@ -174,7 +171,7 @@ label = Gtk.Button.new()
 ```
 
 However, the first form is preferred: it is more Python-like.
-Internally, the difference is that Gtk.Label.new() translates to a call
+Internally, the difference is that `Gtk.Label.new()` translates to a call
 to `gtk_label_new()`, whereas `Gtk.Label()` will
 directly construct an instance of GtkLabel at the GObject level.
 
@@ -214,7 +211,7 @@ button = Gtk.Button(label="foo")
 GtkHBox and GtkVBox, commonly used containers in GTK+ 2 code, have
 `pack_start` and `pack_end` methods. These take 4 parameters:
 
-1.  The widget to pack into the container
+1.  **widget**: The widget to pack into the container
 2.  **expand**: Whether the child should receive extra space when the
     container grows (default True)
 3.  **fill**: True if space given to child by the expand option is
@@ -313,48 +310,47 @@ menu, x, y, push\_in and user\_data.
 Previously, gdk was an attribute of the GTK module, which means that it
 can be called through GTK. For example, if we want to use
 color\_parse():
-
-`gtk.gdk.color_parse(color)`
-
+```python
+gtk.gdk.color_parse(color)
+```
 However, what we have to do now is:
-
-`from gi.repository import Gdk`
-
+```python
+from gi.repository import Gdk
+```
 Then we can modify the code to the following:
-
-`Gdk.color_parse(color)`
-
+```python
+Gdk.color_parse(color)
+```
 ### Pango
 
 Following the release of GTK+ 3, we should not be importing pango like
 this:
-
-`import pango`
-
+```python
+import pango
+```
 In fact, we can now import pango as an attribute within the GTK+ 3
 library:
-
-`from gi.repository import Pango as pango`
-
+```python
+from gi.repository import Pango as pango
+```
 ### Gio.Settings from GConf
 
 Any use of GConf should be ported to Gio.Settings.
 
 ### Other considerations
 
-*self.allocation* property is no longer available. Please search your
-code for “self.allocation” and replace it for “self.get\_allocation()”.
+`self.allocation` property is no longer available. `self.get_allocation()` should be used instead.
 
 So to get the allocation size:
-
-`self.allocation.width`\
-`self.allocation.height`
-
+```python
+self.allocation.width
+self.allocation.height
+```
 should be replaced by:
-
-`self.get_allocated_width()`\
-`self.get_allocated_height()`
-
+```python
+self.get_allocated_width()
+self.get_allocated_height()
+```
 ### Constants
 
 Most of the constants have slightly different formats, e.g.,
@@ -510,9 +506,6 @@ return (ord(pixels[2]), ord(pixels[1]), ord(pixels[0]), 0)
 
 ### Going from Cairo in GTK+ 2 to Cairo in GTK+ 3
 
-(For more detailes, see
-<http://developer.gnome.org/pangomm/2.28/annotated.html>)
-
 The Cairo/Pango interaction is a little different:
 
 ```python
@@ -536,6 +529,9 @@ a class with methods for `get_x()`, `get_y()`, `get_width()`, and
 `get_height()`, so you cannot iter over it.
 
 Note that `cairo.Region` will no longer work in GTK+ 3
+
+(For more detailes, see
+<http://developer.gnome.org/pangomm/2.28/annotated.html>)
 
 #### Replacing pixmaps with Cairo
 
@@ -637,27 +633,26 @@ examples that are there. Even more, you can run some demo application
 that show how to use something specific about the library.
 
 -   Clone the code:
-```
-git clone git://git.gnome.org/pygobject
-```
-
+    ```
+    git clone git://git.gnome.org/pygobject
+    ```
 -   Run an example
-```shell
-cd pygobject
-cd demos/gtk-demo/demos
-python pixbuf.py
-```
+    ```shell
+    cd pygobject
+    cd demos/gtk-demo/demos
+    python pixbuf.py
+    ```
 -   Grep the code to search for something useful
-```shell
-cd pygobject
-git grep GdkPixbuf
-```
+    ```shell
+    cd pygobject
+    git grep GdkPixbuf
+    ```
 ### Monitoring DBus
 
 Not sure how this command works, but it can give us an interesting
 information. If you run this command and plug an USB drive you will see
 useful information
-```
+```shell
 dbus-monitor --system
 ```
 ## Port to Python 3
