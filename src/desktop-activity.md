@@ -104,7 +104,7 @@ Here is `activity/activity-helloworld.svg`;
 You should rename this file and change `icon` in the `activity.info`
 file.
 
-Your activity icon must follow the guidelines as decribed in
+Your activity icon must follow the guidelines as described in
 [The Sugar Interface:
 Icons](https://wiki.sugarlabs.org/go/Human_Interface_Guidelines/The_Sugar_Interface/Icons) on our Wiki.
 
