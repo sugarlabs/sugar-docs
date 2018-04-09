@@ -1,34 +1,76 @@
-# Porting a GTK+ 2 activity to GTK+ 3:
+# GTK+ 3 Porting Guide
 
-This is a guide to porting an existing activity from GTK+ 2 to [GTK+
-3](http://developer.gnome.org/gtk3/stable/). It also describes the changes
-to use the new Sugar toolkit that also now uses [GTK+
-3](https://wiki.sugarlabs.org/go/Features/GTK3).
+Guide to porting Sugar Activities to GTK+ 3.
 
-This guide uses the [hello-world](https://github.com/sugarlabs/hello-world) activity as a
-simple example.
+## GTK+
 
-## How to Port an Activity to GTK+ 3:
+GTK+ is a library for creating graphical user interfaces.  GTK+ is written in C.  GTK+ for Python is a language binding.
 
-1.  Read the [Sugar Official Wiki](http://wiki.sugarlabs.org/go/Features/GTK3)
-2.  Resolve any existing pull requests before porting to avoid conflicts
-    at a later stage.
-3.  Run this
-    [script](https://gitlab.gnome.org/GNOME/pygobject/blob/master/tools/pygi-convert.sh)
-    that will convert automatically things as much as it can. This
-    will avoid some stressful manually conversions that can be done using *sed*
-4.  Follow the [Code
-    Guidelines](https://github.com/sugarlabs/sugar-docs/blob/master/src/contributing.md) during all
-    the porting process
-5.  Make the API changes in sugar-toolkit
-6.  Write comments on the code, by adding **\# README:**, **\# TODO:**
-    and **\# FIXME:** explaining what are the problems that you are
-    having with that chunk of code. Put a link if it's necessary
+* [GTK+](https://gtk.org/)
 
-## API changes in sugar-toolkit
+GTK+ 2 is the previous major version of GTK+.  GTK+ 2 for Python is a static binding, and is called PyGTK.  GTK+ 2 is soon to be obsolete and unavailable.
 
--   The namespace is changed from `sugar` to `sugar3`, trying to reflect
-    that GTK+ 3 is the underlying technology.
+* [PyGTK](http://pygtk.org/)
+* [GTK+ 2 Reference Manual](https://developer.gnome.org/gtk2/stable/)
+
+GTK+ 3 is the current major version of GTK+.  It breaks both API and ABI compared with GTK+ 2.  GTK+ 3 for Python is a GObject Introspection binding, using PyGObject.
+
+* [PyGObject](https://wiki.gnome.org/Projects/PyGObject)
+* [PyGObject API Reference](https://lazka.github.io/pgi-docs/)
+* [GTK+ 3 Reference Manual](https://developer.gnome.org/gtk3/stable/)
+
+## Sugar Toolkit
+
+Sugar Toolkit provides services and a set of GTK+ widgets to build activities and other Sugar components on Linux based computers using Python.
+
+* [Sugar Toolkit for GTK+ 2](https://github.com/sugarlabs/sugar-toolkit), module name `sugar`, uses PyGTK,
+* [Sugar Toolkit for GTK+ 3](https://github.com/sugarlabs/sugar-toolkit-gtk3), module name `sugar3`, uses PyGObject,
+* [Sugar Toolkit for GTK+ 3 Documentation](https://developer.sugarlabs.org/sugar3)
+
+## Sugar Activities
+
+New Sugar activities are written in either;
+* JavaScript using the [Sugar Web](https://github.com/sugarlabs/sugar-web) tools, or
+* Python using GTK+ 3 and Sugar Toolkit for GTK+ 3,
+
+Old Sugar activities were written in Python using GTK+ 2 and Sugar Toolkit for GTK+ 2.
+
+These old activities are to be ported to GTK+ 3.  This guide explains how.
+
+## Required Skills
+
+* application development in Python,
+* application development in GTK+ 2 and GTK+ 3, using the event loop model,
+* Sugar activity development,
+* use of PyGObject API libraries.
+
+## How to Port to GTK+ 3
+
+* [PyGObject - Porting from Static Bindings](http://pygobject.readthedocs.io/en/latest/guide/porting.html) part of the PyGObject documentation, focusing on Python,
+* [PyGObject - Introspection Porting](http://live.gnome.org/PyGObject/IntrospectionPorting) on the GNOME Wiki, focusing on Python,
+* [Migrating from GTK+ 2 to GTK+ 3](https://developer.gnome.org/gtk3/stable/gtk-migrating-2-to-3.html) part of the GTK+ documentation, focusing on the underlying C library and object classes, but is relevant to Python porting because the same classes are used.
+
+## How to Port a Sugar Activity to GTK+ 3
+
+* Quiesce the activity source by making sure the activity works properly before porting, closing any solved issues, merging any pull requests or branches and releasing the last GTK+ 2 version; see the activity [maintainer checklist](contributing.md#checklist---maintainer).
+
+* Port to Sugar Toolkit for GTK+ 3 (see below),
+
+* Port to GTK+ 3, using the [PyGObject script pygi-convert.sh](https://gitlab.gnome.org/GNOME/pygobject/blob/master/tools/pygi-convert.sh) to convert automatically much as it can.
+
+* Port to any other libraries, such as Cairo, Pango, GConf to Gio.Settings, GStreamer 0.10 to GStreamer 1.0,
+
+* Test and iterate until original functionality is reached.
+
+Follow the [Code Guidelines](https://github.com/sugarlabs/sugar-docs/blob/master/src/contributing.md) during all porting.
+
+Write any comments in the code, by adding **\# README:**, **\# TODO:** and **\# FIXME:** explaining what are the problems that you are having with that chunk of code. Put a link if it's necessary.
+
+## Port to Sugar Toolkit for GTK+ 3
+
+-   The namespace is changed from `sugar` to `sugar3`, which reflects
+    that GTK+ 3 is the underlying technology, use a script to automate the rename of the imports `sugar` to
+`sugar3`, [sugar-convert.sh](http://dev.laptop.org/~manuq/sugar-convert.sh),
 -   The keep button has been removed
 -   The old-style toolbar has been removed
 -   `set_toolbar_box` is used instead of `set_toolbox`
@@ -41,7 +83,7 @@ simple example.
 -   `sugar3.activity.Activity` does not have the *window* attribute. Use
     the `.get_window()` method instead.
 
-## Port the activity from GTK+ 2 to GTK+ 3
+## Port to GTK+ 3
 
 To start, change the importing instruction for GTK from
 
@@ -89,9 +131,13 @@ The changes that were needed to port the hello-world activity can be
 seen in [this
 commit.](https://github.com/sugarlabs/hello-world/commit/508e1c518b56cbde5508e560c8a2ff38a3518583)
 
-#### Simple example on creating a toolbar
+## Problems
 
-One of Sugar's activity most unique user interface includes the toolbar.
+Several common problems arise during a port.
+
+### Simple example on creating a toolbar
+
+A Sugar Activity has a toolbar.
 These are the relevant modules required to create a simple toolbar containing the activity button and the stop button.
 
 ```python
@@ -131,15 +177,6 @@ toolbar_box.show()
 ```
 
 ### Tools
-
-There are tools to help you do the porting. There is a script in the
-pygobject repository for porting called
-[pygi-convert.sh](https://gitlab.gnome.org/GNOME/pygobject/blob/master/tools/pygi-convert.sh),
-more info about the script can be found in [the PyGObject Introspection
-Porting guide](http://live.gnome.org/PyGObject/IntrospectionPorting).
-
-Here is a script to automate the rename of the imports `sugar` to
-`sugar3`, [sugar-convert.sh](http://dev.laptop.org/~manuq/sugar-convert.sh).
 
 If you are having trouble finding how a particular GTK
 class/method/constant has been named in PyGI, run
@@ -404,7 +441,7 @@ See
 [python-gtk-3-tutorial/drag_and_drop](http://python-gtk-3-tutorial.readthedocs.org/en/latest/drag_and_drop.html)
 for more details.
 
-### Going from Drawable to Cairo
+### Port from Drawable to Cairo
 
 GTK+ 3 does not support GTK Drawable objects, so the first step is to
 get your activity running under Cairo.
@@ -504,7 +541,7 @@ cairo_surface.flush() # ensure all writing is done
 return (ord(pixels[2]), ord(pixels[1]), ord(pixels[0]), 0)
 ```
 
-### Going from Cairo in GTK+ 2 to Cairo in GTK+ 3
+### Port from Cairo in GTK+ 2 to Cairo in GTK+ 3
 
 The Cairo/Pango interaction is a little different:
 
@@ -581,9 +618,25 @@ set_flags(gtk.APP_PAINTABLE)
 
 ## Hacks to help in porting
 
-### Use the same keyboard and mouse
+### Use a virtual machine
 
-If you have an XO, you might want to look at [this](http://wiki.sugarlabs.org/go/User:Humitos/x2x)
+Use an editor with remote file access to a virtual machine, such as emacs with tramp.
+
+Start Terminal inside Sugar and then start Screen.  Change to the activity source directory.  Use an SSH client to reach into the Terminal shell to run `sugar-activity`.
+
+### Use an iterative restarter
+
+Temporarily add code to detect when your editor rewrites files.  For example in `activity.Activity.__init__`;
+```
+# testing restarter
+ct = os.stat('file.py').st_ctime
+def restarter():
+    if os.stat('file.py').st_ctime != ct:
+        self.close()
+        return False
+    return True
+GObject.timeout_add(233, restarter)
+```
 
 ### Use Extended Python debugger
 
@@ -723,34 +776,22 @@ These are the changes noted by developers while porting activities
 
 ## Resources
 
--   PyGI Documentation: <https://lazka.github.io/pgi-docs/>
--   PYGTK documentation
-    -   GTK+ 3:
-        [<http://python-gtk-3-tutorial.readthedocs.org>](http://python-gtk-3-tutorial.readthedocs.org/)
-    -   GTK+ 2: <http://www.pygtk.org/docs/pygtk/>
+-   Python GTK+ 3 Tutorial: [<http://python-gtk-3-tutorial.readthedocs.org>](http://python-gtk-3-tutorial.readthedocs.org/)
+-   PyGTK or GTK+ 2: <http://www.pygtk.org/docs/pygtk/>
 -   Sugar Toolkit GTK+ 3 Documentation:
     <https://developer.sugarlabs.org/sugar3/>
--   Reference Manual
-    -   GTK+ 3: <http://developer.gnome.org/gtk3/3.4/>
+-   GTK+ 3 Reference Manual <http://developer.gnome.org/gtk3/stable/>
 -   OLPC Documentation:
     <http://wiki.laptop.org/go/Activities/PortingToGtk3>
 -   Pango documentation: <http://developer.gnome.org/pangomm>
--   Gst-1.0 documentation:
+-   GStreamer-1.0 documentation:
     <http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/index.html>
--   Gst-1.0 porting hints:
+-   GStreamer-1.0 porting hints:
     <https://wiki.ubuntu.com/Novacut/GStreamer1.0>
 
+## Porting examples
 
-Here are some instances of porting activities, for reference:
--   [Biorhythm](https://github.com/sugarlabs/biorhythm/commit/c16de3b70cce2cc6f8af933e2b062c844a47c144/)
--   [Peru Learns English, includes GStreamer and GST
-    update](https://github.com/sugarlabs/peru-learns-english-activity/commit/caa2cde526b3823a5a1f7d200a76ad5bc3502b0e)
--   [Port of Jump
-    Activity](https://github.com/sugarlabs/jump/commit/b75410d2879d9829df942726f5465b7cf5a9d98d)
--   [Port of
-    I-know-Madagascar](https://github.com/sugarlabs/iknowMadagascar/commit/44ba42645ac4fcd9e06b4add7fa3b6ce2e0d9c3d)
-
-## More porting examples
+### Here
 
 - [Finance](gtk3-porting-examples/Finance.md)
 - [Implode](gtk3-porting-examples/Implode.md)
@@ -759,3 +800,11 @@ Here are some instances of porting activities, for reference:
 - [Log](gtk3-porting-examples/Log.md)
 - [Record](gtk3-porting-examples/Record.md)
 - [Typing_Turtle](gtk3-porting-examples/Typing_Turtle.md)
+
+### Other
+
+-   [Biorhythm (GTK+ 3 and PangoCairo)](https://github.com/sugarlabs/biorhythm/commit/c16de3b70cce2cc6f8af933e2b062c844a47c144/)
+-   [Peru Learns English (GTK+ 3 and GStreamer 1.0)](https://github.com/sugarlabs/peru-learns-english-activity/commit/caa2cde526b3823a5a1f7d200a76ad5bc3502b0e)
+-   [Jump (GTK+ 3 and Sugargame)](https://github.com/sugarlabs/jump/commit/b75410d2879d9829df942726f5465b7cf5a9d98d)
+-   [I know Madagascar (GTK+ 3 and Sugargame)](https://github.com/sugarlabs/iknowMadagascar/commit/5de78baca2daebe483bcc35912d254c77f2416f4)
+
