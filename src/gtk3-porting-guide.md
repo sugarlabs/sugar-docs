@@ -791,20 +791,7 @@ These are the changes noted by developers while porting activities
 
 ## Porting examples
 
-### Here
-
-- [Finance](gtk3-porting-examples/Finance.md)
-- [Implode](gtk3-porting-examples/Implode.md)
-- [InfoSlicer](gtk3-porting-examples/InfoSlicer.md)
-- [Jukebox](gtk3-porting-examples/Jukebox.md)
-- [Log](gtk3-porting-examples/Log.md)
-- [Record](gtk3-porting-examples/Record.md)
-- [Typing_Turtle](gtk3-porting-examples/Typing_Turtle.md)
-
-### Other
-
 -   [Biorhythm (GTK+ 3 and PangoCairo)](https://github.com/sugarlabs/biorhythm/commit/c16de3b70cce2cc6f8af933e2b062c844a47c144/)
 -   [Peru Learns English (GTK+ 3 and GStreamer 1.0)](https://github.com/sugarlabs/peru-learns-english-activity/commit/caa2cde526b3823a5a1f7d200a76ad5bc3502b0e)
 -   [Jump (GTK+ 3 and Sugargame)](https://github.com/sugarlabs/jump/commit/b75410d2879d9829df942726f5465b7cf5a9d98d)
 -   [I know Madagascar (GTK+ 3 and Sugargame)](https://github.com/sugarlabs/iknowMadagascar/commit/5de78baca2daebe483bcc35912d254c77f2416f4)
-
