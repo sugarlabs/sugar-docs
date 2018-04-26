@@ -61,7 +61,7 @@ basically a normal app, that has an Intent with a category
 
 Being a normal Android app, it can be a web activity.  And it would be
 possible to put colors to the launcher SVG icons and organize them in
-a spiral, just like the GTK Sugar home.
+a spiral, just like the GTK+ Sugar desktop home.
 
 There is a Home screen replacement sample in the
 [android-sdk samples](http://developer.android.com/tools/samples/index.html). It

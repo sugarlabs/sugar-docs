@@ -1,18 +1,19 @@
 Write your own Sugar desktop activity
 =====================================
 
-Most Sugar desktop activities are written in Python 3, using our
-[GTK+ 3.0](https://github.com/sugarlabs/sugar-toolkit-gtk3) libraries.
-This page shows how to develop an activity using Python 3 with GTK+ 3.0.
+Most Sugar desktop activities are written in Python, using our [Sugar
+Toolkit](https://github.com/sugarlabs/sugar-toolkit-gtk3) libraries.
 
 Some Sugar desktop activities are written in languages other than
 Python, such as Smalltalk, C, and JavaScript.  For new activities to
 run on both Sugar desktop and Sugarizer, please consider [Write your
 own Sugar web activity](web-activity.md).
 
+This page shows how to develop an activity using Python 3 with Sugar Toolkit.
+
 ### Setting up a development environment
 
-You must first [setup a development
+[Setup a development
 environment](https://github.com/sugarlabs/sugar/blob/master/docs/development-environment.md), for testing your activity and
 releasing it for distribution.
 
@@ -103,7 +104,7 @@ Here is `activity/activity-helloworld.svg`;
 You should rename this file and change `icon` in the `activity.info`
 file.
 
-Your activity icon must follow the guidelines as decribed in
+Your activity icon must follow the guidelines as described in
 [The Sugar Interface:
 Icons](https://wiki.sugarlabs.org/go/Human_Interface_Guidelines/The_Sugar_Interface/Icons) on our Wiki.
 
@@ -213,19 +214,16 @@ For further releases, you should update the activity_version in
 More details
 ============
 
-Documentation for our GTK+ 3.0 toolkit `sugar-toolkit-gtk3` is available
-[here](https://developer.sugarlabs.org/sugar3/).
+* [Sugar Toolkit Documentation](https://developer.sugarlabs.org/sugar3/).
 
-A Python GTK+ 3.0 tutorial is available
-[here](http://python-gtk-3-tutorial.readthedocs.io/en/latest/).
+* [Python GTK+ 3 Tutorial](http://python-gtk-3-tutorial.readthedocs.io/en/latest/).
 
-You may read this book by James Simmons on how to make Sugar
-activities, available at [Make Your Own Sugar Activities](https://flossmanuals.net/make-your-own-sugar-activities/).
+* [Make Your Own Sugar Activities](https://flossmanuals.net/make-your-own-sugar-activities/), a book by James Simmons.
 
 # Coding standards
 
 We currently use [Python 3](https://docs.python.org/3/) for
-the Sugar toolkit and Sugar activity development.
+the Sugar Toolkit and Sugar activity development.
 
 We recommend [flake8](https://pypi.python.org/pypi/flake8) as a
 wrapper around the [pep8](https://www.python.org/dev/peps/pep-0008/)
