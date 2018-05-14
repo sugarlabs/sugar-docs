@@ -84,6 +84,7 @@ Coding, documentation and quality assurance is important - it is required everyw
   * You can choose to write your own [desktop activity][1] or write your own [web activity][5].
   * You can port activities which are in GTK+ 2 to GTK+ 3, using the [guide](gtk3-porting-guide.md).
   * You can port activities which are in Python 2 to Python 3, using the [guide](python-porting-guide.md).
+  * You can test code coverage of activities, using the [guide](python-coverage-guide.md).
 
 ## <a name="DESIGN-TEAM"></a> Design
 Design is also crucial to Sugar Labs - it is where new ideas and initiatives are formed into proper reports which can be worked on. You can either contribute a new design proposal or implement an existing one in the [Design Team User Experience Proposals wiki page](https://wiki.sugarlabs.org/go/Design_Team/Proposals).
