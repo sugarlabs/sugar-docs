@@ -26,6 +26,6 @@ python -m SimpleHTTPServer &
 
 * browse to http://localhost:8000/
 
-Tested on Ubuntu 18.04.
+Tested on Ubuntu 18.04 and Ubuntu 16.04.
 
 See the [Python Coverage](https://coverage.readthedocs.io) documentation.
