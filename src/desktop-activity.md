@@ -195,6 +195,10 @@ git status
 We recommend that you use [github](http://github.com) to host your
 activity.
 
+### Check Python Coverage of your activity
+
+You can check the Python Coverage of your activity by following [this](python-coverage-guide.md) guide.
+
 ### Ready to release
 
 Once your activity is working, you can ask to have
