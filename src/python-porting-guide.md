@@ -10,46 +10,44 @@ Guide to porting Sugar Activities to Python 3.
 
 ## How to Port an Activity to Python 3:
 
-* Quiesce the activity source by making sure the activity works properly before porting, closing any solved issues, merging any pull requests or branches and releasing the last GTK+ 2 version; see the activity [maintainer checklist](contributing.md#checklist---maintainer).
+* Quiesce the activity source by making sure the activity works properly before porting, closing any solved issues, merging any pull requests or branches and releasing the last Python 2 version; see the [activity maintainer checklist](contributing.md#checklist---maintainer).
 
-* Use the Python 2-3 compatible version of Sugar Toolkit GTK+ 3 (currently under developement, [here](https://github.com/Pro-Panda/sugar-toolkit-gtk3/tree/python3-port)).
-* If the activity uses `telepathy-python`, port the code to its PyGI binding (`TelepathyGLib`)
+* Use the Python 3 version of Sugar Toolkit GTK+ 3 (currently under development, [here](https://github.com/Pro-Panda/sugar-toolkit-gtk3/tree/python3-port)).
+* If the activity uses `telepathy-python`, port to PyGObject binding `TelepathyGLib`
   ```python
   import telepathy
   ```
-  should get changed to:
+  should change to:
   ```python
   from gi.repository import TelepathyGLib
   ```
 
-* Port the activity code from Python 2 to Python 3.
-  To automate the syntactic changes, you can take help of the [2to3](https://docs.python.org/3.0/library/2to3.html) tool,<br>
+* Port from Python 2 to Python 3.
+  Start your porting with [2to3](https://docs.python.org/3.0/library/2to3.html) tool,<br>
   In the terminal, type:
   ```shell
   2to3 -w *.py
   ```
-* Changes `exec` value in `activity.info` from `sugar-activity...` to `sugar-activity3...`
-* Test run the activity.
-* Check if the activity can be build successfully,<br>
+* Change `exec` value in `activity.info` from `sugar-activity` to `sugar-activity3`
+* Test the activity
+* Check if the activity can be built,<br>
   In the terminal, type:
   ```shell
   python3 setup.py dist_xo
   ```
 
-
 Follow the [Code Guidelines](https://github.com/sugarlabs/sugar-docs/blob/master/src/contributing.md) during all porting.
 
 Write any comments in the code, by adding **\# README:**, **\# TODO:** and **\# FIXME:** explaining what are the problems that you are having with that chunk of code. Put a link if it's necessary.
 
-## Releasing Activities (For maintainers)
+## Releasing Activities (for maintainers)
 
 Once an activity is ported, a new release can be made. The major version
 should be greater than the existing one.
 
 Please follow
 [this](contributing.md#checklist---maintainer)
-guide for releasing a new version
-
+guide for releasing a new version.
 
 ## Resources:
  - [What's new in Python 3 | Python Docs](https://docs.python.org/3.0/whatsnew/3.0.html)
@@ -67,5 +65,5 @@ Here are some examples of porting activities to Python 3:
 
 
 ## Reporting Issues:
-The Python 2-3 compatible toolkit is still in development mode. Report any bugs [here](https://github.com/sugarlabs/sugar-toolkit-gtk3/pull/383)
+The Python 3 toolkit is still in development mode. Report any bugs [here](https://github.com/sugarlabs/sugar-toolkit-gtk3/pull/383)
 
