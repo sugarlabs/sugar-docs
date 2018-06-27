@@ -5,19 +5,17 @@ We use the pull-request model, see [GitHub's help on pull-request](https://help.
 
 In brief, you will:
 
-* add an issue about what you plan to change;
 * on GitHub, find and fork the source repository;
 * on your computer, clone your fork repository,
 * commit your changes in a new branch;
 * push your branch and submit a pull-request for it;
 * go through the review process until your pull-request is merged; and
-* close your issue.
 
 Please note there is no need to ask permission to work on an
-issue. You should check for pull requests linked to the issue you are
+issue. You should check for pull requests linked to an issue you are
 addressing; if there are none, then assume nobody has done
 anything. Begin to fix the problem, test, make your commits, push your
-commits, then make a pull request. Mention the issue number in the
+commits, then make a pull request. Mention an issue number in the
 pull request, but not the commit message. These practices allow the
 competition of ideas (Sugar Labs is a meritocracy).
 
@@ -115,7 +113,7 @@ Workflow
 
 We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of repositories.
 
-Each improvement to Sugar should start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project.
+An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project.
 
 ### Forking
 
