@@ -14,12 +14,9 @@ convert a single icon or run over a batch of icons at one time.
 
 You can find the script in the [sugariconify repository](https://github.com/GhostAlgorithm/sugariconify/blob/master/sugariconify.py).
 
-There is a web service available for converting icons as
-well (See [Sugar Iconify Service](http://kuckuck.treehouse.su:5000/)).
-
 For additional information about creating an SVG suitable for Sugar,
 see the tutorial on [Making Sugar
-Icons](http://wiki.laptop.org/go/Making_Sugar_icons).
+Icons](http://wiki.sugarlabs.org/go/Development_Team/Almanac/Making_Icons).
 
 In some cases, you may desire to update a single icon, or a subset of
 the icons defined within a given SVG. To do so, pass a pattern to the
