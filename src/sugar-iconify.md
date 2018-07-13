@@ -224,5 +224,5 @@ entities, True or False are the only accepted values.
 ```
 ----
 
-You can find more at https://wiki.sugarlabs.org/go/Sugar_iconify
+
 You can find the repository at https://github.com/i5o/iconify-web
