@@ -65,7 +65,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] correlate with `activity_version` metadata in `activity/activity.info`,
 
-* [ ] look for commmits _after_ any of these, in either;
+* [ ] look for commits _after_ any of these, in either;
 
     * [ ] master branch of repository at sugarlabs,
     * [ ] any other branches,
@@ -77,7 +77,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] apply all desired commits, making pull requests if review is needed,
 
-* [ ] apply all [translation.sugarlabs.org](https://translate.sugarlabs.org) changes,
+* [ ] apply any [translation.sugarlabs.org](https://translate.sugarlabs.org) changes,
 
 * [ ] regenerate the POT file using `python setup.py genpot`, review the changes, and commit,
 
@@ -91,7 +91,9 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] for activities that include a tarball release, or where Fedora or Debian packages may be made, create a tarball using `python setup.py dist_source`, and upload tarball to download.sugarlabs.org using shell account,
 
-* [ ] create bundle using `python setup.py dist_xo`, test that it can be installed by Browse, and upload to activities.sugarlabs.org using developer account.
+* [ ] create bundle using `python setup.py dist_xo`, test that it can be installed by Browse, and upload to activities.sugarlabs.org using developer account,
+
+* [ ] rebase any other maintained branches or pull requests, such as those for future versions of Python, or past releases of Fedora, Ubuntu or libraries.
 
 
 Modifying Sugar
