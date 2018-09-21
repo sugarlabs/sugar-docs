@@ -40,7 +40,8 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
   </tr>
 </tbody></table>
 
-
+  * [Complete the activity development tutorial](https://github.com/llaske/sugarizer/blob/master/docs/tutorial.md)
+ 
 
 ### Sugar Desktop
 

@@ -282,7 +282,7 @@ After that, on *sugar-build* you can make an XO bundle and upload it to the Suga
 
     python setup.py dist_xo
 
-With *Sugarizer*, you can directly publish the XO bundle. So, just zip the content of your `activities/MyActivity.activity` directory and rename the `.zip` file to a `.xo` file.
+With **Sugarizer**, you can directly publish the XO bundle. So, just zip the content of your `activities/MyActivity.activity` directory and rename the `.zip` file to a `.xo` file.
 
 For further releases, you should update the activity_version in
 `activity/activity.info`.
