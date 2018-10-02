@@ -79,7 +79,7 @@ Coding, documentation and quality assurance is important - it is required everyw
   * Another way you can contribute to Sugar Labs is the [Release Engineer's Feature Tracking wiki page](https://wiki.sugarlabs.org/go/Features). These are features proposed and implemented by other Sugar Labs community contributors. The progress of the feature is also indicated in the page - please contribute to tasks which are "In Progress".
   * You can test Sugar and Activities and familiarise yourself with Sugar, making a note of where your expectation is betrayed by your observations, then seek feedback from others to learn if your expectation was right, and post inconsistencies to the corresponding GitHub repository issues page, [Wiki](https://wiki.sugarlabs.org), or mailing list [sugar-devel@lists.laptop.org][2],
   * You can go to a specific GitHub repository and work on the bugs in the source code.  Choose the "Issues" tabs and work through the various issues listed in it. The main Sugar Labs GitHub Repositories are listed in the "Important Sugar Labs Links".
-  * You can write documentation, see the [Wiki](https://wiki.sugarlabs.org), the [Help Activity](http://wiki.sugarlabs.org/go/Activities/Help/Contribute) which is kept in the [Help](https://github.com/godiard/help-activity) repository, and this [developer documentation](docs.md).
+  * You can write documentation, see the [Wiki](https://wiki.sugarlabs.org), the [Help Activity](http://wiki.sugarlabs.org/go/Activities/Help/Contribute) which are kept in the [Help](https://github.com/godiard/help-activity) repository, and this [developer documentation](docs.md).
   * You can update web sites, see [www.sugarlabs.org](https://www.sugarlabs.org/) which is kept in the [www-sugarlabs](https://github.com/sugarlabs/www-sugarlabs) repository.
   * You can monitor [activities.sugarlabs.org](https://activities.sugarlabs.org/) for activities to download in Sugar.
   * You can choose to write your own [desktop activity][1] or write your own [web activity][5].
@@ -88,7 +88,7 @@ Coding, documentation and quality assurance is important - it is required everyw
   * You can test code coverage of activities, using the [guide](python-coverage-guide.md).
 
 ## <a name="DESIGN-TEAM"></a> Design
-Design is also crucial to Sugar Labs - it is where new ideas and initiatives are formed into proper reports which can be worked on. You can either contribute a new design proposal or implement an existing one in the [Design Team User Experience Proposals wiki page](https://wiki.sugarlabs.org/go/Design_Team/Proposals).
+Design is crucial to Sugar Labs - it is where new ideas and initiatives are formed into proper reports which can be worked on. You can either contribute a new design proposal or implement an existing one in the [Design Team User Experience Proposals wiki page](https://wiki.sugarlabs.org/go/Design_Team/Proposals).
 
 ## <a name="MARKETING-OUTREACH"></a> Marketing/Outreach
 You can help to increase the number of Sugar Labs users through -
@@ -98,7 +98,7 @@ You can help to increase the number of Sugar Labs users through -
   * Design and execute lesson plans to introduce more children and youth to Sugar Labs, either in schools, outside school or in an informal setting.
 
 ## <a name="IMPORTANT-LINKS"></a> Important Sugar Labs Links
-The links listed below are of important Sugar Labs code repositories, wiki and website. Some of the code repositories ar based under the Sugar Labs GitHub Organisation, while others are not.
+The links listed below are of important Sugar Labs code repositories, wiki and website. Some of the code repositories are based under the Sugar Labs GitHub Organisation, while others are not.
 
 __Github Organisation Page__
 
