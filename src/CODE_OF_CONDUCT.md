@@ -1,8 +1,8 @@
 Code of Conduct
 ===============
 
-To be effective, the members of the Sugar Labs community must to work
-together; our code of conduct lays down the "ground rules" for our
+The members of the Sugar Labs community must to work
+together to be effective; our code of conduct lays down the "ground rules" for our
 cooperative efforts.
 
 The Sugar Labs community supports the educators and software
