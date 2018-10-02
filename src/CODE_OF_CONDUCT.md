@@ -1,15 +1,14 @@
 Code of Conduct
 ===============
 
-To be effective, the members of the Sugar Labs community must to work
+To be effective, the members of the Sugar Labs community must work
 together; our code of conduct lays down the "ground rules" for our
 cooperative efforts.
 
 The Sugar Labs community supports the educators and software
 developers who use and develop the Sugar Learning Platform. Sugar is a
-place for children to explore, learn, teach, and reflect. Sugar Labs
-is a place where we all can explore, learn, teach, and reflect. The
-same underlying principles that make Sugar great—discovery,
+place for all and especially for children to explore, learn, teach, and reflect. 
+The same underlying principles that make Sugar great—discovery,
 collaboration, and reflection—are central to the way the Sugar
 community operates.
 
