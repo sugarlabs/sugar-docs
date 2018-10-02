@@ -73,7 +73,7 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
 
 
 ## <a name="OUTREACHY-GSOC"></a> Coding, Documentation and Quality Assurance
-Coding, documentation and quality assurance is important - it is required everywhere from producing new software, rolling out new features, maintaining and upgrading current releases, distributing instructions for others to know how to operating the software, and ensuring that others can use software with any problems.
+Coding, documentation and quality assurance is important - it is required everywhere from producing new software, rolling out new features, maintaining and upgrading current releases, distributing instructions for others to know how to operate the software, and ensuring that others can use software without any problem.
 
   * We have mentoring opportunities through our participation in programs such as Outreachy, [Google Summer Of Code](https://wiki.sugarlabs.org/go/Summer_of_Code/2017), and [Google Code-In](https://wiki.sugarlabs.org/go/Google_Code_In_2017). You can read about these programs in the Wiki.
   * Another way you can contribute to Sugar Labs is the [Release Engineer's Feature Tracking wiki page](https://wiki.sugarlabs.org/go/Features). These are features proposed and implemented by other Sugar Labs community contributors. The progress of the feature is also indicated in the page - please contribute to tasks which are "In Progress".
