@@ -19,22 +19,22 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
     <th style="border: 2px black solid">Recommendations</th>
   </tr>
   <tr>
-    <td style="border: 2px black solid">You have a tablet or phone</td>
+    <td style="border: 2px black solid">Tablet or phone</td>
     <td style="border: 2px black solid">Android or iOS</td> 
     <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from Google Play.</td>
   </tr>
   <tr>
-    <td style="border: 2px black solid">You have a tablet or phone</td>
+    <td style="border: 2px black solid">Tablet or phone</td>
     <td style="border: 2px black solid">iOS</td> 
     <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the App Store.</td>
   </tr>
   <tr>
-    <td style="border: 2px black solid">You have a Chromebook</td>
+    <td style="border: 2px black solid">Chromebook</td>
     <td style="border: 2px black solid">Chrome OS</td> 
    <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Chrome Web Store.</td>
   </tr>
   <tr>
-    <td style="border: 2px black solid">You have a Windows computer</td>
+    <td style="border: 2px black solid">Windows computer</td>
     <td style="border: 2px black solid">Windows</td> 
     <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Windows Store.</td>
   </tr>
