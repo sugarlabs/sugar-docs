@@ -98,7 +98,7 @@ You can help to increase the number of Sugar Labs users through -
   * Design and execute lesson plans to introduce more children and youth to Sugar Labs, either in schools, outside school or in an informal setting.
 
 ## <a name="IMPORTANT-LINKS"></a> Important Sugar Labs Links
-The links listed below are of important Sugar Labs code repositories, wiki and website. Some of the code repositories ar based under the Sugar Labs GitHub Organisation, while others are not.
+The links listed below are of important Sugar Labs code repositories, wiki and website. Some of the code repositories are based under the Sugar Labs GitHub Organisation, while others are not.
 
 __Github Organisation Page__
 
