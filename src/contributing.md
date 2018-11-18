@@ -51,7 +51,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] if your changes add a new feature or will affect users; update the NEWS file, the README.md file, and the help-activity,
 
-* [ ] if your changes affect translatable strings; regenerate the POT file, with `python setup.py genpot`,
+* [ ] if there is a `po/*.pot` file, and your changes affect translated strings; regenerate using `python setup.py genpot`,
 
 * [ ] make a branch, one or more commits, and a pull request, see [Workflow](#workflow) below.
 
@@ -79,7 +79,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] apply any [translation.sugarlabs.org](https://translate.sugarlabs.org) changes,
 
-* [ ] regenerate the POT file using `python setup.py genpot`, review the changes, and commit,
+* [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit,
 
 * [ ] notify our translation-community manager @leonardcj if the POT file changes contain new or changed strings,
 
