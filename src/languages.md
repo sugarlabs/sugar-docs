@@ -37,6 +37,10 @@ different programming languages and libraries;
 
 * RiverHex activity for Sugar,
 
+## SmallTalk, Squeak
+
+* EToys activity for Sugar,
+
 ## Shell
 
 * Sugar,
