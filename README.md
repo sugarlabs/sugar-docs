@@ -7,6 +7,7 @@ Welcome to documentation for contributors and developers.
 * [Code of Conduct](src/CODE_OF_CONDUCT.md)
 * [How can I help?](src/how-can-i-help.md)
 * [Contribute code](src/contributing.md)
+* [Programming Languages](src/languages.md)
 * [Contact](src/contact.md)
 
 ## Design
