@@ -567,7 +567,7 @@ a class with methods for `get_x()`, `get_y()`, `get_width()`, and
 
 Note that `cairo.Region` will no longer work in GTK+ 3
 
-(For more detailes, see
+(For more details, see
 <http://developer.gnome.org/pangomm/2.28/annotated.html>)
 
 #### Replacing pixmaps with Cairo
