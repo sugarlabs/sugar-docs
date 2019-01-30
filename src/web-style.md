@@ -94,7 +94,7 @@ If you are hacking on sugar-web, run the testsuit with the *karma* command insid
 
     karma start sugar-web/test/karma.conf.js
 
-We encourage writting new unit tests for new features.
+We encourage writing new unit tests for new features.
 
 After you do the changes, run:
 
