@@ -126,7 +126,7 @@ It is equivalent of -s on command line, it can be a hex value
    icon.set_stroke_color('rgb(55%, 12%, 55%)')
 ```
 #### #set_fill_color():
-It is quivalent of -f on command line, it can be a hex value
+It is equivalent of -f on command line, it can be a hex value
 (e.g #FF0000) or a rgb percent value such as rgb(32%, 33%, 87%).
 
 ```
