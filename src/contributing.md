@@ -77,7 +77,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] apply all desired commits, making pull requests if review is needed,
 
-* [ ] apply any [translation.sugarlabs.org](https://translate.sugarlabs.org) changes,
+* [ ] apply any [translation.sugarlabs.org](https://translate.sugarlabs.org) changes, e.g. using a [download script](https://github.com/sugarlabs/sugar-tools/blob/master/activity-translations),
 
 * [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit,
 
