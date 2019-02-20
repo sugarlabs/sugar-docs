@@ -46,19 +46,25 @@ These old activities are to be ported to GTK 3.  This guide explains how.
 
 ## How to Port to GTK 3
 
+General information for all GTK applications;
+
 * [PyGObject - Porting from Static Bindings](http://pygobject.readthedocs.io/en/latest/guide/porting.html) part of the PyGObject documentation, focusing on Python,
 * [PyGObject - Introspection Porting](http://live.gnome.org/PyGObject/IntrospectionPorting) on the GNOME Wiki, focusing on Python,
 * [Migrating from GTK 2 to GTK 3](https://developer.gnome.org/gtk3/stable/gtk-migrating-2-to-3.html) part of the GTK documentation, focusing on the underlying C library and object classes, but is relevant to Python porting because the same classes are used.
 
 ## How to Port a Sugar Activity to GTK 3
 
-* Quiesce the activity source by making sure the activity works properly before porting, closing any solved issues, merging any pull requests or branches and releasing the last GTK 2 version; see the activity [maintainer checklist](contributing.md#checklist---maintainer).
+* Set up development environment for Sugar on GTK 3; such as Ubuntu 18.04,
+
+* Set up test environments capable of both GTK 2 and GTK 3 at the same time; such as Ubuntu 16.04,
+
+* Quiesce the activity source by making sure the activity works properly before porting, fixing any bugs, closing any solved issues, merging any pull requests or branches and releasing the last GTK 2 version; see the activity [maintainer checklist](contributing.md#checklist---maintainer).
 
 * Port to Sugar Toolkit for GTK 3 (see below),
 
 * Port to GTK 3, using the [PyGObject script pygi-convert.sh](https://gitlab.gnome.org/GNOME/pygobject/blob/master/tools/pygi-convert.sh) to convert automatically much as it can.
 
-* Port to any other libraries, such as Cairo, Pango, GConf to Gio.Settings, GStreamer 0.10 to GStreamer 1.0,
+* Port to any other libraries, such as Sugargame, Cairo, Pango, GConf to Gio.Settings, GStreamer 0.10 to GStreamer 1.0,
 
 * Test and iterate until original functionality is reached.
 
