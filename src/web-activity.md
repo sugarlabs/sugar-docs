@@ -23,15 +23,17 @@ environment, so your activity may only work in Sugarizer.
 
 ### Create the activity from the template
 
-On *sugar-build*, after you have built the development
-environment, enter the shell
+On *packaged sugar* and *sugar-build*, after you have built the development
+environment, clone the [Sugarizer repository](https://github.com/llaske/Sugarizer).
+Install volo through npm.
 
-    ./osbuild shell
+    npm install -g volo
 
 Create an activity based on the default template
 
-    volo create my-activity ./sugar-web-template
-    cd my-activity
+    cd sugarizer/activities
+    volo create MyActivity.activity ./ActivityTemplate
+    cd MyActivity.activity
 
 On *Sugarizer*, after you've cloned - or copied - the [Sugarizer
 repository](https://github.com/llaske/Sugarizer), copy all content of
@@ -66,7 +68,7 @@ Now you should have a basic activity running!
 
 In your new activity, you will find the following file structure:
 
-    my-activity/
+    MyActivity.activity/
     |-- activity/
     |   |-- activity.info
     |   `-- activity-icon.svg
@@ -255,7 +257,7 @@ the following command inside the activity directory:
 You can easily add AMD-ready libraries with volo.  For example, to add
 [RaphaelJS](http://raphaeljs.com/):
 
-    [osbuild my-activity]$ volo add DmitryBaranovskiy/raphael
+    $ volo add DmitryBaranovskiy/raphael
     Downloading: https://codeload.github.com/DmitryBaranovskiy/raphael/legacy.zip/v2.1.2
     Installed github:DmitryBaranovskiy/raphael/v2.1.2 at lib/raphael.js
     AMD dependency name: raphael
