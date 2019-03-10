@@ -26,7 +26,7 @@ Guide to porting Sugar Activities to Python 3.
   Start your porting with [2to3](https://docs.python.org/3.0/library/2to3.html) tool,<br>
   In the terminal, type:
   ```shell
-  2to3 -w *.py
+  2to3 -w -n *.py
   ```
 * Change `exec` value in `activity.info` from `sugar-activity` to `sugar-activity3`
 * Test the activity
