@@ -6,12 +6,7 @@ Write your own Sugar web activity
 You've got three choices to develop your own web activity for Sugar:
 
 - install packaged Sugar on Fedora, Debian, or Ubuntu; or,
-- use *sugar-build*;
 - use Sugarizer.
-
-*sugar-build* is a Sugar desktop build environment. With *sugar-build*
-you've got a full Sugar desktop environment. It's a good choice if
-you've enough knowledge to build your environment on GNU Linux.
 
 See [Setup a development environment](https://github.com/sugarlabs/sugar/blob/master/docs/development-environment.md) for more detail.
 
@@ -23,7 +18,7 @@ environment, so your activity may only work in Sugarizer.
 
 ### Create the activity from the template
 
-On *packaged sugar* and *sugar-build*, after you have built the development
+On *packaged sugar*, after you have built the development
 environment, clone the [Sugarizer repository](https://github.com/llaske/Sugarizer).
 Install volo through npm.
 
@@ -51,7 +46,7 @@ And also in the title tag of `index.html`.
 
 ![index.html](images/activity-html.png "index.html")
 
-On *sugar-build*, install the activity for development
+On *packaged sugar*, install the activity for development
 
     python setup.py dev
 
@@ -245,7 +240,7 @@ The activity depends on the
 that provides the Sugar API and the Sugar look & feel.
 
 This means that if there are changes to the library you have to update
-your local copy. You can do this (on *sugar-build* only) with running
+your local copy. You can do this with running
 the following command inside the activity directory:
 
     volo add -f
@@ -280,7 +275,7 @@ Before your first release, you should:
   activity icon activity/activity-icon.svg .  Or if you don't have
   graphics skills, you can ask in the community if someone can do it.
 
-After that, on *sugar-build* you can make an XO bundle and upload it to the Sugar Activity Library <http://activities.sugarlabs.org/> (ASLO).
+After that, on *packaged-sugar* you can make an XO bundle and upload it to the Sugar Activity Library <http://activities.sugarlabs.org/> (ASLO).
 
     python setup.py dist_xo
 
