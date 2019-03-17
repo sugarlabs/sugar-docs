@@ -81,7 +81,6 @@ Coding, documentation and quality assurance is important - it is required everyw
   * You can go to a specific GitHub repository and work on the bugs in the source code.  Choose the "Issues" tabs and work through the various issues listed in it. The main Sugar Labs GitHub Repositories are listed in the "Important Sugar Labs Links".
   * You can write documentation, see the [Wiki](https://wiki.sugarlabs.org), the [Help Activity](http://wiki.sugarlabs.org/go/Activities/Help/Contribute) which is kept in the [Help](https://github.com/godiard/help-activity) repository, and this [developer documentation](docs.md).
   * You can update web sites, see [www.sugarlabs.org](https://www.sugarlabs.org/) which is kept in the [www-sugarlabs](https://github.com/sugarlabs/www-sugarlabs) repository.
-  * You can monitor [activities.sugarlabs.org](https://activities.sugarlabs.org/) for activities to download in Sugar.
   * You can choose to write your own [desktop activity][1] or write your own [web activity][5].
   * You can port activities which are in GTK+ 2 to GTK+ 3, using the [guide](gtk3-porting-guide.md).
   * You can port activities which are in Python 2 to Python 3, using the [guide](python-porting-guide.md).

@@ -205,14 +205,15 @@ Once your activity is working, you can ask to have
 your activity repository hosted under the [Sugar Labs github
 organization](http://github.com/sugarlabs).
 
-Make an XO bundle and upload it to
-the Sugar Activity Library <http://activities.sugarlabs.org/> (ASLO).
+Make an XO bundle.
 ```
 python setup.py dist_xo
 ```
+And if it works with Python 2 then upload it to the Sugar Activity
+Library <http://activities.sugarlabs.org/>.
 After that, users of Sugar can download and install your activity.
 
-For further releases, you should update the activity_version in
+For further releases, you must update the activity_version in
 `activity/activity.info`.
 
 More details

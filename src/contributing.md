@@ -57,7 +57,8 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 ### Checklist - maintainer
 
-* [ ] check version of latest bundle release in [activities.sugarlabs.org](https://activities.sugarlabs.org/),
+* [ ] for Python 2 branches, check version of latest bundle release in
+  [activities.sugarlabs.org](https://activities.sugarlabs.org/),
 
 * [ ] check version of latest tarball release in [download.sugarlabs.org/sources/sucrose/fructose/](https://download.sugarlabs.org/sources/sucrose/fructose/) or [download.sugarlabs.org/sources/honey/](https://download.sugarlabs.org/sources/honey/),
 
@@ -91,9 +92,15 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] for activities that include a tarball release, or where Fedora or Debian packages may be made, create a tarball using `python setup.py dist_source`, and upload tarball to download.sugarlabs.org using shell account,
 
-* [ ] create bundle using `python setup.py dist_xo`, test that it can be installed by Browse, and upload to activities.sugarlabs.org using developer account,
+* [ ] create bundle using `python setup.py dist_xo`, and test that it
+  can be installed by Browse,
 
-* [ ] rebase any other maintained branches or pull requests, such as those for future versions of Python, or past releases of Fedora, Ubuntu or libraries.
+* [ ] for Python 2 branches only, upload to activities.sugarlabs.org
+  using developer account,
+
+* [ ] rebase any other maintained branches or pull requests, such as
+  those for past or future versions of Python, or past releases of
+  Fedora, Ubuntu or libraries.
 
 
 Modifying Sugar
