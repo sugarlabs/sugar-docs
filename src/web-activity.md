@@ -275,7 +275,9 @@ Before your first release, you should:
   activity icon activity/activity-icon.svg .  Or if you don't have
   graphics skills, you can ask in the community if someone can do it.
 
-After that, on *packaged-sugar* you can make an XO bundle and upload it to the Sugar Activity Library <http://activities.sugarlabs.org/> (ASLO).
+After that, if the activity works with Sugar 0.112 or earlier, on
+*packaged-sugar* you may make a bundle and upload it to the Sugar
+Activity Library <http://activities.sugarlabs.org/>.
 
     python setup.py dist_xo
 
