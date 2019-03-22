@@ -22,6 +22,7 @@ Welcome to documentation for contributors and developers.
 * [Python code style](src/python-style.md)
 * [Memory leaks](src/memory-leaks.md)
 * [GTK 3 Porting Guide](src/gtk3-porting-guide.md)
+* [Python 3 Porting Guide](src/python-porting-guide.md)
 
 ## Sugar Web
 
