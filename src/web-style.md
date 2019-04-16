@@ -87,3 +87,18 @@ The recess command is provided by sugar-build.
 To check CSS or LESS code:
 
     recess css/activity.css -noIDs false -noOverqualifying false
+
+### Karma
+
+If you are hacking on sugar-web, run the testsuit with the *karma* command inside a osbuild shell:
+
+    karma start sugar-web/test/karma.conf.js
+
+We encourage writing new unit tests for new features.
+
+After you do the changes, run:
+
+    check
+
+It will run all the code checks and the unit tests making sure you won't break the build when your changes are pushed. 
+If a test doesn't pass either your code needs to be fixed or the test need to be adapted.

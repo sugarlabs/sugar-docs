@@ -1,37 +1,9 @@
-Introduction
-============
+# Page Moved
 
-Welcome to the Sugar developers site. Here you will find all you need
-to get started and contribute to Sugar. You can also help us [improve
-this documentation](docs.md.html).
+We have moved this page to [GitHub](https://github.com/sugarlabs/sugar-docs/blob/master/README.md).
 
-Getting started
----------------
+How did you get here?  Please [report](https://github.com/sugarlabs/sugar-docs/issues) any lingering links.
 
-* [Setup a development environment](dev-environment.md.html)
-* [What can I do?](what-can-i-do.md.html)
-* [Write your own activity](activity.md.html)
-* [Contribute code](contributing.md.html)
+2018-02-14
 
-Design
-------
-
-* [Humane Interface Guidelines](HIG.md.html)
-* [Components showcase](http://sugarlabs.github.io/sugar-web-samples/)
-
-Sugar Web
----------
-
-* [Architecture](web-architecture.md.html)
-* [Web code style](web-style.md.html)
-* [Components documentation](sugar-web/README.md.html)
-
-Sugar GTK
----------
-
-* [Python code style](python-style.md.html)
-
-Sugar Android
--------------
-
-* [Web activity](android.md.html)
+<!-- file to exist while developers.sugarlabs.org continues to be rendered from this repository -->

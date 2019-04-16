@@ -16,11 +16,11 @@ Python
 Libraries
 ---------
 
-* New code should be written using Gtk3, Gst-1.0, etc.
+* New code should be written in Python 3, using GTK+ 3, GStreamer 1.0, etc
 
 * Use json, ...
 
-* Use sugargames when interfacing to pygames
+* Use [sugargame](https://github.com/sugarlabs/sugargame) when interfacing to pygames
 
 Conventions
 -----------
