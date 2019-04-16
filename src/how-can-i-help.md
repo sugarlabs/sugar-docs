@@ -15,8 +15,13 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
 <table style="width:100%; border-collapse:collapse">
   <tbody><tr>
     <th style="border: 2px black solid">Your Equipment</th>
-    <th style="border: 2px black solid">Your Operating System</th> 
+    <th style="border: 2px black solid">Your Operating System</th>
     <th style="border: 2px black solid">Recommendations</th>
+  </tr>
+  <tr>
+    <td style="border: 2px black solid">You have a computer</td>
+    <td style="border: 2px black solid">Linux, Windows or macOS</td>
+    <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> package for your operating system.</td>
   </tr>
   <tr>
     <td style="border: 2px black solid">You have a tablet or phone</td>
@@ -29,14 +34,9 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
     <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the App Store.</td>
   </tr>
   <tr>
-    <td style="border: 2px black solid">You have a Chromebook</td>
-    <td style="border: 2px black solid">Chrome OS</td> 
-   <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Chrome Web Store.</td>
-  </tr>
-  <tr>
-    <td style="border: 2px black solid">You have a Windows computer</td>
-    <td style="border: 2px black solid">Windows</td> 
-    <td style="border: 2px black solid">Install the <a href="https://sugarizer.org/">Sugarizer</a> app from the Windows Store.</td>
+    <td style="border: 2px black solid">You have just a browser</td>
+    <td style="border: 2px black solid">Any</td> 
+    <td style="border: 2px black solid">Test Sugarizer on the <a href="https://try.sugarizer.org/">Sugarizer</a> web site.</td>
   </tr>
 </tbody></table>
 
@@ -44,7 +44,6 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
  
 
 ### Sugar Desktop
-
 <table style="width:100%; border-collapse:collapse">
   <tr>
     <th style="border: 2px black solid">Your Equipment</th>
