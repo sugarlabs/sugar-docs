@@ -123,6 +123,27 @@ Workflow
 We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of repositories.
 
 An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project.
+The below template contains are all useful things to include and will hopefully make it easier for others to recreate the issue to provide better assistance/feedback.
+```
+**What**
+This should ideally be the same as the title or one line summary of an issue.
+
+**Why**
+Description of an issue. This should be written from a user perspective as user stories.
+A user story describes the Who, What, and Why scenario and expresses user needs in terms of what the user wants to achieve.
+
+Example 1: "As a <type of user or role>, I can't <action> in order to <purpose>", is a user story.
+Example 2: "As a new user, I can't input my username and password into a login form on the desktop page and click submit in order to create a new account"
+
+**Link(s)**
+Links to any documentation/specs or other related issues.
+
+**Screenshot(s)**
+If any.
+
+**Notes**
+If any.
+```
 
 ### Forking
 
