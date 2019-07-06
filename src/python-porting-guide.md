@@ -22,6 +22,37 @@ Guide to porting Sugar Activities to Python 3.
   ```python
   from gi.repository import TelepathyGLib
   ```
+  Use constants from `TelepathyGLib`
+  ```python
+  from telepathy.interfaces import CHANNEL
+  ```
+  should change to:
+  ```python
+  CHANNEL = TelepathyGLib.IFACE_CHANNEL
+  ```
+  Replace calls to `Channel` and `Connection` classes of `telepathy-python` with a dictonary
+  of `dbus.Interface()`. Look through the source code for constants used by `Channel` and `Connection` objects as keys. Use these constants as keys of dictonary for the `dbus.Interface()` objects.
+  Example-
+  ```python
+  Channel(self._connection.requested_bus_name, channel_path,
+    ready_handler=self.__text_channel_ready_cb)
+  ```
+  should change to (ensure adding all key-interface pairs):
+  ```python
+  self.text_channel = {}
+  self.text_proxy = dbus.Bus().get_object(
+            self._connection.requested_bus_name, channel_path)
+  self.text_channel[PROPERTIES_IFACE] = dbus.Interface(
+            self.text_proxy, PROPERTIES_IFACE)
+  ```
+  Replace all bare references to `telepathy_text_chan`
+  ```python
+  self.telepathy_text_chan.AddMembers(
+  ```
+  should change to:
+  ```python
+  self.telepathy_text_chan[CHANNEL].AddMembers(
+  ```
 
 * Port from Python 2 to Python 3.
   Start your porting with [2to3](https://docs.python.org/3.0/library/2to3.html) tool,<br>
