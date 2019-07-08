@@ -35,9 +35,11 @@ Guide to porting Sugar Activities to Python 3.
   ```python
   CHANNEL = TelepathyGLib.IFACE_CHANNEL
   ```
-  Replace calls to `Channel` and `Connection` classes of `telepathy-python` with a dictonary
-  of `dbus.Interface()`. Look through the source code for constants used by `Channel` and `Connection` objects as keys. Use these constants as keys of dictonary for the `dbus.Interface()` objects.
-  Example-
+  Replace calls to `Channel` and `Connection` classes of
+  `telepathy-python` with a dictonary of `dbus.Interface()`.  Look
+  through the source code for constants used by `Channel` and `Connection`
+  objects as keys.  Use these constants as keys to a dictonary of the
+  `dbus.Interface()` objects.  For example;
   ```python
   Channel(self._connection.requested_bus_name, channel_path,
     ready_handler=self.__text_channel_ready_cb)
