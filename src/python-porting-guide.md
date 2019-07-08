@@ -12,9 +12,14 @@ Guide to porting Sugar Activities to Python 3.
 
 * Quiesce the activity source by making sure the activity works properly before porting, closing any solved issues, merging any pull requests or branches and releasing the last Python 2 version; see the [activity maintainer checklist](contributing.md#checklist---maintainer).
 
-* Use Sugar Toolkit for GTK 3 version 0.113 or later.
+* For activities known to work with Fedora 18, create a _fedora18_ branch and push; this branch will be for any future maintenance with Python 2,
 
-* If the activity uses `telepathy-python`, port to PyGObject binding `TelepathyGLib`
+* Use Sugar Toolkit for GTK 3 version 0.114 or later, built for Python 3, and test that `/usr/bin/python3` can import it, for example;
+  ```python
+  import sugar3
+  ```
+
+* If the activity uses `telepathy-python`, test and fix collaboration, then port to PyGObject binding `TelepathyGLib`, and test again, for example;
   ```python
   import telepathy
   ```
@@ -22,6 +27,41 @@ Guide to porting Sugar Activities to Python 3.
   ```python
   from gi.repository import TelepathyGLib
   ```
+  Use constants from `TelepathyGLib`, and minimise changes, for example;
+  ```python
+  from telepathy.interfaces import CHANNEL
+  ```
+  should change to:
+  ```python
+  CHANNEL = TelepathyGLib.IFACE_CHANNEL
+  ```
+  Replace calls to `Channel` and `Connection` classes of
+  `telepathy-python` with a dictonary of `dbus.Interface()`.  Look
+  through the source code for constants used by `Channel` and `Connection`
+  objects as keys.  Use these constants as keys to a dictonary of the
+  `dbus.Interface()` objects.  For example;
+  ```python
+  Channel(self._connection.requested_bus_name, channel_path,
+    ready_handler=self.__text_channel_ready_cb)
+  ```
+  should change to (ensure adding all key-interface pairs):
+  ```python
+  self.text_channel = {}
+  self.text_proxy = dbus.Bus().get_object(
+            self._connection.requested_bus_name, channel_path)
+  self.text_channel[PROPERTIES_IFACE] = dbus.Interface(
+            self.text_proxy, PROPERTIES_IFACE)
+  ```
+  Replace all bare references to `telepathy_text_chan` and
+  `telepathy_tubes_chan`
+  ```python
+  self.telepathy_text_chan.AddMembers(
+  ```
+  should change to:
+  ```python
+  self.telepathy_text_chan[CHANNEL].AddMembers(
+  ```
+  Test and fix collaboration before proceeding further.
 
 * Port from Python 2 to Python 3.
   Start your porting with [2to3](https://docs.python.org/3.0/library/2to3.html) tool,<br>
@@ -49,6 +89,8 @@ should be greater than the existing one.
 Please follow
 [this](contributing.md#checklist---maintainer)
 guide for releasing a new version.
+
+Avoid releasing Python 3 activities to https://activities.sugarlabs.org/ as these will not work on existing systems.
 
 ## Resources:
  - [What's new in Python 3 | Python Docs](https://docs.python.org/3.0/whatsnew/3.0.html)
