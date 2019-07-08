@@ -12,7 +12,10 @@ Guide to porting Sugar Activities to Python 3.
 
 * Quiesce the activity source by making sure the activity works properly before porting, closing any solved issues, merging any pull requests or branches and releasing the last Python 2 version; see the [activity maintainer checklist](contributing.md#checklist---maintainer).
 
-* Use Sugar Toolkit for GTK 3 version 0.113 or later.
+* Use Sugar Toolkit for GTK 3 version 0.114 or later, built for Python 3, and test that `/usr/bin/python3` can import it, for example;
+  ```python
+  import sugar3
+  ```
 
 * If the activity uses `telepathy-python`, port to PyGObject binding `TelepathyGLib`
   ```python
