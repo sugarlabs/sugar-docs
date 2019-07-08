@@ -12,6 +12,8 @@ Guide to porting Sugar Activities to Python 3.
 
 * Quiesce the activity source by making sure the activity works properly before porting, closing any solved issues, merging any pull requests or branches and releasing the last Python 2 version; see the [activity maintainer checklist](contributing.md#checklist---maintainer).
 
+* For activities known to work with Fedora 18, create a _fedora18_ branch and push; this branch will be for any future maintenance with Python 2,
+
 * Use Sugar Toolkit for GTK 3 version 0.114 or later, built for Python 3, and test that `/usr/bin/python3` can import it, for example;
   ```python
   import sugar3
@@ -83,6 +85,8 @@ should be greater than the existing one.
 Please follow
 [this](contributing.md#checklist---maintainer)
 guide for releasing a new version.
+
+Avoid releasing Python 3 activities to https://activities.sugarlabs.org/ as these will not work on existing systems.
 
 ## Resources:
  - [What's new in Python 3 | Python Docs](https://docs.python.org/3.0/whatsnew/3.0.html)
