@@ -19,7 +19,7 @@ Guide to porting Sugar Activities to Python 3.
   import sugar3
   ```
 
-* If the activity uses `telepathy-python`, test and fix collaboration, then port to PyGObject binding `TelepathyGLib`, for example;
+* If the activity uses `telepathy-python`, test and fix collaboration, then port to PyGObject binding `TelepathyGLib`, and test again, for example;
   ```python
   import telepathy
   ```
@@ -58,6 +58,7 @@ Guide to porting Sugar Activities to Python 3.
   ```python
   self.telepathy_text_chan[CHANNEL].AddMembers(
   ```
+  Test and fix collaboration before proceeding further.
 
 * Port from Python 2 to Python 3.
   Start your porting with [2to3](https://docs.python.org/3.0/library/2to3.html) tool,<br>
