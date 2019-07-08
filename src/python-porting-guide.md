@@ -52,7 +52,8 @@ Guide to porting Sugar Activities to Python 3.
   self.text_channel[PROPERTIES_IFACE] = dbus.Interface(
             self.text_proxy, PROPERTIES_IFACE)
   ```
-  Replace all bare references to `telepathy_text_chan`
+  Replace all bare references to `telepathy_text_chan` and
+  `telepathy_tubes_chan`
   ```python
   self.telepathy_text_chan.AddMembers(
   ```
