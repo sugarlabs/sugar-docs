@@ -27,7 +27,7 @@ Guide to porting Sugar Activities to Python 3.
   ```python
   from gi.repository import TelepathyGLib
   ```
-  Use constants from `TelepathyGLib`
+  Use constants from `TelepathyGLib`, and minimise changes, for example;
   ```python
   from telepathy.interfaces import CHANNEL
   ```
