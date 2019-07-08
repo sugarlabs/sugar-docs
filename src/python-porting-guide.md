@@ -17,7 +17,7 @@ Guide to porting Sugar Activities to Python 3.
   import sugar3
   ```
 
-* If the activity uses `telepathy-python`, port to PyGObject binding `TelepathyGLib`
+* If the activity uses `telepathy-python`, test and fix collaboration, then port to PyGObject binding `TelepathyGLib`, for example;
   ```python
   import telepathy
   ```
