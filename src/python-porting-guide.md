@@ -12,11 +12,13 @@ Guide to porting Sugar Activities to Python 3.
 
 * Quiesce the activity source by making sure the activity works properly before porting, closing any solved issues, merging any pull requests or branches and releasing the last Python 2 version; see the [activity maintainer checklist](contributing.md#checklist---maintainer).
 
+* Check that a Python 3 port has not already been done; look for a _python3_ branch in the main repository, or any developer fork.
+
 * For activities known to work with Fedora 18, create a _fedora18_ branch and push; this branch will be for any future maintenance with Python 2,
 
-* Use Sugar Toolkit for GTK 3 version 0.114 or later, built for Python 3, and test that `/usr/bin/python3` can import it, for example;
-  ```python
-  import sugar3
+* Use Sugar Toolkit for GTK 3 version 0.115 or later, built for Python 3, and test that `/usr/bin/python3` can import it, for example;
+  ```bash
+  python3 -c 'import sugar3'
   ```
 
 * If the activity uses `telepathy-python`, test and fix collaboration, then port to PyGObject binding `TelepathyGLib`, and test again, for example;
@@ -70,7 +72,8 @@ Guide to porting Sugar Activities to Python 3.
   2to3 -w -n *.py
   ```
 * Change `exec` value in `activity.info` from `sugar-activity` to `sugar-activity3`
-* Test the activity
+* Make Sugar Home View reload the bundle; by restarting Sugar or moving the bundle directory out of `~/Activities` and back again a few seconds later,
+* Test the activity from Sugar,
 * Check if the activity can be built,<br>
   In the terminal, type:
   ```shell
@@ -105,3 +108,9 @@ Here are some examples of porting activities to Python 3:
  - [Write](https://github.com/sugarlabs/write-activity/pull/24/commits/4fc05b3b78a40d5631d1a7b7bda04b1d82920dd8)
  - [Log](https://github.com/sugarlabs/log-activity/pull/9/commits/c39db017968fea18ec4bf6c24c4e359ab95b49fa)
  - [CowBulls](https://github.com/sugarlabs/CowBulls-activity/commit/02a2727f8a11784dad9b711b0684ff2f2b261363)
+
+## Common Questions
+
+### Why does my traceback show Python 2?
+
+Check that you have changed the `activity.info` file, and that Sugar has been restarted.
