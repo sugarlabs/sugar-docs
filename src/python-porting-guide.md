@@ -2,6 +2,8 @@
 
 Guide to porting Sugar Activities to Python 3.
 
+Many activities were written in Python 2 with the PyGObject introspection library, GTK, GDK, GStreamer, and other dependencies.  Activities usually did not have test cases or test coverage.
+
 ## Required Skills
 
 * application development in Python,
@@ -71,9 +73,19 @@ Guide to porting Sugar Activities to Python 3.
   ```shell
   2to3 -w -n *.py
   ```
+  and then review every change made,
+
+* Iterate through [How to Port Python 2 code to Python 3 | Python Docs](https://docs.python.org/3/howto/pyporting.html), and [Supporting Python 3: An in-depth guide](http://python3porting.com/) changing code,
+
+* Check for integer divisions that have become floating point,
+
+* Check for use of binary data, especially in files, pipes, and subprocesses,
+
+* Check for use of _Gtk.CssProvider_, and if so ensure the _load_from_data_ function is given bytes rather than unicode strings, e.g. `b"...",
+
 * Change `exec` value in `activity.info` from `sugar-activity` to `sugar-activity3`
 * Make Sugar Home View reload the bundle; by restarting Sugar or moving the bundle directory out of `~/Activities` and back again a few seconds later,
-* Test the activity from Sugar,
+* Test the activity from Sugar, that it starts without error, that no warnings or errors are in logs, and that each user function works as before,
 * Check if the activity can be built,<br>
   In the terminal, type:
   ```shell
@@ -113,4 +125,8 @@ Here are some examples of porting activities to Python 3:
 
 ### Why does my traceback show Python 2?
 
-Check that you have changed the `activity.info` file, and that Sugar has been restarted.
+Check that you have changed `exec` in `activity.info`, and that Sugar has been restarted.
+
+### Why does "consider porting to Python 3" still appear?
+
+Check that you have changed `exec` in `activity.info`.
