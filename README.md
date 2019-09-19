@@ -23,6 +23,7 @@ Welcome to documentation for contributors and developers.
 * [Memory leaks](src/memory-leaks.md)
 * [GTK 3 Porting Guide](src/gtk3-porting-guide.md)
 * [Python 3 Porting Guide](src/python-porting-guide.md)
+* [Python Coverage Guide](src/python-coverage-guide.md)
 
 ## Sugar Web
 
