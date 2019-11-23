@@ -111,13 +111,13 @@ __GitHub Repositories Under Sugar Labs__
   * [Sugar Artwork](https://github.com/sugarlabs/sugar-artwork)
   * [Sugar Labs Documentation](https://github.com/sugarlabs/sugar-docs)
   * [Sugar Labs Website](https://github.com/sugarlabs/www-sugarlabs)
+  * [TurtleBlocksJS](https://github.com/sugarlabs/turtleblocksjs)
+  * [MusicBlocks](https://github.com/sugarlabs/musicblocks)
+  * [Help Activity](https://github.com/sugarlabs/help-activity)
 
 __GitHub Repositories Not Under Sugar Labs__
 
   * [Sugarizer](https://github.com/llaske/sugarizer)
-  * [TurtleBlocksJS](https://github.com/walterbender/turtleblocksjs)
-  * [MusicBlocks](https://github.com/walterbender/musicblocks)
-  * [Help Activity](https://github.com/godiard/help-activity)
 
 __Other Relevant Links__
 
