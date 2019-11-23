@@ -8,7 +8,28 @@
 5.  [I'm Stuck!](#IM-STUCK)
 
 ## <a name="PREPARE"></a> Prepare
-Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
+Before contributing to Sugar Labs, you should use Music Blocks, Sugarizer or Sugar Desktop.
+
+### Music Blocks
+
+<table style="width:100%; border-collapse:collapse">
+  <tbody><tr>
+    <th style="border: 2px black solid">Your Equipment</th>
+    <th style="border: 2px black solid">Your Operating System</th>
+    <th style="border: 2px black solid">Recommendations</th>
+  </tr>
+  <tr>
+    <td style="border: 2px black solid">You have a computer</td>
+    <td style="border: 2px black solid">Linux, Windows or macOS</td>
+    <td style="border: 2px black solid">Clone the <a href="https://github.com/sugarlabs/musicblocks">Music Blocks</a> git repository.</td>
+  </tr>
+  <tr>
+    <td style="border: 2px black solid">You have just a browser</td>
+    <td style="border: 2px black solid">Any</td> 
+    <td style="border: 2px black solid">Test Music Blocks on the <a href="https://musicblocks.sugarlabs.org/">Music Blocks</a> web site from your computer, tablet, or phone.</td>
+  </tr>
+</tbody></table>
+
 
 ### Sugarizer
 
