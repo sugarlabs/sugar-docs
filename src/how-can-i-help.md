@@ -8,7 +8,29 @@
 5.  [I'm Stuck!](#IM-STUCK)
 
 ## <a name="PREPARE"></a> Prepare
-Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
+Before contributing to Sugar Labs, you should use Music Blocks, Sugarizer or Sugar Desktop.
+
+
+### Music Blocks
+
+<table style="width:100%; border-collapse:collapse">
+  <tbody><tr>
+    <th style="border: 2px black solid">Your Equipment</th>
+    <th style="border: 2px black solid">Your Operating System</th>
+    <th style="border: 2px black solid">Recommendations</th>
+  </tr>
+  <tr>
+    <td style="border: 2px black solid">You have a computer</td>
+    <td style="border: 2px black solid">Linux, Windows or macOS</td>
+    <td style="border: 2px black solid">Clone the <a href="https://github.com/sugarlabs/musicblocks">Music Blocks</a> git repository.</td>
+  </tr>
+  <tr>
+    <td style="border: 2px black solid">You have just a browser</td>
+    <td style="border: 2px black solid">Any</td> 
+    <td style="border: 2px black solid">Test Music Blocks on the <a href="https://musicblocks.sugarlabs.org/">Music Blocks</a> web site from your computer, tablet, or phone.</td>
+  </tr>
+</tbody></table>
+
 
 ### Sugarizer
 
@@ -74,7 +96,8 @@ Before contributing to Sugar Labs, you should use Sugarizer or Sugar Desktop.
 ## <a name="OUTREACHY-GSOC"></a> Coding, Documentation and Quality Assurance
 Coding, documentation and quality assurance is important - it is required everywhere from producing new software, rolling out new features, maintaining and upgrading current releases, distributing instructions for others to know how to operate the software, and ensuring that others can use software without any problem.
 
-  * We have mentoring opportunities through our participation in programs such as [Outreachy](https://wiki.sugarlabs.org/go/Outreachy), [Google Summer Of Code](https://wiki.sugarlabs.org/go/Summer_of_Code/2018), and [Google Code-In](https://wiki.sugarlabs.org/go/Google_Code_In_2018).
+  * We have critical projects listed under the [Projects Tab](https://github.com/orgs/sugarlabs/projects), including porting to GTK 3 and migrating to Python 3. These are great places for Python programmers to jump in.
+  * We have mentoring opportunities through our participation in programs such as [Google Summer Of Code](https://wiki.sugarlabs.org/go/Summer_of_Code/2018), and [Google Code-In](https://wiki.sugarlabs.org/go/Google_Code_In_2018). Please note that only experienced community members can be mentors.
   * Another way you can contribute to Sugar Labs is the [Release Engineer's Feature Tracking page](https://wiki.sugarlabs.org/go/Features). These are features proposed and implemented by other Sugar Labs community contributors. The progress of the feature is also indicated in the page - please contribute to tasks which are "In Progress".
   * You can test Sugar and Activities and familiarise yourself with Sugar, making a note of where your expectation is betrayed by your observations, then seek feedback from others to learn if your expectation was right, and post inconsistencies to the corresponding GitHub repository issues page, [Wiki](https://wiki.sugarlabs.org), or mailing list [sugar-devel@lists.laptop.org][2],
   * You can go to a specific GitHub repository and work on the bugs in the source code.  Choose the "Issues" tabs and work through the various issues listed in it. The main Sugar Labs GitHub Repositories are listed in the "Important Sugar Labs Links".
@@ -111,13 +134,13 @@ __GitHub Repositories Under Sugar Labs__
   * [Sugar Artwork](https://github.com/sugarlabs/sugar-artwork)
   * [Sugar Labs Documentation](https://github.com/sugarlabs/sugar-docs)
   * [Sugar Labs Website](https://github.com/sugarlabs/www-sugarlabs)
+  * [TurtleBlocksJS](https://github.com/sugarlabs/turtleblocksjs)
+  * [MusicBlocks](https://github.com/sugarlabs/musicblocks)
+  * [Help Activity](https://github.com/sugarlabs/help-activity)
 
 __GitHub Repositories Not Under Sugar Labs__
 
   * [Sugarizer](https://github.com/llaske/sugarizer)
-  * [TurtleBlocksJS](https://github.com/walterbender/turtleblocksjs)
-  * [MusicBlocks](https://github.com/walterbender/musicblocks)
-  * [Help Activity](https://github.com/godiard/help-activity)
 
 __Other Relevant Links__
 
