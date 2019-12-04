@@ -26,7 +26,7 @@ The js-beautify tool can be handy for indenting HTML as well.
 
 ### JavaScript
 
-* The JavaScript style guide is now in its own document [here](#https://github.com/sugarlabs/sugar-docs/blob/master/src/javascript-style.md)
+* The JavaScript style guide is now [here](#https://github.com/sugarlabs/sugar-docs/blob/master/src/javascript-style.md)
 
 Tools
 -----
