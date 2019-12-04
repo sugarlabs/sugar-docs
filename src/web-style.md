@@ -26,7 +26,7 @@ The js-beautify tool can be handy for indenting HTML as well.
 
 ### JavaScript
 
-* The JavaScript style guide is [here](#javascript-style.md)
+* The JavaScript style guide is [here](./javascript-style.md)
 
 Tools
 -----
