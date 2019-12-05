@@ -29,7 +29,6 @@ Welcome to documentation for contributors and developers.
 
 * [Write your own Sugar web activity](src/web-activity.md)
 * [Architecture](src/web-architecture.md)
-* [JavaScript style](src/javascript-style.md)
 * [Web code style](src/web-style.md)
 * [Components showcase](http://sugarlabs.github.io/sugar-web-samples/)
 

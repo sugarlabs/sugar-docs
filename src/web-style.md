@@ -10,6 +10,24 @@ General
   All our source should be readable using the Sugar "View Source"
   feature.
 
+### Javascript
+
+* Make your code conform to JSHint. [See explanation below](#jshint).
+
+* Use four spaces for indentation.
+
+The js-beautify tool can be handy for the indentation part. [See
+explanation below](#js-beautify).
+
+Here is a good reading about javascript code conventions
+<http://javascript.crockford.com/code.html> .
+
+For public and private members of an object, read
+<http://javascript.crockford.com/private.html>.  To make the object
+available in private members, keep a private variable named **that**:
+
+    var that = this;
+
 ### HTML
 
 * Use two spaces for indentation.  The rationale is that HTML tends to
@@ -24,12 +42,41 @@ The js-beautify tool can be handy for indenting HTML as well.
 
 * Make it compliant with RECESS. [See explanation below](#recess).
 
-### JavaScript
-
-* The JavaScript style guide is [here](./javascript-style.md)
-
 Tools
 -----
+
+### </a>JSHint
+
+Use JSHint <http://jshint.com/> to check for errors and make the
+source compatible with our coding conventions.  The jshint command is
+provided by sugar-build.
+
+To check JavaScript code:
+
+    jshint js/main.js
+
+Add it to your editor to ease development.  There are several plugins
+at <http://jshint.com/install/> .
+
+### js-beautify
+
+Use js-beautify <https://github.com/einars/js-beautify> to make the
+sources compatible with our indentation conventions.  The js-beautify
+command is provided by sugar-build.
+
+To clean javascript code:
+
+    js-beautify --replace --good-stuff js/main.js
+
+Warning: the --replace option will modify your source.  But you will
+be safe if you are versioning it (we use git for Sugar Web).
+
+It can do HTML as well:
+
+    js-beautify --type html --replace --indent-size 2 index.html
+
+Add it to your editor to ease development.  There are several plugins
+at <http://jsbeautifier.org/> .
 
 ### RECESS
 
