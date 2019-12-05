@@ -10,7 +10,7 @@ General
 
 * Make your code conform to JSHint. [See explanation below](#jshint).
 
-* Use four spaces for indentation.
+* When writing new code, use 4 spaces for indentation, but when editing existing code, use the same indentation style.
 
 The js-beautify tool can be handy for the indentation part. [See
 explanation below](#js-beautify).
