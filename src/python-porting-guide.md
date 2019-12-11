@@ -23,6 +23,8 @@ Many activities were written in Python 2 with the PyGObject introspection librar
   python3 -c 'import sugar3'
   ```
 
+* Prepare a test plan to cover each feature and user interface widget, and consider [assessing coverage](python-coverage-guide.md),
+
 * If the activity uses `telepathy-python`, test and fix collaboration, then port to PyGObject binding `TelepathyGLib`, and test again, for example;
   ```python
   import telepathy
@@ -67,6 +69,10 @@ Many activities were written in Python 2 with the PyGObject introspection librar
   ```
   Test and fix collaboration before proceeding further.
 
+* If the activity uses `dbus.gobject_service.ExportedGObject` (deprecated and only available for Python 2), then port to `CollabWrapper`, and test again,
+
+* If the activity uses `dbus` directly, refer to [dbus-python Porting to Python 3](https://dbus.freedesktop.org/doc/dbus-python/PY3PORT.html), and test again,
+
 * Port from Python 2 to Python 3.
   Start your porting with [2to3](https://docs.python.org/3.0/library/2to3.html) tool,<br>
   In the terminal, type:
@@ -82,6 +88,8 @@ Many activities were written in Python 2 with the PyGObject introspection librar
 * Check for use of binary data, especially in files, pipes, and subprocesses,
 
 * Check for use of _Gtk.CssProvider_, and if so ensure the _load_from_data_ function is given bytes rather than unicode strings, e.g. `b"...",
+
+* Check for use of _Rsvp.new_from_data_ for making images from SVG data, and if so ensure the function is given bytes rather than unicode strings,
 
 * Change `exec` value in `activity.info` from `sugar-activity` to `sugar-activity3`
 * Make Sugar Home View reload the bundle; by restarting Sugar or moving the bundle directory out of `~/Activities` and back again a few seconds later,
