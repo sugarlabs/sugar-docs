@@ -33,6 +33,7 @@ different programming languages and libraries;
 
 * activities.sugarlabs.org, the activity store for Python 2 and web
   activities compatible with Sugar 0.112 and earlier,
+* Music Blocks Planet,
 
 ## C#
 
