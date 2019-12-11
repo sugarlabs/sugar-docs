@@ -24,8 +24,15 @@ python-coverage html
 python -m SimpleHTTPServer &
 ```
 
-* browse to http://localhost:8000/
+* browse to http://localhost:8000/htmlcov
 
 Tested on Ubuntu 18.04 and Ubuntu 16.04.
 
 See the [Python Coverage](https://coverage.readthedocs.io) documentation.
+
+Measuring coverage during collaboration
+=======================================
+
+When an activity is started to join a collaboration, there is little opportunity to intercept and add the command-line wrapper.
+
+`/usr/bin/sugar-activity3` may be edited to add coverage API calls.  See [Coverage.py API](https://coverage.readthedocs.io/en/v4.5.x/api.html).
