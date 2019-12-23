@@ -47,7 +47,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] check if what you want to change is available already in any other branches or forks,
 
-* [ ] make and test your changes,
+* [ ] make and [test](#testing) your changes,
 
 * [ ] if your changes add a new feature or will affect users; update the NEWS file, the README.md file, and the help-activity,
 
@@ -234,7 +234,7 @@ git checkout BRANCH-NAME
 
 ### Review
 
-We encourage testing before merging a pull-request.
+We encourage [testing](#testing) before merging a pull-request.
 
 So instead of merging directly with the "merge" button on GitHub, we may do a local merge, then test, then push.
 
@@ -249,7 +249,7 @@ git checkout -b SOME-USER-topic1 master
 git pull https://github.com/SOME-USER/sugar.git topic1
 ```
 
-Test! If everything is fine, merge:
+[Test](#testing)! If everything is fine, merge:
 
 ```
 git checkout master
@@ -263,6 +263,34 @@ Once your pull-request is merged, you should close any issue or ticket.  GitHub 
 
 Be sure to thank everyone who helped you out along the way.
 
+Testing
+-------
+
+When testing activities;
+
+* activity must start,
+
+* activity must refresh entire display when focus is restored,
+
+* activity must behave predictably (except where randomness is designed),
+
+* activity must save data to journal,
+
+* activity must restore the saved data from journal (click on the journal entry),
+
+* other activities must be able to use saved data, if it is declared with the relevant content type,
+
+* every coded feature should either work properly, or be removed if it cannot be fixed,
+
+* collaboration support, if present, must function properly between two or more systems,
+
+* activity should not consume all available battery power (e.g. pygame clock rate too high),
+
+* activity should not contain any security vulnerabilities,
+
+* activity should not reveal personal information.
+
+
 Guide for Reviewers
 -------------------
 
@@ -274,7 +302,7 @@ Goals for review are to;
 
 * maintain consistent and good code quality,
 
-* reproduce test results, (especially for critical repositories),
+* reproduce [test](#testing) results, (especially for critical repositories),
 
 * maintain a useful git commit history for use by git bisect, and developers who read it,
 
