@@ -146,6 +146,11 @@ You may also test interactively by starting Terminal, then `cd` to the activity 
 ```
 sugar-activity .
 ```
+if your activity uses python2. If it uses python3, type:
+
+```
+sugar-activity3 .
+```
 ### File structure
 
 All activities should follow this file structure:
