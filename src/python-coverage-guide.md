@@ -1,32 +1,32 @@
 Measuring coverage of Python activities
 =======================================
 
-* install the `python-coverage` package,
+* install the `python3-coverage` package,
 * start Terminal activity inside Sugar,
 * change to the directory that holds activity source code,
 * run the activity like this;
 
 ```
-python-coverage run /usr/bin/sugar-activity
+python3-coverage run /usr/bin/sugar-activity
 ```
 
-* run any test scripts, such as those using `xdotool`,
+* run any test scripts, such as those using `xdotool`, or your test plan,
 * stop the activity,
 * generate annotated HTML listings,
 
 ```
-python-coverage html
+python3-coverage html
 ```
 
-* run the SimpleHTTPServer module in a background process,
+* run the http.server module in a background process,
 
 ```
-python -m SimpleHTTPServer &
+python3 -m http.server &
 ```
 
 * browse to http://localhost:8000/htmlcov
 
-Tested on Ubuntu 18.04 and Ubuntu 16.04.
+Tested on Ubuntu 18.04.
 
 See the [Python Coverage](https://coverage.readthedocs.io) documentation.
 
