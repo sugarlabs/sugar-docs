@@ -7,7 +7,7 @@ Measuring coverage of Python activities
 * run the activity like this;
 
 ```
-python3-coverage run /usr/bin/sugar-activity
+python3-coverage run /usr/bin/sugar-activity3
 ```
 
 * run any test scripts, such as those using `xdotool`, or your test plan,
@@ -26,7 +26,7 @@ python3 -m http.server &
 
 * browse to http://localhost:8000/htmlcov
 
-Tested on Ubuntu 18.04.
+Tested on Ubuntu 18.04 and 19.04.
 
 See the [Python Coverage](https://coverage.readthedocs.io) documentation.
 
