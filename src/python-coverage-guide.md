@@ -2,6 +2,11 @@ Measuring coverage of Python activities
 =======================================
 
 * install the `python3-coverage` package,
+
+```
+sudo apt install python3-coverage
+```
+
 * start Terminal activity inside Sugar,
 * change to the directory that holds activity source code,
 * run the activity like this;
