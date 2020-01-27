@@ -43,6 +43,8 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 ### Checklist - anyone
 
+* [ ] run the activity and confirm that you understand what it is for, what it does, and how a child will use it,
+
 * [ ] make a fork and clone it,
 
 * [ ] check if what you want to change is available already in any other branches or forks,
