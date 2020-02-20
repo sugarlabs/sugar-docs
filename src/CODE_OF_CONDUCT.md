@@ -121,7 +121,7 @@ different. When you leave or disengage from the project, in whole or
 in part, we ask that you do so in a way that minimizes disruption to
 the project. This means you should tell people you are leaving and
 take the proper steps to ensure that others can pick up where you
-leave off.
+left off.
 
 Mailing lists and web forums
 ----------------------------
