@@ -152,7 +152,7 @@ __Other Relevant Links__
 Well, don't worry; there are real people here who will try to help you. Some
 ways to get in touch with real people are:
 
-* [Hang out on the irc](irc://irc.freenode.net#sugar). Please stay for a
+* [Hang out on the IRC](irc://irc.freenode.net#sugar). Please stay for a
 little while, as people will come and go at different times of the day.
 * [Send an email on the mailing list][3]
 
