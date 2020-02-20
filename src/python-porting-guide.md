@@ -42,9 +42,9 @@ Many activities were written in Python 2 with the PyGObject introspection librar
   CHANNEL = TelepathyGLib.IFACE_CHANNEL
   ```
   Replace calls to `Channel` and `Connection` classes of
-  `telepathy-python` with a dictonary of `dbus.Interface()`.  Look
+  `telepathy-python` with a dictionary of `dbus.Interface()`.  Look
   through the source code for constants used by `Channel` and `Connection`
-  objects as keys.  Use these constants as keys to a dictonary of the
+  objects as keys.  Use these constants as keys to a dictionary of the
   `dbus.Interface()` objects.  For example;
   ```python
   Channel(self._connection.requested_bus_name, channel_path,
