@@ -105,7 +105,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 ```
 
-Note that `require_version` needs to called only the first time when GTK
+Note that `require_version` needs to call only the first time when GTK
 is being imported.
 
 Similar imports that may be used are:
