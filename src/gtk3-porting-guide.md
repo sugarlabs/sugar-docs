@@ -110,7 +110,7 @@ is being imported.
 
 Similar imports that may be used are:
 ```python
-from gi.repository import Gdk, Pango, Gobject
+from gi.repository import Gdk, Pango, GObject
 ```
 Then you have to change each call that involves GTK, for example
 creating a button will look now like this:
