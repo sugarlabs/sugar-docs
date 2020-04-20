@@ -81,7 +81,7 @@ Many activities were written in Python 2 with the PyGObject introspection librar
   ```
   and then review every change made,
 
-* Iterate through [How to Port Python 2 code to Python 3 | Python Docs](https://docs.python.org/3/howto/pyporting.html), and [Supporting Python 3: An in-depth guide](http://python3porting.com/) changing code,
+* Iterate through [How to Port Python 2 code to Python 3 | Python Docs](https://docs.python.org/3/howto/pyporting.html) (most Sugar activities being ported to Python 3 do not _need_ to support Python 2 as well), and [Supporting Python 3: An in-depth guide](http://python3porting.com/) changing code,
 
 * Check for integer divisions that have become floating point,
 
