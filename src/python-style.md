@@ -7,11 +7,22 @@ General
 * Avoid lines longer than 79 characters.
 
 Python
-------
 
 * Make your code conform to pep8 and pyflakes
 
 * Use four spaces for indentation.
+
+Tools
+-----
+
+### </a>JPyflakes
+
+Use Pyflakes <https://pypi.org/project/pyflakes/> to check for errors and make the
+source compatible with our coding conventions. The command is provided by sugar-build.
+
+To check JavaScript code:
+
+    python3 -m pyflakes
 
 Libraries
 ---------
