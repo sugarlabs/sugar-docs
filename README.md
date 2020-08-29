@@ -24,6 +24,7 @@ Welcome to documentation for contributors and developers.
 * [GTK 3 Porting Guide](src/gtk3-porting-guide.md)
 * [Python 3 Porting Guide](src/python-porting-guide.md)
 * [Python Coverage Guide](src/python-coverage-guide.md)
+* [Guide to installing Sugar on Debian](src/sugar-on-debian.md)
 
 ## Sugar Web
 
