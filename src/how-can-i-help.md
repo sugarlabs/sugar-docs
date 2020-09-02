@@ -111,9 +111,9 @@ Coding, documentation and quality assurance is important - it is required everyw
 ## <a name="DESIGN-TEAM"></a> Design
 Design is very crucial to Sugar Labs - it is where new ideas and initiatives are formed into proper reports which can be worked on. You can;
 
-- Propose or work on existing [Sugar Desktop Icons](https://github.com/sugarlabs/sugar-docs/blob/master/src/sugar-iconify.md)
-- Propose changes to [OS & activity(apps) mockups](https://wiki.sugarlabs.org/go/Design_Team/Proposals) for the Sugar Desktop, [See Guidelines](https://wiki.sugarlabs.org/go/Human_Interface_Guidelines)
-- Support marketing - by contributing to [website](https://github.com/sugarlabs/www-sugarlabs), [marketing materials](https://wiki.sugarlabs.org/go/Marketing_Team/Swag)
+- Propose or work on existing [Sugar Desktop Icons](https://github.com/sugarlabs/sugar-docs/blob/master/src/sugar-iconify.md).
+- Propose changes to [OS & activity(apps) mockups](https://wiki.sugarlabs.org/go/Design_Team/Proposals) for the Sugar Desktop, [See Guidelines](https://wiki.sugarlabs.org/go/Human_Interface_Guidelines).
+- Support marketing - by contributing to [website](https://github.com/sugarlabs/www-sugarlabs), [marketing materials](https://wiki.sugarlabs.org/go/Marketing_Team/Swag).
 - You can either contribute a new design proposal or implement an existing one in the [Design Team User Experience Proposals wiki page](https://wiki.sugarlabs.org/go/Design_Team/Proposals).
 
 ## <a name="MARKETING-OUTREACH"></a> Marketing/Outreach
