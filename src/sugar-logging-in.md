@@ -41,6 +41,12 @@ To log in with the Sugar Desktop, select **Sugar** at the login screen before lo
 
   
 
+**GDM** - on *Ubuntu (Groovy Gorilla)*
+
+* Select `Sugar` from the `gear icon` on the right
+
+![Ubuntu Groovy Gorilla GDM](images/gdm3-ubuntu-20.10.png)
+
 **GDM** - Demonstrated on *Ubuntu (Focal Fossa)*
 
 * Select `Sugar` from the `gear icon` on the right
