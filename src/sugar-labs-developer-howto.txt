@@ -1,0 +1,258 @@
+New to Sugar Labs?
+
+Unlock these achievements.  Work from top to bottom.
+
+1.  Use Sugar, Sugarizer, or Music Blocks,
+
+    https://github.com/sugarlabs/sugar-docs/blob/master/src/how-can-i-help.md
+
+    * by using Sugar, Sugarizer or Music Blocks you will learn how it
+      works, and what can be improved.
+
+    * mandatory; we are an open source software project, and these
+      three software products are what we produce.
+
+2.  Read our Code of Conduct,
+
+    https://github.com/sugarlabs/sugar-docs/blob/master/src/CODE_OF_CONDUCT.md
+
+    * especially choose an appropriate forum, and remind others to do
+      the same; we use many forums, but only GitHub and the developer
+      mailing list have all our members,
+
+    * some members practice transparency and load sharing; please ask
+      your questions in public so we can all learn from them,
+
+    * mandatory; we behave best when we know what to expect.
+
+3.  Join the developer mailing list,
+
+    https://lists.sugarlabs.org/listinfo/sugar-devel
+
+    * for asking questions and helping others,
+
+    * subscribe before posting,
+
+    * don't use digest mode if you plan to post messages or replies,
+      as it breaks threads,
+
+    * try to keep discussions public; the default reply mode is
+      private, so use reply-all,
+
+    * check the archives in case your question has already been
+      answered,
+
+    * mandatory; messages on this list are assumed to be seen by
+      everyone in Sugar Labs,
+
+4.  Get a GitHub account,
+
+    https://github.com/
+
+    * for reporting issues that you won't fix, (not for issues you
+      will fix),
+
+    * for fixing coding problems in source code using a pull request,
+
+    * fix fixing graphical design problems in source code,
+
+    * recommended; collaboration is very difficult if you don't use
+      GitHub,
+
+5.  Join the Sugar Labs GitHub organisation,
+
+    https://github.com/sugarlabs
+
+    * for regular source code contributors, and reviewers; by
+      invitation, contact one of the existing members,
+
+    * helpful for mail notification of GitHub activity,
+
+    * optional,
+
+6.  Join as a Member of Sugar Labs,
+
+    https://wiki.sugarlabs.org/go/Sugar_Labs/Members
+
+    * requires some contribution; code, documentation, translations,
+      maintenance, running a Sugar deployment, or any other
+      non-trivial activities which benefit Sugar Labs,
+
+    * reviewed by committee,
+
+    * optional,
+
+7.  Get a wiki.sugarlabs.org account,
+
+    https://wiki.sugarlabs.org/
+
+    * needed for maintaining Wiki content,
+
+    * needed as part of moving Wiki content to GitHub,
+
+    * for subscribing to edit notifications.
+
+    * optional; our Wiki is not dead yet, see RecentChanges,
+
+8.  Get an activities.sugarlabs.org account,
+
+    https://activities.sugarlabs.org/
+
+    * needed for releasing new versions of Sugar activities for
+      systems that use Fedora 18 and Python 2,
+
+    * optional,
+
+9.  Get a shell.sugarlabs.org account,
+
+    https://wiki.sugarlabs.org/go/Service/shell#Requesting_a_shell_account
+
+    * requires a justification,
+
+    * also provides a @sugarlabs.org mail alias,
+
+    * for releasing new versions of Sugar components, test builds,
+      or large data sets,
+
+    * for limited experimentation with non-root network services, such
+      as bots or IRC proxies,
+
+    * optional,
+
+10. Get a translate.sugarlabs.org account,
+
+    https://translate.sugarlabs.org/
+
+    * if you are bi- or multi-lingual, use your skills,
+
+    * especially if you can test Sugar activities and components, as
+      this will inform your translations,
+
+    * optional,
+
+11. Get a bugs.sugarlabs.org account,
+
+    https://bugs.sugarlabs.org/
+
+    * only if you must maintain old bug reports, many of which have
+      not been closed,
+
+    * new bugs may be reported via GitHub issues,
+
+    * optional,
+
+12. Join Sugar on Fedora live system mailing list,
+
+    https://lists.sugarlabs.org/listinfo/soas
+
+    * download, test, report bugs, fix bugs, package,
+
+    * share your experience with others who focus on this
+      distribution,
+
+    * optional,
+
+13. Join Sugar on Debian mailing lists,
+
+    https://github.com/sugarlabs/sugar/blob/master/docs/debian.md#packaging
+
+    * download, test, report bugs, fix bugs, package,
+
+    * share your experience with others who focus on this
+      distribution,
+
+    * optional,
+
+14. Join the Internet Relay Chat channel #sugar
+
+    https://webchat.freenode.net/#sugar
+
+    * for synchronous chat with others,
+
+    * requires registration with freenode.net, otherwise you will see
+      "Cannot send to nick/channel",
+
+    * stay connected and keep the window open for hours to see
+      discussion; does not work well with mobility,
+
+    * optional,
+
+15. Join the Internet Relay Chat channel #sugar-meeting
+
+    https://webchat.freenode.net/#sugar-meeting
+    http://meeting.sugarlabs.org/
+
+    * for any announced meetings,
+
+    * optional,
+
+16. Maintain an Activity
+
+    https://github.com/sugarlabs/sugar-docs/blob/master/src/contributing.md#checklist---maintainer
+
+    * many learner focused activities (apps) need simple maintenance,
+
+    * adopt an activity you like as your focus.
+
+Hope that helps!
+
+----
+
+How to ask for directions?
+
+“How to get started as a Sugar Labs developer” above assumes you are
+self-directed.  You will decide for yourself what is best for you to
+do.  You will use Sugar, Sugarizer or Music Blocks, and choose what to
+maintain or improve, based on;
+
+    * your time,
+    * your interest,
+    * your equipment,
+    * how many other people are also interested, and;
+    * your previous experience with the languages and tools.
+
+You are always the best judge of these things.  If you fail in one of
+these areas, you can self-improve.
+
+Lionel (@llaske) can tell you what needs doing in Sugarizer.  Walter
+(@walterbender) can tell you what needs doing in Music Blocks.  For
+Sugar, what needs doing is;
+
+    * maintenance of activities, through to release and publishing;
+      roughly 90% of our activities are not maintained,
+
+    * maintenance of the JavaScript library and back-porting Sugarizer
+      activities to Sugar; roughly 95% of the activities have not been
+      back-ported,
+
+    * maintenance of the GTK 3 toolkit and shell (for experts),
+
+    * porting old activities to GTK 3, TelepathyGLib and Python 3;
+      roughly 75% of the activities need some form of porting,
+
+    * in conjunction with other communities, package Sugar and
+      activities for Fedora, Debian, Ubuntu, and any other
+      distributions of interest; roughly 90% of the activities have
+      not been packaged,
+
+It is tempting to do something small like the web site.  Please don't.
+
+New developers should avoid changes to our infrastructure, such as web
+sites and documentation, until they have demonstrated their
+contribution to and awareness of the source code of Sugar, Sugarizer
+or Music Blocks.
+
+This is also a cultural difference.  Sugar Labs is closer to the
+innovation culture of Silicon Valley than to a university.  We don't
+direct ourselves much at all.
+
+For personal development in the open source innovation culture, please
+also read How To Become A Hacker by Eric S. Raymond.
+
+http://www.catb.org/esr/faqs/hacker-howto.html
+
+wi1meeL9Mahdeewu
+
+-- 
+James Cameron
+http://quozl.netrek.org/
