@@ -6,10 +6,10 @@ We use the pull-request model, see [GitHub's help on pull-request](https://help.
 In brief, you will:
 
 * on GitHub, find and fork the source repository;
-* on your computer, clone your fork repository,
+* on your computer, clone your fork repository;
 * commit your changes in a new branch;
-* push your branch and submit a pull-request for it;
-* go through the review process until your pull-request is merged; and
+* push your branch and submit a pull-request for it; and
+* go through the review process until your pull-request is merged.
 
 Please note there is no need to ask permission to work on an
 issue. You should check for pull requests linked to an issue you are
@@ -43,62 +43,62 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 ### Checklist - anyone
 
-* [ ] run the activity and confirm that you understand what it is for, what it does, and how a child will use it,
+* [ ] run the activity and confirm that you understand what it is for, what it does, and how a child will use it;
 
-* [ ] make a fork and clone it,
+* [ ] make a fork and clone it;
 
-* [ ] check if what you want to change is available already in any other branches or forks,
+* [ ] check if what you want to change is available already in any other branches or forks;
 
-* [ ] make and [test](#testing) your changes,
+* [ ] make and [test](#testing) your changes;
 
-* [ ] if your changes add a new feature or will affect users; update the NEWS file, the README.md file, and the help-activity,
+* [ ] if your changes add a new feature or will affect users; update the NEWS file, the README.md file, and the help-activity;
 
-* [ ] if there is a `po/*.pot` file, and your changes affect translated strings; regenerate using `python setup.py genpot`,
+* [ ] if there is a `po/*.pot` file, and your changes affect translated strings; regenerate using `python setup.py genpot`;
 
 * [ ] make a branch, one or more commits, and a pull request, see [Workflow](#workflow) below.
 
 ### Checklist - maintainer
 
 * [ ] for Python 2 branches, check version of latest bundle release in
-  [activities.sugarlabs.org](https://activities.sugarlabs.org/),
+  [activities.sugarlabs.org](https://activities.sugarlabs.org/);
 
-* [ ] check version of latest tarball release in [download.sugarlabs.org/sources/sucrose/fructose/](https://download.sugarlabs.org/sources/sucrose/fructose/) or [download.sugarlabs.org/sources/honey/](https://download.sugarlabs.org/sources/honey/),
+* [ ] check version of latest tarball release in [download.sugarlabs.org/sources/sucrose/fructose/](https://download.sugarlabs.org/sources/sucrose/fructose/) or [download.sugarlabs.org/sources/honey/](https://download.sugarlabs.org/sources/honey/);
 
-* [ ] check for a release version git tag, e.g. v34,
+* [ ] check for a release version git tag, e.g. v34;
 
-* [ ] correlate with `activity_version` metadata in `activity/activity.info`,
+* [ ] correlate with `activity_version` metadata in `activity/activity.info`;
 
 * [ ] look for commits _after_ any of these, in either;
 
-    * [ ] master branch of repository at sugarlabs,
-    * [ ] any other branches,
-    * [ ] any other forks,
-    * [ ] orphaned repositories with the same `bundle_id` value, using GitHub or Google Search,
-    * [ ] deprecated repositories at git.sugarlabs.org,
+    * [ ] master branch of repository at sugarlabs;
+    * [ ] any other branches;
+    * [ ] any other forks;
+    * [ ] orphaned repositories with the same `bundle_id` value, using GitHub or Google Search;
+    * [ ] deprecated repositories at git.sugarlabs.org;
 
-* [ ] review and merge all pull requests,
+* [ ] review and merge all pull requests;
 
-* [ ] apply all desired commits, making pull requests if review is needed,
+* [ ] apply all desired commits, making pull requests if review is needed;
 
-* [ ] apply any [translate.sugarlabs.org](https://translate.sugarlabs.org) changes, e.g. using a [download script](https://github.com/sugarlabs/sugar-tools/blob/master/activity-translations),
+* [ ] apply any [translate.sugarlabs.org](https://translate.sugarlabs.org) changes, e.g. using a [download script](https://github.com/sugarlabs/sugar-tools/blob/master/activity-translations);
 
-* [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit,
+* [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit;
 
-* [ ] notify our translation-community manager @leonardcj if the POT file changes contain new or changed strings,
+* [ ] notify our translation-community manager @leonardcj if the POT file changes contain new or changed strings;
 
-* [ ] update the README.md file if necessary,
+* [ ] update the README.md file if necessary;
 
-* [ ] write release notes for the NEWS file, change the `activity_version` metadata in `activity/activity.info`, commit, and `git tag` the version,
+* [ ] write release notes for the NEWS file, change the `activity_version` metadata in `activity/activity.info`, commit, and `git tag` the version;
 
-* [ ] update the activity documentation in the help-activity repository,
+* [ ] update the activity documentation in the help-activity repository;
 
-* [ ] for activities that include a tarball release, or where Fedora or Debian packages may be made, create a tarball using `python setup.py dist_source`, and upload tarball to download.sugarlabs.org using shell account,
+* [ ] for activities that include a tarball release, or where Fedora or Debian packages may be made, create a tarball using `python setup.py dist_source`, and upload tarball to download.sugarlabs.org using shell account;
 
 * [ ] create bundle using `python setup.py dist_xo`, and test that it
-  can be installed by Browse,
+  can be installed by Browse;
 
 * [ ] for Python 2 branches only, upload to activities.sugarlabs.org
-  using developer account,
+  using developer account;
 
 * [ ] rebase any other maintained branches or pull requests, such as
   those for past or future versions of Python, or past releases of
@@ -114,7 +114,7 @@ environment repositories are:
 
 * https://github.com/sugarlabs/sugar (the desktop shell);
 * https://github.com/sugarlabs/sugar-artwork (images, icons, themes);
-* https://github.com/sugarlabs/sugar-toolkit-gtk3 (graphical widget library); and,
+* https://github.com/sugarlabs/sugar-toolkit-gtk3 (graphical widget library); and;
 * https://github.com/sugarlabs/sugar-datastore (journal backend).
 
 Workflow
@@ -136,7 +136,8 @@ See [complete help in GitHub](https://help.github.com/articles/fork-a-repo).
 
 You should clone your fork.
 This step is needed only once.
-Using [sugar](https://github.com/sugarlabs/sugar) as example;
+
+Using [sugar](https://github.com/sugarlabs/sugar) as an example:
 
 ```
 git clone git@github.com:YOUR-NAME/sugar.git
@@ -147,7 +148,7 @@ git fetch upstream
 
 ### Branching
 
-Create a branch per set of changes; e.g. to fix a problem or add a feature;
+Create a branch per set of changes; e.g. to fix a problem or add a feature.
 
 ```
 git checkout -b BRANCH-NAME
@@ -157,7 +158,7 @@ Your BRANCH-NAME can be anything, other than master.  The scope is your forked r
 
 ### Making commits
 
-Change files, and commit.  Commit messages are kept by git, and are used later when problems are being solved.  When writing a commit message;
+Change files, and commit.  Commit messages are kept by git, and are used later when problems are being solved.  When writing a commit message:
 
 1. start with a one line summary of the change;
 2. leave a blank line after the summary;
@@ -168,7 +169,7 @@ Change files, and commit.  Commit messages are kept by git, and are used later w
 7. avoid mentioning any contest tasks or mentors; use pull-request comments instead; and
 8. use imperative mood, like "add foo", or "port to bar"; (if English is not your first language, see [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood), [git documentation](https://git.kernel.org/pub/scm/git/git.git/tree/Documentation/SubmittingPatches#n133) and [blog post by Dan Clarke](https://www.danclarke.com/git-tense)).
 
-Make one or more commits and push the branch to your repository;
+Make one or more commits and push the branch to your repository.
 
 ```
 git push origin BRANCH-NAME
@@ -179,13 +180,13 @@ git push origin BRANCH-NAME
 Send a pull-request for your branch.
 Navigate to your repository page in GitHub, switch to the branch you made, and then press the **Pull Request** button.
 
-When writing a pull-request message;
+When writing a pull-request message:
 
 1. if there is only one commit, begin with the GitHub default of the commit message, otherwise write a summary of the series of commits;
 2. link to any relevant pull-requests, issues, or tickets; and
 3. link to any contest tasks, and name your @mentors to subscribe them.
 
-A review will happen in the pull-request, and a reviewer will either;
+A review will happen in the pull-request, and a reviewer will either:
 
 1. merge, squash, or rebase your commits;
 2. merge your commits with their own changes;
@@ -200,7 +201,7 @@ When squashing commits to different files, use interactive rebase.
 git rebase -i master
 ```
 
-After resolving any conflicts, push the changes to the same branch;
+After resolving any conflicts, push the changes to the same branch.
 
 ```
 git push --force origin
@@ -210,13 +211,13 @@ Then respond on the pull-request.
 
 ### Keep your pull-request up to date
 
-When there have been upstream commits while your pull-request was open, you should rebase your pull-request;
+When there have been upstream commits while your pull-request was open, you should rebase your pull-request.
 
 ```
 git pull --rebase upstream
 ```
 
-Then push the changes to the same branch;
+Then push the changes to the same branch.
 
 ```
 git push --force origin
@@ -270,25 +271,25 @@ Testing
 
 When testing activities;
 
-* activity must start,
+* activity must start;
 
-* activity must refresh entire display when focus is restored,
+* activity must refresh entire display when focus is restored;
 
-* activity must behave predictably (except where randomness is designed),
+* activity must behave predictably (except where randomness is designed);
 
-* activity must save data to journal,
+* activity must save data to journal;
 
-* activity must restore the saved data from journal (click on the journal entry),
+* activity must restore the saved data from journal (click on the journal entry);
 
-* other activities must be able to use saved data, if it is declared with the relevant content type,
+* other activities must be able to use saved data, if it is declared with the relevant content type;
 
-* every coded feature should either work properly, or be removed if it cannot be fixed,
+* every coded feature should either work properly, or be removed if it cannot be fixed;
 
-* collaboration support, if present, must function properly between two or more systems,
+* collaboration support, if present, must function properly between two or more systems;
 
-* activity should not consume all available battery power (e.g. pygame clock rate too high),
+* activity should not consume all available battery power (e.g. pygame clock rate too high);
 
-* activity should not contain any security vulnerabilities,
+* activity should not contain any security vulnerabilities;
 
 * activity should not reveal personal information.
 
@@ -298,39 +299,39 @@ Guide for Reviewers
 
 ### Goals
 
-Goals for review are to;
+Goals for review are to:
 
-* detect trivial mistakes,
+* detect trivial mistakes;
 
-* maintain consistent and good code quality,
+* maintain consistent and good code quality;
 
-* reproduce [test](#testing) results, (especially for critical repositories),
+* reproduce [test](#testing) results, (especially for critical repositories);
 
-* maintain a useful git commit history for use by git bisect, and developers who read it,
+* maintain a useful git commit history for use by git bisect, and developers who read it;
 
-* maintain other records, such as issues, tickets, and documentation,
+* maintain other records, such as issues, tickets, and documentation;
 
 * not waste the time of the contributor, by doing anything trivial that otherwise the contributor might have to do.
 
 ### Checklist
 
-* [ ] does the change have consensus of the community, see also [code of conduct](CODE_OF_CONDUCT.md) (if a reviewer is in doubt, seek opinions by @mentioning people),
+* [ ] does the change have consensus of the community, see also [code of conduct](CODE_OF_CONDUCT.md) (if a reviewer is in doubt, seek opinions by @mentioning people);
 
-* [ ] does the commit message explain the summary, problem, and solution, so that it can be used in future analysis, see also [making commits](#making-commits) (if a reviewer can fix it by squash or manual rebase, do so),
+* [ ] does the commit message explain the summary, problem, and solution, so that it can be used in future analysis, see also [making commits](#making-commits) (if a reviewer can fix it by squash or manual rebase, do so);
 
-* [ ] does the commit message reference any issue, bugs.sugarlabs.org ticket number, or downstream ticket numbers, (if a reviewer can fix it by squash or manual rebase, do so),
+* [ ] does the commit message reference any issue, bugs.sugarlabs.org ticket number, or downstream ticket numbers, (if a reviewer can fix it by squash or manual rebase, do so);
 
-* [ ] are the number of commits excessive for future analysis, (a reviewer may squash or rebase if necessary),
+* [ ] are the number of commits excessive for future analysis, (a reviewer may squash or rebase if necessary);
 
-* [ ] is the changed code consistent in style with the existing code, see also [coding standards](desktop-activity.md#coding-standards), (on the other hand, expect flake8 changes to be in separate commits),
+* [ ] is the changed code consistent in style with the existing code, see also [coding standards](desktop-activity.md#coding-standards), (on the other hand, expect flake8 changes to be in separate commits);
 
 * [ ] for critical repositories, does the change work properly on our latest version of Sugar on either Fedora, Debian, or Ubuntu.
 
 ### Critical repositories
 
-- sugar, sugar-toolkit, sugar-toolkit-gtk3, sugar-artwork, sugar-datastore, gst-plugins-espeak,
+- sugar, sugar-toolkit, sugar-toolkit-gtk3, sugar-artwork, sugar-datastore, gst-plugins-espeak;
 
-- each of the [Fructose](https://wiki.sugarlabs.org/go/Development_Team/Release/Modules#Fructose) activity set repositories,
+- each of the [Fructose](https://wiki.sugarlabs.org/go/Development_Team/Release/Modules#Fructose) activity set repositories.
 
 Frequently Asked Questions
 --------------------------
