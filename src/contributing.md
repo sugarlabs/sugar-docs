@@ -230,7 +230,8 @@ When there have been upstream commits since your fork was made, you should bring
 
 ```
 git checkout master
-git pull upstream
+git pull upstream master
+git push origin master
 git checkout BRANCH-NAME
 ```
 
