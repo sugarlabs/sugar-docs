@@ -104,8 +104,10 @@ After modifying an activity, a new release may be needed.  Some activities have 
   those for past or future versions of Python, or past releases of
   Fedora, Ubuntu or libraries.
 
-* [ ] for Python 3 Activities, copy the bundle to `~aslo-v4/aslo/bundles`
-  and verify if your bundle is visible on v4.activities.sugarlabs.org
+* [ ] for Python 3 Activities, copy the bundle to `~activities-v4/bundles`, and trigger
+  a rebuild of the static site using `rebuild-aslo` command, verify if your bundle is
+  visible on https://v4.activities.sugarlabs.org . For more information, it is
+  recommended to take a look at the   [Activities4 wiki page](https://wiki.sugarlabs.org/go/Service/activities4)
 
 
 Modifying Sugar
