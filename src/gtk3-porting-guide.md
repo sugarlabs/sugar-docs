@@ -459,13 +459,16 @@ import cairo
 cairo_context = self.canvas.get_window().cairo_create()
 # Create an XLib surface to be used for drawing
 xlib_surface = surface.create_similar(cairo.CONTENT_COLOR,
-                                      gtk.gdk.screen_width(),
-                                      gtk.gdk.screen_height())
+                                      Gdk.Screen.width(),
+                                      Gdk.Screen.height())
+# Although Gdk.Screen.width() and Gdk.Screen.height() have been
+# deprecated from version 3.22 they can still be used.
+#
 # You'll need a Cairo context from which you'll build a GTK Cairo context
 cairo_context = cairo.Context(xlib_surface)
-cairo_context = gtk.gdk.CairoContext(cairo_context)
 # Use this context as you would a Drawable, substituting Cairo commands
 # for gtk commands, e.g.,
+# draw_line changes to line_to
 cairo_context.move_to(0, 0)
 cairo_context.line_to(100, 100)
 # Cairo uses floats from 0 to 1 for RGB values
@@ -475,15 +478,15 @@ cairo_context.fill()
 # To invalidate a region to force a refresh, use:
 self.canvas.queue_draw_area(x, y, w, h)
 # Handle the expose event
-# "expose" became "draw" for the cairo signal
-def do_expose_event(self, event):
-    # Create the cairo context
-    cairo_context = self.canvas.get_window().cairo_create()
-    cairo_context.rectangle(event.area.x, event.area.y,
-                            event.area.width, event.area.height)
-    cairo_context.clip()
-    cairo_context.set_source_surface(xlib_surface)
-    cairo_context.paint()
+# "expose-event" signal became "draw" signal for Gtk Widget
+# And it takes a cairo context instead of an expose event
+def draw(self, widget, cr):
+    x, y = cr.get_current_point()
+    width, height = widget.get_allocated_width(), widget.get_allocated_height()
+    cr.rectangle(x, y, width, height)
+    cr.clip()
+    cr.set_source_surface(xlib_surface)
+    cr.paint()
 ```
 
 Pango is a bit different when used with Cairo:
@@ -525,9 +528,7 @@ To draw a bitmap...
 # Again, from the xlib_surface...
 cairo_context = cairo.Context(xlib_surface)
 
-# Create a gtk context
-cairo_context = gtk.gdk.CairoContext(cairo_context)
-cairo_context.set_source_pixbuf(pixbuf, x, y)
+Gdk.cairo_set_source_pixbuf(cairo_context, pixbuf, x, y)
 cairo_context.rectangle(x, y, w, h)
 cairo_context.fill()
 ```
@@ -571,14 +572,32 @@ necessarily available after v1.16. Note that Rectangle is not a list but
 a class with methods for `get_x()`, `get_y()`, `get_width()`, and
 `get_height()`, so you cannot iter over it.
 
-Note that `cairo.Region` will no longer work in GTK 3
-
 (For more details, see
 <http://developer.gnome.org/pangomm/2.28/annotated.html>)
 
 #### Replacing pixmaps with Cairo
 
 You need to replace your pixmaps with Cairo in GTK 3.
+```python
+win = gtk.gdk.get_default_root_window()
+gc = gtk.gdk.GC(win)
+pix = gtk.gdk.pixbuf_new_from_file("filename.png")
+map = gtk.gdk.Pixmap(win, pix.get_width(), pix.get_height())
+map.draw_rectangle(gc, True, 0, 0, pix.get_width(), pix.get_height())
+map.draw_pixbuf(gc, pix, 0, 0, 0, 0, pix.get_width(), pix.get_height(), gtk.gdk.RGB_DITHER_NONE)
+```
+Becomes;
+```python
+pix = GdkPixbuf.Pixbuf.new_from_file("filename.png")
+imagesurface = cairo.ImageSurface(
+    cairo.Format.ARGB32,
+    pix.get_width(),
+    pix.get_height())
+context = cairo.Context(imagesurface)
+context.rectangle(0, 0, pix.get_width(), pix.get_height())
+Gdk.cairo_set_source_pixbuf(pix)
+context.fill()
+```
 
 ### Taking a screenshot and making a thumbnail
 
