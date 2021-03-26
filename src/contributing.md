@@ -1,6 +1,9 @@
 Contributing
 ============
 
+Sugar is mostly written with [PyGObject bindings](https://pygobject.readthedocs.io/en/latest/) so you'll need
+knowledge of those bindings in order to contribute to Sugar.
+
 We use the pull-request model, see [GitHub's help on pull-request](https://help.github.com/articles/using-pull-requests).
 
 In brief, you will:
