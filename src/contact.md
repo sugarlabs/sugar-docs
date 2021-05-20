@@ -4,17 +4,20 @@ Contact
 Join us at Sugar-devel mailing list
 <http://lists.sugarlabs.org/listinfo/sugar-devel>.
 
-We have an [IRC channel][IRC]. Please enter #sugar at
-[Freenode][freenode]. You may wish to begin by using their
-[webchat][webchat].
+We have a [Matrix channel][Matrix] where real time discussions mostly happen. 
 
-We also have a [Matrix channel][Matrix] bridged directly to the IRC channel. 
-Please join as at [#sugar:matrix.org](https://matrix.to/#/#sugar:matrix.org). 
-Follow the steps [here][matrix-reg-wiki].
+Some important channels are:
+* [#sugar:matrix.org][sugar_matrix]: General Sugar Labs discussion
+* [#sugar-systems:matrix.org][sugar_systems_matrix]: Questions and discussion about Sugar Labs Infrastructure.
+* [#music-blocks:matrix.org][music_blocks_matrix]: Share your projects and asks questions about Music Blocks (musicblocks.sugarlabs.org)
+* [#musicblocksdev:matrix.org][music_blocks_dev_matrix]: Development for Music Blocks visual programming language.
 
-[IRC]: https://opensource.com/article/16/6/irc-quickstart-guide
-[freenode]: https://freenode.net/
-[webchat]: https://webchat.freenode.net/
+
+
 [Matrix]: https://www.matrix.org/
 [matrix-reg-wiki]: https://wiki.sugarlabs.org/go/Matrix#How_to_use_Matrix_channels
+[sugar_matrix]: https://matrix.to/#/#sugar:matrix.org
+[sugar_systems_matrix]: https://matrix.to/#/#sugar-systems:matrix.org
+[music_blocks_matrix]: https://matrix.to/#/#music-blocks:matrix.org
+[music_blocks_dev_matrix]: https://matrix.to/#/#musicblocksdev:matrix.org
 
