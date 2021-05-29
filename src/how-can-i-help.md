@@ -146,14 +146,13 @@ __Other Relevant Links__
 
   * [Sugar Labs Website](https://www.sugarlabs.org/)
   * [Sugar Labs Wiki](https://wiki.sugarlabs.org/go/Welcome_to_the_Sugar_Labs_wiki)
-  * [Sugar Labs IRC](https://chat.sugarlabs.org:9091/)
+  * [Sugar Labs Matrix Channel](https://matrix.to/#/#sugar:matrix.org)
 
 ## <a name="IM-STUCK"></a>I'm Stuck!
 Well, don't worry; there are real people here who will try to help you. Some
 ways to get in touch with real people are:
 
-* [Hang out on the IRC](irc://irc.freenode.net#sugar). Please stay for a
-little while, as people will come and go at different times of the day.
+* [Hang out on the Matrix channel](https://matrix.to/#/#sugar:matrix.org).
 * [Send an email on the mailing list][3]
 
 
