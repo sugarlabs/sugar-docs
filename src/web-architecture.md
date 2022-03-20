@@ -47,7 +47,7 @@ opens a chrome-less window with a WebKitGTK view, and the web activity
 is loaded inside.
 
 The JavaScript interface to connect web activities and Sugar GTK is
-being developed.  The interface ends calling the same bits than GTK
+being developed.  The interface ends up calling the same bits as GTK
 activities.  It uses WebSockets for the communication between
 JavaScript and Python code.
 
@@ -87,7 +87,7 @@ for which the shell has an Intent filter that matches.
 
 The Sugar shell on Android should implement all of the Sugar features,
 unlike Sugar GTK shell that only needs to connect to the current
-features.  But both take adventage of sharing the same JavaScript
+features.  But both take advantage of sharing the same JavaScript
 interface.  The interface should be platform agnostic.
 
 ### Web activities standalone

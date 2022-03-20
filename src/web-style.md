@@ -43,7 +43,7 @@ To check CSS or LESS code:
 
 ### Karma
 
-If you are hacking on sugar-web, run the testsuit with the *karma* command inside a osbuild shell:
+If you are hacking on sugar-web, run the test suite with the *karma* command inside a osbuild shell:
 
     karma start sugar-web/test/karma.conf.js
 
