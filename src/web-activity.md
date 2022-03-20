@@ -161,7 +161,7 @@ toolbar button in the previous section, is very limited.  You'll want
 to add HTML elements on the fly, as the user interacts with the
 activity, or as the data structures of your activity logic change.
 There are several options to archive this.  Most of the time you'll
-end using a mix of them, so is important to know them all.
+end up using a mix of them, so it is important to know them all.
 
 First, it is possible to create HTML elements and append them to other
 HTML elements using JavaScript.  This is called "manipulating the
