@@ -1,10 +1,10 @@
 # How Can I Help?
 ## Table Of Contents
-1.  [Prepare](#PREPARE)
-2.  [Coding/Documentation/Quality Assurance](#OUTREACHY-GSOC)
-3.  [Design](#DESIGN-TEAM)
-4.  [Marketing/Outreach](#MARKETING-OUTREACH)
-5.  [Important Links](#IMPORTANT-LINKS)
+1.  [Prepare](#-prepare)
+2.  [Coding/Documentation/Quality Assurance](#-coding-documentation-and-quality-assurance)
+3.  [Design](#-design)
+4.  [Marketing/Outreach](#-marketingoutreach)
+5.  [Important Links](#-important-sugar-labs-links)
 5.  [I'm Stuck!](#IM-STUCK)
 
 ## <a name="PREPARE"></a> Prepare
