@@ -84,7 +84,8 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit,
 
-* [ ] notify our translation-community manager @leonardcj if the POT file changes contain new or changed strings,
+* [ ] If the activity is on [weblate](weblate.sugarlabs.org), be sure to merged any open PRs raised
+from the [weblate-sync](https://wiki.sugarlabs.org/go/Service/Weblate) workflow. 
 
 * [ ] update the README.md file if necessary,
 
