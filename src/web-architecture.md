@@ -71,7 +71,7 @@ communicate with the Java application.  The application can then
 communicate with the Sugar shell application and respond to the web
 activity executing JavaScript.
 
-The Sugar shell on Android is a separate process, runs in its own
+The Sugar shell on Android is a separate process, and it runs in its own
 application with one component: an [Android bound
 service](http://developer.android.com/guide/components/bound-services.html).
 The inter-process communication is made sending [Message
