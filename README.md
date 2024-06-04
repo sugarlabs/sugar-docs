@@ -42,3 +42,6 @@ Welcome to documentation for contributors and developers.
 ## Documentation
 
 * [Improving this documentation](src/docs.md)
+
+## Translation
+* [Weblate](weblate.sugarlabs.org)
