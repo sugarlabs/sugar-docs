@@ -44,4 +44,4 @@ Welcome to documentation for contributors and developers.
 * [Improving this documentation](src/docs.md)
 
 ## Translation
-* [Weblate](weblate.sugarlabs.org)
+* [Weblate](https://weblate.sugarlabs.org)
