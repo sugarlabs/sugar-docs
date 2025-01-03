@@ -100,6 +100,10 @@ Many activities were written in Python 2 with the PyGObject introspection librar
   python3 setup.py dist_xo
   ```
 
+* Release a new version,
+
+* Update README.md to point to the released bundle,
+
 Follow the [Code Guidelines](https://github.com/sugarlabs/sugar-docs/blob/master/src/contributing.md) during all porting.
 
 Write any comments in the code, by adding **\# README:**, **\# TODO:** and **\# FIXME:** explaining what are the problems that you are having with that chunk of code. Put a link if it's necessary.
