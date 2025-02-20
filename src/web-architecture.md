@@ -107,7 +107,7 @@ Modularization of JavaScript code is handled with
 specification (Asynchronous Module Definition).
 
 Package management and creation of activities from a template is
-handled with [Volo](http://volojs.org/).
+handled with [Volo](https://volojs.github.io).
 
 Unit testing of JavaScript code is done with the
 [Jasmine](http://jasmine.github.io/) framework.
