@@ -39,6 +39,14 @@ Welcome to documentation for contributors and developers.
 * [Sugarizer](https://github.com/llaske/sugarizer)
 * [Web activity](src/android.md)
 
+## Music Blocks
+
+* [Overview](https://github.com/sugarlabs/musicblocks#readme)
+* [Guide](https://github.com/sugarlabs/musicblocks/blob/master/guide/README.md)
+* [Using Music Blocks](https://github.com/sugarlabs/musicblocks/blob/master/documentation/README.md)
+* [Running Music Blocks](https://github.com/sugarlabs/musicblocks#running-music-blocks)
+* [Contributing](https://github.com/sugarlabs/musicblocks?tab=readme-ov-file#CONTRIBUTING)
+
 ## Documentation
 
 * [Improving this documentation](src/docs.md)
