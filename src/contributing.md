@@ -19,6 +19,40 @@ commits, then make a pull request. Mention an issue number in the
 pull request, but not the commit message. These practices allow the
 competition of ideas (Sugar Labs is a meritocracy).
 
+Modifying Music Blocks
+----------------------
+The Music Blocks repository can be found in the [Github sugarlabs organisation](https://github.com/sugarlabs/musicblocks)
+ 
+### Steps to Modify Music Blocks
+
+- **Understand Music Blocks**:
+   Start by reviewing the [Overview of Music Blocks](https://github.com/sugarlabs/musicblocks#readme) to understand its purpose and functionality.
+
+-  **Set Up the Development Environment**:
+   Follow the instructions in the [Running Music Blocks](https://github.com/sugarlabs/musicblocks#running-music-blocks) section to set up and run Music Blocks locally.
+
+-  **Learn the Codebase**:
+   Refer to the [Programming with Music Blocks Guide](https://github.com/sugarlabs/musicblocks/blob/master/guide/README.md) to understand the structure of the codebase and how to work with it.
+
+-  **Make Changes**:
+   Modify the source code as needed. Use the [Using Music Blocks Documentation](https://github.com/sugarlabs/musicblocks/blob/master/documentation/README.md) to understand how the application works and test your changes.
+
+- **Contribute Your Changes**:
+   Follow the [Contributing Guidelines](https://github.com/sugarlabs/musicblocks?tab=readme-ov-file#CONTRIBUTING) to submit your changes. This includes creating a pull request and linking it to any relevant issues.
+
+### Checklist - Contributor
+
+* [ ] Clone the repository and set up the development environment.
+* [ ] Test the application to ensure it runs correctly before making changes.
+* [ ] Make and test your changes thoroughly.
+* [ ] Update relevant documentation, such as the README or guides, if your changes affect users.
+* [ ] Create a pull request with a clear description of your changes and link it to any relevant issues.
+
+
+
+### Additional Resources
+- [Issues and Feature Requests](https://github.com/sugarlabs/musicblocks/issues): Report or view existing issues.
+
 Modifying Activities
 --------------------
 
