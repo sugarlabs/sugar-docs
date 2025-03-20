@@ -51,8 +51,6 @@ Follow the [Contributing Guidelines](https://github.com/sugarlabs/musicblocks?ta
 ### Additional Resources
 - [Issues and Feature Requests](https://github.com/sugarlabs/musicblocks/issues): Report or view existing issues.
 
-
-
 Modifying Activities
 --------------------
 
