@@ -2,8 +2,12 @@ Improving this documentation
 ============================
 
 Have you found an error in these docs, or want to improve them?
-Please [contact us](contact.md) or directly send pull requests to
-the [GitHub repository](https://github.com/sugarlabs/sugar-docs).
+
+You can help in two ways:
+
+1. Contact us if you are unsure.
+2. Directly create a pull request on the GitHub repository:
+   https://github.com/sugarlabs/sugar-docs
 
 This documentation lives in <https://github.com/sugarlabs/sugar-docs>
 
