@@ -81,6 +81,42 @@ Many activities were written in Python 2 with the PyGObject introspection librar
   ```
   and then review every change made,
 
+## What to do after running 2to3
+
+Running the `2to3` tool only converts Python 2 syntax to Python 3 syntax.
+After this step, manual changes are usually required before the activity
+can run correctly.
+
+Common changes that may be needed:
+
+* **Imports**
+  - Update deprecated module imports.
+  - Example: `import gtk` should be replaced with GTK 3 imports using:
+    `from gi.repository import Gtk`
+
+* **Print statements**
+  - Ensure all print statements are converted to function calls.
+
+* **String and bytes handling**
+  - Python 3 separates `str` and `bytes`.
+  - File operations may require explicit encoding.
+
+* **GTK compatibility**
+  - Ensure GTK 3 development libraries are installed.
+  - On Debian/Ubuntu systems, this usually requires:
+    `gir1.2-gtk-3.0`
+
+* **activity.info update**
+  - Change the `exec` value from `sugar-activity`
+    to `sugar-activity3`
+
+* **Testing**
+  - Run the activity after each change.
+  - Fix errors incrementally to identify issues early.
+
+These steps describe common patterns seen while porting
+Sugar activities from Python 2 to Python 3.
+
 * Iterate through [How to Port Python 2 code to Python 3 | Python Docs](https://docs.python.org/3/howto/pyporting.html) (most Sugar activities being ported to Python 3 do not _need_ to support Python 2 as well), and [Supporting Python 3: An in-depth guide](http://python3porting.com/) changing code,
 
 * Check for integer divisions that have become floating point,
