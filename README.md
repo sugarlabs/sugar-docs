@@ -1,6 +1,6 @@
 # Sugar Labs
 
-Welcome to the documentation for contributors and developers.
+Welcome to the documentation for contributors and developers working on Sugar Labs projects.
 
 ## Getting started
 
@@ -52,4 +52,4 @@ Welcome to the documentation for contributors and developers.
 * [Improving this documentation](src/docs.md)
 
 ## Translation
-* [Weblate](https://weblate.sugarlabs.org)
+* [Weblate](https://hosted.weblate.org/)
