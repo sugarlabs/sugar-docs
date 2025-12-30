@@ -15,7 +15,7 @@ General
 The js-beautify tool can be handy for the indentation part. [See
 explanation below](#js-beautify).
 
-Here is a good reading about javascript code conventions
+Here is a good resource about JavaScript code conventions:
 <http://javascript.crockford.com/code.html> .
 
 For public and private members of an object, read
@@ -27,7 +27,7 @@ available in private members, keep a private variable named **that**:
 Tools
 -----
 
-### </a>JSHint
+### JSHint
 
 Use JSHint <http://jshint.com/> to check for errors and make the
 source compatible with our coding conventions.  The jshint command is

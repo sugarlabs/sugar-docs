@@ -1,6 +1,6 @@
 # Sugar Labs
 
-Welcome to the documentation for contributors and developers.
+Welcome to the documentation for contributors and developers of Sugar Labs.
 
 ## Getting started
 
