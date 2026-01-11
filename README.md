@@ -1,11 +1,11 @@
 # Sugar Labs
 
-Welcome to the documentation for contributors and developers.
+Welcome to the documentation for contributors and developers working on Sugar Labs.
 
-## Getting started
+## Getting started for contributors
 
 * [Code of Conduct](src/CODE_OF_CONDUCT.md)
-* [How can I help?](src/how-can-i-help.md)
+* [How can I help as a contributor?](src/how-can-i-help.md)
 * [Contribute code](src/contributing.md)
 * [Programming Languages](src/languages.md)
 * [Contact](src/contact.md)
@@ -17,7 +17,7 @@ Welcome to the documentation for contributors and developers.
 
 ## Sugar Desktop
 
-* [Setup a development environment](https://github.com/sugarlabs/sugar/blob/master/docs/development-environment.md)
+* [Set up a development environment](https://github.com/sugarlabs/sugar/blob/master/docs/development-environment.md)
 * [Write your own Sugar desktop activity](src/desktop-activity.md)
 * [Python code style](src/python-style.md)
 * [Memory leaks](src/memory-leaks.md)
@@ -52,4 +52,5 @@ Welcome to the documentation for contributors and developers.
 * [Improving this documentation](src/docs.md)
 
 ## Translation
+
 * [Weblate](https://weblate.sugarlabs.org)
