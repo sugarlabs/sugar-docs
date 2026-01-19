@@ -1,10 +1,13 @@
 Code style for Sugar HTML development
 =====================================
-
+This document defines the code style guidelines for HTML-based Sugar
+development. Following these conventions ensures consistency,
+readability, and compatibility with Sugar’s “View Source” feature.
 General
 -------
 
-* Avoid lines longer than 80 characters.
+* Avoid lines longer than 80 characters to improve readability,
+  especially when viewing source code inside Sugar.
 
 * Don't use any form of minification (neither in JS, HTML or CSS).
   All our source should be readable using the Sugar "View Source"
@@ -12,11 +15,16 @@ General
 
 ### HTML
 
-* Use two spaces for indentation.  The rationale is that HTML tends to
-  be very nested, and avoiding lines longer than 80 characters becomes
-  difficult.
+## HTML
 
-The js-beautify tool can be handy for indenting HTML as well.
+* Use **two spaces** for indentation.
+  HTML files are often deeply nested, and two spaces help keep lines
+  under 80 characters.
+
+* Do not minify HTML files.
+
+### Helpful Tools
+- `js-beautify` can be used to format and re-indent HTML code.
 
 ### CSS
 
@@ -26,7 +34,9 @@ The js-beautify tool can be handy for indenting HTML as well.
 
 ### JavaScript
 
-* The JavaScript style guide is [here](./javascript-style.md)
+JavaScript code must follow the Sugar JavaScript style guide:
+- [JavaScript Style Guide](./javascript-style.md)
+
 
 Tools
 -----
