@@ -102,15 +102,16 @@ libraries as with the other web activities are used.
 Tools
 -----
 
-Modularization of JavaScript code is handled with
-[RequireJS](http://requirejs.org/) which provides the AMD
-specification (Asynchronous Module Definition).
+Modern development of Sugar web activities utilizes standard Node.js workflows:
 
-Package management and creation of activities from a template is
-handled with [Volo](https://volojs.github.io).
+Modularization: JavaScript code is handled using standard ES6 Modules (Import/Export syntax). Older activities may still use RequireJS, but the current standard favors native browser modules or bundling via Webpack/Vite.
 
-Unit testing of JavaScript code is done with the
-[Jasmine](http://jasmine.github.io/) framework.
+Package Management: Dependency management and activity scaffolding are handled via NPM (Node Package Manager). The package.json file in each activity defines the libraries and build scripts.
 
-Installation of JavaScript tools is done with
-[Node.js](http://nodejs.org/).
+Sugar-CLI: Creation of activities from templates and management of the development lifecycle is often handled using the @sugarlabs/sugar-cli.
+
+Unit Testing: Testing of JavaScript code is primarily performed with the Jasmine framework or modern alternatives like Jest.
+
+Build Environment: All development tools and build scripts are run within the Node.js runtime.
+
+ 
