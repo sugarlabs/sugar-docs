@@ -215,7 +215,7 @@ Make an XO bundle.
 python setup.py dist_xo
 ```
 And if it works with Python 2 then upload it to the Sugar Activity
-Library <http://activities.sugarlabs.org/>.
+Library <https://v4.activities.sugarlabs.org/>.
 After that, users of Sugar can download and install your activity.
 
 For further releases, you must update the activity_version in
