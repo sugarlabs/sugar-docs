@@ -9,7 +9,12 @@ In brief, you will:
 * on your computer, clone your fork repository,
 * commit your changes in a new branch;
 * push your branch and submit a pull-request for it;
-* go through the review process until your pull-request is merged; and
+* go through the review process until your pull-request is merged;
+
+When contributing to a specific repository, always check for additional
+project-specific guidelines or requirements.
+
+### Getting started
 
 Please note there is no need to ask permission to work on an
 issue. You should check for pull requests linked to an issue you are
@@ -57,7 +62,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] make a branch, one or more commits, and a pull request, see [Workflow](#workflow) below.
 
-### Checklist - maintainer
+### Checklist - maintainer (contributors can ignore this section).
 
 * [ ] for Python 2 branches, check version of latest bundle release in
   [activities.sugarlabs.org](https://activities.sugarlabs.org/),
@@ -131,7 +136,8 @@ Workflow
 
 We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of repositories.
 
-An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project.
+An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project. 
+For small or obvious fixes, opening an issue first may be unnecessary.
 
 ### Forking
 
@@ -161,6 +167,7 @@ git checkout -b BRANCH-NAME
 ```
 
 Your BRANCH-NAME can be anything, other than master.  The scope is your forked repository.  The branch name will be shown on pull-requests.
+TIP: Use short, descriptive branch names that reflect the purpose of the change.
 
 ### Making commits
 
@@ -200,6 +207,8 @@ A review will happen in the pull-request, and a reviewer will either;
 2. merge your commits with their own changes;
 3. ask you to make changes; or
 4. close and reject your pull-request giving reasons.
+
+Review timing may vary depending on maintainer availability and repository activity.
 
 When they ask you for changes, you may have to change both files, commits or commit messages.
 
@@ -362,3 +371,8 @@ changes, then push.  See [Getting error 403 while submitting
 PR](http://lists.sugarlabs.org/archive/sugar-devel/2017-March/053926.html)
 and [D. Joe's
 reply](http://lists.sugarlabs.org/archive/sugar-devel/2017-March/053929.html).
+
+### My fork is out of date. How do I sync it with upstream?
+
+Add the upstream repository as a remote, fetch changes, and pull or
+rebase from the upstream branch into your local branch.
