@@ -11,9 +11,6 @@ In brief, you will:
 * push your branch and submit a pull-request for it;
 * go through the review process until your pull-request is merged;
 
-When contributing to a specific repository, always check for additional
-project-specific guidelines or requirements.
-
 ### Getting started
 
 Please note there is no need to ask permission to work on an
@@ -62,7 +59,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] make a branch, one or more commits, and a pull request, see [Workflow](#workflow) below.
 
-### Checklist - maintainer (contributors can ignore this section).
+### Checklist - maintainer
 
 * [ ] for Python 2 branches, check version of latest bundle release in
   [activities.sugarlabs.org](https://activities.sugarlabs.org/),
@@ -89,7 +86,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit,
 
-* [ ] If the activity is on [weblate](weblate.sugarlabs.org), be sure to merged any open PRs raised
+* [ ] If the activity is on [weblate](weblate.sugarlabs.org), be sure to merge any open PRs raised
 from the [weblate-sync](https://wiki.sugarlabs.org/go/Service/Weblate) workflow. 
 
 * [ ] update the README.md file if necessary,
@@ -136,8 +133,9 @@ Workflow
 
 We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of repositories.
 
-An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project. 
-For small or obvious fixes, opening an issue first may be unnecessary.
+An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted. An issue may be avoided for fixing bugs that are obvious to everyone or part of a project. 
+
+Issues are to be added when you do not plan to fix a problem. If you plan to fix a problem, open a pull request.
 
 ### Forking
 
@@ -166,8 +164,8 @@ Create a branch per set of changes; e.g. to fix a problem or add a feature;
 git checkout -b BRANCH-NAME
 ```
 
-Your BRANCH-NAME can be anything, other than master.  The scope is your forked repository.  The branch name will be shown on pull-requests.
-TIP: Use short, descriptive branch names that reflect the purpose of the change.
+Your BRANCH-NAME can be anything, other than master. The scope is your forked repository. 
+The branch name will be shown on pull-requests.
 
 ### Making commits
 
@@ -207,8 +205,6 @@ A review will happen in the pull-request, and a reviewer will either;
 2. merge your commits with their own changes;
 3. ask you to make changes; or
 4. close and reject your pull-request giving reasons.
-
-Review timing may vary depending on maintainer availability and repository activity.
 
 When they ask you for changes, you may have to change both files, commits or commit messages.
 
@@ -279,7 +275,7 @@ git push origin master
 
 ### Close Issue
 
-Once your pull-request is merged, you should close any issue or ticket.  GitHub issues named as "Fixes" in a commit message may be automatically closed.
+Once your pull-request is merged, you should close any issue or ticket. GitHub issues named as "Fixes" in a commit message may be automatically closed.
 
 Be sure to thank everyone who helped you out along the way.
 
@@ -374,5 +370,10 @@ reply](http://lists.sugarlabs.org/archive/sugar-devel/2017-March/053929.html).
 
 ### My fork is out of date. How do I sync it with upstream?
 
-Add the upstream repository as a remote, fetch changes, and pull or
-rebase from the upstream branch into your local branch.
+See GitHub’s guide on syncing a fork:
+https://docs.github.com/en/get-started/quickstart/fork-a-repo#syncing-a-fork
+
+### Where can I ask questions or get help from the community?
+
+Join the Sugar Labs community chat or mailing lists:
+https://matrix.to/#/#sugar:matrix.org
