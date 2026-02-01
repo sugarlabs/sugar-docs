@@ -9,9 +9,7 @@ In brief, you will:
 * on your computer, clone your fork repository,
 * commit your changes in a new branch;
 * push your branch and submit a pull-request for it;
-* go through the review process until your pull-request is merged;
-
-### Getting started
+* go through the review process until your pull-request is merged.
 
 Please note there is no need to ask permission to work on an
 issue. You should check for pull requests linked to an issue you are
