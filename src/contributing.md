@@ -131,9 +131,7 @@ Workflow
 
 We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of repositories.
 
-An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted. An issue may be avoided for fixing bugs that are obvious to everyone or part of a project. 
-
-Issues are to be added when you do not plan to fix a problem. If you plan to fix a problem, open a pull request.
+An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project.
 
 ### Forking
 
@@ -162,8 +160,7 @@ Create a branch per set of changes; e.g. to fix a problem or add a feature;
 git checkout -b BRANCH-NAME
 ```
 
-Your BRANCH-NAME can be anything, other than master. The scope is your forked repository. 
-The branch name will be shown on pull-requests.
+Your BRANCH-NAME can be anything, other than master.  The scope is your forked repository.  The branch name will be shown on pull-requests.
 
 ### Making commits
 
@@ -273,7 +270,7 @@ git push origin master
 
 ### Close Issue
 
-Once your pull-request is merged, you should close any issue or ticket. GitHub issues named as "Fixes" in a commit message may be automatically closed.
+Once your pull-request is merged, you should close any issue or ticket.  GitHub issues named as "Fixes" in a commit message may be automatically closed.
 
 Be sure to thank everyone who helped you out along the way.
 
