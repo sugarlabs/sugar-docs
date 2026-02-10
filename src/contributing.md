@@ -1,12 +1,12 @@
 Contributing
 ============
 
-We use the pull-request model, see [GitHub's help on pull-request](https://help.github.com/articles/using-pull-requests).
+We use the pull-request model, see [GitHub's help on pull requests](https://docs.github.com/en/pull-requests).
 
 In brief, you will:
 
 * on GitHub, find and fork the source repository;
-* on your computer, clone your fork repository,
+* on your computer, clone your fork repository;
 * commit your changes in a new branch;
 * push your branch and submit a pull-request for it;
 * go through the review process until your pull-request is merged; and
@@ -84,8 +84,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit,
 
-* [ ] If the activity is on [weblate](weblate.sugarlabs.org), be sure to merged any open PRs raised
-from the [weblate-sync](https://wiki.sugarlabs.org/go/Service/Weblate) workflow. 
+* [ ] If the activity is on [weblate](https://weblate.sugarlabs.org), be sure to merge any open PRs raised from the [weblate-sync](https://wiki.sugarlabs.org/go/Service/Weblate) workflow. 
 
 * [ ] update the README.md file if necessary,
 
@@ -109,7 +108,7 @@ from the [weblate-sync](https://wiki.sugarlabs.org/go/Service/Weblate) workflow.
   remove any other old versions of the bundle from `~activities-v4/bundles`, and trigger
   a rebuild of the static site using `rebuild-aslo` command, verify if your bundle is
   visible on https://v4.activities.sugarlabs.org . For more information, it is
-  recommended to take a look at the   [Activities4 wiki page](https://wiki.sugarlabs.org/go/Service/activities4)
+  recommended to take a look at the [Activities4 wiki page](https://wiki.sugarlabs.org/go/Service/activities4)
 
 
 Modifying Sugar
@@ -137,13 +136,13 @@ An improvement to Sugar may start with an issue discussion, to build consensus a
 
 You should first fork a repository on GitHub.
 This step is needed only once.
-See [complete help in GitHub](https://help.github.com/articles/fork-a-repo).
+See [complete help in GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
 ### Cloning
 
 You should clone your fork.
 This step is needed only once.
-Using [sugar](https://github.com/sugarlabs/sugar) as example;
+Using [sugar](https://github.com/sugarlabs/sugar) as an example;
 
 ```
 git clone git@github.com:YOUR-NAME/sugar.git
@@ -247,7 +246,7 @@ We encourage [testing](#testing) before merging a pull-request.
 
 So instead of merging directly with the "merge" button on GitHub, we may do a local merge, then test, then push.
 
-See [GitHub help on merging a pull-request](https://help.github.com/articles/merging-a-pull-request).
+See [GitHub help on merging a pull-request](https://docs.github.com/articles/merging-a-pull-request).
 
 The GitHub page for the pull-request will provide you the right commands to do the local merge, similar to the following.
 

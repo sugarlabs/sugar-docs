@@ -1,4 +1,4 @@
-Code style for Sugar Python development
+Code Style for Sugar Python Development
 =======================================
 
 General
@@ -9,20 +9,20 @@ General
 Python
 ------
 
-* Make your code conform to pep8 and pyflakes
+* Make your code conform to PEP 8 and pyflakes
 
 * Use four spaces for indentation.
 
 Libraries
 ---------
 
-* New code should be written in Python 3, using GTK+ 3, GStreamer 1.0, etc
+* New code should be written in Python 3 and use GTK 3, GStreamer 1.0, etc
 
-* Use json, ...
+* Use the json module for data serialization when appropriate.
 
 * Use [sugargame](https://github.com/sugarlabs/sugargame) when interfacing to pygames
 
 Conventions
 -----------
 
-* Methods documentation should be "attached" to the methods (See http://www.python.org/dev/peps/pep-0257)
+* Methods documentation should be attached directly to the methods (See http://www.python.org/dev/peps/pep-0257)
