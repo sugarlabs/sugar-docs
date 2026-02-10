@@ -1,31 +1,27 @@
-Contributing
-============
+# Contributing
 
-We use the pull-request model, see [GitHub's help on pull requests](https://docs.github.com/en/pull-requests).
+This is our guide to contributing code. In brief, you will:
 
-In brief, you will:
+* select a Sugar Labs software product, i.e. Sugarizer, Sugar, Music
+  Blocks, or one of the hundreds of learning activities,
+* use the software, so that you know from direct experience what to
+  change,
+* fork the source repository and set it up on your system;
+* find a problem that interests you,
+  * make a pull request, if you can fix it, see [Workflow](#workflow), 
+  * add an issue, but only if you cannot or will not fix the problem,
+* go through the review process until your pull-request is merged;
+* look at other issues and see if you can help,
+* review other pull requests, see [Guide for Reviewers](#guide-for-reviewers)
 
-* on GitHub, find and fork the source repository;
-* on your computer, clone your fork repository;
-* commit your changes in a new branch;
-* push your branch and submit a pull-request for it;
-* go through the review process until your pull-request is merged; and
+You do not need to ask permission to work.
 
-Please note there is no need to ask permission to work on an
-issue. You should check for pull requests linked to an issue you are
-addressing; if there are none, then assume nobody has done
-anything. Begin to fix the problem, test, make your commits, push your
-commits, then make a pull request. Mention an issue number in the
-pull request, but not the commit message. These practices allow the
-competition of ideas (Sugar Labs is a meritocracy).
-
-Modifying Activities
---------------------
+## Modifying Activities
 
 Most activity repositories can be found in our [GitHub `sugarlabs`
 organization](https://github.com/sugarlabs).
 
-A few activity repositories are somewhere else; read the
+A few activity repositories are somewhere else; to find them read the
 `activity/activity.info` file, check the metadata on the
 [activities.sugarlabs.org app
 store](https://activities.sugarlabs.org/), or the [Activity page on
@@ -39,9 +35,7 @@ GitHub account, put the source code in it, then ask the [systems@
 list](https://lists.sugarlabs.org/listinfo/systems) to move it to the
 GitHub `sugarlabs` organization.
 
-After modifying an activity, a new release may be needed.  Some activities have no maintainer, so you may need to be the maintainer for a short time.
-
-### Checklist - anyone
+### Checklist - everyone
 
 * [ ] run the activity and confirm that you understand what it is for, what it does, and how a child will use it,
 
@@ -56,6 +50,8 @@ After modifying an activity, a new release may be needed.  Some activities have 
 * [ ] if there is a `po/*.pot` file, and your changes affect translated strings; regenerate using `python setup.py genpot`,
 
 * [ ] make a branch, one or more commits, and a pull request, see [Workflow](#workflow) below.
+
+After modifying an activity, a new release will be needed.  Some activities have no maintainer, so you may need to be the maintainer for a short time.
 
 ### Checklist - maintainer
 
@@ -84,7 +80,9 @@ After modifying an activity, a new release may be needed.  Some activities have 
 
 * [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit,
 
-* [ ] If the activity is on [weblate](https://weblate.sugarlabs.org), be sure to merge any open PRs raised from the [weblate-sync](https://wiki.sugarlabs.org/go/Service/Weblate) workflow. 
+* [ ] If the activity is on [weblate](https://weblate.sugarlabs.org), check to make sure that the changes on weblate are also on the repo
+as weblate automatically pushes changes, you can ask for the admin in our matrix channel if you notice that weblate changes aren't
+reflected on the repo.
 
 * [ ] update the README.md file if necessary,
 
@@ -111,8 +109,7 @@ After modifying an activity, a new release may be needed.  Some activities have 
   recommended to take a look at the [Activities4 wiki page](https://wiki.sugarlabs.org/go/Service/activities4)
 
 
-Modifying Sugar
----------------
+## Modifying Sugar
 
 Sugar repositories can be found in our [GitHub `sugarlabs`
 organization](https://github.com/sugarlabs).  Sugar desktop
@@ -120,17 +117,18 @@ environment repositories are:
 
 * https://github.com/sugarlabs/sugar (the desktop shell);
 * https://github.com/sugarlabs/sugar-artwork (images, icons, themes);
-* https://github.com/sugarlabs/sugar-toolkit-gtk3 (graphical widget library); and,
+* https://github.com/sugarlabs/sugar-toolkit-gtk4 (graphical widget library); and,
 * https://github.com/sugarlabs/sugar-datastore (journal backend).
 
-Workflow
---------
+## Workflow
 
-### Open an Issue
+We use the pull-request model, see [GitHub's help on pull requests](https://docs.github.com/en/pull-requests). Precisely, you will:
 
-We track issues in http://bugs.sugarlabs.org/ or in the GitHub Issues tab of repositories.
-
-An improvement to Sugar may start with an issue discussion, to build consensus and ensure that work isn't wasted.  An issue may be avoided for fixing bugs that are obvious to everyone or part of a project.
+* find and fork the source repository, see [Forking](#forking) below,
+* on your computer, clone your fork repository, see [Cloning](#cloning),
+* commit your changes in a new branch, see [Branching](#branching) and [Making Commits](#making-commits),
+* push your branch and submit a pull-request for it, and;
+* respond to review until your pull-request is merged or the problem is solved in another way.
 
 ### Forking
 
@@ -140,9 +138,9 @@ See [complete help in GitHub](https://docs.github.com/en/get-started/quickstart/
 
 ### Cloning
 
-You should clone your fork.
-This step is needed only once.
-Using [sugar](https://github.com/sugarlabs/sugar) as an example;
+You must clone your fork.
+This step is needed only once for each repository.
+Using [sugar](https://github.com/sugarlabs/sugar) as example;
 
 ```
 git clone git@github.com:YOUR-NAME/sugar.git
@@ -174,13 +172,19 @@ Change files, and commit.  Commit messages are kept by git, and are used later w
 7. avoid mentioning any contest tasks or mentors; use pull-request comments instead; and
 8. use imperative mood, like "add foo", or "port to bar"; (if English is not your first language, see [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood), [git documentation](https://git.kernel.org/pub/scm/git/git.git/tree/Documentation/SubmittingPatches#n133) and [blog post by Dan Clarke](https://www.danclarke.com/git-tense)).
 
-Make one or more commits and push the branch to your repository;
+See additional guidance [How to Write a Git Commit Message](https://chris.beams.io/git-commit) from 2014.
+
+Make one or more commits.
+
+### Pushing
+
+Push the branch to your repository;
 
 ```
 git push origin BRANCH-NAME
 ```
 
-### Sending a pull-request
+### Create a pull-request
 
 Send a pull-request for your branch.
 Navigate to your repository page in GitHub, switch to the branch you made, and then press the **Pull Request** button.
@@ -318,7 +322,7 @@ Goals for review are to;
 
 * not waste the time of the contributor, by doing anything trivial that otherwise the contributor might have to do.
 
-### Checklist
+### Checklist - review
 
 * [ ] does the change have consensus of the community, see also [code of conduct](CODE_OF_CONDUCT.md) (if a reviewer is in doubt, seek opinions by @mentioning people),
 
@@ -344,8 +348,7 @@ Goals for review are to;
 
 
 
-Frequently Asked Questions
---------------------------
+# Frequently Asked Questions
 
 ### I've used the GitHub editor, how can I rebase or amend commits?
 
@@ -355,7 +358,15 @@ Make a local clone of your GitHub repository, use `git commit --amend` or the ot
 
 Most likely you have cloned someone else's repository, and you should
 instead fork their repository, clone your own repository, make your
-changes, then push.  See [Getting error 403 while submitting
-PR](http://lists.sugarlabs.org/archive/sugar-devel/2017-March/053926.html)
-and [D. Joe's
-reply](http://lists.sugarlabs.org/archive/sugar-devel/2017-March/053929.html).
+changes, then push.
+See related discussions in the sugar-devel mailing list archive for more details.
+
+### My fork is out of date. How do I sync it with upstream?
+
+See GitHub’s guide on syncing a fork:
+https://docs.github.com/en/get-started/quickstart/fork-a-repo#syncing-a-fork
+
+### Where can I ask questions or get help from the community?
+
+Join the Sugar Labs community chat or mailing lists:
+https://matrix.to/#/#sugar:matrix.org

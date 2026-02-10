@@ -2,7 +2,7 @@
 
 This is a guide to finding and fixing memory leaks.
 
-Memory leaks are a common bug where a program retains allocated memory after it is no longer needed, and over time this makes the program slow (and even slows down the whole operating system.) 
+Memory leaks are a common bug where a program retains allocated memory after it is no longer needed, and over time this makes the program slow (and even slows down the whole operating system). 
 
 To see if they are happening, you can log and graph the memory consumption of your Activity.
 
