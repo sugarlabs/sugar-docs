@@ -16,7 +16,7 @@ Python
 Libraries
 ---------
 
-* New code should be written in Python 3 and use GTK 3, GStreamer 1.0, etc
+* New code should be written in Python 3 and use GTK+ 3, GStreamer 1.0, etc
 
 * Use the json module for data serialization when appropriate.
 
@@ -25,4 +25,4 @@ Libraries
 Conventions
 -----------
 
-* Methods documentation should be attached directly to the methods (See http://www.python.org/dev/peps/pep-0257)
+* Methods documentation should be "attached" to the methods (See https://www.python.org/dev/peps/pep-0257)

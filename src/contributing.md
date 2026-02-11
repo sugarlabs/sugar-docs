@@ -1,20 +1,20 @@
 # Contributing
 
-This is our guide to contributing code. In brief, you will:
+This is our guide to contributing code.  In brief, you will:
 
 * select a Sugar Labs software product, i.e. Sugarizer, Sugar, Music
   Blocks, or one of the hundreds of learning activities,
 * use the software, so that you know from direct experience what to
   change,
-* fork the source repository and set it up on your system;
 * find a problem that interests you,
   * make a pull request, if you can fix it, see [Workflow](#workflow), 
   * add an issue, but only if you cannot or will not fix the problem,
-* go through the review process until your pull-request is merged;
 * look at other issues and see if you can help,
 * review other pull requests, see [Guide for Reviewers](#guide-for-reviewers)
 
-You do not need to ask permission to work.
+Make your own decision on what to do.
+
+Do not ask permission to work.
 
 ## Modifying Activities
 
@@ -80,9 +80,7 @@ After modifying an activity, a new release will be needed.  Some activities have
 
 * [ ] if there is a `po/*.pot` file, regenerate using `python setup.py genpot`, review the changes, and commit,
 
-* [ ] If the activity is on [weblate](https://weblate.sugarlabs.org), check to make sure that the changes on weblate are also on the repo
-as weblate automatically pushes changes, you can ask for the admin in our matrix channel if you notice that weblate changes aren't
-reflected on the repo.
+* [ ] If the activity is on [weblate](https://weblate.sugarlabs.org), check to make sure that the changes on weblate are also on the repo as weblate automatically pushes changes, you can ask for the admin in our matrix channel if you notice that weblate changes aren't reflected on the repo.
 
 * [ ] update the README.md file if necessary,
 
@@ -106,7 +104,7 @@ reflected on the repo.
   remove any other old versions of the bundle from `~activities-v4/bundles`, and trigger
   a rebuild of the static site using `rebuild-aslo` command, verify if your bundle is
   visible on https://v4.activities.sugarlabs.org . For more information, it is
-  recommended to take a look at the [Activities4 wiki page](https://wiki.sugarlabs.org/go/Service/activities4)
+  recommended to take a look at the   [Activities4 wiki page](https://wiki.sugarlabs.org/go/Service/activities4)
 
 
 ## Modifying Sugar
@@ -122,7 +120,7 @@ environment repositories are:
 
 ## Workflow
 
-We use the pull-request model, see [GitHub's help on pull requests](https://docs.github.com/en/pull-requests). Precisely, you will:
+We use a pull-request workflow, see [GitHub's help on pull-request](https://help.github.com/articles/using-pull-requests).  In brief, you will:
 
 * find and fork the source repository, see [Forking](#forking) below,
 * on your computer, clone your fork repository, see [Cloning](#cloning),
@@ -132,9 +130,9 @@ We use the pull-request model, see [GitHub's help on pull requests](https://docs
 
 ### Forking
 
-You should first fork a repository on GitHub.
-This step is needed only once.
-See [complete help in GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+You must first fork a repository on GitHub.
+This step is needed only once for each repository.
+See [complete help in GitHub](https://help.github.com/articles/fork-a-repo).
 
 ### Cloning
 
@@ -250,7 +248,7 @@ We encourage [testing](#testing) before merging a pull-request.
 
 So instead of merging directly with the "merge" button on GitHub, we may do a local merge, then test, then push.
 
-See [GitHub help on merging a pull-request](https://docs.github.com/articles/merging-a-pull-request).
+See [GitHub help on merging a pull-request](https://help.github.com/articles/merging-a-pull-request).
 
 The GitHub page for the pull-request will provide you the right commands to do the local merge, similar to the following.
 
@@ -359,7 +357,6 @@ Make a local clone of your GitHub repository, use `git commit --amend` or the ot
 Most likely you have cloned someone else's repository, and you should
 instead fork their repository, clone your own repository, make your
 changes, then push.
-See related discussions in the sugar-devel mailing list archive for more details.
 
 ### My fork is out of date. How do I sync it with upstream?
 
