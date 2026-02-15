@@ -193,7 +193,7 @@ two options: 1. go back to use the JavaScript methods for DOM
 manipulation, or 2. use a template system.
 
 There are many template systems out there, and you can use whatever
-you like.  Let's try [mustache](http://mustache.github.io/) here.
+you like.  Let's try [mustache](https://mustache.github.io/) here.
 
 Add mustache to your activity:
 
@@ -250,7 +250,7 @@ the following command inside the activity directory:
 #### AMD-ready
 
 You can easily add AMD-ready libraries with volo.  For example, to add
-[RaphaelJS](http://raphaeljs.com/):
+[RaphaelJS](https://raphaeljs.com/):
 
     $ volo add DmitryBaranovskiy/raphael
     Downloading: https://codeload.github.com/DmitryBaranovskiy/raphael/legacy.zip/v2.1.2
@@ -264,7 +264,7 @@ Then in `js/activity.js` you can use it:
 #### non-AMD libs
 
 Please, refer to
-RequiresJS [shim section](http://requirejs.org/docs/api.html#config-shim),
+RequiresJS [shim section](https://requirejs.org/docs/api.html#config-shim),
 then you can add your shim section in `js/loader.js`
 
 ### Ready to release
@@ -277,7 +277,7 @@ Before your first release, you should:
 
 After that, if the activity works with Sugar 0.112 or earlier, on
 *packaged-sugar* you may make a bundle and upload it to the Sugar
-Activity Library <http://activities.sugarlabs.org/>.
+Activity Library <https://activities.sugarlabs.org/>.
 
     python setup.py dist_xo
 

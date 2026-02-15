@@ -5,9 +5,9 @@ Web Activities
 --------------
 
 A sugar web activity is an activity developed using the standard web
-technologies: [HTML](http://dev.w3.org/html5/spec/),
-[JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
-and [CSS](http://www.w3.org/Style/CSS/). They are called "web" because
+technologies: [HTML](https://dev.w3.org/html5/spec/),
+[JavaScript](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
+and [CSS](https://www.w3.org/Style/CSS/). They are called "web" because
 of the technology used but they run off-line just fine. The activities
 are run within the Sugar Shell, an activity runtime built on standard
 browser technology, to render the display, assist with events, and
@@ -58,11 +58,11 @@ JavaScript and Python code.
 There is research going on about running web activities on Android.
 The activity source is bundled in an Android application with one
 component: an [Android
-activity](http://developer.android.com/guide/components/activities.html)
+activity](https://developer.android.com/guide/components/activities.html)
 (not to confuse with our activity term).  The Android activity is
 composed of a chrome-less WebKit view, and the web activity is loaded
 inside.  This is the same as other [webapps on
-Android](http://developer.android.com/guide/webapps/overview.html) do.
+Android](https://developer.android.com/guide/webapps/overview.html) do.
 
 The Android activity [exposes a JavaScript
 object](http://developer.android.com/guide/webapps/webview.html#UsingJavaScript)
@@ -73,14 +73,14 @@ activity executing JavaScript.
 
 The Sugar shell on Android is a separate process, and it runs in its own
 application with one component: an [Android bound
-service](http://developer.android.com/guide/components/bound-services.html).
+service](https://developer.android.com/guide/components/bound-services.html).
 The inter-process communication is made sending [Message
-objects](http://developer.android.com/reference/android/os/Message.html).
+objects](https://developer.android.com/reference/android/os/Message.html).
 
 Many Android activities can be connected to the Sugar shell.  The
 first one starts it, and the last one stops it.  They bind to the
 shell sending an [Intent
-message](http://developer.android.com/guide/components/intents-filters.html),
+message](https://developer.android.com/guide/components/intents-filters.html),
 for which the shell has an Intent filter that matches.
 
 ![Android architecture](images/arch-android.png "Android architecture")
@@ -103,14 +103,14 @@ Tools
 -----
 
 Modularization of JavaScript code is handled with
-[RequireJS](http://requirejs.org/) which provides the AMD
+[RequireJS](https://requirejs.org/) which provides the AMD
 specification (Asynchronous Module Definition).
 
 Package management and creation of activities from a template is
 handled with [Volo](https://volojs.github.io).
 
 Unit testing of JavaScript code is done with the
-[Jasmine](http://jasmine.github.io/) framework.
+[Jasmine](https://jasmine.github.io/) framework.
 
 Installation of JavaScript tools is done with
-[Node.js](http://nodejs.org/).
+[Node.js](https://nodejs.org/).

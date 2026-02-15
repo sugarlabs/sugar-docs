@@ -208,14 +208,14 @@ You can check the Python Coverage of your activity by following [this](python-co
 
 Once your activity is working, you can ask to have
 your activity repository hosted under the [Sugar Labs github
-organization](http://github.com/sugarlabs).
+organization](https://github.com/sugarlabs).
 
 Make an XO bundle.
 ```
 python setup.py dist_xo
 ```
 And if it works with Python 2 then upload it to the Sugar Activity
-Library <http://activities.sugarlabs.org/>.
+Library <https://activities.sugarlabs.org/>.
 After that, users of Sugar can download and install your activity.
 
 For further releases, you must update the activity_version in
@@ -226,7 +226,7 @@ More details
 
 * [Sugar Toolkit Documentation](https://developer.sugarlabs.org/sugar3/).
 
-* [Python GTK+ 3 Tutorial](http://python-gtk-3-tutorial.readthedocs.io/en/latest/).
+* [Python GTK+ 3 Tutorial](https://python-gtk-3-tutorial.readthedocs.io/en/latest/).
 
 * [Make Your Own Sugar Activities](https://flossmanuals.net/make-your-own-sugar-activities/), a book by James Simmons.
 

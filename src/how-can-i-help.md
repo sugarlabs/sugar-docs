@@ -101,7 +101,7 @@ Coding, documentation and quality assurance is important - it is required everyw
   * Another way you can contribute to Sugar Labs is the [Release Engineer's Feature Tracking page](https://wiki.sugarlabs.org/go/Features). These are features proposed and implemented by other Sugar Labs community contributors. The progress of the feature is also indicated in the page - please contribute to tasks which are "In Progress".
   * You can test Sugar and Activities and familiarise yourself with Sugar, making a note of where your expectation is betrayed by your observations, then seek feedback from others to learn if your expectation was right, and post inconsistencies to the corresponding GitHub repository issues page, [Wiki](https://wiki.sugarlabs.org), or mailing list [sugar-devel@lists.laptop.org][2],
   * You can go to a specific GitHub repository and work on the bugs in the source code.  Choose the "Issues" tabs and work through the various issues listed in it. The main Sugar Labs GitHub Repositories are listed in the "Important Sugar Labs Links".
-  * You can write documentation, see the [Wiki](https://wiki.sugarlabs.org), the [Help Activity](http://wiki.sugarlabs.org/go/Activities/Help/Contribute) which is kept in the [Help](https://github.com/godiard/help-activity) repository, and this [developer documentation](docs.md).
+  * You can write documentation, see the [Wiki](https://wiki.sugarlabs.org), the [Help Activity](https://wiki.sugarlabs.org/go/Activities/Help/Contribute) which is kept in the [Help](https://github.com/godiard/help-activity) repository, and this [developer documentation](docs.md).
   * You can update web sites, see [www.sugarlabs.org](https://www.sugarlabs.org/) which is kept in the [www-sugarlabs](https://github.com/sugarlabs/www-sugarlabs) repository.
   * You can choose to write your own [desktop activity][1] or write your own [web activity][5].
   * You can port activities which are in GTK+ 2 to GTK+ 3, using the [guide](gtk3-porting-guide.md).
@@ -158,6 +158,5 @@ ways to get in touch with real people are:
 
 [1]: desktop-activity.md
 [2]: https://bugs.sugarlabs.org
-[3]: https://lists.sugarlabs.org/listinfo/sugar-devel
-[4]: https://wiki.sugarlabs.org/go/Mentors
-[5]: web-activity.md
+[3]: https://wiki.sugarlabs.org/go/Mentors
+[4]: web-activity.md

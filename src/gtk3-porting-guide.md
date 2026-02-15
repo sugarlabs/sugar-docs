@@ -10,7 +10,7 @@ GTK is a library for creating graphical user interfaces.  GTK is written in C.  
 
 GTK 2 is the previous major version of GTK.  GTK 2 for Python is a static binding, and is called PyGTK.  GTK 2 is soon to be obsolete and unavailable.
 
-* [PyGTK](http://pygtk.org/)
+* [PyGTK](https://pygtk.org/)
 * [GTK 2 Reference Manual](https://developer.gnome.org/gtk2/stable/)
 
 GTK 3 is the current major version of GTK.  It breaks both API and ABI compared with GTK 2.  GTK 3 for Python is a GObject Introspection binding, using PyGObject.
@@ -48,8 +48,7 @@ These old activities are to be ported to GTK 3.  This guide explains how.
 
 General information for all GTK applications;
 
-* [PyGObject - Porting from Static Bindings](http://pygobject.readthedocs.io/en/latest/guide/porting.html) part of the PyGObject documentation, focusing on Python,
-* [PyGObject - Introspection Porting](http://live.gnome.org/PyGObject/IntrospectionPorting) on the GNOME Wiki, focusing on Python,
+* [PyGObject - Porting from Static Bindings](https://pygobject.readthedocs.io/en/latest/guide/porting.html) part of the PyGObject documentation, focusing on Python,
 * [Migrating from GTK 2 to GTK 3](https://developer.gnome.org/gtk3/stable/gtk-migrating-2-to-3.html) part of the GTK documentation, focusing on the underlying C library and object classes, but is relevant to Python porting because the same classes are used.
 
 ## How to Port a Sugar Activity to GTK 3
@@ -76,7 +75,7 @@ Write any comments in the code, by adding **\# README:**, **\# TODO:** and **\# 
 
 -   The namespace is changed from `sugar` to `sugar3`, which reflects
     that GTK 3 is the underlying technology, use a script to automate the rename of the imports `sugar` to
-`sugar3`, [sugar-convert.sh](http://dev.laptop.org/~manuq/sugar-convert.sh),
+`sugar3`, [sugar-convert.sh](https://dev.laptop.org/~manuq/sugar-convert.sh),
 -   The keep button has been removed
 -   The old-style toolbar has been removed
 -   `set_toolbar_box` is used instead of `set_toolbox`
@@ -186,7 +185,7 @@ toolbar_box.show()
 
 If you are having trouble finding how a particular GTK
 class/method/constant has been named in PyGI, run
-[pygi-enumerate.py](http://dev.laptop.org/~dsd/20110806/pygi-enumerate.py)
+[pygi-enumerate.py](https://dev.laptop.org/~dsd/20110806/pygi-enumerate.py)
 and grep the output. (this app lists all identified methods and
 constants). Usage example:
 ```shell
@@ -231,7 +230,7 @@ TypeError: GObject.__init__() takes exactly 0 arguments (1 given)
 ```
 
 The solution is to go to the [GtkExpander API
-documentation](http://developer.gnome.org/gtk3/3.2/GtkExpander.html#GtkExpander.properties)
+documentation](https://developer.gnome.org/gtk3/3.2/GtkExpander.html#GtkExpander.properties)
 and find the appropriate property that we wish to set. In this case it
 is <b>label</b> (which is a Construct property, further increasing our
 confidence of success), so the code should be:
@@ -242,7 +241,7 @@ Combining the two points above, if you wish to call a construct-like
 function such as gtk\_button\_new\_with\_label(), you do have the option
 of calling Gtk.Button.new\_with\_label(), however if we check the
 [GtkButton
-properties](http://developer.gnome.org/gtk3/3.2/GtkButton.html#GtkButton.properties)
+properties](https://developer.gnome.org/gtk3/3.2/GtkButton.html#GtkButton.properties)
 we see one called "label" which is equivalent. Therefore
 `gtk_button_new_with_label("foo")` should be called as:
 
@@ -422,7 +421,7 @@ clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
 ```python
 clipboard.set_text(string, len(string))
 ```
-See [python-gtk-3-tutorial/clipboard](http://python-gtk-3-tutorial.readthedocs.org/en/latest/clipboard.html) for more details.
+See [python-gtk-3-tutorial/clipboard](https://python-gtk-3-tutorial.readthedocs.org/en/latest/clipboard.html) for more details.
 
 ### Changes to Drag-and-Drop
 
@@ -444,7 +443,7 @@ data.get_image()
 ```
 
 See
-[python-gtk-3-tutorial/drag_and_drop](http://python-gtk-3-tutorial.readthedocs.org/en/latest/drag_and_drop.html)
+[python-gtk-3-tutorial/drag_and_drop](https://python-gtk-3-tutorial.readthedocs.org/en/latest/drag_and_drop.html)
 for more details.
 
 ### Port from Drawable to Cairo
@@ -573,7 +572,7 @@ a class with methods for `get_x()`, `get_y()`, `get_width()`, and
 `get_height()`, so you cannot iter over it.
 
 (For more details, see
-<http://developer.gnome.org/pangomm/2.28/annotated.html>)
+<https://developer.gnome.org/pangomm/2.28/annotated.html>)
 
 #### Replacing pixmaps with Cairo
 
@@ -755,15 +754,15 @@ guide for releasing a new version
 
 These are the changes noted by developers while porting activities
 
--   `Gtk.Widget.hide_all()` does not exist anymore. We should use just `.hide` [Ref](http://developer.gnome.org/gtk3/3.5/GtkWidget.html#gtk-widget-hide)
+-   `Gtk.Widget.hide_all()` does not exist anymore. We should use just `.hide` [Ref](https://developer.gnome.org/gtk3/3.5/GtkWidget.html#gtk-widget-hide)
 -   If the code creates some own object, and it defines some properties,
-    you should use `__gproperties__` dictionary. [Ref](http://python-gtk-3-tutorial.readthedocs.org/en/latest/objects.html#GObject.GObject.__gproperties__)
+    you should use `__gproperties__` dictionary. [Ref](https://python-gtk-3-tutorial.readthedocs.org/en/latest/objects.html#GObject.GObject.__gproperties__)
 -   `Gtk.ListStore` doesn't have the method `.reorder`. There is a
     [ticket](https://bugzilla.gnome.org/show_bug.cgi?id=677941) reported
     upstream about this.
--   I replaced the use of `dbus` by [Gio](http://developer.gnome.org/gio/unstable/pt02.html) to monitor (dis)connection of pen drives
+-   I replaced the use of `dbus` by [Gio](https://developer.gnome.org/gio/unstable/pt02.html) to monitor (dis)connection of pen drives
 -   Migrate custom signals:
-    If you have defined custom gtk objects with custom signal you need to update them to [the new way](http://python-gtk-3-tutorial.readthedocs.org/en/latest/objects.html)
+    If you have defined custom gtk objects with custom signal you need to update them to [the new way](https://python-gtk-3-tutorial.readthedocs.org/en/latest/objects.html)
     You should replace this:
 
     ```python
@@ -801,16 +800,16 @@ These are the changes noted by developers while porting activities
 
 ## Resources
 
--   Python GTK 3 Tutorial: [<http://python-gtk-3-tutorial.readthedocs.org>](http://python-gtk-3-tutorial.readthedocs.org/)
--   PyGTK or GTK 2: <http://www.pygtk.org/docs/pygtk/>
+-   Python GTK 3 Tutorial: [<https://python-gtk-3-tutorial.readthedocs.org>](https://python-gtk-3-tutorial.readthedocs.org/)
+-   PyGTK or GTK 2: <https://www.pygtk.org/docs/pygtk/>
 -   Sugar Toolkit GTK 3 Documentation:
     <https://developer.sugarlabs.org/sugar3/>
--   GTK 3 Reference Manual <http://developer.gnome.org/gtk3/stable/>
+-   GTK 3 Reference Manual <https://developer.gnome.org/gtk3/stable/>
 -   OLPC Documentation:
-    <http://wiki.laptop.org/go/Activities/PortingToGtk3>
--   Pango documentation: <http://developer.gnome.org/pangomm>
+    <https://wiki.laptop.org/go/Activities/PortingToGtk3>
+-   Pango documentation: <https://developer.gnome.org/pangomm>
 -   GStreamer-1.0 documentation:
-    <http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/index.html>
+    <https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/index.html>
 -   GStreamer-1.0 porting hints:
     <https://wiki.ubuntu.com/Novacut/GStreamer1.0>
 
