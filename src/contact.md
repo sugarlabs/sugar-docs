@@ -1,6 +1,9 @@
 Contact
 =======
 
+Join us at Sugar-devel mailing list:
+https://lists.sugarlabs.org/mailman3/lists/sugar-devel.lists.sugarlabs.org/
+
 We have a [Matrix channel][Matrix] where real time discussions mostly happen. 
 
 Some important channels are:
