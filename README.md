@@ -53,3 +53,4 @@ Welcome to the documentation for contributors and developers.
 
 ## Translation
 * [Weblate](https://weblate.sugarlabs.org)
+* Contribution by Janasruthi for NxtWave GSoC mentorship
