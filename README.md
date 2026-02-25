@@ -32,7 +32,7 @@ Welcome to the documentation for contributors and developers.
 * [Architecture](src/web-architecture.md)
 * [JavaScript style](src/javascript-style.md)
 * [Web code style](src/web-style.md)
-* [Components showcase](http://sugarlabs.github.io/sugar-web-samples/)
+* [Components showcase](https://sugarlabs.github.io/sugar-web-samples/)
 
 ## Sugar Android
 
