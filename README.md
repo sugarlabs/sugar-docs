@@ -22,6 +22,7 @@ Welcome to the documentation for contributors and developers.
 * [Python code style](src/python-style.md)
 * [Memory leaks](src/memory-leaks.md)
 * [GTK 3 Porting Guide](src/gtk3-porting-guide.md)
+* [GTK 4 Porting Guide](src/gtk4-porting-guide.md)
 * [Python 3 Porting Guide](src/python-porting-guide.md)
 * [Python Coverage Guide](src/python-coverage-guide.md)
 * [Guide to installing Sugar on Debian](src/sugar-on-debian.md)
